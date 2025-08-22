@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <div></div>
+    <div className="bg-black min-h-screen"></div>
   );
 }
