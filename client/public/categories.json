@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Phone",
+    "image": "https://i.ibb.co.com/PhtX1LB/JBL-Flip-6-hero-brick.jpg"
+  },
+  {
+    "name": "Camera",
+    "image": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg"
+  },
+  {
+    "name": "Gaming",
+    "image": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg"
+  },
+  {
+    "name": "Laptop",
+    "image": "https://i.ibb.co.com/8K4Tjts/6176423d-7769-46a0-ba01-a4d9008c86b9.png"
+  },
+  {
+    "name": "Headphones",
+    "image": "https://i.ibb.co.com/V2MNxst/61-Beh-Gy-Hz-HL-AC-UF894-1000-QL80.jpg"
+  },
+  {
+    "name": "Mouse",
+    "image": "https://example.com/images/categories/home-kitchen.jpg"
+  },
+  {
+    "name": "Keyboard",
+    "image": "https://i.ibb.co.com/4gPRw8k9/MXCL3-wid-4000-hei-4000-fmt-jpeg-qlt-90.jpg"
+  },
+  {
+    "name": "Speakers",
+    "image": "https://i.ibb.co.com/60D042hF/Vision-21-Multimedia-Speaker-Beat-105-Vision-da0de-365582.png"
+  },
+  {
+    "name": "Combo",
+    "image": "https://i.ibb.co.com/S7sVRm69/pngtree-gaming-wireless-keyboard-mouse-and-speaker-combo-png-image-19748814.png"
+  },
+  {
+    "name": "Others",
+    "image": "https://i.ibb.co.com/4ZWY3VP3/mockup-showcases-collection-of-tech-gadgets-designed-in-isometric-view-featuring-stylish-headphones.jpg"
+  }
+]

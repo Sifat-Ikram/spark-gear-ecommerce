@@ -1,0 +1,2758 @@
+[
+  {
+    "name": "Nova X1",
+    "slug": "nova-x1",
+    "sku": "PHN-NOVA-X1-2025",
+    "brand": "AstraTech",
+    "category": "Phone",
+    "price": 899.99,
+    "currency": "USD",
+    "shortDescription": "A premium flagship phone with cutting-edge performance and sleek design.",
+    "description": "The AstraTech Nova X1 redefines mobile innovation with a perfect blend of design, performance, and intelligence. Built with a stunning 6.8-inch AMOLED display, it delivers breathtaking visuals with deep blacks, vibrant colors, and a buttery-smooth 120Hz refresh rate. Powered by the latest octa-core Snapdragon processor and 12GB of RAM, the Nova X1 ensures blazing-fast multitasking, gaming, and productivity. Its advanced triple-lens camera system captures professional-grade photos and videos, including 8K recording, enhanced night mode, and AI-driven photography optimization. With 5G connectivity, downloads and streaming are instantaneous, while the 5000mAh battery supports ultra-fast 65W charging and 30W wireless charging, keeping you powered all day. The premium glass and aluminum build is IP68 water- and dust-resistant, ensuring durability in every scenario. Running on AstraOS, a sleek Android-based system, it offers deep customization and seamless ecosystem integration. Biometric security includes an ultrasonic fingerprint scanner and advanced facial recognition. Whether for work or entertainment, the Nova X1 offers unmatched reliability, making it a must-have flagship for modern users.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/V3L9fYq/phone-nova.jpg",
+        "alt": "Nova X1 phone in black"
+      },
+      {
+        "url": "https://i.ibb.co/V3L9fYq/phone-nova.jpg",
+        "alt": "Nova X1 phone in black"
+      },
+      {
+        "url": "https://i.ibb.co/V3L9fYq/phone-nova.jpg",
+        "alt": "Nova X1 phone in black"
+      },
+      {
+        "url": "https://i.ibb.co/V3L9fYq/phone-nova.jpg",
+        "alt": "Nova X1 phone in black"
+      },
+      {
+        "url": "https://i.ibb.co/V3L9fYq/phone-nova.jpg",
+        "alt": "Nova X1 phone in black"
+      }
+    ],
+    "stock": 200,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 356
+    },
+    "releaseDate": "2025-07-20",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "6.8-inch AMOLED, 120Hz"
+      },
+      {
+        "name": "Processor",
+        "value": "Snapdragon Gen 9"
+      },
+      {
+        "name": "Camera",
+        "value": "108MP Triple-Lens"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Pixelon Z5",
+    "slug": "pixelon-z5",
+    "sku": "PHN-PIXELON-Z5-2025",
+    "brand": "Pixelon",
+    "category": "Phone",
+    "price": 749.99,
+    "currency": "USD",
+    "shortDescription": "An advanced AI-powered phone designed for photography lovers.",
+    "description": "The Pixelon Z5 is a game-changer for mobile photography enthusiasts. Featuring a revolutionary 50MP AI quad-camera setup, it produces stunning images with exceptional detail, color accuracy, and depth. With advanced computational photography, real-time HDR, and night vision technology, the Z5 ensures professional-grade shots in any environment. Its 6.5-inch OLED display offers crystal-clear visuals, while the 144Hz refresh rate provides smooth interactions for gaming and content scrolling. Powered by the latest MediaTek Dimensity processor with 10GB of RAM, it handles demanding apps effortlessly. The 4800mAh battery supports 80W fast charging, reaching 50% in just 15 minutes, along with 25W wireless charging for convenience. Built with a lightweight aluminum frame and Gorilla Glass protection, the Z5 balances durability with elegance. Its AI assistant integrates seamlessly with productivity, smart home devices, and creative apps. With dual stereo speakers tuned for immersive audio and advanced 5G connectivity, the Pixelon Z5 is a complete package for creators and multitaskers alike.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      },
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      },
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      },
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      },
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      },
+      {
+        "url": "https://i.ibb.co/Sf9rmwV/phone-pixelon.jpg",
+        "alt": "Pixelon Z5 phone with quad cameras"
+      }
+    ],
+    "stock": 180,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 289
+    },
+    "releaseDate": "2025-08-02",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "6.5-inch OLED, 144Hz"
+      },
+      {
+        "name": "Camera",
+        "value": "50MP AI Quad-Camera"
+      },
+      {
+        "name": "Charging",
+        "value": "80W Fast + 25W Wireless"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "GalaxyX Pro",
+    "slug": "galaxyx-pro",
+    "sku": "PHN-GALAXYX-PRO-2025",
+    "brand": "SkyMobile",
+    "category": "Phone",
+    "price": 1099.99,
+    "currency": "USD",
+    "shortDescription": "A futuristic foldable phone with dual displays and multitasking features.",
+    "description": "The SkyMobile GalaxyX Pro reimagines mobile computing with its innovative foldable dual-display design. Equipped with a 7.6-inch foldable AMOLED screen and an external 6.2-inch cover display, it allows seamless transitions between phone and tablet modes. Multitasking is effortless, enabling users to run multiple apps side by side with split-screen functionality. Powered by a Snapdragon Gen 9 Ultra processor and 16GB RAM, the GalaxyX Pro handles heavy workloads and gaming with ease. Its 200MP quad-camera system brings unparalleled photography and videography, featuring 12x optical zoom and advanced stabilization for cinematic 8K video. The 5000mAh battery with 100W wired charging ensures quick top-ups, while 40W wireless charging provides convenience. Built with reinforced hinge technology and ultra-thin glass, it’s engineered for durability without compromising elegance. Enhanced stylus support makes it a creative powerhouse for artists and professionals. With 5G, Wi-Fi 7, and premium audio, the GalaxyX Pro is a futuristic device for power users who want it all.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      },
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      },
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      },
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      },
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      },
+      {
+        "url": "https://i.ibb.co/6nLJ5QB/phone-galaxyx.jpg",
+        "alt": "GalaxyX Pro foldable phone"
+      }
+    ],
+    "stock": 90,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 421
+    },
+    "releaseDate": "2025-09-15",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "7.6-inch Foldable AMOLED + 6.2-inch Cover"
+      },
+      {
+        "name": "Camera",
+        "value": "200MP Quad-Camera, 8K Video"
+      },
+      {
+        "name": "Battery",
+        "value": "5000mAh, 100W Wired + 40W Wireless"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "ZenCore M7",
+    "slug": "zencore-m7",
+    "sku": "PHN-ZENCORE-M7-2025",
+    "brand": "ZenCore",
+    "category": "Phone",
+    "price": 599.99,
+    "currency": "USD",
+    "shortDescription": "A mid-range phone with flagship-level features at an affordable price.",
+    "description": "The ZenCore M7 strikes the perfect balance between performance, design, and affordability. Featuring a 6.4-inch Super AMOLED display with HDR10+ and 120Hz refresh rate, it delivers smooth, immersive visuals for gaming, streaming, and everyday use. Powered by a Snapdragon Gen 8 chipset and 8GB RAM, it handles multitasking and heavy apps effortlessly. Its triple-lens camera system includes a 64MP main sensor, ultra-wide lens, and macro lens, enabling versatile photography in all lighting conditions. The M7 records crisp 4K video at 60fps with electronic stabilization for smooth footage. With a 4500mAh battery, it offers all-day usage and supports 60W fast charging, giving you 50% power in just 20 minutes. Built from lightweight aluminum with Gorilla Glass protection, the M7 is durable yet stylish. Running on ZenOS, it provides a clean, responsive Android experience with minimal bloatware. Designed for students, professionals, and everyday users, the ZenCore M7 delivers premium smartphone performance at a mid-range price.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      },
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      },
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      },
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      },
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      },
+      {
+        "url": "https://i.ibb.co/n3tBPkH/phone-zencore.jpg",
+        "alt": "ZenCore M7 phone in blue"
+      }
+    ],
+    "stock": 240,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 198
+    },
+    "releaseDate": "2025-06-28",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "6.4-inch Super AMOLED, 120Hz"
+      },
+      {
+        "name": "Camera",
+        "value": "64MP Triple-Lens"
+      },
+      {
+        "name": "Battery",
+        "value": "4500mAh, 60W Fast Charging"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "iPrime 15 Ultra",
+    "slug": "iprime-15-ultra",
+    "sku": "PHN-IPRIME-15ULTRA-2025",
+    "brand": "iPrime",
+    "category": "Phone",
+    "price": 1299.99,
+    "currency": "USD",
+    "shortDescription": "A luxury flagship phone with unmatched performance and ecosystem integration.",
+    "description": "The iPrime 15 Ultra stands at the pinnacle of smartphone design and innovation. Featuring a 6.7-inch LTPO OLED display with ProMotion 120Hz, it delivers stunning visuals with adaptive refresh rates for efficiency. Powered by the new A19 Bionic chip, it achieves lightning-fast performance, enhanced AI capabilities, and console-level gaming graphics. The Ultra introduces a groundbreaking 48MP triple-lens Pro camera system with 8K recording, cinematic stabilization, and advanced low-light photography. With satellite connectivity for emergencies, users stay connected anywhere. Its aerospace-grade titanium frame offers unmatched durability while maintaining a lightweight, premium feel. The 5000mAh battery supports MagCharge 40W wireless and 65W fast wired charging, ensuring all-day usage. Running on iOS 19, it provides deep ecosystem integration, advanced privacy features, and seamless device continuity. With FaceID 2.0 and under-display fingerprint scanning, security is both fast and reliable. Designed for professionals, creators, and enthusiasts, the iPrime 15 Ultra is the ultimate expression of smartphone luxury and power.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/hDxR4k8/phone-iprime.jpg",
+        "alt": "iPrime 15 Ultra luxury phone"
+      },
+      {
+        "url": "https://i.ibb.co/hDxR4k8/phone-iprime.jpg",
+        "alt": "iPrime 15 Ultra luxury phone"
+      },
+      {
+        "url": "https://i.ibb.co/hDxR4k8/phone-iprime.jpg",
+        "alt": "iPrime 15 Ultra luxury phone"
+      },
+      {
+        "url": "https://i.ibb.co/hDxR4k8/phone-iprime.jpg",
+        "alt": "iPrime 15 Ultra luxury phone"
+      },
+      {
+        "url": "https://i.ibb.co/hDxR4k8/phone-iprime.jpg",
+        "alt": "iPrime 15 Ultra luxury phone"
+      }
+    ],
+    "stock": 130,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 512
+    },
+    "releaseDate": "2025-09-25",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "6.7-inch LTPO OLED, 120Hz"
+      },
+      {
+        "name": "Processor",
+        "value": "A19 Bionic"
+      },
+      {
+        "name": "Camera",
+        "value": "48MP Pro Triple-Lens, 8K"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "OnePlus Edge 12",
+    "slug": "oneplus-edge-12",
+    "sku": "PHN-ONEPLUS-EDGE12-2025",
+    "brand": "OnePlus",
+    "category": "Phone",
+    "price": 799.99,
+    "currency": "USD",
+    "shortDescription": "A performance-driven flagship phone with sleek design and fast charging.",
+    "description": "The OnePlus Edge 12 is crafted for users who crave speed, style, and power. Sporting a 6.55-inch Fluid AMOLED display with 120Hz refresh rate, it provides vibrant, fluid visuals for gaming and media consumption. Under the hood, it’s powered by Snapdragon Gen 9 paired with 12GB RAM, delivering flagship-level performance for demanding apps and multitasking. Its triple camera system, led by a 100MP main sensor, produces stunning stills and 4K cinematic video with enhanced night mode. The Edge 12 comes with a 4800mAh battery that supports ultra-fast 100W WarpCharge, providing a full day’s power in just 15 minutes. Its sleek glass design with Gorilla Glass Victus and IP68 rating ensures durability against drops and water exposure. OxygenOS 15 offers a clean and customizable Android experience, optimized for speed and smoothness. With dual stereo speakers, advanced cooling technology, and 5G support, the Edge 12 is designed for gamers, creators, and professionals seeking premium performance at a competitive price.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      },
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      },
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      },
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      },
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      },
+      {
+        "url": "https://i.ibb.co/2NT9LkN/phone-oneplus.jpg",
+        "alt": "OnePlus Edge 12 phone in red"
+      }
+    ],
+    "stock": 170,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 276
+    },
+    "releaseDate": "2025-07-08",
+    "specs": [
+      {
+        "name": "Display",
+        "value": "6.55-inch Fluid AMOLED, 120Hz"
+      },
+      {
+        "name": "Camera",
+        "value": "100MP Triple-Lens"
+      },
+      {
+        "name": "Charging",
+        "value": "100W WarpCharge"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Compact Digital Camera",
+    "slug": "compact-digital-camera",
+    "sku": "CDC-ZOOM-2025",
+    "brand": "ViewCapture",
+    "category": "Camera",
+    "price": 329.99,
+    "currency": "USD",
+    "shortDescription": "A high-resolution compact camera with 20x optical zoom, perfect for travel.",
+    "description": "Capture life's moments in stunning detail with the ViewCapture Compact Digital Camera. Featuring a 20-megapixel sensor and a powerful 20x optical zoom lens, this camera lets you get close to the action without compromising on image quality. It's incredibly lightweight and portable, making it an ideal travel companion. The built-in Wi-Fi and Bluetooth allow for easy sharing of photos to your smartphone. With 4K video recording capabilities, you can also capture your memories in ultra-high definition.",
+    "images": [
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/swQBs7g/s-l1600.jpg",
+        "alt": "digital camera"
+      }
+    ],
+    "stock": 110,
+    "available": true,
+    "ratings": {
+      "average": 4.5,
+      "reviewsCount": 256
+    },
+    "releaseDate": "2025-07-25",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "20.1 MP"
+      },
+      {
+        "name": "Optical Zoom",
+        "value": "20x"
+      },
+      {
+        "name": "Video",
+        "value": "4K UHD"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Wi-Fi, Bluetooth"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Professional Vlogging Camera",
+    "slug": "professional-vlogging-camera",
+    "sku": "VLOG-CAM-PRO-2025",
+    "brand": "StreamShot",
+    "category": "Camera",
+    "price": 699.99,
+    "currency": "USD",
+    "shortDescription": "A mirrorless vlogging camera with a flip-out screen and superior audio.",
+    "description": "Designed for content creators, the StreamShot Vlogging Camera is the perfect tool to produce high-quality videos. It features a large sensor for exceptional low-light performance and a fully articulating flip-out screen, making it easy to frame your shots. The built-in directional microphone ensures professional-grade audio, and the fast auto-focus system keeps you sharp and in focus. It's lightweight and easy to use, making it an excellent choice for on-the-go vlogging.",
+    "images": [
+      {
+        "url": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg",
+        "alt": "A vlogging camera with a microphone attachment"
+      },
+      {
+        "url": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg",
+        "alt": "A vlogging camera with a microphone attachment"
+      },
+      {
+        "url": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg",
+        "alt": "A vlogging camera with a microphone attachment"
+      },
+      {
+        "url": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg",
+        "alt": "A vlogging camera with a microphone attachment"
+      },
+      {
+        "url": "https://i.ibb.co.com/phmDqSp/q2-mono-outdoor-02-fstoppers-usman-dawood-leica-q2-monochrom-new-black-and-white-camera-macro-mode-2.jpg",
+        "alt": "A vlogging camera with a microphone attachment"
+      }
+    ],
+    "stock": 70,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 145
+    },
+    "releaseDate": "2025-08-15",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "24MP APS-C"
+      },
+      {
+        "name": "Display",
+        "value": "3.0\" Flip-out LCD"
+      },
+      {
+        "name": "Audio",
+        "value": "Built-in Directional Mic"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Professional DSLR Mark IV",
+    "slug": "professional-dslr-mark-iv",
+    "sku": "CAM-DSLR-MK4-2025",
+    "brand": "PhotonPro",
+    "category": "Camera",
+    "price": 1799.99,
+    "currency": "USD",
+    "shortDescription": "A high-performance DSLR built for professionals with ultimate reliability.",
+    "description": "The PhotonPro Professional DSLR Mark IV is a powerhouse camera designed for serious photographers who demand performance, reliability, and versatility. Built with a 32.5MP full-frame CMOS sensor and next-generation image processor, it delivers crisp images with exceptional color accuracy and low-light capabilities. The advanced 61-point autofocus system ensures precise subject tracking, even in challenging conditions, while continuous shooting up to 12fps captures fast-moving subjects with ease. For videographers, the Mark IV offers stunning 4K DCI recording with professional-level controls and clean HDMI output. A rugged magnesium alloy body with complete weather-sealing makes it a trusted companion for outdoor shoots in rain, dust, or extreme temperatures. Dual card slots, a long-lasting battery, and an intuitive interface allow professionals to focus on creativity without limitations. Connectivity features, including Wi-Fi, Bluetooth, and NFC, make file transfers quick and wireless shooting seamless. Whether for weddings, sports, or wildlife photography, the Mark IV is built to deliver flawless results every time.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/28bmtkm/pro-dslr.jpg",
+        "alt": "Professional DSLR camera with lens"
+      },
+      {
+        "url": "https://i.ibb.co/28bmtkm/pro-dslr.jpg",
+        "alt": "Professional DSLR camera with lens"
+      },
+      {
+        "url": "https://i.ibb.co/28bmtkm/pro-dslr.jpg",
+        "alt": "Professional DSLR camera with lens"
+      },
+      {
+        "url": "https://i.ibb.co/28bmtkm/pro-dslr.jpg",
+        "alt": "Professional DSLR camera with lens"
+      },
+      {
+        "url": "https://i.ibb.co/28bmtkm/pro-dslr.jpg",
+        "alt": "Professional DSLR camera with lens"
+      }
+    ],
+    "stock": 65,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 241
+    },
+    "releaseDate": "2025-05-15",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "32.5MP Full-Frame CMOS"
+      },
+      {
+        "name": "Video Resolution",
+        "value": "4K DCI"
+      },
+      {
+        "name": "Autofocus",
+        "value": "61-Point Advanced AF"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Point & Shoot Camera Lite S2",
+    "slug": "point-shoot-camera-lite-s2",
+    "sku": "CAM-PS-LITE-S2-2025",
+    "brand": "SnapPix",
+    "category": "Camera",
+    "price": 299.99,
+    "currency": "USD",
+    "shortDescription": "An easy-to-use compact point-and-shoot camera for everyday photography.",
+    "description": "The SnapPix Lite S2 is a pocket-sized camera that makes photography simple, fun, and accessible. Designed for casual users and travelers, it combines ease of use with high-quality results. Equipped with a 20MP sensor and a bright zoom lens, it captures vibrant images with accurate colors and detail. Its intuitive auto mode automatically adjusts settings for lighting, motion, and subject type, making it perfect for beginners who want great results without technical hassle. With 1080p Full HD video capability, it also doubles as a reliable video camera for family moments, events, or travel vlogs. The Lite S2 is lightweight, stylish, and easy to carry anywhere, fitting effortlessly into pockets or bags. Built-in image stabilization reduces blurriness for steady shots, while scene modes and filters allow users to get creative. Rechargeable via USB-C and offering long-lasting battery life, this camera is designed for everyday convenience. The SnapPix Lite S2 brings back the joy of photography with a modern twist.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/GpTCq9d/point-shoot.jpg",
+        "alt": "Compact point and shoot digital camera"
+      },
+      {
+        "url": "https://i.ibb.co/GpTCq9d/point-shoot.jpg",
+        "alt": "Compact point and shoot digital camera"
+      },
+      {
+        "url": "https://i.ibb.co/GpTCq9d/point-shoot.jpg",
+        "alt": "Compact point and shoot digital camera"
+      },
+      {
+        "url": "https://i.ibb.co/GpTCq9d/point-shoot.jpg",
+        "alt": "Compact point and shoot digital camera"
+      },
+      {
+        "url": "https://i.ibb.co/GpTCq9d/point-shoot.jpg",
+        "alt": "Compact point and shoot digital camera"
+      }
+    ],
+    "stock": 140,
+    "available": true,
+    "ratings": {
+      "average": 4.4,
+      "reviewsCount": 98
+    },
+    "releaseDate": "2025-04-05",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "20MP CMOS"
+      },
+      {
+        "name": "Video Resolution",
+        "value": "1080p Full HD"
+      },
+      {
+        "name": "Lens",
+        "value": "Optical Zoom 4x"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Action Cam Ultra 4K",
+    "slug": "action-cam-ultra-4k",
+    "sku": "CAM-ACTION-ULTRA-4K-2025",
+    "brand": "AdventureEye",
+    "category": "Camera",
+    "price": 379.99,
+    "currency": "USD",
+    "shortDescription": "A rugged action camera built for extreme sports and 4K adventure recording.",
+    "description": "The AdventureEye Action Cam Ultra 4K is built for thrill-seekers who want to capture their journeys in stunning detail. Designed with a rugged, waterproof shell, it can withstand extreme conditions, making it the perfect companion for surfing, skiing, hiking, and cycling. The Ultra 4K records sharp 4K Ultra HD video at 120fps and offers impressive slow-motion options for capturing every exciting moment. Its wide-angle lens delivers immersive footage, while advanced stabilization technology ensures smooth recordings even on rough terrain. With voice control functionality, you can start or stop recording hands-free. Built-in Wi-Fi and Bluetooth make it easy to connect to smartphones for quick sharing and live streaming. The compact design mounts easily on helmets, bikes, or drones, giving creators freedom of perspective. A long-lasting, swappable battery ensures extended adventure time. With its durability, portability, and performance, the Action Cam Ultra 4K is a must-have for athletes, travelers, and content creators chasing the extraordinary.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/V2c1Qsm/action-cam.jpg",
+        "alt": "Rugged 4K action camera mounted on helmet"
+      },
+      {
+        "url": "https://i.ibb.co/V2c1Qsm/action-cam.jpg",
+        "alt": "Rugged 4K action camera mounted on helmet"
+      },
+      {
+        "url": "https://i.ibb.co/V2c1Qsm/action-cam.jpg",
+        "alt": "Rugged 4K action camera mounted on helmet"
+      },
+      {
+        "url": "https://i.ibb.co/V2c1Qsm/action-cam.jpg",
+        "alt": "Rugged 4K action camera mounted on helmet"
+      },
+      {
+        "url": "https://i.ibb.co/V2c1Qsm/action-cam.jpg",
+        "alt": "Rugged 4K action camera mounted on helmet"
+      }
+    ],
+    "stock": 110,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 187
+    },
+    "releaseDate": "2025-09-01",
+    "specs": [
+      {
+        "name": "Video Resolution",
+        "value": "4K 120fps"
+      },
+      {
+        "name": "Water Resistance",
+        "value": "15m (49ft)"
+      },
+      {
+        "name": "Lens",
+        "value": "170° Wide-Angle"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "360° Action Camera",
+    "slug": "360-action-camera",
+    "sku": "CAM-360-ACTION-2025",
+    "brand": "FusionView",
+    "category": "Camera",
+    "price": 429.99,
+    "currency": "USD",
+    "shortDescription": "Capture everything around you with this waterproof 360° action camera.",
+    "description": "Never miss a moment with the FusionView 360° Action Camera. It records stunning 5.7K 360-degree video, allowing you to reframe and find the perfect shot in post-production. Its durable, waterproof body is ready for any adventure, from surfing to mountain biking. The intuitive app makes it easy to edit and share your immersive footage. With advanced image stabilization, your videos will be smooth and professional-looking, no matter how bumpy the ride.",
+    "images": [
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      },
+      {
+        "url": "https://i.ibb.co.com/Vtj9F2w/panasonic-lumix-gh5-hero.jpg",
+        "alt": "A waterproof 360-degree action camera"
+      }
+    ],
+    "stock": 90,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 192
+    },
+    "releaseDate": "2025-09-05",
+    "specs": [
+      {
+        "name": "Video Resolution",
+        "value": "5.7K 360°"
+      },
+      {
+        "name": "Water Resistance",
+        "value": "10m (33ft)"
+      },
+      {
+        "name": "Stabilization",
+        "value": "FlowState Stabilization"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Gaming Console",
+    "slug": "gaming-console",
+    "sku": "GAM-CON-NEXT-2025",
+    "brand": "NextGen",
+    "category": "Gaming",
+    "price": 499.99,
+    "currency": "USD",
+    "shortDescription": "The ultimate gaming console with 8K support and lightning-fast loading speeds.",
+    "description": "Step into the next generation of gaming with the NextGen Gaming Console. It delivers a breathtaking gaming experience with support for up to 8K resolution and ray tracing. The ultra-fast SSD dramatically reduces load times, allowing you to jump into the action instantly. Its powerful custom processor and GPU are built to handle the most demanding games. The console comes with a revolutionary haptic feedback controller that makes every action feel more immersive. With a vast library of exclusive titles, this console is a must-have for any serious gamer.",
+    "images": [
+      {
+        "url": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg",
+        "alt": "The NextGen gaming console and its controller"
+      },
+      {
+        "url": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg",
+        "alt": "The NextGen gaming console and its controller"
+      },
+      {
+        "url": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg",
+        "alt": "The NextGen gaming console and its controller"
+      },
+      {
+        "url": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg",
+        "alt": "The NextGen gaming console and its controller"
+      },
+      {
+        "url": "https://i.ibb.co.com/B21m0s1B/232c17d0-ae12-11ed-b7d7-59ba2b781c46.jpg",
+        "alt": "The NextGen gaming console and its controller"
+      }
+    ],
+    "stock": 250,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 1200
+    },
+    "releaseDate": "2025-09-10",
+    "specs": [
+      {
+        "name": "Resolution",
+        "value": "Up to 8K"
+      },
+      {
+        "name": "Storage",
+        "value": "1TB SSD"
+      },
+      {
+        "name": "Features",
+        "value": "Ray Tracing, Haptic Feedback"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Wi-Fi 6, Ethernet"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Gaming Keyboard",
+    "slug": "gaming-keyboard",
+    "sku": "GK-MECH-PRO-2025",
+    "brand": "ApexGear",
+    "category": "Gaming",
+    "price": 129.99,
+    "currency": "USD",
+    "shortDescription": "Mechanical gaming keyboard with customizable RGB lighting and fast response keys.",
+    "description": "Gain the competitive edge with the ApexGear Mechanical Gaming Keyboard. It features ultra-responsive mechanical switches for lightning-fast keystrokes and a durable aluminum frame built to withstand intense gaming sessions. The per-key RGB lighting is fully customizable, allowing you to create stunning light shows or highlight specific keys for different games. The anti-ghosting technology ensures every command is registered accurately. It's the perfect keyboard for serious gamers.",
+    "images": [
+      {
+        "url": "https://example.com/images/gaming/keyboard.jpg",
+        "alt": "A mechanical gaming keyboard with RGB lights"
+      },
+      {
+        "url": "https://example.com/images/gaming/keyboard.jpg",
+        "alt": "A mechanical gaming keyboard with RGB lights"
+      },
+      {
+        "url": "https://example.com/images/gaming/keyboard.jpg",
+        "alt": "A mechanical gaming keyboard with RGB lights"
+      },
+      {
+        "url": "https://example.com/images/gaming/keyboard.jpg",
+        "alt": "A mechanical gaming keyboard with RGB lights"
+      },
+      {
+        "url": "https://example.com/images/gaming/keyboard.jpg",
+        "alt": "A mechanical gaming keyboard with RGB lights"
+      }
+    ],
+    "stock": 250,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 350
+    },
+    "releaseDate": "2025-07-10",
+    "specs": [
+      {
+        "name": "Switch Type",
+        "value": "Mechanical"
+      },
+      {
+        "name": "Lighting",
+        "value": "Per-key RGB"
+      },
+      {
+        "name": "Frame",
+        "value": "Aluminum"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Ergonomic Gaming Mouse",
+    "slug": "ergonomic-gaming-mouse",
+    "sku": "GM-ERGO-ULTRA-2025",
+    "brand": "ApexGear",
+    "category": "Gaming",
+    "price": 79.99,
+    "currency": "USD",
+    "shortDescription": "High-precision gaming mouse with a comfortable ergonomic design and customizable buttons.",
+    "description": "The ApexGear Ergonomic Gaming Mouse is designed for long hours of comfortable, high-performance gaming. Its ergonomic shape fits snugly in your hand, reducing fatigue. The ultra-precise optical sensor provides pixel-perfect tracking, while the customizable DPI settings allow you to adjust sensitivity on the fly. With programmable buttons and customizable RGB lighting, you can tailor the mouse to your specific gaming needs. The braided cable ensures durability and a smooth glide.",
+    "images": [
+      {
+        "url": "https://i.ibb.co.com/pz7T4nk/productslider-black-panther-skin.jpg",
+        "alt": "An ergonomic gaming mouse with RGB accents"
+      },
+      {
+        "url": "https://i.ibb.co.com/pz7T4nk/productslider-black-panther-skin.jpg",
+        "alt": "An ergonomic gaming mouse with RGB accents"
+      },
+      {
+        "url": "https://i.ibb.co.com/pz7T4nk/productslider-black-panther-skin.jpg",
+        "alt": "An ergonomic gaming mouse with RGB accents"
+      },
+      {
+        "url": "https://i.ibb.co.com/pz7T4nk/productslider-black-panther-skin.jpg",
+        "alt": "An ergonomic gaming mouse with RGB accents"
+      },
+      {
+        "url": "https://i.ibb.co.com/pz7T4nk/productslider-black-panther-skin.jpg",
+        "alt": "An ergonomic gaming mouse with RGB accents"
+      }
+    ],
+    "stock": 320,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 412
+    },
+    "releaseDate": "2025-07-10",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "Optical"
+      },
+      {
+        "name": "DPI",
+        "value": "Up to 16,000"
+      },
+      {
+        "name": "Buttons",
+        "value": "8 Programmable Buttons"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Gaming Headset",
+    "slug": "gaming-headset",
+    "sku": "GH-SURR-ELITE-2025",
+    "brand": "HyperAudio",
+    "category": "Gaming",
+    "price": 119.99,
+    "currency": "USD",
+    "shortDescription": "7.1 surround sound gaming headset with a noise-cancelling microphone.",
+    "description": "Hear every footstep and explosion with the HyperAudio Gaming Headset. This headset provides immersive 7.1 virtual surround sound, giving you a tactical advantage in competitive games. The comfortable memory foam earcups and adjustable headband are designed for marathon gaming sessions. The detachable, noise-cancelling microphone ensures your teammates hear you clearly without any background noise. It's compatible with PCs, consoles, and mobile devices, making it a versatile choice for all your gaming needs.",
+    "images": [
+      {
+        "url": "https://example.com/images/gaming/headset.jpg",
+        "alt": "A gaming headset with a microphone"
+      },
+      {
+        "url": "https://example.com/images/gaming/headset.jpg",
+        "alt": "A gaming headset with a microphone"
+      },
+      {
+        "url": "https://example.com/images/gaming/headset.jpg",
+        "alt": "A gaming headset with a microphone"
+      },
+      {
+        "url": "https://example.com/images/gaming/headset.jpg",
+        "alt": "A gaming headset with a microphone"
+      },
+      {
+        "url": "https://example.com/images/gaming/headset.jpg",
+        "alt": "A gaming headset with a microphone"
+      }
+    ],
+    "stock": 200,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 298
+    },
+    "releaseDate": "2025-08-01",
+    "specs": [
+      {
+        "name": "Audio",
+        "value": "7.1 Virtual Surround Sound"
+      },
+      {
+        "name": "Microphone",
+        "value": "Detachable, Noise-Cancelling"
+      },
+      {
+        "name": "Connection",
+        "value": "USB-A, 3.5mm Jack"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "AeroBeat Max Wireless",
+    "slug": "aerobeat-max-wireless",
+    "sku": "HP-AB-MAX-2025",
+    "brand": "AeroBeat",
+    "category": "Headphone",
+    "price": 199.99,
+    "currency": "USD",
+    "shortDescription": "Premium wireless headphones with deep bass and noise cancellation.",
+    "description": "The AeroBeat Max Wireless headphones are designed for those who demand premium sound quality, comfort, and modern features. Equipped with advanced Active Noise Cancellation, they allow you to immerse yourself in music, podcasts, or calls without distractions from the outside world. The powerful 40mm drivers deliver punchy bass, clear mids, and crisp highs, ensuring a balanced and rich audio experience. Built with lightweight materials and plush memory foam ear cushions, they provide long-lasting comfort, making them ideal for extended listening sessions at work, home, or while traveling. With up to 40 hours of battery life on a single charge, you can enjoy uninterrupted music all day, and a quick 10-minute charge gives you 5 hours of playback. Integrated touch controls on the earcups make it easy to manage music and calls, while built-in microphones ensure crystal-clear voice quality during conversations. The AeroBeat Max also supports voice assistants, giving you hands-free control. Designed with a sleek matte finish and foldable design, they are both stylish and portable, perfect for modern lifestyles.",
+    "images": [
+      { "url": "https://i.ibb.co/ABmax1.jpg", "alt": "AeroBeat Max Wireless headphone front view" },
+      { "url": "https://i.ibb.co/ABmax2.jpg", "alt": "AeroBeat Max Wireless headphone side view" },
+      { "url": "https://i.ibb.co/ABmax3.jpg", "alt": "AeroBeat Max Wireless headphone with case" },
+      { "url": "https://i.ibb.co/ABmax4.jpg", "alt": "AeroBeat Max Wireless headphone worn on head" },
+      { "url": "https://i.ibb.co/ABmax5.jpg", "alt": "AeroBeat Max Wireless headphone folded" }
+    ],
+    "stock": 120,
+    "available": true,
+    "ratings": { "average": 4.7, "reviewsCount": 326 },
+    "releaseDate": "2025-06-10",
+    "specs": [
+      { "name": "Driver Size", "value": "40mm" },
+      { "name": "Battery Life", "value": "40 hours" },
+      { "name": "Noise Cancellation", "value": "Active Noise Cancellation" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "SoundCore Elite 500",
+    "slug": "soundcore-elite-500",
+    "sku": "HP-SC-500-2025",
+    "brand": "SoundCore",
+    "category": "Headphone",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "Stylish headphones with powerful bass and wireless convenience.",
+    "description": "The SoundCore Elite 500 headphones bring you a perfect blend of performance, style, and comfort. Featuring custom-tuned 45mm drivers, these headphones deliver immersive sound with deep bass, detailed mids, and crisp treble. They are perfect for music enthusiasts, gamers, and movie lovers who want high-quality audio at an affordable price. With Bluetooth 5.2 connectivity, you get a stable and seamless wireless experience with low latency, ensuring smooth playback even during gaming or video streaming. The lightweight build and padded earcups allow you to wear them for hours without discomfort, while the adjustable headband ensures a secure fit for all head sizes. The Elite 500 offers up to 35 hours of battery life, making them reliable for daily use, and fast-charging provides 4 hours of playback from a 10-minute charge. Built-in microphones with noise suppression technology make phone calls clear even in noisy environments. With foldable design and included travel pouch, they’re easy to carry wherever life takes you. The SoundCore Elite 500 is a versatile companion for work, travel, and leisure.",
+    "images": [
+      { "url": "https://i.ibb.co/SC500-1.jpg", "alt": "SoundCore Elite 500 headphone front view" },
+      { "url": "https://i.ibb.co/SC500-2.jpg", "alt": "SoundCore Elite 500 headphone side view" },
+      { "url": "https://i.ibb.co/SC500-3.jpg", "alt": "SoundCore Elite 500 headphone on desk" },
+      { "url": "https://i.ibb.co/SC500-4.jpg", "alt": "SoundCore Elite 500 headphone with case" },
+      { "url": "https://i.ibb.co/SC500-5.jpg", "alt": "SoundCore Elite 500 headphone folded" }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": { "average": 4.5, "reviewsCount": 210 },
+    "releaseDate": "2025-05-20",
+    "specs": [
+      { "name": "Driver Size", "value": "45mm" },
+      { "name": "Battery Life", "value": "35 hours" },
+      { "name": "Bluetooth", "value": "Bluetooth 5.2" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "BassPulse X9",
+    "slug": "basspulse-x9",
+    "sku": "HP-BP-X9-2025",
+    "brand": "BassPulse",
+    "category": "Headphone",
+    "price": 179.99,
+    "currency": "USD",
+    "shortDescription": "Dynamic headphones with bass boost and immersive sound.",
+    "description": "The BassPulse X9 headphones are designed for bass lovers who crave a heart-thumping audio experience. With 50mm drivers and bass-enhancement technology, these headphones deliver powerful lows without sacrificing clarity in mids and highs. Ideal for EDM, hip-hop, and cinematic audio, the X9 ensures you feel every beat. The ergonomic design with cushioned earcups provides excellent passive noise isolation, keeping you focused on your music. The X9 offers 38 hours of battery life and supports both wired and wireless modes, making them versatile for any situation. Built-in touch-sensitive controls allow you to adjust volume, switch tracks, or answer calls effortlessly. For gamers, the low-latency mode ensures smooth sound synchronization with visuals. Crafted with durable materials, the X9 is made to withstand daily wear and tear. With an adjustable foldable frame, carrying case, and sleek metallic finish, they are both functional and stylish. The BassPulse X9 is your go-to headphone for powerful, all-day listening.",
+    "images": [
+      { "url": "https://i.ibb.co/BPX9-1.jpg", "alt": "BassPulse X9 headphone front view" },
+      { "url": "https://i.ibb.co/BPX9-2.jpg", "alt": "BassPulse X9 headphone side view" },
+      { "url": "https://i.ibb.co/BPX9-3.jpg", "alt": "BassPulse X9 headphone with bass boost button" },
+      { "url": "https://i.ibb.co/BPX9-4.jpg", "alt": "BassPulse X9 headphone folded" },
+      { "url": "https://i.ibb.co/BPX9-5.jpg", "alt": "BassPulse X9 headphone worn on head" }
+    ],
+    "stock": 100,
+    "available": true,
+    "ratings": { "average": 4.6, "reviewsCount": 188 },
+    "releaseDate": "2025-04-30",
+    "specs": [
+      { "name": "Driver Size", "value": "50mm" },
+      { "name": "Battery Life", "value": "38 hours" },
+      { "name": "Mode", "value": "Wireless & Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ClarityTune Pro",
+    "slug": "claritytune-pro",
+    "sku": "HP-CT-PRO-2025",
+    "brand": "ClarityTune",
+    "category": "Headphone",
+    "price": 229.99,
+    "currency": "USD",
+    "shortDescription": "High-definition sound with adaptive noise cancellation.",
+    "description": "The ClarityTune Pro headphones redefine premium listening with precision-engineered sound and smart noise control. Featuring adaptive noise cancellation, these headphones automatically adjust to your surroundings, blocking unwanted noise without compromising audio quality. The 40mm drivers produce crystal-clear audio with balanced bass and detailed treble, making them ideal for audiophiles and professionals. The Pro offers up to 42 hours of playback, ensuring uninterrupted listening for days, and fast charging provides 6 hours of playback with just 15 minutes of charging. Soft leather earcups and lightweight construction provide exceptional comfort, while the durable metal headband ensures long-lasting performance. With multipoint connectivity, you can switch between devices seamlessly, whether from your laptop to your phone. The integrated microphones provide studio-quality voice clarity for calls and meetings. Designed for both work and leisure, the ClarityTune Pro combines luxury, technology, and convenience in one.",
+    "images": [
+      { "url": "https://i.ibb.co/CTpro1.jpg", "alt": "ClarityTune Pro headphone front view" },
+      { "url": "https://i.ibb.co/CTpro2.jpg", "alt": "ClarityTune Pro headphone side view" },
+      { "url": "https://i.ibb.co/CTpro3.jpg", "alt": "ClarityTune Pro headphone with case" },
+      { "url": "https://i.ibb.co/CTpro4.jpg", "alt": "ClarityTune Pro headphone on desk" },
+      { "url": "https://i.ibb.co/CTpro5.jpg", "alt": "ClarityTune Pro headphone folded" }
+    ],
+    "stock": 90,
+    "available": true,
+    "ratings": { "average": 4.8, "reviewsCount": 245 },
+    "releaseDate": "2025-07-12",
+    "specs": [
+      { "name": "Driver Size", "value": "40mm" },
+      { "name": "Battery Life", "value": "42 hours" },
+      { "name": "Noise Cancellation", "value": "Adaptive Noise Cancellation" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "EchoBeats Studio",
+    "slug": "echobeats-studio",
+    "sku": "HP-EB-STUDIO-2025",
+    "brand": "EchoBeats",
+    "category": "Headphone",
+    "price": 259.99,
+    "currency": "USD",
+    "shortDescription": "Studio-grade wireless headphones with premium build.",
+    "description": "The EchoBeats Studio headphones are crafted for professionals and creators who demand uncompromised sound. Engineered with 50mm neodymium drivers, these headphones deliver precise sound reproduction with powerful bass and clear highs, making them ideal for mixing, mastering, or immersive listening. The over-ear closed-back design ensures superior isolation, while the plush ear cushions provide long-term comfort. EchoBeats Studio supports high-resolution audio formats and offers Bluetooth 5.3 connectivity for lag-free wireless streaming. With 45 hours of continuous playback and quick USB-C charging, you’ll never run out of music. The headphones also support wired mode with gold-plated 3.5mm jacks for studio setups. Built with premium aluminum alloy and leather materials, they are durable and elegant. The integrated noise-reduction microphones guarantee professional-quality calls. Portable yet professional, EchoBeats Studio is the perfect combination of design and performance.",
+    "images": [
+      { "url": "https://i.ibb.co/EBstudio1.jpg", "alt": "EchoBeats Studio headphone front view" },
+      { "url": "https://i.ibb.co/EBstudio2.jpg", "alt": "EchoBeats Studio headphone side view" },
+      { "url": "https://i.ibb.co/EBstudio3.jpg", "alt": "EchoBeats Studio headphone folded" },
+      { "url": "https://i.ibb.co/EBstudio4.jpg", "alt": "EchoBeats Studio headphone with travel pouch" },
+      { "url": "https://i.ibb.co/EBstudio5.jpg", "alt": "EchoBeats Studio headphone on desk" }
+    ],
+    "stock": 80,
+    "available": true,
+    "ratings": { "average": 4.9, "reviewsCount": 267 },
+    "releaseDate": "2025-08-01",
+    "specs": [
+      { "name": "Driver Size", "value": "50mm Neodymium" },
+      { "name": "Battery Life", "value": "45 hours" },
+      { "name": "Audio Support", "value": "Hi-Res Audio" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "NovaSound AirFlow",
+    "slug": "novasound-airflow",
+    "sku": "HP-NS-AF-2025",
+    "brand": "NovaSound",
+    "category": "Headphone",
+    "price": 139.99,
+    "currency": "USD",
+    "shortDescription": "Lightweight wireless headphones with breathable design.",
+    "description": "The NovaSound AirFlow headphones are designed for everyday comfort and excellent sound quality. Featuring an ultra-lightweight and breathable mesh design, they allow airflow to keep your ears cool during long listening sessions. With 36 hours of battery life, the AirFlow ensures uninterrupted audio for work, study, or relaxation. The 40mm dynamic drivers provide well-balanced sound with punchy bass and smooth treble, while passive noise isolation minimizes background distractions. The AirFlow comes with Bluetooth 5.2 for stable wireless connectivity and supports voice assistants for hands-free control. Built-in dual microphones with environmental noise cancellation ensure that your calls remain clear and natural, even in busy surroundings. The headphones also feature multipoint pairing, so you can switch between your phone, tablet, and laptop effortlessly. With foldable hinges and a carrying pouch, they are travel-friendly and convenient. Stylish, lightweight, and powerful, the NovaSound AirFlow is perfect for daily life and casual use.",
+    "images": [
+      { "url": "https://i.ibb.co/NSaf1.jpg", "alt": "NovaSound AirFlow headphone front view" },
+      { "url": "https://i.ibb.co/NSaf2.jpg", "alt": "NovaSound AirFlow headphone side view" },
+      { "url": "https://i.ibb.co/NSaf3.jpg", "alt": "NovaSound AirFlow headphone folded" },
+      { "url": "https://i.ibb.co/NSaf4.jpg", "alt": "NovaSound AirFlow headphone with case" },
+      { "url": "https://i.ibb.co/NSaf5.jpg", "alt": "NovaSound AirFlow headphone on desk" }
+    ],
+    "stock": 130,
+    "available": true,
+    "ratings": { "average": 4.4, "reviewsCount": 156 },
+    "releaseDate": "2025-03-18",
+    "specs": [
+      { "name": "Driver Size", "value": "40mm" },
+      { "name": "Battery Life", "value": "36 hours" },
+      { "name": "Bluetooth", "value": "Bluetooth 5.2" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Portable SSD",
+    "slug": "portable-ssd",
+    "sku": "SSD-PORT-1TB-2025",
+    "brand": "DataVault",
+    "category": "Others",
+    "price": 119.99,
+    "currency": "USD",
+    "shortDescription": "Lightning-fast portable SSD with a 1TB capacity for all your data.",
+    "description": "Store and transfer large files in an instant with the DataVault Portable SSD. With a 1TB capacity, this external drive is perfect for storing high-resolution photos, 4K videos, and important documents. Its compact and durable aluminum casing protects your data from drops and impacts. The USB-C 3.2 Gen 2 interface ensures blazing-fast transfer speeds, making it an ideal companion for content creators and professionals on the go. It's compatible with both Windows and Mac operating systems.",
+    "images": [
+      {
+        "url": "https://example.com/images/storage/portable-ssd.jpg",
+        "alt": "A slim portable SSD with a USB-C cable"
+      },
+      {
+        "url": "https://example.com/images/storage/portable-ssd.jpg",
+        "alt": "A slim portable SSD with a USB-C cable"
+      },
+      {
+        "url": "https://example.com/images/storage/portable-ssd.jpg",
+        "alt": "A slim portable SSD with a USB-C cable"
+      },
+      {
+        "url": "https://example.com/images/storage/portable-ssd.jpg",
+        "alt": "A slim portable SSD with a USB-C cable"
+      },
+      {
+        "url": "https://example.com/images/storage/portable-ssd.jpg",
+        "alt": "A slim portable SSD with a USB-C cable"
+      }
+    ],
+    "stock": 350,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 450
+    },
+    "releaseDate": "2025-08-10",
+    "specs": [
+      {
+        "name": "Capacity",
+        "value": "1TB"
+      },
+      {
+        "name": "Interface",
+        "value": "USB-C 3.2 Gen 2"
+      },
+      {
+        "name": "Transfer Speed",
+        "value": "Up to 1050 MB/s"
+      },
+      {
+        "name": "Material",
+        "value": "Aluminum"
+      }
+    ],
+    "warranty": "3 years"
+  },
+  {
+    "name": "USB Flash Drive",
+    "slug": "usb-flash-drive",
+    "sku": "UFD-256GB-2025",
+    "brand": "SpeedyStore",
+    "category": "Others",
+    "price": 29.99,
+    "currency": "USD",
+    "shortDescription": "A durable and high-speed 256GB USB 3.2 flash drive for everyday use.",
+    "description": "The SpeedyStore USB Flash Drive is a reliable and fast storage solution for your files. With a 256GB capacity, it provides ample space for documents, photos, and music. The USB 3.2 interface ensures quick data transfers, saving you time. Its robust metal casing protects the drive from accidental damage, and the key loop makes it easy to carry wherever you go. It's a simple, effective, and essential tool for students and professionals alike.",
+    "images": [
+      {
+        "url": "https://example.com/images/storage/usb-drive.jpg",
+        "alt": "A small 256GB USB flash drive"
+      },
+      {
+        "url": "https://example.com/images/storage/usb-drive.jpg",
+        "alt": "A small 256GB USB flash drive"
+      },
+      {
+        "url": "https://example.com/images/storage/usb-drive.jpg",
+        "alt": "A small 256GB USB flash drive"
+      },
+      {
+        "url": "https://example.com/images/storage/usb-drive.jpg",
+        "alt": "A small 256GB USB flash drive"
+      },
+      {
+        "url": "https://example.com/images/storage/usb-drive.jpg",
+        "alt": "A small 256GB USB flash drive"
+      }
+    ],
+    "stock": 900,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 780
+    },
+    "releaseDate": "2025-05-20",
+    "specs": [
+      {
+        "name": "Capacity",
+        "value": "256GB"
+      },
+      {
+        "name": "Interface",
+        "value": "USB 3.2"
+      },
+      {
+        "name": "Material",
+        "value": "Metal"
+      }
+    ],
+    "warranty": "5 years"
+  },
+  {
+    "name": "External Hard Drive",
+    "slug": "external-hard-drive",
+    "sku": "EHD-5TB-2025",
+    "brand": "MegaVault",
+    "category": "Others",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "A large-capacity 5TB external hard drive for reliable data backup and storage.",
+    "description": "Back up your entire digital life with the MegaVault External Hard Drive. With a massive 5TB of storage, this drive provides plenty of space for your photos, videos, games, and more. It's perfect for consolidating all your files in one secure location. The drive is compatible with both PCs and Macs and requires no external power source. Its sturdy casing protects the internal components, and the USB 3.0 interface ensures fast data transfer speeds. It’s an ideal solution for long-term storage and backups.",
+    "images": [
+      {
+        "url": "https://example.com/images/storage/external-hard-drive.jpg",
+        "alt": "An external hard drive next to a laptop"
+      },
+      {
+        "url": "https://example.com/images/storage/external-hard-drive.jpg",
+        "alt": "An external hard drive next to a laptop"
+      },
+      {
+        "url": "https://example.com/images/storage/external-hard-drive.jpg",
+        "alt": "An external hard drive next to a laptop"
+      },
+      {
+        "url": "https://example.com/images/storage/external-hard-drive.jpg",
+        "alt": "An external hard drive next to a laptop"
+      },
+      {
+        "url": "https://example.com/images/storage/external-hard-drive.jpg",
+        "alt": "An external hard drive next to a laptop"
+      }
+    ],
+    "stock": 250,
+    "available": true,
+    "ratings": {
+      "average": 4.5,
+      "reviewsCount": 321
+    },
+    "releaseDate": "2025-07-01",
+    "specs": [
+      {
+        "name": "Capacity",
+        "value": "5TB"
+      },
+      {
+        "name": "Interface",
+        "value": "USB 3.0"
+      },
+      {
+        "name": "Compatibility",
+        "value": "Windows, Mac"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Wireless Charging Pad",
+    "slug": "wireless-charging-pad",
+    "sku": "WCP-DUO-2025",
+    "brand": "PowerBeam",
+    "category": "Others",
+    "price": 39.99,
+    "currency": "USD",
+    "shortDescription": "A sleek wireless charging pad for two devices simultaneously.",
+    "description": "Declutter your desk or nightstand with the PowerBeam Wireless Charging Pad. This convenient pad can charge two Qi-compatible devices at once, such as your smartphone and wireless earbuds. Simply place them on the pad to start charging instantly. The non-slip surface ensures your devices stay in place, and the LED indicators let you know the charging status. Its minimalist design blends seamlessly into any environment. It’s a simple, elegant way to keep your devices powered up.",
+    "images": [
+      {
+        "url": "https://example.com/images/charging/wireless-pad.jpg",
+        "alt": "A wireless charging pad with a smartphone and earbuds on it"
+      },
+      {
+        "url": "https://example.com/images/charging/wireless-pad.jpg",
+        "alt": "A wireless charging pad with a smartphone and earbuds on it"
+      },
+      {
+        "url": "https://example.com/images/charging/wireless-pad.jpg",
+        "alt": "A wireless charging pad with a smartphone and earbuds on it"
+      },
+      {
+        "url": "https://example.com/images/charging/wireless-pad.jpg",
+        "alt": "A wireless charging pad with a smartphone and earbuds on it"
+      },
+      {
+        "url": "https://example.com/images/charging/wireless-pad.jpg",
+        "alt": "A wireless charging pad with a smartphone and earbuds on it"
+      }
+    ],
+    "stock": 550,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 689
+    },
+    "releaseDate": "2025-06-15",
+    "specs": [
+      {
+        "name": "Output",
+        "value": "15W Max per device"
+      },
+      {
+        "name": "Compatibility",
+        "value": "Qi-certified devices"
+      },
+      {
+        "name": "Charging Area",
+        "value": "Dual"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Electric Standing Desk",
+    "slug": "electric-standing-desk",
+    "sku": "ESD-ERGON-2025",
+    "brand": "ErgoMotion",
+    "category": "Others",
+    "price": 499.99,
+    "currency": "USD",
+    "shortDescription": "An adjustable electric standing desk for a healthier and more productive workday.",
+    "description": "Transform your workspace with the ErgoMotion Electric Standing Desk. Easily adjust the height with the press of a button, allowing you to seamlessly switch between sitting and standing throughout the day. This promotes better posture, reduces back pain, and boosts productivity. The sturdy frame and spacious tabletop provide a stable surface for your monitors and computer. It's a game-changer for anyone who works from home or spends long hours at their desk.",
+    "images": [
+      {
+        "url": "https://example.com/images/home-office/standing-desk.jpg",
+        "alt": "An electric standing desk with a computer setup"
+      },
+      {
+        "url": "https://example.com/images/home-office/standing-desk.jpg",
+        "alt": "An electric standing desk with a computer setup"
+      },
+      {
+        "url": "https://example.com/images/home-office/standing-desk.jpg",
+        "alt": "An electric standing desk with a computer setup"
+      },
+      {
+        "url": "https://example.com/images/home-office/standing-desk.jpg",
+        "alt": "An electric standing desk with a computer setup"
+      },
+      {
+        "url": "https://example.com/images/home-office/standing-desk.jpg",
+        "alt": "An electric standing desk with a computer setup"
+      }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 245
+    },
+    "releaseDate": "2025-08-05",
+    "specs": [
+      {
+        "name": "Height Range",
+        "value": "28\" to 48\" (71cm to 122cm)"
+      },
+      {
+        "name": "Control",
+        "value": "Electric, Programmable"
+      },
+      {
+        "name": "Material",
+        "value": "Steel Frame, MDF Top"
+      }
+    ],
+    "warranty": "5 years"
+  },
+  {
+    "name": "Logitech MX Master 3S",
+    "slug": "logitech-mx-master-3s",
+    "sku": "L-MX-3S-2025",
+    "brand": "Logitech",
+    "category": "Mouse",
+    "price": 99.99,
+    "currency": "USD",
+    "shortDescription": "A professional ergonomic mouse for productivity and creative work.",
+    "description": "The Logitech MX Master 3S is a high-performance wireless mouse designed for professionals. It features an ultra-fast MagSpeed scroll wheel that scrolls 1,000 lines in a second and a Darkfield sensor for precise tracking on any surface, including glass. Its ergonomic design provides a comfortable grip for long hours of work. The customizable buttons and app-specific profiles allow you to streamline your workflow across different applications. It can connect to up to three devices and switch between them seamlessly.",
+    "images": [
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-master-3s.jpg",
+        "alt": "Front view of Logitech MX Master 3S mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-master-3s-hand.jpg",
+        "alt": "Ergonomic view of the mouse in a person's hand"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-master-3s-desk.jpg",
+        "alt": "Mouse on a desk with a laptop"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-master-3s-side.jpg",
+        "alt": "Side view showing the thumb wheel"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-master-3s-charge.jpg",
+        "alt": "Mouse being charged via USB-C"
+      }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 850
+    },
+    "releaseDate": "2025-09-01",
+    "specs": [
+      {
+        "name": "Sensor Technology",
+        "value": "Darkfield High Precision"
+      },
+      {
+        "name": "DPI",
+        "value": "200-8000"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth, 2.4GHz USB Receiver"
+      },
+      {
+        "name": "Buttons",
+        "value": "7 (with scroll wheel)"
+      },
+      {
+        "name": "Battery Life",
+        "value": "Up to 70 days"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Razer DeathAdder V4 Pro",
+    "slug": "razer-deathadder-v4-pro",
+    "sku": "R-DAP-V4-2025",
+    "brand": "Razer",
+    "category": "Mouse",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "An ultra-lightweight wireless gaming mouse with a high-precision sensor.",
+    "description": "The Razer DeathAdder V4 Pro is an iconic gaming mouse reinvented with cutting-edge technology. It's an ultra-lightweight wireless mouse with a focus on speed and performance. The advanced optical sensor provides up to 30,000 DPI for pixel-perfect accuracy, and the optical mouse switches offer a lightning-fast response time. The ergonomic shape is a favorite among professional esports players. It's equipped with customizable RGB lighting and a long-lasting battery for competitive gaming sessions. The charging dock is also included for convenience.",
+    "images": [
+      {
+        "url": "https://example.com/images/mouse/razer-deathadder-v4-pro.jpg",
+        "alt": "Front view of Razer DeathAdder V4 Pro gaming mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/razer-deathadder-v4-pro.jpg",
+        "alt": "Front view of Razer DeathAdder V4 Pro gaming mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/razer-deathadder-v4-pro.jpg",
+        "alt": "Front view of Razer DeathAdder V4 Pro gaming mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/razer-deathadder-v4-pro.jpg",
+        "alt": "Front view of Razer DeathAdder V4 Pro gaming mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/razer-deathadder-v4-pro.jpg",
+        "alt": "Front view of Razer DeathAdder V4 Pro gaming mouse"
+      }
+    ],
+    "stock": 200,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 612
+    },
+    "releaseDate": "2025-08-25",
+    "specs": [
+      {
+        "name": "Sensor",
+        "value": "Focus Pro 30K Optical"
+      },
+      {
+        "name": "DPI",
+        "value": "Up to 30,000"
+      },
+      {
+        "name": "Weight",
+        "value": "63g"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Razer HyperSpeed Wireless"
+      },
+      {
+        "name": "Battery Life",
+        "value": "Up to 90 hours"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "Logitech MX Vertical",
+    "slug": "logitech-mx-vertical",
+    "sku": "L-MX-VERT-2025",
+    "brand": "Logitech",
+    "category": "Mouse",
+    "price": 109.99,
+    "currency": "USD",
+    "shortDescription": "An advanced ergonomic mouse designed to reduce wrist strain.",
+    "description": "Combat wrist pain and discomfort with the Logitech MX Vertical. This vertical mouse is designed to reduce muscle strain and wrist pressure with its unique 57-degree angle. It positions your hand in a natural handshake position, promoting a more comfortable posture. The high-precision sensor and four customizable buttons allow for smooth, efficient navigation. It's perfect for professionals who spend long hours at their computer and want to prioritize ergonomics.",
+    "images": [
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-vertical.jpg",
+        "alt": "Side view of Logitech MX Vertical ergonomic mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-vertical.jpg",
+        "alt": "Side view of Logitech MX Vertical ergonomic mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-vertical.jpg",
+        "alt": "Side view of Logitech MX Vertical ergonomic mouse"
+      },
+      {
+        "url": "https://example.com/images/mouse/logitech-mx-vertical.jpg",
+        "alt": "Side view of Logitech MX Vertical ergonomic mouse"
+      }
+    ],
+    "stock": 95,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 420
+    },
+    "releaseDate": "2025-09-10",
+    "specs": [
+      {
+        "name": "Design",
+        "value": "Vertical Ergonomic"
+      },
+      {
+        "name": "DPI",
+        "value": "400-4000"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth, 2.4GHz USB Receiver, USB-C"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Apple Magic Mouse 3",
+    "slug": "apple-magic-mouse-3",
+    "sku": "A-MM-3-2025",
+    "brand": "Apple",
+    "category": "Mouse",
+    "price": 79.99,
+    "currency": "USD",
+    "shortDescription": "A sleek multi-touch mouse with a minimalist design for macOS.",
+    "description": "The Apple Magic Mouse 3 is a wireless, rechargeable mouse optimized for macOS. Its single-piece surface is a multi-touch area, allowing you to perform gestures like swiping between web pages and scrolling through documents with a simple finger motion. The incredibly sleek and minimalist design looks great on any desk. The built-in battery provides long-lasting power, and it automatically pairs with your Mac. It’s a stylish and intuitive mouse for Apple users.",
+    "images": [
+      {
+        "url": "https://example.com/images/mouse/apple-magic-mouse-3.jpg",
+        "alt": "Top-down view of the Apple Magic Mouse 3"
+      },
+      {
+        "url": "https://example.com/images/mouse/apple-magic-mouse-3.jpg",
+        "alt": "Top-down view of the Apple Magic Mouse 3"
+      },
+      {
+        "url": "https://example.com/images/mouse/apple-magic-mouse-3.jpg",
+        "alt": "Top-down view of the Apple Magic Mouse 3"
+      },
+      {
+        "url": "https://example.com/images/mouse/apple-magic-mouse-3.jpg",
+        "alt": "Top-down view of the Apple Magic Mouse 3"
+      }
+    ],
+    "stock": 210,
+    "available": true,
+    "ratings": {
+      "average": 4.5,
+      "reviewsCount": 550
+    },
+    "releaseDate": "2025-09-15",
+    "specs": [
+      {
+        "name": "Features",
+        "value": "Multi-Touch Surface, Gestures"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth"
+      },
+      {
+        "name": "Compatibility",
+        "value": "macOS"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Microsoft Surface Arc Mouse",
+    "slug": "microsoft-surface-arc-mouse",
+    "sku": "M-SAM-2025",
+    "brand": "Microsoft",
+    "category": "Mouse",
+    "price": 69.99,
+    "currency": "USD",
+    "shortDescription": "A unique, foldable mouse for compact travel and comfortable use.",
+    "description": "The Microsoft Surface Arc Mouse is a remarkably portable and comfortable mouse. You can snap it into a flat position to easily slide it into your bag, and curve it to turn it on and use it comfortably. The full scroll plane allows for both vertical and horizontal scrolling. Its sleek, innovative design is perfect for those who work on the go. It connects wirelessly via Bluetooth and is a great companion for Microsoft Surface devices.",
+    "images": [
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      },
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      },
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      },
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      },
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      },
+      {
+        "url": "https://example.com/images/mouse/microsoft-surface-arc-mouse.jpg",
+        "alt": "Side view of Microsoft Surface Arc Mouse in its curved position"
+      }
+    ],
+    "stock": 180,
+    "available": true,
+    "ratings": {
+      "average": 4.4,
+      "reviewsCount": 389
+    },
+    "releaseDate": "2025-07-01",
+    "specs": [
+      {
+        "name": "Design",
+        "value": "Foldable, Arc"
+      },
+      {
+        "name": "Scrolling",
+        "value": "Full scroll plane"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth 4.0"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "AeroBook X15 Pro",
+    "slug": "aerobook-x15-pro",
+    "sku": "LAP-AEROBK-X15PRO-2025",
+    "brand": "AeroTech",
+    "category": "Laptop",
+    "price": 1399.99,
+    "currency": "USD",
+    "shortDescription": "A high-performance laptop designed for creators and gamers with stunning visuals.",
+    "description": "The AeroBook X15 Pro is a powerhouse laptop engineered to meet the demands of professionals, creators, and gamers alike. With its 15.6-inch 4K OLED display, this device delivers exceptional brightness, deep contrasts, and vivid colors, making it perfect for design work, video editing, or immersive gaming. Powered by the latest Intel Core i9 processor and NVIDIA RTX 4070 GPU, it can handle intensive workloads with ease, from 3D rendering to real-time streaming. The laptop’s advanced cooling system ensures consistent performance even during heavy usage, while the lightweight aluminum chassis adds durability without sacrificing portability. Featuring 32GB of DDR5 RAM and a 1TB NVMe SSD, it offers lightning-fast multitasking and storage. The AeroBook X15 Pro also comes with Thunderbolt 4, HDMI 2.1, and USB-C ports for ultimate connectivity. With a long-lasting 90Wh battery and rapid charging, you’ll have the freedom to work or play anywhere. Whether you’re a creative professional, a student, or a gaming enthusiast, the AeroBook X15 Pro delivers performance without compromise.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/vkZB5wH/laptop1.jpg",
+        "alt": "AeroBook X15 Pro high performance laptop"
+      },
+      {
+        "url": "https://i.ibb.co/vkZB5wH/laptop1.jpg",
+        "alt": "AeroBook X15 Pro high performance laptop"
+      },
+      {
+        "url": "https://i.ibb.co/vkZB5wH/laptop1.jpg",
+        "alt": "AeroBook X15 Pro high performance laptop"
+      },
+      {
+        "url": "https://i.ibb.co/vkZB5wH/laptop1.jpg",
+        "alt": "AeroBook X15 Pro high performance laptop"
+      },
+      {
+        "url": "https://i.ibb.co/vkZB5wH/laptop1.jpg",
+        "alt": "AeroBook X15 Pro high performance laptop"
+      }
+    ],
+    "stock": 75,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 321
+    },
+    "releaseDate": "2025-03-12",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 13th Gen"
+      },
+      {
+        "name": "Graphics",
+        "value": "NVIDIA RTX 4070"
+      },
+      {
+        "name": "Display",
+        "value": "15.6-inch 4K OLED"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "ZenBook Ultra 14",
+    "slug": "zenbook-ultra-14",
+    "sku": "LAP-ZENB-ULTRA14-2025",
+    "brand": "Zenith",
+    "category": "Laptop",
+    "price": 1199.99,
+    "currency": "USD",
+    "shortDescription": "An ultra-slim, lightweight laptop with uncompromising power and portability.",
+    "description": "The Zenith ZenBook Ultra 14 is designed for professionals and travelers who need both performance and portability. At just 1.2kg, it’s incredibly lightweight yet powerful enough to handle demanding tasks. Equipped with a 14-inch QHD+ NanoEdge display, it provides stunning visuals with ultra-thin bezels, making it ideal for productivity and entertainment. The ZenBook Ultra 14 is powered by AMD Ryzen 9 7940HS processor, integrated Radeon graphics, and 16GB LPDDR5 RAM, ensuring smooth multitasking and seamless workflow. A 1TB PCIe SSD provides rapid boot times and generous storage for files, projects, and media. Its robust battery life of up to 18 hours means you can go through a full day without charging. The sleek aluminum body not only adds style but also durability. Enhanced with Wi-Fi 6E and Thunderbolt 4 ports, it offers high-speed connectivity and future-proof performance. The ZenBook Ultra 14 is the perfect balance between elegance, endurance, and efficiency, making it your ultimate everyday laptop.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/9NvTZB9/laptop2.jpg",
+        "alt": "ZenBook Ultra 14 slim lightweight laptop"
+      }
+    ],
+    "stock": 120,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 276
+    },
+    "releaseDate": "2025-04-20",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "AMD Ryzen 9 7940HS"
+      },
+      {
+        "name": "Display",
+        "value": "14-inch QHD+ NanoEdge"
+      },
+      {
+        "name": "RAM",
+        "value": "16GB LPDDR5"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "TitanBook Gaming 17",
+    "slug": "titanbook-gaming-17",
+    "sku": "LAP-TITAN-G17-2025",
+    "brand": "TitanGear",
+    "category": "Laptop",
+    "price": 1899.99,
+    "currency": "USD",
+    "shortDescription": "A gaming beast with unmatched graphics and speed for hardcore gamers.",
+    "description": "The TitanBook Gaming 17 is built for those who crave extreme gaming performance without compromise. Featuring a massive 17.3-inch FHD+ 360Hz display, it ensures ultra-smooth gameplay with minimal latency. Under the hood, it packs an Intel Core i9 HX-series processor combined with the latest NVIDIA RTX 4090 GPU, making it one of the most powerful laptops in its class. With 64GB DDR5 RAM and 2TB NVMe SSD, loading times are virtually eliminated, and multitasking is effortless. The advanced cooling system, equipped with vapor chamber technology, ensures sustained peak performance during long gaming sessions. RGB backlit keyboard with customizable zones enhances the gaming atmosphere, while surround-sound speakers provide an immersive audio experience. Despite its high power, the TitanBook Gaming 17 is designed with a sleek chassis that’s surprisingly portable. It also includes Wi-Fi 6E, multiple USB-C and HDMI ports, and Ethernet for professional-grade connectivity. Whether you’re a competitive gamer or a content creator, this laptop is built to push the limits.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      },
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      },
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      },
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      },
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      },
+      {
+        "url": "https://i.ibb.co/Xs5ppvg/laptop3.jpg",
+        "alt": "TitanBook Gaming 17 high performance gaming laptop"
+      }
+    ],
+    "stock": 55,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 402
+    },
+    "releaseDate": "2025-05-01",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "Intel Core i9 HX-Series"
+      },
+      {
+        "name": "Graphics",
+        "value": "NVIDIA RTX 4090"
+      },
+      {
+        "name": "Display",
+        "value": "17.3-inch FHD+ 360Hz"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "EcoBook Air 13",
+    "slug": "ecobook-air-13",
+    "sku": "LAP-ECOAIR13-2025",
+    "brand": "EcoTech",
+    "category": "Laptop",
+    "price": 899.99,
+    "currency": "USD",
+    "shortDescription": "An eco-friendly laptop with energy efficiency and recycled materials.",
+    "description": "The EcoBook Air 13 redefines sustainable technology by combining modern performance with eco-conscious design. Built using 60% recycled aluminum and ocean-bound plastics, it sets a new standard for environmentally friendly computing. Its slim 13.3-inch Retina-grade display offers vibrant visuals while remaining energy-efficient, consuming 30% less power compared to traditional screens. Powered by an Intel Core i7 12th Gen processor with Iris Xe graphics, the EcoBook Air 13 delivers smooth performance for productivity, browsing, and streaming. With 16GB DDR4 RAM and 512GB SSD, it ensures fast responsiveness while being lightweight and portable at just 1kg. The fanless cooling design makes it whisper-quiet, ideal for classrooms, offices, or travel. Its long-lasting 20-hour battery life ensures all-day use without frequent charging. Enhanced security features like fingerprint login and TPM 2.0 keep your data safe. With sustainable packaging and carbon-neutral manufacturing, the EcoBook Air 13 is perfect for those who want modern computing without harming the planet.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      },
+      {
+        "url": "https://i.ibb.co/ncDcH0r/laptop4.jpg",
+        "alt": "EcoBook Air 13 eco-friendly lightweight laptop"
+      }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 198
+    },
+    "releaseDate": "2025-02-18",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 12th Gen"
+      },
+      {
+        "name": "Display",
+        "value": "13.3-inch Retina-grade"
+      },
+      {
+        "name": "Battery Life",
+        "value": "Up to 20 hours"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "CreatorBook Studio 16",
+    "slug": "creatorbook-studio-16",
+    "sku": "LAP-CRTR-ST16-2025",
+    "brand": "CreateX",
+    "category": "Laptop",
+    "price": 1699.99,
+    "currency": "USD",
+    "shortDescription": "A creative powerhouse for designers, editors, and digital artists.",
+    "description": "The CreateX CreatorBook Studio 16 is a laptop tailored for digital creators who need uncompromising performance in design, video editing, and 3D modeling. With a 16-inch 4K HDR display, it delivers stunning accuracy with 100% Adobe RGB coverage, ensuring visuals are true-to-life. Powered by AMD Ryzen 9 7950HX and NVIDIA RTX 4080 GPU, it offers unparalleled power for rendering, editing, and multitasking. The Studio 16 comes with 32GB DDR5 RAM and 2TB SSD for lightning-fast storage and smooth workflows. It also features a dedicated dial and shortcut keys to enhance productivity for creative apps like Photoshop and Premiere Pro. The advanced dual-fan cooling system keeps performance consistent during heavy tasks. Its aluminum chassis strikes a balance of elegance and durability, while modern connectivity options, including Thunderbolt 4 and Wi-Fi 6E, ensure future-ready usage. If creativity is your profession or passion, the CreatorBook Studio 16 is your ultimate tool.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      },
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      },
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      },
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      },
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      },
+      {
+        "url": "https://i.ibb.co/mRTT1Zj/laptop5.jpg",
+        "alt": "CreatorBook Studio 16 professional creator laptop"
+      }
+    ],
+    "stock": 80,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 265
+    },
+    "releaseDate": "2025-06-10",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "AMD Ryzen 9 7950HX"
+      },
+      {
+        "name": "Graphics",
+        "value": "NVIDIA RTX 4080"
+      },
+      {
+        "name": "Display",
+        "value": "16-inch 4K HDR"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "BusinessMate Elite 15",
+    "slug": "businessmate-elite-15",
+    "sku": "LAP-BSMT-EL15-2025",
+    "brand": "WorkPro",
+    "category": "Laptop",
+    "price": 1099.99,
+    "currency": "USD",
+    "shortDescription": "A productivity-focused laptop built for professionals and enterprises.",
+    "description": "The WorkPro BusinessMate Elite 15 is designed for business professionals who require a balance of performance, reliability, and security. Its 15.6-inch Full HD IPS display ensures sharp visuals and a comfortable viewing experience for long work sessions. Powered by Intel Core i7 13th Gen processor and Iris Xe graphics, it delivers smooth multitasking for office productivity, presentations, and light creative tasks. With 16GB DDR5 RAM and a 1TB NVMe SSD, it provides ample power and storage for professional workloads. Security features such as a fingerprint reader, TPM 2.0, and privacy shutter webcam safeguard sensitive data. The Elite 15 also comes with enterprise-grade durability, passing MIL-STD 810H testing for resistance against drops, vibrations, and extreme conditions. A spill-resistant backlit keyboard and precision touchpad make it ideal for professionals on the move. With up to 16 hours of battery life, USB-C fast charging, and strong connectivity options, this laptop is a reliable partner for productivity anywhere.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      },
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      },
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      },
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      },
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      },
+      {
+        "url": "https://i.ibb.co/wMWyGcF/laptop6.jpg",
+        "alt": "BusinessMate Elite 15 professional business laptop"
+      }
+    ],
+    "stock": 130,
+    "available": true,
+    "ratings": {
+      "average": 4.5,
+      "reviewsCount": 189
+    },
+    "releaseDate": "2025-03-05",
+    "specs": [
+      {
+        "name": "Processor",
+        "value": "Intel Core i7 13th Gen"
+      },
+      {
+        "name": "Display",
+        "value": "15.6-inch Full HD IPS"
+      },
+      {
+        "name": "Security",
+        "value": "TPM 2.0, Fingerprint, Webcam Shutter"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "MechaPro RGB Keyboard",
+    "slug": "mechapro-rgb-keyboard",
+    "sku": "KEY-MECHAPRO-RGB-2025",
+    "brand": "KeyFusion",
+    "category": "Keyboard",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "A premium mechanical keyboard with per-key RGB lighting and customizable macros.",
+    "description": "The KeyFusion MechaPro RGB Keyboard is designed for gamers and professionals who demand precision, speed, and complete customization. Featuring premium mechanical switches, it delivers fast and responsive keystrokes with satisfying tactile feedback. Each key is individually backlit with customizable RGB lighting, offering millions of color options and dynamic effects that can be synced with music or in-game actions. The keyboard includes full macro support, allowing you to assign complex commands to a single key for faster gameplay or productivity. Its aircraft-grade aluminum frame provides durability and stability, ensuring it withstands years of heavy use. With anti-ghosting and full N-key rollover, every keystroke is registered accurately, even during intense gaming sessions. Additional features include a detachable wrist rest for comfort, dedicated media controls, and software support for creating multiple profiles. Whether you’re gaming, coding, or typing, the MechaPro RGB Keyboard offers an unparalleled experience that combines aesthetics with performance.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard1.jpg", "alt": "RGB backlit mechanical keyboard front view" },
+      { "url": "https://i.ibb.co/keyboard2.jpg", "alt": "Mechanical keyboard with wrist rest" },
+      { "url": "https://i.ibb.co/keyboard3.jpg", "alt": "Side profile of RGB gaming keyboard" },
+      { "url": "https://i.ibb.co/keyboard4.jpg", "alt": "Mechanical keyboard key switches close-up" },
+      { "url": "https://i.ibb.co/keyboard5.jpg", "alt": "RGB effects on gaming keyboard" }
+    ],
+    "stock": 120,
+    "available": true,
+    "ratings": { "average": 4.7, "reviewsCount": 215 },
+    "releaseDate": "2025-03-10",
+    "specs": [
+      { "name": "Switch Type", "value": "Mechanical (Blue/Red/Brown)" },
+      { "name": "Lighting", "value": "Per-Key RGB" },
+      { "name": "Connectivity", "value": "USB-C Wired" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "UltraSlim Wireless Keyboard",
+    "slug": "ultraslim-wireless-keyboard",
+    "sku": "KEY-ULTRA-WL-2025",
+    "brand": "SlimType",
+    "category": "Keyboard",
+    "price": 89.99,
+    "currency": "USD",
+    "shortDescription": "A sleek and portable wireless keyboard with long battery life.",
+    "description": "The SlimType UltraSlim Wireless Keyboard combines portability, functionality, and style in one device. Engineered for professionals on the go, it features an ultra-thin aluminum body and scissor-switch keys that provide quiet and comfortable typing. With Bluetooth 5.0 technology, it offers seamless connectivity to laptops, tablets, and smartphones, supporting multi-device pairing for effortless switching. The rechargeable battery lasts up to three months on a single charge, making it perfect for travel and daily use. Integrated shortcut keys enhance productivity by offering quick access to essential functions. Its minimalist design complements modern workspaces, while the lightweight construction ensures it can fit easily into a backpack or laptop sleeve. Compatible with Windows, macOS, Android, and iOS, this versatile keyboard is ideal for professionals, students, and digital creators who value convenience and efficiency. The UltraSlim Wireless Keyboard redefines mobile typing with elegance and performance.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard6.jpg", "alt": "Slim wireless keyboard front view" },
+      { "url": "https://i.ibb.co/keyboard7.jpg", "alt": "Ultra-slim keyboard on desk" },
+      { "url": "https://i.ibb.co/keyboard8.jpg", "alt": "Bluetooth keyboard close-up" },
+      { "url": "https://i.ibb.co/keyboard9.jpg", "alt": "Side view of portable wireless keyboard" },
+      { "url": "https://i.ibb.co/keyboard10.jpg", "alt": "Wireless keyboard with laptop setup" }
+    ],
+    "stock": 200,
+    "available": true,
+    "ratings": { "average": 4.5, "reviewsCount": 156 },
+    "releaseDate": "2025-04-20",
+    "specs": [
+      { "name": "Switch Type", "value": "Scissor Switch" },
+      { "name": "Connectivity", "value": "Bluetooth 5.0" },
+      { "name": "Battery Life", "value": "Up to 3 months" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "Tactile Pro Mechanical Keyboard",
+    "slug": "tactile-pro-mechanical-keyboard",
+    "sku": "KEY-TACTILE-PRO-2025",
+    "brand": "TypeMaster",
+    "category": "Keyboard",
+    "price": 129.99,
+    "currency": "USD",
+    "shortDescription": "A mechanical keyboard built for writers and programmers with tactile feedback.",
+    "description": "The TypeMaster Tactile Pro Mechanical Keyboard is engineered for users who spend long hours typing and demand precision. Featuring high-quality tactile switches, it provides a satisfying keystroke feel while maintaining quiet operation for office environments. Its ergonomic design includes an angled layout and detachable palm rest, reducing strain during extended sessions. The keyboard offers full N-key rollover and anti-ghosting technology, ensuring every keystroke is accurately registered. With a compact yet durable build, it balances functionality with portability, making it suitable for home, office, or travel. Dedicated function keys provide instant access to productivity shortcuts, while double-shot PBT keycaps ensure longevity and resistance to wear. The Tactile Pro is compatible with multiple operating systems, and its plug-and-play setup makes it easy to get started. Whether you’re coding, writing, or gaming casually, this keyboard enhances focus and efficiency with every keystroke.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard11.jpg", "alt": "Mechanical keyboard with tactile switches" },
+      { "url": "https://i.ibb.co/keyboard12.jpg", "alt": "Ergonomic typing keyboard setup" },
+      { "url": "https://i.ibb.co/keyboard13.jpg", "alt": "Keycap close-up of mechanical keyboard" },
+      { "url": "https://i.ibb.co/keyboard14.jpg", "alt": "Tactile mechanical keyboard on desk" },
+      { "url": "https://i.ibb.co/keyboard15.jpg", "alt": "Compact tactile keyboard layout" }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": { "average": 4.6, "reviewsCount": 178 },
+    "releaseDate": "2025-02-18",
+    "specs": [
+      { "name": "Switch Type", "value": "Tactile Mechanical" },
+      { "name": "Keycaps", "value": "Double-Shot PBT" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "ErgoFlex Split Keyboard",
+    "slug": "ergoflex-split-keyboard",
+    "sku": "KEY-ERGOFLEX-2025",
+    "brand": "ComfortKeys",
+    "category": "Keyboard",
+    "price": 159.99,
+    "currency": "USD",
+    "shortDescription": "An ergonomic split keyboard designed for healthy typing posture.",
+    "description": "The ComfortKeys ErgoFlex Split Keyboard is crafted for users who prioritize comfort, ergonomics, and long-term health. Its split design encourages a natural hand, wrist, and arm position, reducing strain during extended typing sessions. Each side of the keyboard can be adjusted for angle and spacing, allowing users to find the most comfortable setup. Equipped with low-profile mechanical switches, it provides a quiet yet responsive typing experience. The ErgoFlex also includes cushioned palm rests, programmable hotkeys, and customizable layouts to enhance productivity. Its durable construction ensures longevity, while the detachable cable allows for easy transport. Compatible with major operating systems, including Windows, macOS, and Linux, it is ideal for professionals, programmers, and writers seeking a healthier typing solution. By promoting better posture and reducing repetitive stress, the ErgoFlex Split Keyboard transforms typing into a more natural and comfortable activity.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard16.jpg", "alt": "Ergonomic split keyboard layout" },
+      { "url": "https://i.ibb.co/keyboard17.jpg", "alt": "Split keyboard on office desk" },
+      { "url": "https://i.ibb.co/keyboard18.jpg", "alt": "Ergo keyboard adjustable halves" },
+      { "url": "https://i.ibb.co/keyboard19.jpg", "alt": "Close-up of ergonomic keyboard keys" },
+      { "url": "https://i.ibb.co/keyboard20.jpg", "alt": "Ergonomic split keyboard top view" }
+    ],
+    "stock": 90,
+    "available": true,
+    "ratings": { "average": 4.8, "reviewsCount": 133 },
+    "releaseDate": "2025-05-12",
+    "specs": [
+      { "name": "Switch Type", "value": "Low-Profile Mechanical" },
+      { "name": "Design", "value": "Adjustable Split" },
+      { "name": "Connectivity", "value": "USB-C" }
+    ],
+    "warranty": "3 years"
+  },
+  {
+    "name": "HyperSpeed Gaming Keyboard",
+    "slug": "hyperspeed-gaming-keyboard",
+    "sku": "KEY-HYPER-GAMING-2025",
+    "brand": "GamerEdge",
+    "category": "Keyboard",
+    "price": 189.99,
+    "currency": "USD",
+    "shortDescription": "A high-performance gaming keyboard with ultra-fast switches and macros.",
+    "description": "The GamerEdge HyperSpeed Gaming Keyboard is engineered for competitive gamers who need speed, precision, and reliability. Featuring optical-mechanical switches, it delivers lightning-fast actuation with minimal latency. Each key is reinforced for durability and supports millions of presses, making it perfect for esports-level play. The keyboard includes per-key RGB lighting with customizable effects and macro recording for personalized control. Dedicated gaming mode ensures uninterrupted gameplay by disabling disruptive keys. Its sturdy metal top plate provides resilience, while the detachable USB-C cable allows portability for LAN events or tournaments. Anti-ghosting and full N-key rollover guarantee every key press is registered accurately. With built-in memory, you can save profiles and switch instantly between setups. The HyperSpeed Gaming Keyboard combines cutting-edge technology with style, making it a must-have for gamers seeking an edge over their competition.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard21.jpg", "alt": "RGB gaming keyboard with optical switches" },
+      { "url": "https://i.ibb.co/keyboard22.jpg", "alt": "Gaming keyboard top view" },
+      { "url": "https://i.ibb.co/keyboard23.jpg", "alt": "Close-up of gaming key switches" },
+      { "url": "https://i.ibb.co/keyboard24.jpg", "alt": "Macro keys on gaming keyboard" },
+      { "url": "https://i.ibb.co/keyboard25.jpg", "alt": "Gaming setup with RGB keyboard" }
+    ],
+    "stock": 110,
+    "available": true,
+    "ratings": { "average": 4.9, "reviewsCount": 264 },
+    "releaseDate": "2025-07-01",
+    "specs": [
+      { "name": "Switch Type", "value": "Optical-Mechanical" },
+      { "name": "Lighting", "value": "RGB Per-Key" },
+      { "name": "Connectivity", "value": "USB-C Detachable" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "StudioBoard Creator Keyboard",
+    "slug": "studioboard-creator-keyboard",
+    "sku": "KEY-STUDIOBOARD-2025",
+    "brand": "CreatorLab",
+    "category": "Keyboard",
+    "price": 219.99,
+    "currency": "USD",
+    "shortDescription": "A creator-focused keyboard with customizable knobs, sliders, and multiple inputs.",
+    "description": "The CreatorLab StudioBoard Keyboard is designed for digital artists, video editors, and content creators who require ultimate control and flexibility. Unlike traditional keyboards, it integrates customizable knobs, sliders, and macro keys alongside premium mechanical switches, offering a hybrid tool that blends typing and creative workflow management. With built-in software, every knob and slider can be mapped to editing functions in software like Photoshop, Premiere Pro, or Ableton Live, giving creators seamless command over their work. The StudioBoard supports per-key RGB lighting, ergonomic wrist support, and detachable magnetic modules for expanded functionality. Designed with aluminum housing and PBT keycaps, it ensures long-lasting durability. It connects via USB-C and also supports wireless operation for flexible setups. The StudioBoard empowers creators to streamline their workflow, reduce reliance on multiple peripherals, and maintain focus on creativity. It’s more than a keyboard—it’s a productivity powerhouse.",
+    "images": [
+      { "url": "https://i.ibb.co/keyboard26.jpg", "alt": "Creator keyboard with knobs and sliders" },
+      { "url": "https://i.ibb.co/keyboard27.jpg", "alt": "Editing-focused keyboard close-up" },
+      { "url": "https://i.ibb.co/keyboard28.jpg", "alt": "Studio keyboard with RGB lighting" },
+      { "url": "https://i.ibb.co/keyboard29.jpg", "alt": "Ergonomic creator keyboard with wrist rest" },
+      { "url": "https://i.ibb.co/keyboard30.jpg", "alt": "Creative workstation keyboard" },
+      { "url": "https://i.ibb.co/keyboard31.jpg", "alt": "Side profile of creator keyboard" },
+      { "url": "https://i.ibb.co/keyboard32.jpg", "alt": "Macro keys and sliders close-up" }
+    ],
+    "stock": 75,
+    "available": true,
+    "ratings": { "average": 4.8, "reviewsCount": 142 },
+    "releaseDate": "2025-06-25",
+    "specs": [
+      { "name": "Switch Type", "value": "Mechanical" },
+      { "name": "Controls", "value": "Knobs, Sliders, Macro Keys" },
+      { "name": "Connectivity", "value": "USB-C & Wireless" }
+    ],
+    "warranty": "3 years"
+  },
+  {
+    "name": "EchoBlast Portable Bluetooth Speaker",
+    "slug": "echoblast-portable-bluetooth-speaker",
+    "sku": "AUD-ECHOBLAST-2025",
+    "brand": "SoundSphere",
+    "category": "Audio",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "Compact yet powerful portable Bluetooth speaker with deep bass and 360° sound.",
+    "description": "The EchoBlast Portable Bluetooth Speaker by SoundSphere is designed for music lovers who want immersive sound on the go. Featuring 360° audio dispersion, this speaker delivers crisp highs, rich mids, and deep, punchy bass for every genre of music. Its rugged, shockproof, and IP67 waterproof build makes it an ideal companion for outdoor adventures, pool parties, or camping trips. The speaker supports up to 20 hours of playback on a single charge, ensuring uninterrupted enjoyment throughout the day. With Bluetooth 5.3 technology, you get seamless connectivity, faster pairing, and better energy efficiency. It also features stereo pairing mode, allowing two EchoBlast speakers to sync for an even more powerful soundstage. An integrated microphone ensures clear hands-free calling, while the USB-C quick charging brings you back to full power in no time. Compact, stylish, and versatile, the EchoBlast is your all-in-one audio powerhouse, balancing durability with premium sound quality.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd123/echoblast-speaker-front.jpg",
+        "alt": "Front view of EchoBlast Bluetooth speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd124/echoblast-speaker-side.jpg",
+        "alt": "Side view of EchoBlast Bluetooth speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd125/echoblast-speaker-back.jpg",
+        "alt": "Back panel of EchoBlast Bluetooth speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd126/echoblast-speaker-waterproof.jpg",
+        "alt": "EchoBlast Bluetooth speaker under water splash"
+      },
+      {
+        "url": "https://i.ibb.co/abcd127/echoblast-speaker-lifestyle.jpg",
+        "alt": "EchoBlast speaker at outdoor party"
+      }
+    ],
+    "stock": 120,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 310
+    },
+    "releaseDate": "2025-07-15",
+    "specs": [
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "name": "Playback Time",
+        "value": "20 hours"
+      },
+      {
+        "name": "Waterproof Rating",
+        "value": "IP67"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "AeroSound Studio Monitor",
+    "slug": "aerosound-studio-monitor",
+    "sku": "AUD-AEROSOUND-2025",
+    "brand": "ProTone",
+    "category": "Audio",
+    "price": 399.99,
+    "currency": "USD",
+    "shortDescription": "High-fidelity wired studio monitor speaker for professionals and creators.",
+    "description": "The AeroSound Studio Monitor by ProTone is engineered for professionals who demand pristine audio reproduction. Designed for music producers, sound engineers, and content creators, this non-Bluetooth wired monitor delivers studio-grade clarity with its precision-tuned drivers. The 6.5-inch woofer produces deep, accurate bass, while the silk-dome tweeter ensures smooth, distortion-free highs. With a wide frequency response of 40Hz–20kHz, you can hear every nuance of your mix. Its solid MDF enclosure minimizes resonance, providing a true and uncolored sound profile. Connectivity includes balanced XLR and TRS inputs, making it compatible with most studio setups. The rear panel features fine-tuning controls for high and low frequencies, letting you adapt the sound to your room’s acoustics. Sleek, modern aesthetics allow it to fit seamlessly into any studio or home workspace. Durable and reliable, the AeroSound Studio Monitor offers consistency and performance that professionals can rely on for critical listening and mixing.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd201/aerosound-monitor-front.jpg",
+        "alt": "Front view of AeroSound Studio Monitor"
+      },
+      {
+        "url": "https://i.ibb.co/abcd202/aerosound-monitor-side.jpg",
+        "alt": "Side angle of AeroSound Studio Monitor"
+      },
+      {
+        "url": "https://i.ibb.co/abcd203/aerosound-monitor-back.jpg",
+        "alt": "Back panel of AeroSound Studio Monitor with inputs"
+      },
+      {
+        "url": "https://i.ibb.co/abcd204/aerosound-monitor-pair.jpg",
+        "alt": "Pair of AeroSound Studio Monitors in a studio setup"
+      },
+      {
+        "url": "https://i.ibb.co/abcd205/aerosound-monitor-close.jpg",
+        "alt": "Close-up of AeroSound tweeter and woofer"
+      }
+    ],
+    "stock": 75,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 215
+    },
+    "releaseDate": "2025-05-22",
+    "specs": [
+      {
+        "name": "Driver Size",
+        "value": "6.5-inch Woofer, 1-inch Tweeter"
+      },
+      {
+        "name": "Frequency Response",
+        "value": "40Hz – 20kHz"
+      },
+      {
+        "name": "Inputs",
+        "value": "XLR, TRS"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "BassFlex Party Speaker",
+    "slug": "bassflex-party-speaker",
+    "sku": "AUD-BASSFLEX-2025",
+    "brand": "MegaBeats",
+    "category": "Audio",
+    "price": 279.99,
+    "currency": "USD",
+    "shortDescription": "Loud, dynamic party speaker with booming bass and LED lights.",
+    "description": "The BassFlex Party Speaker by MegaBeats is the ultimate centerpiece for any celebration. Designed with dual 8-inch subwoofers, it delivers earth-shaking bass that energizes the room. Dynamic LED light effects sync to the beat of your music, creating an immersive party atmosphere. With both Bluetooth 5.0 and wired AUX/USB inputs, you can connect virtually any device, from smartphones to DJ setups. The built-in microphone input makes it perfect for karaoke nights or hosting events. A rechargeable battery provides up to 12 hours of playtime, ensuring your party lasts as long as you do. For even greater impact, BassFlex speakers can be paired wirelessly to double the sound output. Rugged handles and wheels make it easy to transport, while the durable housing withstands heavy use. Whether indoors or outdoors, the BassFlex Party Speaker transforms every gathering into an unforgettable experience filled with sound and energy.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd301/bassflex-front.jpg",
+        "alt": "Front view of BassFlex Party Speaker with LED lights"
+      },
+      {
+        "url": "https://i.ibb.co/abcd302/bassflex-side.jpg",
+        "alt": "Side angle of BassFlex Party Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd303/bassflex-top.jpg",
+        "alt": "Top panel of BassFlex Party Speaker with controls"
+      },
+      {
+        "url": "https://i.ibb.co/abcd304/bassflex-outdoor.jpg",
+        "alt": "BassFlex Party Speaker used outdoors"
+      },
+      {
+        "url": "https://i.ibb.co/abcd305/bassflex-karaoke.jpg",
+        "alt": "BassFlex Party Speaker used for karaoke with microphone"
+      }
+    ],
+    "stock": 110,
+    "available": true,
+    "ratings": {
+      "average": 4.6,
+      "reviewsCount": 540
+    },
+    "releaseDate": "2025-06-18",
+    "specs": [
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth 5.0, AUX, USB"
+      },
+      {
+        "name": "Battery Life",
+        "value": "12 hours"
+      },
+      {
+        "name": "Extra Features",
+        "value": "LED Lights, Mic Input"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "WaveMini Pocket Speaker",
+    "slug": "wavemini-pocket-speaker",
+    "sku": "AUD-WAVEMINI-2025",
+    "brand": "AquaTone",
+    "category": "Audio",
+    "price": 59.99,
+    "currency": "USD",
+    "shortDescription": "Ultra-portable mini Bluetooth speaker with waterproof design.",
+    "description": "The WaveMini Pocket Speaker from AquaTone is a compact powerhouse designed for those who want great sound in a small package. Don’t let its size fool you—this mini speaker delivers surprisingly loud, clear audio with enhanced bass radiators. Featuring Bluetooth 5.1, it ensures fast pairing and reliable wireless streaming. Its IPX7 waterproof rating makes it perfect for showers, poolside lounging, or even beach adventures. The WaveMini runs up to 10 hours on a single charge and recharges quickly via USB-C. An integrated strap lets you hang it on a bag, bike, or backpack for ultimate portability. You can even pair two WaveMini speakers for stereo sound. Built with rugged materials, it withstands daily wear and tear while maintaining a sleek, modern aesthetic. Whether you’re traveling, working out, or relaxing outdoors, the WaveMini is your go-to compact companion for music anywhere, anytime.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd401/wavemini-front.jpg",
+        "alt": "Front view of WaveMini Pocket Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd402/wavemini-side.jpg",
+        "alt": "Side view of WaveMini Pocket Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd403/wavemini-back.jpg",
+        "alt": "Back view of WaveMini Pocket Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd404/wavemini-outdoor.jpg",
+        "alt": "WaveMini Pocket Speaker outdoors near pool"
+      },
+      {
+        "url": "https://i.ibb.co/abcd405/wavemini-strap.jpg",
+        "alt": "WaveMini Pocket Speaker with hanging strap"
+      }
+    ],
+    "stock": 180,
+    "available": true,
+    "ratings": {
+      "average": 4.7,
+      "reviewsCount": 410
+    },
+    "releaseDate": "2025-08-10",
+    "specs": [
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth 5.1"
+      },
+      {
+        "name": "Battery Life",
+        "value": "10 hours"
+      },
+      {
+        "name": "Waterproof Rating",
+        "value": "IPX7"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ClarityVoice Smart Speaker",
+    "slug": "clarityvoice-smart-speaker",
+    "sku": "AUD-CLARITYVOICE-2025",
+    "brand": "VocalNest",
+    "category": "Audio",
+    "price": 199.99,
+    "currency": "USD",
+    "shortDescription": "AI-powered smart speaker with premium sound and voice assistant integration.",
+    "description": "The ClarityVoice Smart Speaker by VocalNest combines intelligent features with exceptional audio performance. Designed for modern smart homes, it integrates seamlessly with major voice assistants like Alexa, Google Assistant, and Siri, enabling hands-free control of your home devices, music, and schedules. Powered by a dual-driver system with a passive radiator, it produces well-balanced sound with deep lows and crisp highs. Its far-field microphone array ensures that your commands are picked up clearly even across the room, while advanced noise cancellation minimizes background disturbances. ClarityVoice supports multi-room audio, allowing you to sync several units throughout your home for immersive, synchronized playback. With Wi-Fi and Bluetooth connectivity, streaming from your favorite platforms is effortless. The stylish, fabric-wrapped design blends into any décor, making it as elegant as it is functional. Whether for music, home automation, or productivity, the ClarityVoice Smart Speaker is the intelligent choice for everyday living.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd501/clarityvoice-front.jpg",
+        "alt": "Front view of ClarityVoice Smart Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd502/clarityvoice-side.jpg",
+        "alt": "Side view of ClarityVoice Smart Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd503/clarityvoice-back.jpg",
+        "alt": "Back view of ClarityVoice Smart Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd504/clarityvoice-home.jpg",
+        "alt": "ClarityVoice Smart Speaker in a living room setup"
+      },
+      {
+        "url": "https://i.ibb.co/abcd505/clarityvoice-close.jpg",
+        "alt": "Close-up of ClarityVoice fabric texture"
+      }
+    ],
+    "stock": 130,
+    "available": true,
+    "ratings": {
+      "average": 4.8,
+      "reviewsCount": 280
+    },
+    "releaseDate": "2025-04-28",
+    "specs": [
+      {
+        "name": "Connectivity",
+        "value": "Wi-Fi, Bluetooth"
+      },
+      {
+        "name": "Voice Assistant",
+        "value": "Alexa, Google Assistant, Siri"
+      },
+      {
+        "name": "Audio Drivers",
+        "value": "Dual-driver + passive radiator"
+      }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "TitanSound Tower Speaker",
+    "slug": "titansound-tower-speaker",
+    "sku": "AUD-TITANSOUND-2025",
+    "brand": "MaxWave",
+    "category": "Audio",
+    "price": 699.99,
+    "currency": "USD",
+    "shortDescription": "Premium floor-standing tower speaker with cinema-grade sound.",
+    "description": "The TitanSound Tower Speaker by MaxWave is designed for audiophiles and home theater enthusiasts who demand nothing but the best. Standing tall with dual 10-inch woofers, midrange drivers, and a high-frequency tweeter, it delivers powerful, room-filling sound with unparalleled clarity. Whether you’re watching movies, playing games, or streaming music, the TitanSound provides an immersive experience with thunderous bass, detailed mids, and sparkling highs. Featuring both wired and Bluetooth connectivity, it offers flexibility for different setups. The speaker’s wooden cabinet enhances resonance control, ensuring warm, natural acoustics. With more than 5 included images showcasing its premium craftsmanship, every detail—from brushed aluminum accents to fine wood finish—reflects luxury. Built-in DSP (Digital Signal Processing) technology optimizes sound output for different content, while the rear bass ports further enhance low-frequency response. Robust, stylish, and acoustically engineered, the TitanSound Tower Speaker elevates your audio experience to professional standards, making it the ultimate centerpiece for any entertainment system.",
+    "images": [
+      {
+        "url": "https://i.ibb.co/abcd601/titansound-front.jpg",
+        "alt": "Front view of TitanSound Tower Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd602/titansound-side.jpg",
+        "alt": "Side profile of TitanSound Tower Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd603/titansound-back.jpg",
+        "alt": "Back panel of TitanSound Tower Speaker"
+      },
+      {
+        "url": "https://i.ibb.co/abcd604/titansound-livingroom.jpg",
+        "alt": "TitanSound Tower Speaker in living room setup"
+      },
+      {
+        "url": "https://i.ibb.co/abcd605/titansound-close.jpg",
+        "alt": "Close-up of TitanSound wood texture and drivers"
+      },
+      {
+        "url": "https://i.ibb.co/abcd606/titansound-pair.jpg",
+        "alt": "Pair of TitanSound Tower Speakers"
+      }
+    ],
+    "stock": 50,
+    "available": true,
+    "ratings": {
+      "average": 4.9,
+      "reviewsCount": 150
+    },
+    "releaseDate": "2025-03-05",
+    "specs": [
+      {
+        "name": "Driver Configuration",
+        "value": "Dual 10-inch woofers, midrange, tweeter"
+      },
+      {
+        "name": "Connectivity",
+        "value": "Bluetooth, Wired"
+      },
+      {
+        "name": "Cabinet Material",
+        "value": "Premium Wood with Aluminum Accents"
+      }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "GamerX Headset & Mouse Combo",
+    "slug": "gamerx-headset-mouse-combo",
+    "sku": "COMBO-GAMERX-2025",
+    "brand": "GameTech",
+    "category": "Combo",
+    "price": 129.99,
+    "currency": "USD",
+    "shortDescription": "High-performance gaming headset paired with a precision gaming mouse.",
+    "description": "The GamerX Headset & Mouse Combo by GameTech is designed for gamers who demand precision and immersive sound in a single package. The headset features over-ear cushioned ear cups, delivering deep bass, clear mids, and crisp highs, while the noise-canceling microphone ensures flawless communication. Paired with the GamerX gaming mouse, it offers customizable DPI settings up to 16,000 for pixel-perfect accuracy, programmable buttons, and RGB lighting for a fully immersive gaming experience. The combo is compatible with PC, Mac, and gaming consoles, making it versatile for various platforms. Both devices are built with durable materials for long-lasting use and come with braided cables for added strength and tangle-free performance. Ideal for professional gamers and enthusiasts alike, this combo offers a complete solution for competitive play, enhancing both auditory and control precision.",
+    "images": [
+      { "url": "https://i.ibb.co/combo1.jpg", "alt": "GamerX headset and mouse front view" },
+      { "url": "https://i.ibb.co/combo2.jpg", "alt": "Side view of headset with mouse" },
+      { "url": "https://i.ibb.co/combo3.jpg", "alt": "GamerX headset and mouse top view" },
+      { "url": "https://i.ibb.co/combo4.jpg", "alt": "RGB lighting on mouse and headset" },
+      { "url": "https://i.ibb.co/combo5.jpg", "alt": "Gaming setup with GamerX headset and mouse" }
+    ],
+    "stock": 140,
+    "available": true,
+    "ratings": { "average": 4.7, "reviewsCount": 215 },
+    "releaseDate": "2025-05-12",
+    "specs": [
+      { "name": "Headset Type", "value": "Over-Ear with Mic" },
+      { "name": "Mouse DPI", "value": "Up to 16,000" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ProWork Keyboard & Mouse Set",
+    "slug": "prowork-keyboard-mouse-set",
+    "sku": "COMBO-PROWORK-2025",
+    "brand": "OfficeGear",
+    "category": "Combo",
+    "price": 79.99,
+    "currency": "USD",
+    "shortDescription": "Professional keyboard and mouse set for office productivity.",
+    "description": "The ProWork Keyboard & Mouse Set is a perfect solution for professionals seeking comfort and efficiency in their workspace. The keyboard features low-profile keys with tactile feedback for smooth and quiet typing, ideal for long hours of work. The ergonomic mouse offers adjustable DPI up to 2,400, ensuring precise control across spreadsheets, documents, and creative software. Both devices use reliable 2.4GHz wireless connectivity for a clutter-free desk. With energy-efficient design and long battery life, the set supports months of uninterrupted use. The minimalist aesthetic complements modern office setups, providing both functionality and style. This combo is compatible with Windows, macOS, and Linux, making it a versatile choice for professional environments. Built with durability in mind, the ProWork set combines reliable performance with a comfortable and streamlined user experience.",
+    "images": [
+      { "url": "https://i.ibb.co/combo6.jpg", "alt": "ProWork keyboard and mouse front view" },
+      { "url": "https://i.ibb.co/combo7.jpg", "alt": "Side view of keyboard and mouse set" },
+      { "url": "https://i.ibb.co/combo8.jpg", "alt": "Top view of keyboard and mouse" },
+      { "url": "https://i.ibb.co/combo9.jpg", "alt": "Ergonomic mouse and keyboard close-up" },
+      { "url": "https://i.ibb.co/combo10.jpg", "alt": "Work desk setup with keyboard and mouse" }
+    ],
+    "stock": 200,
+    "available": true,
+    "ratings": { "average": 4.6, "reviewsCount": 180 },
+    "releaseDate": "2025-04-20",
+    "specs": [
+      { "name": "Keyboard Type", "value": "Low-Profile Wireless" },
+      { "name": "Mouse DPI", "value": "Up to 2,400" },
+      { "name": "Connectivity", "value": "2.4GHz Wireless" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "SoundMaster Headphone & Mouse Combo",
+    "slug": "soundmaster-headphone-mouse-combo",
+    "sku": "COMBO-SOUNMASTER-2025",
+    "brand": "AudioEdge",
+    "category": "Combo",
+    "price": 119.99,
+    "currency": "USD",
+    "shortDescription": "Immersive headphones combined with a responsive gaming mouse.",
+    "description": "The SoundMaster Headphone & Mouse Combo delivers high-quality audio and precise control for gamers and creators. The over-ear headphones feature soft memory foam ear cushions, delivering crisp audio with deep bass and noise isolation. The adjustable boom microphone ensures clear communication in multiplayer sessions or online meetings. The included gaming mouse has programmable buttons, customizable DPI up to 12,000, and ergonomic contours for extended gameplay without fatigue. Both devices offer USB wired connectivity for reliable performance and minimal latency. With its sleek black design and RGB accents, the combo enhances any gaming or workstation setup. Durable construction ensures longevity, while intuitive controls make it easy to customize profiles. Whether gaming, editing, or streaming, this combo enhances both auditory and tactile precision, offering a complete experience for users seeking professional-level tools.",
+    "images": [
+      { "url": "https://i.ibb.co/combo11.jpg", "alt": "SoundMaster headset and mouse front view" },
+      { "url": "https://i.ibb.co/combo12.jpg", "alt": "Side view of headset with gaming mouse" },
+      { "url": "https://i.ibb.co/combo13.jpg", "alt": "Top view of headset and mouse combo" },
+      { "url": "https://i.ibb.co/combo14.jpg", "alt": "RGB accents on headset and mouse" },
+      { "url": "https://i.ibb.co/combo15.jpg", "alt": "Gaming setup with SoundMaster combo" }
+    ],
+    "stock": 150,
+    "available": true,
+    "ratings": { "average": 4.7, "reviewsCount": 200 },
+    "releaseDate": "2025-06-05",
+    "specs": [
+      { "name": "Headset Type", "value": "Over-Ear with Mic" },
+      { "name": "Mouse DPI", "value": "Up to 12,000" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ElitePro Keyboard & Mouse Combo",
+    "slug": "elitepro-keyboard-mouse-combo",
+    "sku": "COMBO-ELITEPRO-2025",
+    "brand": "TechWorks",
+    "category": "Combo",
+    "price": 159.99,
+    "currency": "USD",
+    "shortDescription": "Premium mechanical keyboard and RGB gaming mouse combo.",
+    "description": "The ElitePro Keyboard & Mouse Combo is tailored for gamers and productivity enthusiasts. The mechanical keyboard features tactile switches with per-key RGB lighting, anti-ghosting, and full N-key rollover for high-speed input accuracy. The accompanying RGB gaming mouse offers adjustable DPI up to 16,000, programmable buttons, and customizable lighting to match your setup. Both devices are built with durable materials to withstand intense use and offer USB wired connectivity for ultra-low latency performance. The combo provides comfort with ergonomic design and textured grips. Whether gaming competitively or managing tasks efficiently, this combo enhances control, precision, and aesthetics, making it a complete solution for desktop enthusiasts seeking a high-performance package.",
+    "images": [
+      { "url": "https://i.ibb.co/combo16.jpg", "alt": "ElitePro mechanical keyboard with mouse front view" },
+      { "url": "https://i.ibb.co/combo17.jpg", "alt": "Side view of keyboard and mouse combo" },
+      { "url": "https://i.ibb.co/combo18.jpg", "alt": "Top view with RGB lighting" },
+      { "url": "https://i.ibb.co/combo19.jpg", "alt": "Close-up of key switches and mouse buttons" },
+      { "url": "https://i.ibb.co/combo20.jpg", "alt": "Gaming desktop setup with ElitePro combo" }
+    ],
+    "stock": 130,
+    "available": true,
+    "ratings": { "average": 4.8, "reviewsCount": 185 },
+    "releaseDate": "2025-03-15",
+    "specs": [
+      { "name": "Keyboard Type", "value": "Mechanical RGB" },
+      { "name": "Mouse DPI", "value": "Up to 16,000" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "MaxComfort Headset & Keyboard Combo",
+    "slug": "maxcomfort-headset-keyboard-combo",
+    "sku": "COMBO-MAXCOMFORT-2025",
+    "brand": "ComfortTech",
+    "category": "Combo",
+    "price": 139.99,
+    "currency": "USD",
+    "shortDescription": "Comfortable headset combined with ergonomic keyboard for daily use.",
+    "description": "The MaxComfort Headset & Keyboard Combo is designed for users who spend hours working or gaming at their desk. The headset delivers clear, high-quality audio with soft memory foam ear cups for comfort, while the adjustable microphone ensures crisp voice clarity. The included ergonomic keyboard features low-profile keys, wrist support, and quiet keystrokes, perfect for extended typing sessions. Both devices offer USB wired connectivity for reliable performance. With its sleek design, durable build, and user-friendly features, the MaxComfort Combo is ideal for professionals, gamers, or students seeking a comfortable and efficient desktop setup. The combination of precision audio and ergonomic typing ensures productivity and enjoyment in every use.",
+    "images": [
+      { "url": "https://i.ibb.co/combo21.jpg", "alt": "MaxComfort headset and keyboard front view" },
+      { "url": "https://i.ibb.co/combo22.jpg", "alt": "Side view of headset and ergonomic keyboard" },
+      { "url": "https://i.ibb.co/combo23.jpg", "alt": "Top view of MaxComfort combo" },
+      { "url": "https://i.ibb.co/combo24.jpg", "alt": "Close-up of keyboard keys and headset mic" },
+      { "url": "https://i.ibb.co/combo25.jpg", "alt": "Desktop setup with MaxComfort combo" }
+    ],
+    "stock": 110,
+    "available": true,
+    "ratings": { "average": 4.6, "reviewsCount": 145 },
+    "releaseDate": "2025-04-08",
+    "specs": [
+      { "name": "Headset Type", "value": "Over-Ear with Mic" },
+      { "name": "Keyboard Type", "value": "Ergonomic Low-Profile" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ProGamer Keyboard, Mouse & Headset Bundle",
+    "slug": "progamer-keyboard-mouse-headset-bundle",
+    "sku": "COMBO-PROGAMER-2025",
+    "brand": "EliteGaming",
+    "category": "Combo",
+    "price": 249.99,
+    "currency": "USD",
+    "shortDescription": "Ultimate gaming bundle including mechanical keyboard, RGB mouse, and headset.",
+    "description": "The ProGamer Bundle is the ultimate package for serious gamers. Featuring a mechanical keyboard with customizable RGB lighting and anti-ghosting, a high-precision gaming mouse with adjustable DPI up to 16,000, and an over-ear headset with noise-canceling mic, this combo ensures every aspect of gaming is optimized. All devices are USB wired for minimal latency and maximum reliability. The keyboard and mouse feature programmable buttons, allowing users to assign macros and commands easily. The headset provides immersive audio and comfort for marathon sessions. Designed for performance, durability, and aesthetics, the ProGamer Bundle equips gamers with everything needed for competitive play, enhancing responsiveness, audio precision, and overall experience. One product in this bundle includes **more than 5 images** showcasing each component in detail.",
+    "images": [
+      { "url": "https://i.ibb.co/combo26.jpg", "alt": "ProGamer keyboard, mouse, headset front view" },
+      { "url": "https://i.ibb.co/combo27.jpg", "alt": "Side view of ProGamer gaming bundle" },
+      { "url": "https://i.ibb.co/combo28.jpg", "alt": "Top view of keyboard, mouse, headset" },
+      { "url": "https://i.ibb.co/combo29.jpg", "alt": "Close-up of keyboard keys and mouse buttons" },
+      { "url": "https://i.ibb.co/combo30.jpg", "alt": "RGB lighting on all devices" },
+      { "url": "https://i.ibb.co/combo31.jpg", "alt": "Headset close-up view" },
+      { "url": "https://i.ibb.co/combo32.jpg", "alt": "Gaming setup with ProGamer bundle" }
+    ],
+    "stock": 95,
+    "available": true,
+    "ratings": { "average": 4.9, "reviewsCount": 210 },
+    "releaseDate": "2025-07-01",
+    "specs": [
+      { "name": "Keyboard Type", "value": "Mechanical RGB" },
+      { "name": "Mouse DPI", "value": "Up to 16,000" },
+      { "name": "Headset Type", "value": "Over-Ear with Mic" }
+    ],
+    "warranty": "2 years"
+  },
+  {
+    "name": "WorkMaster Mouse & Keyboard Combo",
+    "slug": "workmaster-mouse-keyboard-combo",
+    "sku": "COMBO-WORKMASTER-2025",
+    "brand": "DeskTech",
+    "category": "Combo",
+    "price": 89.99,
+    "currency": "USD",
+    "shortDescription": "Reliable wired mouse and ergonomic keyboard combo for office use.",
+    "description": "The WorkMaster Combo provides a dependable and ergonomic desktop solution. The wired keyboard features low-profile keys for comfortable typing, while the optical mouse offers precise control with adjustable DPI. Both devices connect via USB, ensuring stable performance with minimal setup. The ergonomic design reduces strain during long hours at the desk, making it ideal for offices, students, or home workstations. Durable construction ensures longevity, and the compact design keeps your workspace organized and efficient. The WorkMaster Combo is a practical, reliable choice for anyone seeking a complete desktop accessory set without compromising comfort or performance.",
+    "images": [
+      { "url": "https://i.ibb.co/combo33.jpg", "alt": "WorkMaster keyboard and mouse front view" },
+      { "url": "https://i.ibb.co/combo34.jpg", "alt": "Side view of WorkMaster combo" },
+      { "url": "https://i.ibb.co/combo35.jpg", "alt": "Top view of mouse and keyboard" },
+      { "url": "https://i.ibb.co/combo36.jpg", "alt": "Close-up of keys and mouse sensor" },
+      { "url": "https://i.ibb.co/combo37.jpg", "alt": "Desk setup with WorkMaster combo" }
+    ],
+    "stock": 180,
+    "available": true,
+    "ratings": { "average": 4.5, "reviewsCount": 160 },
+    "releaseDate": "2025-03-25",
+    "specs": [
+      { "name": "Keyboard Type", "value": "Low-Profile Wired" },
+      { "name": "Mouse Type", "value": "Optical Wired" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "EliteDesk Headset & Keyboard Combo",
+    "slug": "elitedesk-headset-keyboard-combo",
+    "sku": "COMBO-ELITEDESK-2025",
+    "brand": "PremiumGear",
+    "category": "Combo",
+    "price": 149.99,
+    "currency": "USD",
+    "shortDescription": "Professional headset with mechanical keyboard for creators and office use.",
+    "description": "The EliteDesk Headset & Keyboard Combo merges productivity and comfort for professional users. The over-ear headset delivers high-fidelity audio with noise-isolating ear cups and a clear microphone for calls, meetings, or creative work. The mechanical keyboard offers tactile, responsive keys with durable switches and ergonomic design to minimize fatigue. Both devices connect via USB for reliable performance. This combo is perfect for home offices, studios, and workstations where comfort, quality, and reliability are priorities. Built for long-term use, the EliteDesk Combo enhances typing efficiency and auditory clarity, creating a more focused and enjoyable work environment.",
+    "images": [
+      { "url": "https://i.ibb.co/combo38.jpg", "alt": "EliteDesk headset and keyboard front view" },
+      { "url": "https://i.ibb.co/combo39.jpg", "alt": "Side view of headset with keyboard" },
+      { "url": "https://i.ibb.co/combo40.jpg", "alt": "Top view of EliteDesk combo" },
+      { "url": "https://i.ibb.co/combo41.jpg", "alt": "Close-up of headset and keyboard keys" },
+      { "url": "https://i.ibb.co/combo42.jpg", "alt": "Desktop workspace with EliteDesk combo" }
+    ],
+    "stock": 120,
+    "available": true,
+    "ratings": { "average": 4.7, "reviewsCount": 140 },
+    "releaseDate": "2025-05-18",
+    "specs": [
+      { "name": "Headset Type", "value": "Over-Ear with Mic" },
+      { "name": "Keyboard Type", "value": "Mechanical" },
+      { "name": "Connectivity", "value": "USB Wired" }
+    ],
+    "warranty": "1 year"
+  },
+  {
+    "name": "ComboMax Desktop Accessories Pack",
+    "slug": "combomax-desktop-accessories-pack",
+    "sku": "COMBO-COMBOMAX-2025",
+    "brand": "DeskElite",
+    "category": "Combo",
+    "price": 199.99,
+    "currency": "USD",
+    "shortDescription": "Complete desktop pack with headset, keyboard, mouse, and mousepad.",
+    "description": "The ComboMax Desktop Accessories Pack by DeskElite offers a complete setup for users looking for convenience and performance. It includes an over-ear headset with noise-canceling mic, a mechanical keyboard with tactile keys, a high-precision RGB gaming mouse, and a large anti-slip mousepad. The combo is designed to enhance productivity and gaming performance, providing a comfortable, immersive, and stylish desktop experience. All devices are USB wired for reliability and low latency. The keyboard and mouse feature RGB customization to personalize your setup, while the headset ensures clear audio during calls or gaming sessions. The included mousepad provides a smooth surface for precise movements. With high durability and ergonomic design, this desktop combo meets the needs of professionals, students, and gamers. One product in this pack includes **more than 5 images** showing every accessory from multiple angles.",
+    "images": [
+      { "url": "https://i.ibb.co/combo43.jpg", "alt": "ComboMax pack all items front view" },
+      { "url": "https://i.ibb.co/combo44.jpg", "alt": "Side view of ComboMax pack" },
+      { "url": "https://i.ibb.co/combo45.jpg", "alt": "Top view of keyboard, mouse, headset, mousepad" },
+      { "url": "https://i.ibb.co/combo46.jpg", "alt": "Close-up of mechanical keyboard" },
+      { "url": "https://i.ibb.co/combo47.jpg", "alt": "Close-up of RGB mouse" },
+      { "url": "https://i.ibb.co/combo48.jpg", "alt": "Headset ear cup close-up" },
+      { "url": "https://i.ibb.co/combo49.jpg", "alt": "Mousepad full view" }
+    ],
+    "stock": 80,
+    "available": true,
+    "ratings": { "average": 4.9, "reviewsCount": 190 },
+    "releaseDate": "2025-07-20",
+    "specs": [
+      { "name": "Included Items", "value": "Headset, Keyboard, Mouse, Mousepad" },
+      { "name": "Keyboard Type", "value": "Mechanical RGB" },
+      { "name": "Mouse DPI", "value": "Up to 16,000" }
+    ],
+    "warranty": "2 years"
+  }
+]
