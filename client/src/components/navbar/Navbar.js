@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { FiChevronDown, FiSearch } from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import SearchOverlay from "./SearchOverlay";
 import { usePathname } from "next/navigation";
@@ -142,14 +142,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`top-0 w-full left-0 
+        className={`top-0 w-full left-0
           ${isTransparent ? "fixed" : "sticky"}
           `}
         style={{ zIndex: 9999 }}
       >
         <div className="flex flex-col">
           <div
-            className={`bg-[#1A7F73] hidden sm:block dark:bg-[#161929] shadow-md text-white w-full  py-1 sm:py-2
+            className={`bg-[#1a7f73] hidden sm:block dark:bg-[#161929] shadow-md text-white w-full py-1 sm:py-2
              ${
                showTopBar
                  ? isTransparent
@@ -187,19 +187,19 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`w-full  relative transition-all duration-300 ${
+            className={`w-full relative transition-all duration-300 ${
               showTopBar
                 ? isTransparent
-                  ? "translate-y-0 bg-transparent shadow backdrop-blur-sm"
-                  : "translate-y-0 bg-[#00A88F] dark:bg-[#161929] shadow"
-                : "-translate-y-[45px] md:-translate-y-[58px] bg-[#00A88F] text-gray-950 dark:bg-[#161929] shadow mt-5"
+                  ? "translate-y-0 bg-[#00a88f]"
+                  : "translate-y-0 bg-[#00a88f] dark:bg-[#161929] shadow"
+                : "-translate-y-[45px] md:-translate-y-[58px] bg-[#00a88f] text-gray-950 dark:bg-[#161929] shadow mt-5"
             }`}
           >
             <div className="w-11/12 mx-auto flex justify-between items-center shadow">
               {/* Logo */}
               <Link href="/" className="flex items-center">
                 <span
-                  className={`exo text-4xl font-extrabold
+                  className={`exo text-4xl font-extrabold py-2
                   ${
                     showTopBar
                       ? isTransparent
