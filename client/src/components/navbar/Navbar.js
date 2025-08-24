@@ -149,7 +149,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col">
           <div
-            className={`bg-[#1a7f73] hidden sm:block dark:bg-[#161929] shadow-md text-white w-full py-1 sm:py-2
+            className={`bg-[#00a88f] hidden sm:block dark:bg-[#161929] shadow-md text-white w-full py-1 sm:py-2
              ${
                showTopBar
                  ? isTransparent
@@ -190,9 +190,9 @@ const Navbar = () => {
             className={`w-full relative transition-all duration-300 ${
               showTopBar
                 ? isTransparent
-                  ? "translate-y-0 bg-[#00a88f]"
-                  : "translate-y-0 bg-[#00a88f] dark:bg-[#161929] shadow"
-                : "-translate-y-[45px] md:-translate-y-[58px] bg-[#00a88f] text-gray-950 dark:bg-[#161929] shadow mt-5"
+                  ? "translate-y-0 bg-[#1a7f73]"
+                  : "translate-y-0 bg-[#1a7f73] dark:bg-[#161929] shadow"
+                : "-translate-y-[45px] md:-translate-y-[58px] bg-[#1a7f73] text-gray-950 dark:bg-[#161929] shadow mt-5"
             }`}
           >
             <div className="w-11/12 mx-auto flex justify-between items-center shadow">
@@ -240,7 +240,7 @@ const Navbar = () => {
                         <div
                           className="absolute top-full left-1/2 -translate-x-1/2 group-hover:block hidden
                                      group-last:left-auto group-last:right-0 group-last:translate-x-0 z-50 w-max
-                                     bg-[#00A88F] rounded-md dark:bg-[#161929] shadow-xl transition-all duration-300 ease-out animate-fadeInUp"
+                                     bg-[#1a7f73] rounded-md dark:bg-[#161929] shadow-xl transition-all duration-300 ease-out animate-fadeInUp"
                         >
                           {item.dropdown.map((dropdownItem) => (
                             <Link
@@ -333,7 +333,7 @@ const Navbar = () => {
         {menuOpen && (
           <motion.div
             ref={mobileMenuRef}
-            className={`md:hidden bg-[#00A88F] dark:bg-[#161929] shadow-lg py-1 absolute z-50 w-32 sm:w-40 text-center sm:text-right right-0
+            className={`md:hidden bg-[#1a7f73] dark:bg-[#161929] shadow-lg py-1 absolute z-50 w-32 sm:w-40 text-center sm:text-right right-0
               ${
                 showTopBar && isTransparent
                   ? "top-[80px]"
@@ -369,7 +369,7 @@ const Navbar = () => {
 
                 {item.dropdown && openDropdownIndex === index && (
                   <motion.div
-                    className="absolute z-50 right-[129px] sm:right-[160.50px] top-[18px] bg-[#00A88F] dark:bg-[#161929] group-hover:block shadow-lg rounded-md w-auto space-y-2 py-2"
+                    className="absolute z-50 right-[129px] sm:right-[160.50px] top-[18px] bg-[#1a7f73] dark:bg-[#161929] group-hover:block shadow-lg rounded-md w-auto space-y-2 py-2"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}

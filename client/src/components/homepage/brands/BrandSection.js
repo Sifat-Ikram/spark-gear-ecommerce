@@ -6,42 +6,83 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useCategories } from "@/hooks/useCategories";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
-const CategoriesSection = () => {
-  const { categories, categoryIsLoading, categoryError } = useCategories();
+import chico from "@/assets/brands/chico.webp";
+import ivola from "@/assets/brands/ivola.webp";
+import lego from "@/assets/brands/lego.webp";
+import nerf from "@/assets/brands/nerf.webp";
+import nestle from "@/assets/brands/nestle.webp";
+import nutrica from "@/assets/brands/nutrica.webp";
+import paydoh from "@/assets/brands/payDoh.webp";
+import philip from "@/assets/brands/philip.webp";
+import rovco from "@/assets/brands/rovco.webp";
+import winfun from "@/assets/brands/winfun.webp";
+
+const BrandSection = () => {
   const swiperRef = useRef(null);
+
+  const brands = [
+    {
+      _id: 1,
+      name: "Chico",
+      image: chico,
+    },
+    {
+      _id: 2,
+      name: "Ivola",
+      image: ivola,
+    },
+    {
+      _id: 3,
+      name: "Lego",
+      image: lego,
+    },
+    {
+      _id: 4,
+      name: "Nerf",
+      image: nerf,
+    },
+    {
+      _id: 5,
+      name: "Nestle",
+      image: nestle,
+    },
+    {
+      _id: 6,
+      name: "Nutrica",
+      image: nutrica,
+    },
+    {
+      _id: 7,
+      name: "PayDoh",
+      image: paydoh,
+    },
+    {
+      _id: 8,
+      name: "Philip",
+      image: philip,
+    },
+    {
+      _id: 9,
+      name: "Rovco",
+      image: rovco,
+    },
+    {
+      _id: 10,
+      name: "Winfun",
+      image: winfun,
+    },
+  ];
 
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-
-  if (categoryIsLoading)
-    return (
-      <p className="text-center text-gray-600 dark:text-gray-300 text-sm sm:text-base py-6">
-        Loading...
-      </p>
-    );
-
-  if (categoryError)
-    return (
-      <p className="text-center text-red-500 dark:text-red-300 text-sm sm:text-base py-6">
-        Failed to load categories
-      </p>
-    );
-
-  if (!categories || categories.length === 0)
-    return (
-      <p className="text-center text-gray-600 dark:text-gray-300 text-sm sm:text-base py-6">
-        No categories found
-      </p>
-    );
 
   return (
     <section className="">
       {/* Section Title */}
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 dark:text-white leading-snug">
-        Shop by Categories
+        Shop by Brands
       </h2>
 
       <div className="relative">
@@ -83,16 +124,16 @@ const CategoriesSection = () => {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {categories.map((cat) => (
-              <SwiperSlide key={cat._id}>
+            {brands.map((brand) => (
+              <SwiperSlide key={brand._id}>
                 <Link
-                  href={`/categoryDetails/${cat._id}`}
+                  href={`/brandDetails/${brand._id}`}
                   className="flex flex-col items-center cursor-pointer bg-gray-50 dark:bg-[#1c1f2e] rounded-xl shadow hover:shadow-lg px-3 py-4 sm:px-4 sm:py-5 md:px-5 md:py-6 transition-all duration-300"
                 >
                   <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-3 md:mb-4">
                     <Image
-                      src={cat.image}
-                      alt={cat.name}
+                      src={brand.image}
+                      alt={brand.name}
                       fill
                       priority
                       sizes="(max-width: 768px) 100vw, 200px"
@@ -100,7 +141,7 @@ const CategoriesSection = () => {
                     />
                   </div>
                   <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-gray-700 dark:text-gray-200 text-center leading-tight">
-                    {cat.name}
+                    {brand.name}
                   </span>
                 </Link>
               </SwiperSlide>
@@ -112,4 +153,4 @@ const CategoriesSection = () => {
   );
 };
 
-export default CategoriesSection;
+export default BrandSection;

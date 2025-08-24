@@ -35,6 +35,8 @@ const NewArrival = () => {
       </p>
     );
 
+  const randomProducts = products.sort(() => 0.5 - Math.random()).slice(0, 10);
+
   return (
     <section className="w-full">
       {/* Section Title */}
@@ -79,9 +81,9 @@ const NewArrival = () => {
           }}
           className="mySwiper py-4"
         >
-          {products.map((product) => (
+          {randomProducts.map((product) => (
             <SwiperSlide key={product._id} className="flex justify-center">
-              <div className="w-full max-w-xs h-[400px] sm:h-[420px] md:h-[440px] lg:h-[460px] cursor-pointer">
+              <div className="w-full cursor-pointer">
                 <ProductCard product={product} />
               </div>
             </SwiperSlide>

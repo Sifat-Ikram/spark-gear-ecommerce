@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
           src={product.images[0].url}
           alt={product.images[0].alt}
           fill
-          className="object-contain p-4"
+          className="object-contain h-full w-full"
         />
       </motion.div>
 
