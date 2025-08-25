@@ -7,13 +7,12 @@ import { usePathname, useRouter } from "next/navigation";
 
 const AuthContext = createContext();
 
-export const useAuth = () => useContext(AuthContext);
-
 export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
   const pathname = usePathname();
+  const [user, setUser] = useState(null);
 
   const axiosInstance = useMemo(() => {
     const instance = axios.create({
@@ -50,7 +49,8 @@ export function AuthProvider({ children }) {
       try {
         await axiosPublic.post("/api/user/refresh");
       } catch (err) {
-        if (err.response?.status !== 400) {
+        const status = err.response?.status;
+        if (![400, 401, 500].includes(status)) {
           console.error("Unexpected refresh error:", err);
           router.push("/");
         }
@@ -66,14 +66,27 @@ export function AuthProvider({ children }) {
     }
   }, [axiosPublic, router, pathname]);
 
+  const logout = async () => {
+    try {
+      await axiosPublic.post("/api/user/logout");
+      setUser(null);
+      router.push("/");
+    } catch (err) {
+      console.error("Logout failed:", err);
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
         axiosInstance,
         loading,
+        user,
+        logout,
       }}
     >
       {children}
     </AuthContext.Provider>
   );
 }
+export const useAuth = () => useContext(AuthContext);

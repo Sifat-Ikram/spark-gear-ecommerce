@@ -88,7 +88,7 @@ const BrandSection = () => {
       <div className="relative">
         {!isBeginning && (
           <button
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 xl:p-3 rounded-full bg-[#00a88f] hover:bg-[#1a7f73] transition"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1 lg:p-1.5 xl:p-2 rounded-full bg-[#00a88f] hover:bg-[#1a7f73] transition"
             onClick={() => swiperRef.current.slidePrev()}
           >
             <FiChevronLeft className="text-base sm:text-xl lg:text-2xl xl:text-4xl text-white" />
@@ -96,7 +96,7 @@ const BrandSection = () => {
         )}
         {!isEnd && (
           <button
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 xl:p-3 rounded-full bg-[#00a88f] hover:bg-[#1a7f73] transition"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1 lg:p-1.5 xl:p-2 rounded-full bg-[#00a88f] hover:bg-[#1a7f73] transition"
             onClick={() => swiperRef.current.slideNext()}
           >
             <FiChevronRight className="text-base sm:text-xl lg:text-2xl xl:text-4xl text-white" />

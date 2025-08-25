@@ -32,40 +32,46 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-full">
-      {/* Section Title */}
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 dark:text-white"
-      >
-        Why Choose Us
-      </motion.h2>
+    <section className="relative w-full py-16 bg-[url('https://i.ibb.co/35qDwjLf/showcase-with-smartphones-modern-electronics-store-buy-mobile-phone-many-smartphones-shelf-technolog.jpg')] bg-cover bg-center bg-fixed">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      {/* Feature List */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-12 max-w-5xl mx-auto">
-        {features.map((feature, index) => (
-          <motion.div
-            key={feature.id}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="flex items-start space-x-4"
-          >
-            <div className="flex-shrink-0">{feature.icon}</div>
-            <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                {feature.title}
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                {feature.desc}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+      {/* Content */}
+      <div className="relative z-10 w-11/12 mx-auto bg-black/30 rounded-2xl p-3 sm:p-4 lg:p-6 xl:p-10">
+        {/* Section Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-white"
+        >
+          Why Choose Us
+        </motion.h2>
+
+        {/* Feature List */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-12">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.id}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="flex items-start space-x-4"
+            >
+              <div className="flex-shrink-0">{feature.icon}</div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-1">
+                  {feature.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-200">
+                  {feature.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

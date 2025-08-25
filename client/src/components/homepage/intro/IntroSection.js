@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const IntroSection = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center gap-10">
+    <section className="flex flex-col md:flex-row items-center gap-10">
       {/* Left Side: Image */}
       <div className="relative w-full md:w-1/2 h-64 md:h-96">
         <Image

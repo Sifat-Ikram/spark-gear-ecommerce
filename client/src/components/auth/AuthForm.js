@@ -7,9 +7,11 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Swal from "sweetalert2";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
 
 export default function AuthForm({ type }) {
   const router = useRouter();
+  const axiosPublic = useAxiosPublic();
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const {
@@ -41,7 +43,9 @@ export default function AuthForm({ type }) {
     try {
       const endpoint =
         type === "login" ? "/api/user/login" : "/api/user/register";
-      // const res = await axiosPublic.post(endpoint, data);
+      const res = await axiosPublic.post(endpoint, data);
+      console.log(res);
+
       Swal.fire({
         toast: true,
         position: "top-end",

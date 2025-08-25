@@ -18,86 +18,88 @@ export default function Footer() {
       viewport={{ once: true }}
       className="bg-[#1a7f73] text-white pt-10 pb-6"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Brand & Description */}
-        <div>
-          <h2 className="text-2xl font-bold text-white text-">SparkGear</h2>
-          <p className="mt-3 text-gray-200 text-sm sm:text-base">
-            SparkGear is your go-to place for high-quality tech accessories and
-            gadgets. We bring you the latest products with fast delivery and
-            excellent support.
-          </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col sm:flex-row gap-8">
+          {/* Brand & Description */}
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl font-bold text-white text-">SparkGear</h2>
+            <p className="mt-3 text-gray-200 text-sm sm:text-base">
+              SparkGear is your go-to place for high-quality tech accessories
+              and gadgets. We bring you the latest products with fast delivery
+              and excellent support.
+            </p>
 
-          {/* Social Icons */}
-          <div className="flex space-x-4 mt-4">
-            <Link
-              href="#"
-              className="hover:text-white text- transition-colors duration-300"
-            >
-              <FaFacebookF size={20} />
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-white text- transition-colors duration-300"
-            >
-              <FaTwitter size={20} />
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-white text- transition-colors duration-300"
-            >
-              <FaInstagram size={20} />
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-white text- transition-colors duration-300"
-            >
-              <FaLinkedinIn size={20} />
-            </Link>
+            {/* Social Icons */}
+            <div className="flex space-x-4 mt-4">
+              <Link
+                href="#"
+                className="hover:text-white text- transition-colors duration-300"
+              >
+                <FaFacebookF size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-white text- transition-colors duration-300"
+              >
+                <FaTwitter size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-white text- transition-colors duration-300"
+              >
+                <FaInstagram size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-white text- transition-colors duration-300"
+              >
+                <FaLinkedinIn size={20} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="w-full sm:w-1/2">
+            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <ul className="mt-3 space-y-2 text-gray-200">
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-white text- transition-colors duration-300"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products"
+                  className="hover:text-white text- transition-colors duration-300"
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="hover:text-white text- transition-colors duration-300"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-white text- transition-colors duration-300"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-          <ul className="mt-3 space-y-2 text-gray-200">
-            <li>
-              <Link
-                href="/"
-                className="hover:text-white text- transition-colors duration-300"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/products"
-                className="hover:text-white text- transition-colors duration-300"
-              >
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className="hover:text-white text- transition-colors duration-300"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="hover:text-white text- transition-colors duration-300"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-
         {/* Newsletter / Contact */}
-        <div>
+        <div className="">
           <h3 className="text-lg font-semibold text-white">Stay Updated</h3>
           <p className="mt-3 text-gray-200 text-sm sm:text-base">
             Subscribe to our newsletter to get the latest products and offers.

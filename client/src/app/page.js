@@ -1,3 +1,4 @@
+import AppDownload from "@/components/homepage/appDownload/AppDownload";
 import Banner from "@/components/homepage/banner/Banner";
 import BrandSection from "@/components/homepage/brands/BrandSection";
 import CategoriesSection from "@/components/homepage/categories/CategoriesSection";
@@ -6,6 +7,7 @@ import FeaturedProducts from "@/components/homepage/featuredProduct/FeaturedProd
 import HeroProductHighlight from "@/components/homepage/highlights/HeroProductHighlight";
 import IntroSection from "@/components/homepage/intro/IntroSection";
 import NewArrival from "@/components/homepage/new-arrivals/NewArrival";
+import TestimonialSection from "@/components/homepage/testimonial/TestimonialSection";
 
 export const metadata = {
   title: "Spark Gear | Best Gadget Shop for Innovative Tech Products",
@@ -49,13 +51,17 @@ export default function Home() {
       <div className="w-11/12 mx-auto flex flex-col space-y-20">
         <IntroSection />
         <CategoriesSection />
-        <WhyChooseUs />
         <FeaturedProducts />
-        <BrandSection />
       </div>
-      <HeroProductHighlight />
+      <WhyChooseUs />
       <div className="w-11/12 mx-auto flex flex-col space-y-20">
+        <BrandSection />
+        <HeroProductHighlight />
         <NewArrival />
+      </div>
+      <AppDownload />
+      <div className="w-11/12 mx-auto flex flex-col space-y-20">
+        <TestimonialSection />
       </div>
     </div>
   );

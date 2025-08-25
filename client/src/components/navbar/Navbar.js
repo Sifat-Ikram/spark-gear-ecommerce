@@ -18,7 +18,6 @@ const Navbar = () => {
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
   const { user, logout } = useAuth();
   const [showSearch, setShowSearch] = useState(false);
-  const [showQuickLinks, setShowQuickLinks] = useState(false);
   const pathname = usePathname();
 
   const transparentRoutes = ["/"];
@@ -26,9 +25,6 @@ const Navbar = () => {
 
   const toggleSearch = () => {
     setShowSearch((prev) => !prev);
-  };
-  const toggleQuickLink = () => {
-    setShowQuickLinks((prev) => !prev);
   };
 
   const toggleDropdown = (index) => {
@@ -112,10 +108,6 @@ const Navbar = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(target)) {
         setOpenDropdownIndex(null);
       }
-
-      if (quickLinkRef.current && !quickLinkRef.current.contains(target)) {
-        setShowQuickLinks(false);
-      }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -145,7 +137,7 @@ const Navbar = () => {
         className={`top-0 w-full left-0
           ${isTransparent ? "fixed" : "sticky"}
           `}
-        style={{ zIndex: 9999 }}
+        style={{ zIndex: 40 }}
       >
         <div className="flex flex-col">
           <div
@@ -239,7 +231,7 @@ const Navbar = () => {
                         {/* Dropdown Menu */}
                         <div
                           className="absolute top-full left-1/2 -translate-x-1/2 group-hover:block hidden
-                                     group-last:left-auto group-last:right-0 group-last:translate-x-0 z-50 w-max
+                                     group-last:left-auto group-last:right-0 group-last:translate-x-0 z-40 w-max
                                      bg-[#1a7f73] rounded-md dark:bg-[#161929] shadow-xl transition-all duration-300 ease-out animate-fadeInUp"
                         >
                           {item.dropdown.map((dropdownItem) => (
@@ -295,7 +287,7 @@ const Navbar = () => {
                       </button>
                     ) : (
                       <Link
-                        href="/auth/login"
+                        href="/login"
                         className="hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 rounded font-medium"
                       >
                         Login
@@ -333,7 +325,7 @@ const Navbar = () => {
         {menuOpen && (
           <motion.div
             ref={mobileMenuRef}
-            className={`md:hidden bg-[#1a7f73] dark:bg-[#161929] shadow-lg py-1 absolute z-50 w-32 sm:w-40 text-center sm:text-right right-0
+            className={`md:hidden bg-[#1a7f73] dark:bg-[#161929] shadow-lg py-1 absolute z-40 w-32 sm:w-40 text-center sm:text-right right-0
               ${
                 showTopBar && isTransparent
                   ? "top-[80px]"
@@ -369,7 +361,7 @@ const Navbar = () => {
 
                 {item.dropdown && openDropdownIndex === index && (
                   <motion.div
-                    className="absolute z-50 right-[129px] sm:right-[160.50px] top-[18px] bg-[#1a7f73] dark:bg-[#161929] group-hover:block shadow-lg rounded-md w-auto space-y-2 py-2"
+                    className="absolute z-40 right-[129px] sm:right-[160.50px] top-[18px] bg-[#1a7f73] dark:bg-[#161929] group-hover:block shadow-lg rounded-md w-auto space-y-2 py-2"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
