@@ -1,20 +1,28 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function Cover({ title }) {
+export default function Cover({ title, subtitle, bgImage }) {
   return (
-    <section className="relative w-full py-16 bg-[url('https://i.ibb.co.com/Z1Fn3kqN/istockphoto-1165052026-612x612.jpg')] bg-cover bg-center bg-fixed">
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-0"></div>
+    <section
+      className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] bg-cover bg-center bg-fixed flex items-center justify-center"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-      <motion.h1
+      {/* Content */}
+      <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl md:text-5xl font-bold text-center text-white px-6 py-2 rounded-lg"
+        className="relative z-10 text-center px-6 w-4/5 mx-auto"
       >
-        {title}
-      </motion.h1>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+          {title}
+        </h1>
+        <p className="text-base sm:text-lg lg:text-2xl text-white/90 leading-relaxed drop-shadow-md">
+          {subtitle}
+        </p>
+      </motion.div>
     </section>
   );
 }

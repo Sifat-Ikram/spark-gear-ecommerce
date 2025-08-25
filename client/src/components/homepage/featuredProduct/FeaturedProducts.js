@@ -44,7 +44,7 @@ const FeaturedProducts = () => {
         Trending Products
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-3 flex-1 overflow-hidden">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-3 flex-1 overflow-hidden">
         {featured?.map((product) => (
           <Link href={`/productDetails/${product._id}`} key={product._id}>
             <FeaturedCard product={product} />

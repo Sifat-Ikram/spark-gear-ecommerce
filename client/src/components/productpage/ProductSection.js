@@ -48,7 +48,7 @@ export default function ProductSection({ products }) {
         setRating={setRating}
       />
       <div className="flex">
-        <div className="hidden lg:flex flex-col w-1/5 bg-white border-r-2 border-[#1a7f73] shadow-lg sticky top-10 h-screen p-4">
+        <div className="hidden lg:flex flex-col w-1/5 bg-white border-r-2 border-gray-300 shadow sticky top-10 h-screen p-4">
           <Filters
             categories={categories}
             brands={brands}

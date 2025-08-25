@@ -1,8 +1,9 @@
 "use client";
 import "swiper/css";
 import Link from "next/link";
-import "swiper/css/navigation";
+import slugify from "slugify";
 import Image from "next/image";
+import "swiper/css/navigation";
 import { useRef, useState } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -86,7 +87,7 @@ const CategoriesSection = () => {
             {categories.map((cat) => (
               <SwiperSlide key={cat._id}>
                 <Link
-                  href={`/categoryDetails/${cat._id}`}
+                  href={`/category/${slugify(cat.name, { lower: true })}`}
                   className="flex flex-col items-center cursor-pointer bg-gray-50 dark:bg-[#1c1f2e] rounded-xl shadow hover:shadow-lg px-3 py-4 sm:px-4 sm:py-5 md:px-5 md:py-6 transition-all duration-300"
                 >
                   <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-3 md:mb-4">

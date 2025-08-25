@@ -1,6 +1,5 @@
 import Product from "../models/product.model.js";
 
-
 export default class ProductService {
   static async getAllProducts() {
     return await Product.find().sort({ createdAt: -1 });
@@ -26,9 +25,9 @@ export default class ProductService {
     return await Product.findById(id);
   }
 
-  // Get a product by slug
-//   static async getProductBySlug(slug) {
-//     return await Product.findOne({ slug });
-//   }
-
+  static async getProductsByCategory(categoryName) {
+    return await Product.find({
+      category: new RegExp(`^${categoryName}$`, "i"),
+    }).sort({ createdAt: -1 });
+  }
 }

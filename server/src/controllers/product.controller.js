@@ -55,14 +55,26 @@ export default class ProductController {
     }
   }
 
-  //   static async getProductBySlug(req, res) {
-  //     try {
-  //       const product = await ProductService.getProductBySlug(req.params.slug);
-  //       if (!product)
-  //         return res.status(404).json({ message: "Product not found" });
-  //       res.json(product);
-  //     } catch (error) {
-  //       res.status(500).json({ message: error.message });
-  //     }
-  //   }
+  static async getProductsByCategory(req, res) {
+    try {
+      const { categoryName } = req.params;
+
+      if (!categoryName) {
+        return res.status(400).json({ message: "Category name is required" });
+      }
+
+      const products = await ProductService.getProductsByCategory(categoryName);
+
+      if (!products || products.length === 0) {
+        return res
+          .status(404)
+          .json({ message: "No products found in this category" });
+      }
+
+      res.status(200).json(products);
+    } catch (error) {
+      console.error("Error fetching products by category:", error);
+      res.status(500).json({ message: "Internal Server Error", error });
+    }
+  }
 }
