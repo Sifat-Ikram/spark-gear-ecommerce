@@ -5,40 +5,20 @@ import { motion } from "framer-motion";
 import { FiSearch, FiShoppingCart, FiUser } from "react-icons/fi";
 import { useState } from "react";
 import Image from "next/image";
-import { useCategories } from "@/hooks/useCategories";
 import SearchOverlay from "./SearchOverlay";
 
-const RightNav = () => {
+const RightNav = ({
+  categories,
+  categoryIsLoading,
+  categoryError,
+  navItems,
+}) => {
   const [openDropdown, setOpenDropdown] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
-  const { categories, categoryIsLoading, categoryError } = useCategories();
-
-  if (categoryIsLoading) {
-    return <h1>Loading...</h1>;
-  }
 
   if (categoryError) {
     return <h1>Error fetching categories!!!</h1>;
   }
-
-  const navItems = [
-    {
-      label: "Products",
-      link: "/allProduct",
-    },
-    {
-      label: "Categories",
-      dropdown: categories?.map((cat) => ({
-        label: cat.name,
-        link: `/category/${cat._id}`,
-        image: cat.image,
-      })),
-    },
-    {
-      label: "About us",
-      link: "/aboutUs",
-    },
-  ];
 
   return (
     <div className="flex items-center space-x-3.5 text-lg font-medium">
@@ -60,28 +40,34 @@ const RightNav = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute left-2/3 -translate-x-2/3 bg-white shadow-xl rounded-lg p-3 z-50
+                  className="absolute -left-2/3 -translate-x-2/3 bg-white shadow-xl rounded-lg p-3 z-50
                              grid grid-cols-3 lg:grid-cols-4
                              gap-2 w-[500px] md:w-[700px]"
                 >
-                  {item.dropdown.map((cat) => (
-                    <Link
-                      href={cat.link}
-                      key={cat.label}
-                      className="flex flex-col items-center p-1 rounded-lg hover:bg-gray-100 transition"
-                    >
-                      <Image
-                        src={cat.image}
-                        alt={cat.label}
-                        height={80}
-                        width={80}
-                        className="w-20 h-20 object-cover rounded-full shadow-sm mb-2"
-                      />
-                      <span className="text-sm font-medium text-gray-700 text-center">
-                        {cat.label}
-                      </span>
-                    </Link>
-                  ))}
+                  {categoryIsLoading ? (
+                    <span className="col-span-full text-center text-gray-500">
+                      Loading...
+                    </span>
+                  ) : (
+                    item.dropdown.map((cat) => (
+                      <Link
+                        href={cat.link}
+                        key={cat.label}
+                        className="flex flex-col items-center p-1 rounded-lg hover:bg-gray-100 transition"
+                      >
+                        <Image
+                          src={cat.image}
+                          alt={cat.label}
+                          height={80}
+                          width={80}
+                          className="w-20 h-20 object-cover rounded-full shadow-sm mb-2"
+                        />
+                        <span className="text-sm font-medium text-gray-700 text-center">
+                          {cat.label}
+                        </span>
+                      </Link>
+                    ))
+                  )}
                 </motion.div>
               )}
             </div>
@@ -110,7 +96,7 @@ const RightNav = () => {
           className="relative cursor-pointer"
         >
           <FiShoppingCart className="text-sm md:text-base" />
-          <span className="absolute -top-2 -right-2 bg-[#DC143C] text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+          <span className="absolute -bottom-1 -right-2 bg-[#DC143C] text-white text-[10px] font-bold w-3.5 h-3.5 flex items-center justify-center rounded-full">
             3
           </span>
         </motion.div>

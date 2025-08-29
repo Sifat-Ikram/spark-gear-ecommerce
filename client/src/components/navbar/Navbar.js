@@ -1,7 +1,9 @@
 "use client";
 import TopBar from "./TopBar";
 import MainNav from "./MainNav";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 
 const quickLinksLeft = [
   { id: 1, label: "About Us", href: "/about" },
@@ -18,19 +20,48 @@ const quickLinksRight = [
 ];
 
 const Navbar = () => {
+  const [showTopBar, setShowTopBar] = useState(true);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowTopBar(false);
+      } else {
+        setShowTopBar(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const showTopBarOnPage = pathname === "/" && showTopBar;
+
   return (
     <>
-      <nav className="top-5 w-full left-0">
-        <div className="flex flex-col">
-          <TopBar
-            quickLinksLeft={quickLinksLeft}
-            quickLinksRight={quickLinksRight}
-          />
-        </div>
+      <nav className="w-full sticky top-0 z-50">
+        <AnimatePresence>
+          {showTopBarOnPage && (
+            <motion.div
+              key="topbar"
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -50, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <TopBar
+                quickLinksLeft={quickLinksLeft}
+                quickLinksRight={quickLinksRight}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
         <motion.div
-          initial={{ y: -50, opacity: 0 }}
+          key="mainnav"
+          initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.3 }}
           className="bg-[#1a7f73] w-full"
         >
           <MainNav />

@@ -18,7 +18,6 @@ export const metadata = {
 };
 
 export default async function ProductsPage() {
-  // ISR (revalidate every 60 seconds)
   const res = await fetch("http://localhost:5000/api/product", {
     next: { revalidate: 60 },
   });
