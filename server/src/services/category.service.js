@@ -1,6 +1,5 @@
 import Category from "../models/category.model.js";
 
-
 export default class CategoryService {
   static async getAllCategories() {
     return await Category.find().sort({ createdAt: -1 });
@@ -24,5 +23,11 @@ export default class CategoryService {
 
   static async getCategoryById(id) {
     return await Category.findById(id);
+  }
+
+  static async getCategoryByName(name) {
+    return await Category.findOne({
+      name: new RegExp(`^${name}$`, "i"),
+    });
   }
 }

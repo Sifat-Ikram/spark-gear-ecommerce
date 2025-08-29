@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Filters from "./Filters";
 
 export default function FilterBar({
+  type,
   categories,
   brands,
   search,
@@ -17,6 +18,8 @@ export default function FilterBar({
   setPrice,
   rating,
   setRating,
+  sort,
+  setSort
 }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -36,11 +39,14 @@ export default function FilterBar({
 
           {/* Right Section: Sort Dropdown */}
           <div>
-            <select className="max-sm:w-28 text-sm sm:text-base md:text-lg border text-gray-800 bg-white border-[#1a7f73] rounded px-2 py-1 sm:px-3 sm:py-2 focus:outline-none focus:ring-2 focus:ring-[#1a7f73]">
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value)}
+              className="max-sm:w-28 text-sm sm:text-base md:text-lg border text-gray-800 bg-white border-[#1a7f73] rounded px-2 py-1 sm:px-3 sm:py-2 focus:outline-none focus:ring-2 focus:ring-[#1a7f73]"
+            >
               <option>Sort by</option>
               <option value="price_low">Price: Low to High</option>
               <option value="price_high">Price: High to Low</option>
-              <option value="rating">Rating</option>
             </select>
           </div>
         </div>
@@ -66,6 +72,7 @@ export default function FilterBar({
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <Filters
+                type={type}
                 categories={categories}
                 brands={brands}
                 search={search}

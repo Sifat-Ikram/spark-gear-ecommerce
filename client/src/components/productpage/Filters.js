@@ -3,6 +3,7 @@ import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { FiRefreshCcw } from "react-icons/fi";
 
 export default function Filters({
+  type,
   categories,
   brands,
   search,
@@ -58,22 +59,28 @@ export default function Filters({
 
         {/* Category */}
         <div>
-          <label className="block text-gray-700 font-medium max-xl:mb-1 2xl:mb-3">
-            Category
-          </label>
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="w-full border border-gray-300 focus:border-[#1a7f73] focus:ring-1 
+          {
+            (type !== "category" && (
+              <div>
+                <label className="block text-gray-700 font-medium max-xl:mb-1 2xl:mb-3">
+                  Category
+                </label>
+                <select
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
+                  className="w-full border border-gray-300 focus:border-[#1a7f73] focus:ring-1 
                        focus:ring-[#1a7f73] rounded-lg px-3 py-2 text-sm lg:text-base outline-none transition"
-          >
-            <option value="">All</option>
-            {categories.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
+                >
+                  <option value="">All</option>
+                  {categories.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ))
+          }
         </div>
 
         {/* Brand */}

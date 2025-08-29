@@ -39,9 +39,15 @@ export default async function CategoryPage({ params }) {
 
   const products = await res.json();
 
+  const resCategory = await fetch(
+    `http://localhost:5000/api/category/category/${slug}`
+  );
+
+  const category = await resCategory.json();
+
   return (
     <section>
-      <CategoryDetails slug={slug} subtitle={""} products={products} />
+      <CategoryDetails category={category} products={products} />
     </section>
   );
 }

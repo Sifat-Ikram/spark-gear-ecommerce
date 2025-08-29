@@ -21,7 +21,7 @@ export default function ProductPageCard({ product }) {
         <p className="text-sm text-gray-500">{product.shortDescription}</p>
         <div className="mt-2 flex justify-between items-center">
           <span className="text-[#1a7f73] font-bold">
-            ${product.price} {product.currency}
+            {product.price} BDT
           </span>
           <span className="text-sm text-yellow-600">
             ⭐ {product.ratings.average}
