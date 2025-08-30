@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import "inner-image-zoom/lib/styles.min.css";
+import InnerImageZoom from "react-inner-image-zoom";
 
 const placeholder = "https://i.ibb.co/X1kSkVK/general-img-landscape.png";
 
@@ -17,71 +18,41 @@ const ImageSection = ({ images }) => {
       : [{ url: placeholder, alt: "Placeholder image" }];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [offset, setOffset] = useState({ x: 50, y: 50 });
-  const [hovered, setHovered] = useState(false);
-
-  const handleMouseMove = (e) => {
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - left) / width) * 100;
-    const y = ((e.clientY - top) / height) * 100;
-    setOffset({ x, y });
-  };
-
-  const handleMouseLeave = () => {
-    setHovered(false);
-    setOffset({ x: 50, y: 50 });
-  };
 
   return (
-    <div className="flex flex-col md:flex-row gap-4">
-      <div
-        className="flex-1 flex justify-center items-center overflow-hidden rounded-2xl shadow-lg relative h-[500px] md:h-[500px]"
-        onMouseMove={(e) => {
-          handleMouseMove(e);
-          setHovered(true);
-        }}
-        onMouseLeave={handleMouseLeave}
-      >
-        <motion.div
-          className="absolute"
-          style={{
-            top: `${-offset.y}%`,
-            left: `${-offset.x}%`,
-            transformOrigin: `${offset.x}% ${offset.y}%`,
-          }}
-          animate={{ scale: hovered ? 2 : 1 }}
-          transition={{ type: "spring", stiffness: 200, damping: 30 }}
-        >
-          <Image
-            src={finalImages[selectedIndex].url}
-            alt={finalImages[selectedIndex].alt || "Product Image"}
-            width={1000}
-            height={1000}
-            style={{ objectFit: "contain" }}
-            priority
+    <div className="flex flex-col gap-6 w-full max-w-[700px] mx-auto">
+      {/* Main Image with Zoom */}
+      <div className="flex-1">
+        <div className="relative w-full aspect-square rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+          <InnerImageZoom
+            src={finalImages[selectedIndex]?.url}
+            zoomSrc={finalImages[selectedIndex]?.url}
+            fullscreenOnMobile={true}
+            alt={finalImages[selectedIndex]?.alt || "Main image"}
+            className="w-full h-full object-contain"
           />
-        </motion.div>
+        </div>
       </div>
 
+      {/* Thumbnails */}
       {finalImages.length > 1 && (
-        <div className="flex md:flex-col gap-2 md:w-24">
+        <div className="flex gap-3 justify-center">
           {finalImages.map((img, idx) => (
             <div
               key={idx}
-              className={`relative w-20 h-20 rounded-lg overflow-hidden border cursor-pointer ${
+              className={`relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200 ${
                 selectedIndex === idx
-                  ? "border-primary border-2"
-                  : "border-gray-200"
+                  ? "border-crimson ring-2 ring-crimson"
+                  : "border-gray-100 hover:border-[#1a7f73]"
               }`}
               onClick={() => setSelectedIndex(idx)}
             >
               <Image
                 src={img.url}
                 alt={img.alt || `Thumbnail ${idx + 1}`}
-                height={80}
-                width={80}
-                style={{ objectFit: "cover" }}
+                fill
+                sizes="80px"
+                className="object-cover"
               />
             </div>
           ))}
