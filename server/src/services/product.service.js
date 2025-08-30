@@ -30,4 +30,10 @@ export default class ProductService {
       category: new RegExp(`^${categoryName}$`, "i"),
     }).sort({ createdAt: -1 });
   }
+
+  static async getProductsBySlug(slug) {
+    return await Product.find({
+      slug: new RegExp(`^${slug}$`, "i"),
+    }).sort({ createdAt: -1 });
+  }
 }

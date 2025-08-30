@@ -1,10 +1,11 @@
 "use client";
 
+import Link from "next/link";
+import slugify from "slugify";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function FeaturedCard({ product }) {
-  // Function to render star rating
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -40,10 +41,11 @@ export default function FeaturedCard({ product }) {
   };
 
   return (
-    <div className="bg-gray-50 group border-[1px] border-[#00a88f] rounded-2xl shadow-lg overflow-hidden flex flex-col">
-      <motion.div
-        className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110"
-      >
+    <Link
+      href={`/productDetails/${slugify(product?.name, { lower: true })}`}
+      className="bg-gray-50 group border-[1px] border-[#00a88f] rounded-2xl shadow-lg overflow-hidden flex flex-col"
+    >
+      <motion.div className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">
         <Image
           src={product.images[0].url}
           alt={product.images[0].alt}
@@ -76,6 +78,6 @@ export default function FeaturedCard({ product }) {
           {product.price.toFixed(2)} BDT
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -9,5 +9,6 @@ router.get("/id/:id", ProductController.getProductById);
 router.put("/:id", ProductController.updateProduct);
 router.delete("/:id", ProductController.deleteProduct);
 router.get("/:categoryName", ProductController.getProductsByCategory);
+router.get("/:slug", ProductController.getProductsBySlug);
 
 export default router;

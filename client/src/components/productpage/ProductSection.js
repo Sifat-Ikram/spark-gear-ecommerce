@@ -13,7 +13,6 @@ export default function ProductSection({ products, type }) {
   const [price, setPrice] = useState(500);
   const [rating, setRating] = useState("");
   const [sort, setSort] = useState("");
-  console.log(products);
 
   // unique categories & brands from products
   const categories = [...new Set(products.map((p) => p.category))];
@@ -40,9 +39,6 @@ export default function ProductSection({ products, type }) {
 
     return result;
   }, [products, search, category, brand, price, rating, sort]);
-
-  console.log(filteredProducts);
-  
 
   return (
     <div>

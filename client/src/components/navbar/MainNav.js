@@ -8,6 +8,7 @@ import { GrMenu } from "react-icons/gr";
 import { FiSearch } from "react-icons/fi";
 import { useCategories } from "@/hooks/useCategories";
 import Image from "next/image";
+import slugify from "slugify";
 
 const MainNav = () => {
   const navRef = useRef(null);
@@ -24,7 +25,7 @@ const MainNav = () => {
       label: "Categories",
       dropdown: categories?.map((cat) => ({
         label: cat.name,
-        link: `/category/${cat._id}`,
+        link: `/category/${slugify(cat.name, { lower: true })}`,
         image: cat.image,
       })),
     },
@@ -55,11 +56,12 @@ const MainNav = () => {
     >
       <div className="flex items-center space-x-3">
         <div className="relative">
-          <GrMenu
-            className="block sm:hidden text-sm cursor-pointer py-5"
-            color="#ffffff"
+          <div
             onClick={() => setMenuOpen((prev) => !prev)}
-          />
+            className="block sm:hidden cursor-pointer py-5 px-2"
+          >
+            <GrMenu className="text-white text-xl" />
+          </div>
           <AnimatePresence>
             {menuOpen && (
               <motion.div
@@ -67,7 +69,7 @@ const MainNav = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.2 }}
-                className="sm:hidden absolute top-full left-full mobile-nav bg-gray-50 rounded-b-lg shadow-lg z-50 flex"
+                className="sm:hidden absolute top-full left-0 mobile-nav bg-gray-50 rounded-b-lg shadow-lg z-50 flex"
               >
                 <ul className="relative flex flex-col space-y-[1px] w-full bg-[#1a7f73]">
                   {navItems.map((item, idx) => (
@@ -133,8 +135,8 @@ const MainNav = () => {
         </Link>
       </div>
 
-      <div className="relative hidden lg:flex items-center w-[600px] bg-white rounded-[6px] px-3 py-2 shadow-sm">
-        <FiSearch className="absolute left-3 text-gray-500 text-lg" />
+      <div className="relative hidden lg:flex items-center lg:w-[400px] xl:w-[450px] 2xl:w-[600px] bg-white rounded-[6px] px-3 py-2 shadow-sm">
+        <FiSearch className="absolute left-2 text-gray-500 text-lg" />
         <input
           type="text"
           placeholder="Search products..."
@@ -143,7 +145,6 @@ const MainNav = () => {
       </div>
 
       <RightNav
-        categories={categories}
         categoryIsLoading={categoryIsLoading}
         categoryError={categoryError}
         navItems={navItems}

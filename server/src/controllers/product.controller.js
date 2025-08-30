@@ -77,4 +77,27 @@ export default class ProductController {
       res.status(500).json({ message: "Internal Server Error", error });
     }
   }
+
+  static async getProductsBySlug(req, res) {
+    try {
+      const { slug } = req.params;
+
+      if (!slug) {
+        return res.status(400).json({ message: "Category name is required" });
+      }
+
+      const products = await ProductService.getProductsBySlug(slug);
+
+      if (!products || products.length === 0) {
+        return res
+          .status(404)
+          .json({ message: "No products found in this category" });
+      }
+
+      res.status(200).json(products);
+    } catch (error) {
+      console.error("Error fetching products by category:", error);
+      res.status(500).json({ message: "Internal Server Error", error });
+    }
+  }
 }

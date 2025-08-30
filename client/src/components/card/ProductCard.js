@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import slugify from "slugify";
 
 export default function ProductCard({ product }) {
   return (
     <div className="bg-white dark:bg-[#1c1f2e] rounded-2xl shadow-lg overflow-hidden flex flex-col">
-      {/* Product Image with hover zoom */}
       <motion.div
         className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden"
         whileHover={{ scale: 1.05 }}
@@ -36,7 +36,9 @@ export default function ProductCard({ product }) {
           <p className="text-sm md:text-base lg:text-lg font-bold text-gray-900 dark:text-white">
             {product.price.toFixed(2)} BDT
           </p>
-          <Link href={`/productDetails/${product._id}`}>
+          <Link
+            href={`/productDetails/${slugify(product?.name, { lower: true })}`}
+          >
             <button className="bg-[#00a88f] hover:bg-[#1a7f73] text-white font-semibold px-4 sm:px-5 py-2 rounded-lg transition text-sm sm:text-base">
               View Details
             </button>

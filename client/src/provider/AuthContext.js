@@ -14,6 +14,25 @@ export function AuthProvider({ children }) {
   const pathname = usePathname();
   const [user, setUser] = useState(null);
 
+  useEffect(() => {
+    try {
+      const storedUser = localStorage.getItem("userName");
+      if (storedUser) {
+        setUser(storedUser);
+      }
+    } catch (err) {
+      console.warn("localStorage not available", err);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem("userName", user);
+    } else {
+      localStorage.removeItem("userName");
+    }
+  }, [user]);
+
   const axiosInstance = useMemo(() => {
     const instance = axios.create({
       withCredentials: true,
