@@ -14,9 +14,11 @@ export default function ProductSection({ products, type }) {
   const [rating, setRating] = useState("");
   const [sort, setSort] = useState("");
 
-  // unique categories & brands from products
   const categories = [...new Set(products.map((p) => p.category))];
   const brands = [...new Set(products.map((p) => p.brand))];
+
+  const productNames = products.map((prod) => prod.name);
+  console.log(productNames);
 
   const filteredProducts = useMemo(() => {
     let result = products.filter((p) => {

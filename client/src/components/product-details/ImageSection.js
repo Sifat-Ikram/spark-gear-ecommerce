@@ -20,10 +20,9 @@ const ImageSection = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <div className="flex flex-col gap-6 w-full max-w-[700px] mx-auto">
-      {/* Main Image with Zoom */}
+    <div className="flex flex-col gap-6 w-full mx-auto">
       <div className="flex-1">
-        <div className="relative w-full aspect-square rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+        <div className="relative w-full aspect-square h-[325px] rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
           <InnerImageZoom
             src={finalImages[selectedIndex]?.url}
             zoomSrc={finalImages[selectedIndex]?.url}
@@ -42,7 +41,7 @@ const ImageSection = ({ images }) => {
               key={idx}
               className={`relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200 ${
                 selectedIndex === idx
-                  ? "border-crimson ring-2 ring-crimson"
+                  ? "border-[#1a7f73] ring-1 ring-[#1a7f73]"
                   : "border-gray-100 hover:border-[#1a7f73]"
               }`}
               onClick={() => setSelectedIndex(idx)}

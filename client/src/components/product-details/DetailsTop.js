@@ -6,9 +6,16 @@ import ImageSection from "./ImageSection";
 import { motion } from "framer-motion";
 
 const DetailsTop = ({ product }) => {
+  if (!product) {
+    return (
+      <h1 className="text-center text-white text-lg md:text-xl xl:text-2xl font-semibold xl:font-bold">
+        Product loading!!!
+      </h1>
+    );
+  }
+
   return (
-    <section className="pt-5 pb-10 px-4 sm:px-6 lg:px-16">
-      {/* Breadcrumb */}
+    <section className="w-11/12 mx-auto pt-5 pb-10">
       <nav
         className="flex flex-wrap items-center space-x-2 text-gray-600 text-xs sm:text-sm mb-6"
         aria-label="Breadcrumb"
@@ -26,9 +33,9 @@ const DetailsTop = ({ product }) => {
         </span>
       </nav>
 
-      <div className="flex flex-col lg:flex-row lg:space-x-14 gap-10 items-start lg:items-stretch">
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-10 items-center">
         <motion.div
-          className="lg:w-1/2 w-full flex-shrink-0"
+          className="lg:w-2/5 w-full flex-shrink-0"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -43,7 +50,7 @@ const DetailsTop = ({ product }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="flex-1 flex flex-col justify-between space-y-5 h-full">
+          <div className="flex-1 flex flex-col justify-between space-y-10 h-full">
             {/* Product Name */}
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 break-words leading-snug sm:leading-tight">
               {product.name}
@@ -80,7 +87,7 @@ const DetailsTop = ({ product }) => {
             </p>
 
             {/* Product Details */}
-            <div className="flex flex-col space-y-2 text-gray-800 text-sm sm:text-base">
+            <div className="flex flex-col space-y-4 text-gray-800 text-sm sm:text-base">
               <span>
                 <strong>Brand:</strong> {product?.brand}
               </span>
@@ -98,7 +105,9 @@ const DetailsTop = ({ product }) => {
           </div>
 
           {/* Add to Cart */}
-          <button className="w-full buttons mt-auto">Add to Cart</button>
+          <div className="w-full sm:w-1/2">
+            <button className="w-full buttons mt-10">Add to Cart</button>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -1,0 +1,506 @@
+[
+  {
+    "productName": "ZenCore M7",
+    "review": [
+      {
+        "reviewer": {
+          "name": "Aarav Singh",
+          "image": "/images/reviewers/aarav.jpg"
+        },
+        "review": "The ZenCore M7 is blazing fast and handles multitasking with ease. Battery life is impressive.",
+        "likes": 152,
+        "dislikes": 8,
+        "replies": [
+          {
+            "name": "Sophia Carter",
+            "image": "/images/reviewers/sophia.jpg",
+            "reply": "Totally agree! I’ve been using it for 2 weeks and it’s flawless."
+          },
+          {
+            "name": "Daniel Kim",
+            "image": "/images/reviewers/daniel.jpg",
+            "reply": "Does it handle 4K video editing smoothly?"
+          }
+        ]
+      },
+      {
+        "reviewer": {
+          "name": "Liam Johnson",
+          "image": "/images/reviewers/liam.jpg"
+        },
+        "review": "Great performance but the device heats up when gaming for long hours.",
+        "likes": 97,
+        "dislikes": 21,
+        "replies": []
+      },
+      {
+        "reviewer": {
+          "name": "Hannah Walker",
+          "image": "/images/reviewers/hannah.jpg"
+        },
+        "review": "Love the design and display quality. Speakers could be louder though.",
+        "likes": 83,
+        "dislikes": 12,
+        "replies": [
+          {
+            "name": "James Lee",
+            "image": "/images/reviewers/james.jpg",
+            "reply": "That’s true. I paired it with Bluetooth speakers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productName": "MaxComfort Headset & Keyboard Combo",
+    "review": [
+      {
+        "reviewer": {
+          "name": "Emily Roberts",
+          "image": "/images/reviewers/emily.jpg"
+        },
+        "review": "Keyboard is smooth and responsive. Headset audio quality is decent for the price.",
+        "likes": 89,
+        "dislikes": 12,
+        "replies": []
+      },
+      {
+        "reviewer": {
+          "name": "James Lee",
+          "image": "/images/reviewers/james.jpg"
+        },
+        "review": "Headset mic is surprisingly clear during calls. Very good for remote work.",
+        "likes": 65,
+        "dislikes": 5,
+        "replies": [
+          {
+            "name": "Maya Sharma",
+            "image": "/images/reviewers/maya.jpg",
+            "reply": "Good to know. How about durability?"
+          }
+        ]
+      },
+      {
+        "reviewer": {
+          "name": "Olivia Green",
+          "image": "/images/reviewers/olivia.jpg"
+        },
+        "review": "Keys feel comfortable, but headset is slightly tight for long use.",
+        "likes": 72,
+        "dislikes": 14,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "OnePlus Edge 12",
+    "review": [
+      {
+        "reviewer": {
+          "name": "Michael Brown",
+          "image": "/images/reviewers/michael.jpg"
+        },
+        "review": "Excellent display and cameras. The performance is flagship-level but battery could be better.",
+        "likes": 210,
+        "dislikes": 15,
+        "replies": [
+          {
+            "name": "Nora Patel",
+            "image": "/images/reviewers/nora.jpg",
+            "reply": "True, I had to charge twice on heavy use days."
+          }
+        ]
+      },
+      {
+        "reviewer": {
+          "name": "Chloe Bennett",
+          "image": "/images/reviewers/chloe.jpg"
+        },
+        "review": "Build quality feels premium and camera stabilization is top-notch.",
+        "likes": 132,
+        "dislikes": 9,
+        "replies": []
+      },
+      {
+        "reviewer": {
+          "name": "Ryan Garcia",
+          "image": "/images/reviewers/ryan.jpg"
+        },
+        "review": "Good phone, but the OS has some minor bugs.",
+        "likes": 88,
+        "dislikes": 13,
+        "replies": [
+          {
+            "name": "Zara Ali",
+            "image": "/images/reviewers/zara.jpg",
+            "reply": "Yes, I’m waiting for the next software update too."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productName": "Professional DSLR Mark IV",
+    "review": [
+      {
+        "reviewer": {
+          "name": "David Wilson",
+          "image": "/images/reviewers/david.jpg"
+        },
+        "review": "An outstanding camera for professionals. Low-light performance is superb.",
+        "likes": 178,
+        "dislikes": 5,
+        "replies": []
+      },
+      {
+        "reviewer": {
+          "name": "Arjun Mehta",
+          "image": "/images/reviewers/arjun.jpg"
+        },
+        "review": "Colors are accurate and dynamic range is wide. A solid upgrade.",
+        "likes": 143,
+        "dislikes": 7,
+        "replies": [
+          {
+            "name": "Rachel White",
+            "image": "/images/reviewers/rachel.jpg",
+            "reply": "Did you try it for wedding photography?"
+          }
+        ]
+      },
+      {
+        "reviewer": {
+          "name": "Sophia Martinez",
+          "image": "/images/reviewers/sophia-m.jpg"
+        },
+        "review": "Battery life is okay, but heavier than expected.",
+        "likes": 91,
+        "dislikes": 11,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "360° Action Camera",
+    "review": [
+      {
+        "reviewer": {
+          "name": "Chris Evans",
+          "image": "/images/reviewers/chris.jpg"
+        },
+        "review": "Compact, lightweight, and captures stunning 360 videos. Perfect for travel vlogging.",
+        "likes": 134,
+        "dislikes": 9,
+        "replies": []
+      },
+      {
+        "reviewer": {
+          "name": "Ethan Parker",
+          "image": "/images/reviewers/ethan.jpg"
+        },
+        "review": "Great stabilization, but battery drains quickly.",
+        "likes": 77,
+        "dislikes": 18,
+        "replies": [
+          {
+            "name": "Aisha Khan",
+            "image": "/images/reviewers/aisha.jpg",
+            "reply": "I carry a spare battery pack, works fine."
+          }
+        ]
+      },
+      {
+        "reviewer": {
+          "name": "Leo Carter",
+          "image": "/images/reviewers/leo.jpg"
+        },
+        "review": "Quality is excellent during the day, night shots need improvement.",
+        "likes": 84,
+        "dislikes": 10,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "Samsung Galaxy Z Ultra",
+    "review": [
+      {
+        "reviewer": { "name": "Ishaan Verma", "image": "/images/reviewers/ishaan.jpg" },
+        "review": "The foldable design is futuristic. Multitasking on the big screen is amazing.",
+        "likes": 201,
+        "dislikes": 15,
+        "replies": [
+          { "name": "Clara Brooks", "image": "/images/reviewers/clara.jpg", "reply": "I love using it for productivity apps too." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Sophia White", "image": "/images/reviewers/sophia-w.jpg" },
+        "review": "Battery life is average, but charging speed is fast.",
+        "likes": 112,
+        "dislikes": 19,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Daniel Kim", "image": "/images/reviewers/daniel.jpg" },
+        "review": "Display quality is jaw-dropping. Feels a little heavy though.",
+        "likes": 130,
+        "dislikes": 11,
+        "replies": [
+          { "name": "Nina Lopez", "image": "/images/reviewers/nina.jpg", "reply": "Yeah, weight is noticeable during long use." }
+        ]
+      }
+    ]
+  },
+  {
+    "productName": "Asus ROG Strix G17",
+    "review": [
+      {
+        "reviewer": { "name": "Ethan Jones", "image": "/images/reviewers/ethan.jpg" },
+        "review": "Handles AAA games at ultra settings with no lag. Fans are a bit loud though.",
+        "likes": 175,
+        "dislikes": 12,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Priya Kapoor", "image": "/images/reviewers/priya.jpg" },
+        "review": "RGB lighting and cooling are excellent. Perfect for gamers.",
+        "likes": 146,
+        "dislikes": 7,
+        "replies": [
+          { "name": "Lucas Brown", "image": "/images/reviewers/lucas.jpg", "reply": "Agreed! Mine stays cool even during long sessions." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Oliver Smith", "image": "/images/reviewers/oliver.jpg" },
+        "review": "Battery drains quickly, but performance is worth it.",
+        "likes": 90,
+        "dislikes": 18,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "MacBook Pro M3",
+    "review": [
+      {
+        "reviewer": { "name": "Rachel Green", "image": "/images/reviewers/rachel.jpg" },
+        "review": "Super smooth performance. Perfect for video editing.",
+        "likes": 220,
+        "dislikes": 14,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Omar Ali", "image": "/images/reviewers/omar.jpg" },
+        "review": "Battery lasts all day. Price is high but justified.",
+        "likes": 188,
+        "dislikes": 6,
+        "replies": [
+          { "name": "Sophia Carter", "image": "/images/reviewers/sophia.jpg", "reply": "True, best for professionals." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Henry Adams", "image": "/images/reviewers/henry.jpg" },
+        "review": "The display is stunning, but ports are limited.",
+        "likes": 99,
+        "dislikes": 13,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "iPad Pro 2025",
+    "review": [
+      {
+        "reviewer": { "name": "Zara Ali", "image": "/images/reviewers/zara.jpg" },
+        "review": "Best tablet for creative work. Apple Pencil feels natural.",
+        "likes": 190,
+        "dislikes": 10,
+        "replies": [
+          { "name": "Noah Lee", "image": "/images/reviewers/noah.jpg", "reply": "Using it for digital art, it’s amazing." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Mason Clark", "image": "/images/reviewers/mason.jpg" },
+        "review": "Runs heavy apps without lag. Expensive though.",
+        "likes": 130,
+        "dislikes": 16,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Emma Wilson", "image": "/images/reviewers/emma.jpg" },
+        "review": "Great for entertainment and work. Battery life is solid.",
+        "likes": 115,
+        "dislikes": 8,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "HP Envy x360",
+    "review": [
+      {
+        "reviewer": { "name": "Aisha Khan", "image": "/images/reviewers/aisha.jpg" },
+        "review": "Lightweight, stylish, and perfect for students.",
+        "likes": 98,
+        "dislikes": 9,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "William Scott", "image": "/images/reviewers/william.jpg" },
+        "review": "Convertible design is convenient. Keyboard is comfortable.",
+        "likes": 120,
+        "dislikes": 11,
+        "replies": [
+          { "name": "Hannah Walker", "image": "/images/reviewers/hannah.jpg", "reply": "Yes! I love using it in tablet mode." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Sofia Martinez", "image": "/images/reviewers/sofia.jpg" },
+        "review": "Performance is decent, but not for heavy gaming.",
+        "likes": 87,
+        "dislikes": 13,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "Sony Bravia OLED 55”",
+    "review": [
+      {
+        "reviewer": { "name": "Lucas Brown", "image": "/images/reviewers/lucas.jpg" },
+        "review": "Colors pop beautifully. Best for watching movies.",
+        "likes": 175,
+        "dislikes": 6,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Maya Sharma", "image": "/images/reviewers/maya.jpg" },
+        "review": "Sound quality is immersive. Picture quality is unmatched.",
+        "likes": 141,
+        "dislikes": 7,
+        "replies": [
+          { "name": "Ryan Garcia", "image": "/images/reviewers/ryan.jpg", "reply": "I agree, it feels like a theater at home." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Benjamin Taylor", "image": "/images/reviewers/benjamin.jpg" },
+        "review": "Expensive, but worth it if you want premium quality.",
+        "likes": 95,
+        "dislikes": 12,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "Bose QuietComfort Ultra",
+    "review": [
+      {
+        "reviewer": { "name": "Chloe Bennett", "image": "/images/reviewers/chloe.jpg" },
+        "review": "Noise cancellation is the best in the market.",
+        "likes": 210,
+        "dislikes": 9,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Ethan Parker", "image": "/images/reviewers/ethan.jpg" },
+        "review": "Comfortable even for long flights. Sound clarity is amazing.",
+        "likes": 155,
+        "dislikes": 7,
+        "replies": [
+          { "name": "David Wilson", "image": "/images/reviewers/david.jpg", "reply": "Yes, I used it on a 10hr flight, super comfy." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Isabella Reed", "image": "/images/reviewers/isabella.jpg" },
+        "review": "Battery life is great, but case feels a bit bulky.",
+        "likes": 102,
+        "dislikes": 14,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "GoPro Hero 12",
+    "review": [
+      {
+        "reviewer": { "name": "Leo Carter", "image": "/images/reviewers/leo.jpg" },
+        "review": "Perfect for adventure lovers. Videos are sharp and smooth.",
+        "likes": 140,
+        "dislikes": 8,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Hannah Walker", "image": "/images/reviewers/hannah.jpg" },
+        "review": "Waterproofing works perfectly. I used it while diving.",
+        "likes": 99,
+        "dislikes": 6,
+        "replies": [
+          { "name": "Michael Brown", "image": "/images/reviewers/michael.jpg", "reply": "That’s awesome, planning to use it for surfing!" }
+        ]
+      },
+      {
+        "reviewer": { "name": "Olivia Green", "image": "/images/reviewers/olivia.jpg" },
+        "review": "Battery could last longer, but overall it’s fantastic.",
+        "likes": 84,
+        "dislikes": 10,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "PlayStation 6",
+    "review": [
+      {
+        "reviewer": { "name": "Ryan Garcia", "image": "/images/reviewers/ryan.jpg" },
+        "review": "Graphics are mind-blowing, runs games smoothly.",
+        "likes": 310,
+        "dislikes": 15,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "Sophia Martinez", "image": "/images/reviewers/sophia-m.jpg" },
+        "review": "The controller haptics feel next-level. Loving it!",
+        "likes": 270,
+        "dislikes": 12,
+        "replies": [
+          { "name": "Arjun Mehta", "image": "/images/reviewers/arjun.jpg", "reply": "Same here, the new DualSense is amazing." }
+        ]
+      },
+      {
+        "reviewer": { "name": "Liam Johnson", "image": "/images/reviewers/liam.jpg" },
+        "review": "Design is sleek, but storage should have been larger.",
+        "likes": 190,
+        "dislikes": 22,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "productName": "Xbox Series Z",
+    "review": [
+      {
+        "reviewer": { "name": "Emily Roberts", "image": "/images/reviewers/emily.jpg" },
+        "review": "Game Pass makes it unbeatable value. Smooth gameplay.",
+        "likes": 280,
+        "dislikes": 18,
+        "replies": []
+      },
+      {
+        "reviewer": { "name": "James Lee", "image": "/images/reviewers/james.jpg" },
+        "review": "Cooling is much improved. Runs quietly even under load.",
+        "likes": 200,
+        "dislikes": 10,
+        "replies": [
+          { "name": "Chloe Bennett", "image": "/images/reviewers/chloe.jpg", "reply": "I noticed the same, whisper quiet console!" }
+        ]
+      },
+      {
+        "reviewer": { "name": "Olivia Green", "image": "/images/reviewers/olivia.jpg" },
+        "review": "Graphics are excellent, but UI feels a bit cluttered.",
+        "likes": 150,
+        "dislikes": 17,
+        "replies": []
+      }
+    ]
+  }
+]

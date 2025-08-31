@@ -1,3 +1,4 @@
+import DescriptionSection from "@/components/product-details/DescriptionSection";
 import DetailsTop from "@/components/product-details/DetailsTop";
 import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
@@ -44,8 +45,9 @@ const DetailPage = async ({ params }) => {
   if (!product) return notFound();
 
   return (
-    <main className="w-11/12 mx-auto min-h-screen">
+    <main className="w-full mx-auto space-y-20 pb-10 min-h-screen">
       <DetailsTop product={product} />
+      <DescriptionSection product={product} />
     </main>
   );
 };

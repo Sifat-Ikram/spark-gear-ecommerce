@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import slugify from "slugify";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -42,7 +41,7 @@ export default function FeaturedCard({ product }) {
 
   return (
     <Link
-      href={`/productDetails/${slugify(product?.name, { lower: true })}`}
+      href={`/productDetails/${product?.slug}`}
       className="bg-gray-50 group border-[1px] border-[#00a88f] rounded-2xl shadow-lg overflow-hidden flex flex-col"
     >
       <motion.div className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">

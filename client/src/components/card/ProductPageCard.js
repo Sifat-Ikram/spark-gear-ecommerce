@@ -1,8 +1,7 @@
 "use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import slugify from "slugify";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ProductPageCard({ product }) {
   return (
@@ -10,7 +9,7 @@ export default function ProductPageCard({ product }) {
       whileHover={{ scale: 1.03 }}
       className="bg-white rounded-xl shadow"
     >
-      <Link href={`/productDetails/${slugify(product?.name, { lower: true })}`}>
+      <Link href={`/productDetails/${product?.slug}`}>
         <div className="relative w-full h-40">
           <Image
             src={product.images[0]?.url}
