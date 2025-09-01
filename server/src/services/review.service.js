@@ -1,44 +1,74 @@
-import reviewModel from "../models/review.model.js";
+import Review from "../models/review.model.js";
 
-class ReviewService {
-  async getAll() {
-    return await reviewModel.find();
+export const getAllReviews = async () => {
+  return await Review.find();
+};
+
+export const addReview = async (productName, reviewData) => {
+  let product = await Review.findOne({ productName });
+  if (!product) {
+    product = new Review({
+      productName,
+      review: [],
+      averageRating: 0,
+    });
   }
 
-  async getByProductName(productName) {
-    return await reviewModel.findOne({ productName });
+  product.review.push({
+    reviewer: { name: reviewData.reviewerName },
+    review: reviewData.review,
+    rating: reviewData.rating || 0,
+    likes: reviewData.likes || 0,
+    replies: [],
+  });
+
+  await product.save();
+  return product;
+};
+
+export const getReviewsByProduct = async (productName) => {
+  return await Review.findOne({ productName });
+};
+
+export const deleteReviewById = async (productName, reviewId) => {
+  return await Review.findOneAndUpdate(
+    { productName },
+    { $pull: { review: { _id: reviewId } } },
+    { new: true }
+  );
+};
+
+export const updateReview = async (productName, reviewId, updatedData) => {
+  return await Review.findOneAndUpdate(
+    { productName, "review._id": reviewId },
+    {
+      $set: {
+        "review.$.review": updatedData.review,
+        "review.$.rating": updatedData.rating,
+        "review.$.likes": updatedData.likes,
+      },
+    },
+    { new: true }
+  );
+};
+
+export const addLike = async (productName, reviewIndex) => {
+  const product = await Review.findOne({ productName });
+  if (!product || !product.review[reviewIndex]) {
+    throw new Error("Review not found");
   }
+  product.review[reviewIndex].likes =
+    (product.review[reviewIndex].likes || 0) + 1;
+  await product.save();
+  return product;
+};
 
-  async add(productName, reviewData) {
-    let productReview = await reviewModel.findOne({ productName });
-    if (!productReview) {
-      productReview = new reviewModel({ productName, reviews: [] });
-    }
-    productReview.reviews.push(reviewData);
-    return await productReview.save();
+export const addReply = async (productName, reviewIndex, reply) => {
+  const product = await Review.findOne({ productName });
+  if (!product || !product.review[reviewIndex]) {
+    throw new Error("Review not found");
   }
-
-  async update(productName, reviewId, updatedData) {
-    const productReview = await reviewModel.findOne({ productName });
-    if (!productReview) throw new Error("Product not found");
-
-    const review = productReview.reviews.id(reviewId);
-    if (!review) throw new Error("Review not found");
-
-    Object.assign(review, updatedData);
-    return await productReview.save();
-  }
-
-  async delete(productName, reviewId) {
-    const productReview = await reviewModel.findOne({ productName });
-    if (!productReview) throw new Error("Product not found");
-
-    const review = productReview.reviews.id(reviewId);
-    if (!review) throw new Error("Review not found");
-
-    review.deleteOne();
-    return await productReview.save();
-  }
-}
-
-export default new ReviewService();
+  product.review[reviewIndex].replies.push(reply);
+  await product.save();
+  return product;
+};

@@ -1,506 +1,3542 @@
 [
-  {
-    "productName": "ZenCore M7",
-    "review": [
-      {
-        "reviewer": {
-          "name": "Aarav Singh",
-          "image": "/images/reviewers/aarav.jpg"
-        },
-        "review": "The ZenCore M7 is blazing fast and handles multitasking with ease. Battery life is impressive.",
-        "likes": 152,
-        "dislikes": 8,
-        "replies": [
-          {
-            "name": "Sophia Carter",
-            "image": "/images/reviewers/sophia.jpg",
-            "reply": "Totally agree! I’ve been using it for 2 weeks and it’s flawless."
+    {
+      "productName": "ZenCore M7",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Alice Johnson"
           },
-          {
-            "name": "Daniel Kim",
-            "image": "/images/reviewers/daniel.jpg",
-            "reply": "Does it handle 4K video editing smoothly?"
-          }
-        ]
-      },
-      {
-        "reviewer": {
-          "name": "Liam Johnson",
-          "image": "/images/reviewers/liam.jpg"
+          "review": "Great performance and sleek design! Love the feel of the keys.",
+          "rating": 5,
+          "likes": 23,
+          "replies": [
+            {
+              "name": "Bob Smith",
+              "reply": "Totally agree! The design is amazing. It's so minimalist and modern."
+            },
+            {
+              "name": "Chris Green",
+              "reply": "I'm considering buying it. Does the battery last a full workday?"
+            }
+          ]
         },
-        "review": "Great performance but the device heats up when gaming for long hours.",
-        "likes": 97,
-        "dislikes": 21,
-        "replies": []
-      },
-      {
-        "reviewer": {
-          "name": "Hannah Walker",
-          "image": "/images/reviewers/hannah.jpg"
+        {
+          "reviewer": {
+            "name": "Mark Lee"
+          },
+          "review": "Battery life could be better but overall satisfied. I expected more from the price.",
+          "rating": 4,
+          "likes": 15,
+          "replies": [
+            {
+              "name": "Alice Johnson",
+              "reply": "Yes, I had to charge it twice a day during heavy usage. It's a bit of a letdown."
+            },
+            {
+              "name": "Samantha Jones",
+              "reply": "That's a shame. Good to know before I purchase."
+            }
+          ]
         },
-        "review": "Love the design and display quality. Speakers could be louder though.",
-        "likes": 83,
-        "dislikes": 12,
-        "replies": [
-          {
-            "name": "James Lee",
-            "image": "/images/reviewers/james.jpg",
-            "reply": "That’s true. I paired it with Bluetooth speakers."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "productName": "MaxComfort Headset & Keyboard Combo",
-    "review": [
-      {
-        "reviewer": {
-          "name": "Emily Roberts",
-          "image": "/images/reviewers/emily.jpg"
+        {
+          "reviewer": {
+            "name": "Sofia Brown"
+          },
+          "review": "High-quality sound and very responsive. The trackpad is also fantastic.",
+          "rating": 5,
+          "likes": 30,
+          "replies": [
+            {
+              "name": "John Doe",
+              "reply": "Agreed, the sound is top-notch! The speakers are surprisingly good for such a small device."
+            },
+            {
+              "name": "Emily White",
+              "reply": "I'm glad to hear that about the speakers. My old one had terrible sound quality."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "MaxComfort Headset & Keyboard Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jake Miller"
+          },
+          "review": "The keyboard is super comfortable for long hours of typing. The headset is a nice bonus.",
+          "rating": 5,
+          "likes": 42,
+          "replies": [
+            {
+              "name": "Olivia Davis",
+              "reply": "I'm a writer, so comfort is key. How's the sound quality on the headset?"
+            },
+            {
+              "name": "Liam Clark",
+              "reply": "Is the keyboard mechanical or membrane? I'm looking for a quiet one."
+            }
+          ]
         },
-        "review": "Keyboard is smooth and responsive. Headset audio quality is decent for the price.",
-        "likes": 89,
-        "dislikes": 12,
-        "replies": []
-      },
-      {
-        "reviewer": {
-          "name": "James Lee",
-          "image": "/images/reviewers/james.jpg"
+        {
+          "reviewer": {
+            "name": "Ava Wilson"
+          },
+          "review": "Great value for money. The headset microphone is clear and the keyboard has a nice click.",
+          "rating": 4,
+          "likes": 18,
+          "replies": [
+            {
+              "name": "Noah Evans",
+              "reply": "That's good to hear. I need a clear mic for my conference calls."
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Are the keys backlit? I work in a low-light environment."
+            }
+          ]
         },
-        "review": "Headset mic is surprisingly clear during calls. Very good for remote work.",
-        "likes": 65,
-        "dislikes": 5,
-        "replies": [
-          {
-            "name": "Maya Sharma",
-            "image": "/images/reviewers/maya.jpg",
-            "reply": "Good to know. How about durability?"
-          }
-        ]
-      },
-      {
-        "reviewer": {
-          "name": "Olivia Green",
-          "image": "/images/reviewers/olivia.jpg"
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "The headset is perfect for gaming, but the keyboard feels a bit flimsy. Overall, a decent buy.",
+          "rating": 4,
+          "likes": 25,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "Thanks for the heads-up on the keyboard. I'll probably invest in a separate one."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Is the headset comfortable for extended use? My ears get sore easily."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "OnePlus Edge 12",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Brown"
+          },
+          "review": "The camera quality is breathtaking! The low-light shots are insane. Highly recommend.",
+          "rating": 5,
+          "likes": 56,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "I saw some sample photos online and they looked incredible. The zoom is also amazing."
+            },
+            {
+              "name": "James Taylor",
+              "reply": "How's the battery life on this? My current phone dies way too fast."
+            }
+          ]
         },
-        "review": "Keys feel comfortable, but headset is slightly tight for long use.",
-        "likes": 72,
-        "dislikes": 14,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "OnePlus Edge 12",
-    "review": [
-      {
-        "reviewer": {
-          "name": "Michael Brown",
-          "image": "/images/reviewers/michael.jpg"
+        {
+          "reviewer": {
+            "name": "Isabella Garcia"
+          },
+          "review": "Super fast charging and a vibrant display. The software is also very clean and smooth.",
+          "rating": 5,
+          "likes": 39,
+          "replies": [
+            {
+              "name": "Matthew Martinez",
+              "reply": "I'm a fan of the fast charging feature too. It's a lifesaver when you're in a hurry."
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "Is it worth upgrading from the OnePlus Edge 10? What's the biggest difference?"
+            }
+          ]
         },
-        "review": "Excellent display and cameras. The performance is flagship-level but battery could be better.",
-        "likes": 210,
-        "dislikes": 15,
-        "replies": [
-          {
-            "name": "Nora Patel",
-            "image": "/images/reviewers/nora.jpg",
-            "reply": "True, I had to charge twice on heavy use days."
-          }
-        ]
-      },
-      {
-        "reviewer": {
-          "name": "Chloe Bennett",
-          "image": "/images/reviewers/chloe.jpg"
+        {
+          "reviewer": {
+            "name": "Daniel Wilson"
+          },
+          "review": "The phone is excellent, but the lack of a headphone jack is a bummer. Not a deal-breaker, though.",
+          "rating": 4,
+          "likes": 22,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "That's a common issue with new phones. Did you get a good adapter with it?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "I'm used to wireless headphones, so that's not an issue for me. But I can see why it's a complaint."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Professional DSLR Mark IV",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Alex Carter"
+          },
+          "review": "This camera is a beast! The autofocus is lightning fast, and the image quality is stunning.",
+          "rating": 5,
+          "likes": 87,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I'm a professional photographer and this camera has elevated my work. The video capabilities are also fantastic."
+            },
+            {
+              "name": "Ryan White",
+              "reply": "Is it user-friendly for someone transitioning from a mirrorless camera? I'm worried about the learning curve."
+            }
+          ]
         },
-        "review": "Build quality feels premium and camera stabilization is top-notch.",
-        "likes": 132,
-        "dislikes": 9,
-        "replies": []
-      },
-      {
-        "reviewer": {
-          "name": "Ryan Garcia",
-          "image": "/images/reviewers/ryan.jpg"
+        {
+          "reviewer": {
+            "name": "Sarah Davis"
+          },
+          "review": "A bit heavy to carry around, but the results are worth it. The low-light performance is amazing.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "I've heard about the weight. Is it manageable with a good strap?"
+            },
+            {
+              "name": "Laura Green",
+              "reply": "What lens are you using with it? I'm trying to decide on a good starter lens for this body."
+            }
+          ]
         },
-        "review": "Good phone, but the OS has some minor bugs.",
-        "likes": 88,
-        "dislikes": 13,
-        "replies": [
-          {
-            "name": "Zara Ali",
-            "image": "/images/reviewers/zara.jpg",
-            "reply": "Yes, I’m waiting for the next software update too."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "productName": "Professional DSLR Mark IV",
-    "review": [
-      {
-        "reviewer": {
-          "name": "David Wilson",
-          "image": "/images/reviewers/david.jpg"
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "Excellent camera, but the price is a bit steep. Still, you get what you pay for.",
+          "rating": 4,
+          "likes": 40,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "I'm saving up for it. I hope it's a good long-term investment for a hobbyist like me."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it come with any software for post-processing? Or do you need to buy that separately?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "360° Action Camera",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "This camera is a game-changer for capturing action sports! The stabilization is incredible.",
+          "rating": 5,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Lisa Robinson",
+              "reply": "I'm a skier and this sounds perfect for me. Is it waterproof without a case?"
+            },
+            {
+              "name": "Ben Taylor",
+              "reply": "How easy is it to edit the 360-degree footage? Is there a good app for that?"
+            }
+          ]
         },
-        "review": "An outstanding camera for professionals. Low-light performance is superb.",
-        "likes": 178,
-        "dislikes": 5,
-        "replies": []
-      },
-      {
-        "reviewer": {
-          "name": "Arjun Mehta",
-          "image": "/images/reviewers/arjun.jpg"
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "The video quality is fantastic, but the battery life is a bit short. I had to buy an extra one.",
+          "rating": 4,
+          "likes": 32,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "That's a common problem with these compact cameras. Good to know about the extra battery."
+            },
+            {
+              "name": "Sophia Wilson",
+              "reply": "Does it get hot when recording for long periods? My last camera would overheat."
+            }
+          ]
         },
-        "review": "Colors are accurate and dynamic range is wide. A solid upgrade.",
-        "likes": 143,
-        "dislikes": 7,
-        "replies": [
-          {
-            "name": "Rachel White",
-            "image": "/images/reviewers/rachel.jpg",
-            "reply": "Did you try it for wedding photography?"
-          }
-        ]
-      },
-      {
-        "reviewer": {
-          "name": "Sophia Martinez",
-          "image": "/images/reviewers/sophia-m.jpg"
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "The stitching of the 360-degree footage is seamless. I'm really impressed with the software.",
+          "rating": 5,
+          "likes": 48,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "That's the main thing I'm worried about. Glad to hear it's a smooth process."
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Does it have a good app for sharing to social media directly?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Ergonomic Gaming Mouse",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "Super comfortable for my hand, even after hours of gaming. The customizable buttons are a huge plus.",
+          "rating": 5,
+          "likes": 67,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I've been looking for a good ergonomic mouse. Is it lightweight or on the heavier side?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "How's the sensor accuracy? I need something precise for competitive gaming."
+            }
+          ]
         },
-        "review": "Battery life is okay, but heavier than expected.",
-        "likes": 91,
-        "dislikes": 11,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "360° Action Camera",
-    "review": [
-      {
-        "reviewer": {
-          "name": "Chris Evans",
-          "image": "/images/reviewers/chris.jpg"
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "The DPI settings are great, but the scroll wheel feels a bit cheap. Overall, I'm happy with it.",
+          "rating": 4,
+          "likes": 38,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "I've read about that. Is it a deal-breaker for you?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "I'm mostly a casual gamer, so that's probably not an issue for me."
+            }
+          ]
         },
-        "review": "Compact, lightweight, and captures stunning 360 videos. Perfect for travel vlogging.",
-        "likes": 134,
-        "dislikes": 9,
-        "replies": []
-      },
-      {
-        "reviewer": {
-          "name": "Ethan Parker",
-          "image": "/images/reviewers/ethan.jpg"
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "The RGB lighting is awesome and the mouse glides smoothly. Great product for the price.",
+          "rating": 5,
+          "likes": 52,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "The RGB is what I'm looking for! Can you customize the colors easily?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "How's the weight? My current mouse is too heavy for fast movements."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "External Hard Drive",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "Fast transfer speeds and very reliable. I use it for my photography backups and it works perfectly.",
+          "rating": 5,
+          "likes": 45,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm a photographer too! What's the capacity on this model?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "Does it require external power or is it bus-powered by the USB cable?"
+            }
+          ]
         },
-        "review": "Great stabilization, but battery drains quickly.",
-        "likes": 77,
-        "dislikes": 18,
-        "replies": [
-          {
-            "name": "Aisha Khan",
-            "image": "/images/reviewers/aisha.jpg",
-            "reply": "I carry a spare battery pack, works fine."
-          }
-        ]
-      },
-      {
-        "reviewer": {
-          "name": "Leo Carter",
-          "image": "/images/reviewers/leo.jpg"
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "A great storage solution, but the cable it came with is a bit short. Had to buy a longer one.",
+          "rating": 4,
+          "likes": 28,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "That's a minor inconvenience. At least the drive itself is good."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Is it durable? I'm worried about dropping it."
+            }
+          ]
         },
-        "review": "Quality is excellent during the day, night shots need improvement.",
-        "likes": 84,
-        "dislikes": 10,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "Samsung Galaxy Z Ultra",
-    "review": [
-      {
-        "reviewer": { "name": "Ishaan Verma", "image": "/images/reviewers/ishaan.jpg" },
-        "review": "The foldable design is futuristic. Multitasking on the big screen is amazing.",
-        "likes": 201,
-        "dislikes": 15,
-        "replies": [
-          { "name": "Clara Brooks", "image": "/images/reviewers/clara.jpg", "reply": "I love using it for productivity apps too." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Sophia White", "image": "/images/reviewers/sophia-w.jpg" },
-        "review": "Battery life is average, but charging speed is fast.",
-        "likes": 112,
-        "dislikes": 19,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Daniel Kim", "image": "/images/reviewers/daniel.jpg" },
-        "review": "Display quality is jaw-dropping. Feels a little heavy though.",
-        "likes": 130,
-        "dislikes": 11,
-        "replies": [
-          { "name": "Nina Lopez", "image": "/images/reviewers/nina.jpg", "reply": "Yeah, weight is noticeable during long use." }
-        ]
-      }
-    ]
-  },
-  {
-    "productName": "Asus ROG Strix G17",
-    "review": [
-      {
-        "reviewer": { "name": "Ethan Jones", "image": "/images/reviewers/ethan.jpg" },
-        "review": "Handles AAA games at ultra settings with no lag. Fans are a bit loud though.",
-        "likes": 175,
-        "dislikes": 12,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Priya Kapoor", "image": "/images/reviewers/priya.jpg" },
-        "review": "RGB lighting and cooling are excellent. Perfect for gamers.",
-        "likes": 146,
-        "dislikes": 7,
-        "replies": [
-          { "name": "Lucas Brown", "image": "/images/reviewers/lucas.jpg", "reply": "Agreed! Mine stays cool even during long sessions." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Oliver Smith", "image": "/images/reviewers/oliver.jpg" },
-        "review": "Battery drains quickly, but performance is worth it.",
-        "likes": 90,
-        "dislikes": 18,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "MacBook Pro M3",
-    "review": [
-      {
-        "reviewer": { "name": "Rachel Green", "image": "/images/reviewers/rachel.jpg" },
-        "review": "Super smooth performance. Perfect for video editing.",
-        "likes": 220,
-        "dislikes": 14,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Omar Ali", "image": "/images/reviewers/omar.jpg" },
-        "review": "Battery lasts all day. Price is high but justified.",
-        "likes": 188,
-        "dislikes": 6,
-        "replies": [
-          { "name": "Sophia Carter", "image": "/images/reviewers/sophia.jpg", "reply": "True, best for professionals." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Henry Adams", "image": "/images/reviewers/henry.jpg" },
-        "review": "The display is stunning, but ports are limited.",
-        "likes": 99,
-        "dislikes": 13,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "iPad Pro 2025",
-    "review": [
-      {
-        "reviewer": { "name": "Zara Ali", "image": "/images/reviewers/zara.jpg" },
-        "review": "Best tablet for creative work. Apple Pencil feels natural.",
-        "likes": 190,
-        "dislikes": 10,
-        "replies": [
-          { "name": "Noah Lee", "image": "/images/reviewers/noah.jpg", "reply": "Using it for digital art, it’s amazing." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Mason Clark", "image": "/images/reviewers/mason.jpg" },
-        "review": "Runs heavy apps without lag. Expensive though.",
-        "likes": 130,
-        "dislikes": 16,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Emma Wilson", "image": "/images/reviewers/emma.jpg" },
-        "review": "Great for entertainment and work. Battery life is solid.",
-        "likes": 115,
-        "dislikes": 8,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "HP Envy x360",
-    "review": [
-      {
-        "reviewer": { "name": "Aisha Khan", "image": "/images/reviewers/aisha.jpg" },
-        "review": "Lightweight, stylish, and perfect for students.",
-        "likes": 98,
-        "dislikes": 9,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "William Scott", "image": "/images/reviewers/william.jpg" },
-        "review": "Convertible design is convenient. Keyboard is comfortable.",
-        "likes": 120,
-        "dislikes": 11,
-        "replies": [
-          { "name": "Hannah Walker", "image": "/images/reviewers/hannah.jpg", "reply": "Yes! I love using it in tablet mode." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Sofia Martinez", "image": "/images/reviewers/sofia.jpg" },
-        "review": "Performance is decent, but not for heavy gaming.",
-        "likes": 87,
-        "dislikes": 13,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "Sony Bravia OLED 55”",
-    "review": [
-      {
-        "reviewer": { "name": "Lucas Brown", "image": "/images/reviewers/lucas.jpg" },
-        "review": "Colors pop beautifully. Best for watching movies.",
-        "likes": 175,
-        "dislikes": 6,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Maya Sharma", "image": "/images/reviewers/maya.jpg" },
-        "review": "Sound quality is immersive. Picture quality is unmatched.",
-        "likes": 141,
-        "dislikes": 7,
-        "replies": [
-          { "name": "Ryan Garcia", "image": "/images/reviewers/ryan.jpg", "reply": "I agree, it feels like a theater at home." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Benjamin Taylor", "image": "/images/reviewers/benjamin.jpg" },
-        "review": "Expensive, but worth it if you want premium quality.",
-        "likes": 95,
-        "dislikes": 12,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "Bose QuietComfort Ultra",
-    "review": [
-      {
-        "reviewer": { "name": "Chloe Bennett", "image": "/images/reviewers/chloe.jpg" },
-        "review": "Noise cancellation is the best in the market.",
-        "likes": 210,
-        "dislikes": 9,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Ethan Parker", "image": "/images/reviewers/ethan.jpg" },
-        "review": "Comfortable even for long flights. Sound clarity is amazing.",
-        "likes": 155,
-        "dislikes": 7,
-        "replies": [
-          { "name": "David Wilson", "image": "/images/reviewers/david.jpg", "reply": "Yes, I used it on a 10hr flight, super comfy." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Isabella Reed", "image": "/images/reviewers/isabella.jpg" },
-        "review": "Battery life is great, but case feels a bit bulky.",
-        "likes": 102,
-        "dislikes": 14,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "GoPro Hero 12",
-    "review": [
-      {
-        "reviewer": { "name": "Leo Carter", "image": "/images/reviewers/leo.jpg" },
-        "review": "Perfect for adventure lovers. Videos are sharp and smooth.",
-        "likes": 140,
-        "dislikes": 8,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Hannah Walker", "image": "/images/reviewers/hannah.jpg" },
-        "review": "Waterproofing works perfectly. I used it while diving.",
-        "likes": 99,
-        "dislikes": 6,
-        "replies": [
-          { "name": "Michael Brown", "image": "/images/reviewers/michael.jpg", "reply": "That’s awesome, planning to use it for surfing!" }
-        ]
-      },
-      {
-        "reviewer": { "name": "Olivia Green", "image": "/images/reviewers/olivia.jpg" },
-        "review": "Battery could last longer, but overall it’s fantastic.",
-        "likes": 84,
-        "dislikes": 10,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "PlayStation 6",
-    "review": [
-      {
-        "reviewer": { "name": "Ryan Garcia", "image": "/images/reviewers/ryan.jpg" },
-        "review": "Graphics are mind-blowing, runs games smoothly.",
-        "likes": 310,
-        "dislikes": 15,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "Sophia Martinez", "image": "/images/reviewers/sophia-m.jpg" },
-        "review": "The controller haptics feel next-level. Loving it!",
-        "likes": 270,
-        "dislikes": 12,
-        "replies": [
-          { "name": "Arjun Mehta", "image": "/images/reviewers/arjun.jpg", "reply": "Same here, the new DualSense is amazing." }
-        ]
-      },
-      {
-        "reviewer": { "name": "Liam Johnson", "image": "/images/reviewers/liam.jpg" },
-        "review": "Design is sleek, but storage should have been larger.",
-        "likes": 190,
-        "dislikes": 22,
-        "replies": []
-      }
-    ]
-  },
-  {
-    "productName": "Xbox Series Z",
-    "review": [
-      {
-        "reviewer": { "name": "Emily Roberts", "image": "/images/reviewers/emily.jpg" },
-        "review": "Game Pass makes it unbeatable value. Smooth gameplay.",
-        "likes": 280,
-        "dislikes": 18,
-        "replies": []
-      },
-      {
-        "reviewer": { "name": "James Lee", "image": "/images/reviewers/james.jpg" },
-        "review": "Cooling is much improved. Runs quietly even under load.",
-        "likes": 200,
-        "dislikes": 10,
-        "replies": [
-          { "name": "Chloe Bennett", "image": "/images/reviewers/chloe.jpg", "reply": "I noticed the same, whisper quiet console!" }
-        ]
-      },
-      {
-        "reviewer": { "name": "Olivia Green", "image": "/images/reviewers/olivia.jpg" },
-        "review": "Graphics are excellent, but UI feels a bit cluttered.",
-        "likes": 150,
-        "dislikes": 17,
-        "replies": []
-      }
-    ]
-  }
-]
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "Sleek design and it's so quiet. I'm impressed with the quality.",
+          "rating": 5,
+          "likes": 39,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "I'm glad to hear it's quiet. My current one makes a lot of noise."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it come with any security software or is it just a basic drive?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Logitech MX Master 3S",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "The best mouse I've ever owned. The MagSpeed scroll wheel is a game-changer for productivity.",
+          "rating": 5,
+          "likes": 78,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I've heard great things about that feature. Is it comfortable for people with smaller hands?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "How's the battery life on it? And does it work well on different surfaces like glass?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "A bit pricey, but worth every penny. The flow feature for multiple computers is genius.",
+          "rating": 5,
+          "likes": 54,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "I'm a freelancer and that feature would be perfect for my workflow. How easy is it to set up?"
+            },
+            {
+              "name": "Laura Green",
+              "reply": "Does it have a lot of customizable buttons? I use a lot of shortcuts."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "Excellent mouse for work, but not the best for gaming. The button placement isn't ideal for fast action.",
+          "rating": 4,
+          "likes": 32,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "Good to know. I'm mostly a gamer, so I'll look for a different mouse then."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Yeah, it's definitely designed for productivity first. I have a separate gaming mouse."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "EcoBook Air 13",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "I love how lightweight and eco-friendly this laptop is. The battery lasts all day.",
+          "rating": 5,
+          "likes": 61,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "That's amazing! I'm a student and need something portable with a long battery life."
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "How's the performance for everyday tasks like browsing and word processing?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "The screen is vibrant, but the speakers are a bit weak. Overall, a great laptop for its purpose.",
+          "rating": 4,
+          "likes": 35,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "I'm okay with weak speakers, I mostly use headphones anyway. Thanks for the honest review."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Is the keyboard comfortable for long typing sessions? I'm a writer."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "It's perfect for my work needs. The build quality feels solid, despite being so light.",
+          "rating": 5,
+          "likes": 48,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "Is it good for light photo and video editing? I'm not doing anything heavy-duty."
+            },
+            {
+              "name": "Chloe White",
+              "reply": "Does it have a good selection of ports? I need to connect to an external monitor."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ErgoFlex Split Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophie Martin"
+          },
+          "review": "My wrist pain is gone! This keyboard took some getting used to, but it's been a lifesaver.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Jacob Wilson",
+              "reply": "I have carpal tunnel and have been considering this. Is the learning curve difficult?"
+            },
+            {
+              "name": "Grace Miller",
+              "reply": "What's the key travel and feel like? Are the keys tactile or linear?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chris Davis"
+          },
+          "review": "Great for ergonomics, but the wrist rests feel a bit cheap. They could have used better material.",
+          "rating": 4,
+          "likes": 41,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "Good to know. I might have to buy separate wrist rests then."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Is it a quiet keyboard? I work in an office and don't want to bother my colleagues."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emily White"
+          },
+          "review": "The customizable macros are a huge plus for my programming work. I'm very happy with this purchase.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Jack Adams",
+              "reply": "That's awesome. I'm a developer too and shortcuts are a must-have for me."
+            },
+            {
+              "name": "Olivia Miller",
+              "reply": "Does it have backlit keys? I work at night sometimes."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "StudioBoard Creator Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jessica Taylor"
+          },
+          "review": "The customizable dials are a game-changer for my video editing workflow. It's so intuitive.",
+          "rating": 5,
+          "likes": 88,
+          "replies": [
+            {
+              "name": "Ryan Chen",
+              "reply": "I'm a graphic designer and this sounds perfect for me. Can you program the dials for different software?"
+            },
+            {
+              "name": "Laura Davis",
+              "reply": "How's the build quality? It looks very professional in the pictures."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Alex Wilson"
+          },
+          "review": "A fantastic keyboard for creative professionals, but it's a bit larger than I expected. Takes up a lot of desk space.",
+          "rating": 4,
+          "likes": 52,
+          "replies": [
+            {
+              "name": "Kevin Green",
+              "reply": "I have a small desk, so that's good to know. I might have to rearrange my setup."
+            },
+            {
+              "name": "Chloe Miller",
+              "reply": "Is it a mechanical keyboard? I like the satisfying click of those keys."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "The key travel is perfect and the backlight is very bright. The extra keys are also very useful.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Isabella White",
+              "reply": "I'm glad to hear about the backlight. I work in a dimly lit studio."
+            },
+            {
+              "name": "Daniel Brown",
+              "reply": "Does it come with a wrist rest? That's a must-have for long editing sessions."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "EchoBlast Portable Bluetooth Speaker",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Daniel Rodriguez"
+          },
+          "review": "Amazing sound quality for such a small speaker. The bass is surprisingly deep.",
+          "rating": 5,
+          "likes": 92,
+          "replies": [
+            {
+              "name": "Emily Carter",
+              "reply": "I'm looking for a party speaker. Does it get loud enough for a small gathering?"
+            },
+            {
+              "name": "Matthew Taylor",
+              "reply": "How's the battery life? I need something that can last all day at the beach."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Miller"
+          },
+          "review": "It's durable and waterproof, which is perfect for my outdoor adventures. The battery life is a bit short at max volume.",
+          "rating": 4,
+          "likes": 68,
+          "replies": [
+            {
+              "name": "Lucas Davis",
+              "reply": "That's a good trade-off for the durability and sound quality. Thanks for the heads-up!"
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Can you pair two of these together for stereo sound?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ryan Green"
+          },
+          "review": "The design is sleek and the connectivity is seamless. I'm very happy with this speaker.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Sophie Wilson",
+              "reply": "Is it easy to pair with both iOS and Android devices?"
+            },
+            {
+              "name": "Ben Perez",
+              "reply": "Does it have a built-in microphone for taking calls?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "TitanSound Tower Speaker",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Laura Johnson"
+          },
+          "review": "The sound is incredible! It fills the entire room and the bass is deep and rich. Worth every penny.",
+          "rating": 5,
+          "likes": 110,
+          "replies": [
+            {
+              "name": "Chris Smith",
+              "reply": "I'm building a home theater and this sounds perfect. Does it connect to a TV easily?"
+            },
+            {
+              "name": "Jessica Lee",
+              "reply": "Is it good for listening to different genres of music? Or is it more for movies?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Kevin Chen"
+          },
+          "review": "A powerful speaker, but the size is a bit much for my small apartment. It's a bit of a space hog.",
+          "rating": 4,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "I have a big living room so that's not a problem for me. Thanks for the warning though."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it have wireless connectivity like Bluetooth, or is it only wired?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emma Wilson"
+          },
+          "review": "The sound is clear and crisp, and the design is beautiful. It looks great in my living room.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "James Taylor",
+              "reply": "Does it come with a remote control? I'd like to be able to change settings from my couch."
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "How's the setup process? Is it straightforward or complicated?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ElitePro Keyboard & Mouse Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Wilson"
+          },
+          "review": "A solid combo for everyday use. The keyboard is quiet and the mouse is comfortable.",
+          "rating": 4,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "I'm looking for a combo for my home office. Does it come with a USB receiver or is it Bluetooth?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "How's the battery life on both the keyboard and the mouse?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Grace Lee"
+          },
+          "review": "Great value for the price. The mouse is very responsive and the keyboard feels good to type on.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "Is the keyboard a full size one with a number pad? I need that for my accounting work."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have a long range? I like to use it from my couch when connected to my TV."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "The keyboard is good, but the mouse is a bit too small for my hand. I have to adjust my grip.",
+          "rating": 4,
+          "likes": 30,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "Thanks for the heads-up. I have big hands too, so that's an important detail."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Can you use the mouse and keyboard with different devices, or are they paired together?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "Nova X1",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophia Adams"
+          },
+          "review": "This drone is a blast! The flight controls are intuitive and the camera quality is outstanding.",
+          "rating": 5,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "Mark Evans",
+              "reply": "I've been looking for a drone to get into aerial photography. Is it good for beginners?"
+            },
+            {
+              "name": "Lisa Robinson",
+              "reply": "How's the battery life? And does it have good wind resistance?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "The drone is great, but the app for the phone is a bit buggy. Sometimes it disconnects during flight.",
+          "rating": 4,
+          "likes": 45,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "That's a bit concerning. Is there a way to update the firmware to fix that?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Is the controller easy to use or does it feel complicated with too many buttons?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "The GPS feature is very accurate and the 'return to home' function is a lifesaver.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "That's a huge relief to hear. I'm always worried about losing my drone."
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Does it come with a carrying case? I'd like to take it with me on my trips."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "AeroSound Studio Monitor",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "These monitors are incredibly accurate and the sound is crystal clear. Perfect for my home studio.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I'm a music producer and I've been looking for good monitors. How's the bass response on these?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "Do they come in pairs or do you have to buy them individually?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "Great for mixing and mastering. The flat frequency response is exactly what I needed. They are a bit heavy, though.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "I'm glad to hear about the flat response. Is the setup and calibration process complicated?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Do they have a good range of inputs? Like XLR, TRS, and RCA?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "The sound is amazing, but the build quality feels a bit plastic-y. Still, a good deal for the price.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "I'm more concerned with sound than looks, so that's not a problem for me."
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "How's the size? I have limited desk space for my monitors."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Compact Digital Camera",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "This is the perfect camera for travel! It's small, lightweight, and takes great photos.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm looking for a camera for my upcoming trip to Europe. How's the low-light performance?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "Does it have a good optical zoom? I like to take pictures of nature."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "The video quality is surprisingly good. It's a great all-around camera for vlogging and photos.",
+          "rating": 4,
+          "likes": 45,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "Is it good for taking selfies? Does the screen flip up?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "How's the battery life when recording videos?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "It's a good camera for its size, but the autofocus is a bit slow. Still, a solid purchase for a beginner.",
+          "rating": 4,
+          "likes": 30,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "I'm a beginner, so that's fine for me. I just need something simple to use."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it have Wi-Fi connectivity to easily transfer photos to my phone?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "Point & Shoot Camera Lite S2",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "Perfect for my needs! It's super easy to use and the photos come out crisp and clear.",
+          "rating": 5,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "Is it small enough to fit in my pocket? I'm looking for a camera for everyday moments."
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Does it have a good flash for indoor photos? My phone's flash is terrible."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "The camera is great, but the battery drains a bit quickly. I had to buy a spare battery for my trips.",
+          "rating": 4,
+          "likes": 35,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "Thanks for the heads-up. I'll make sure to get an extra one when I buy it."
+            },
+            {
+              "name": "Laura Green",
+              "reply": "How long does it take to charge a full battery?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "A great camera for the price. The zoom is decent, but the video quality is just average.",
+          "rating": 4,
+          "likes": 28,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "I'm mostly interested in photos, so that's fine for me. Thanks for the honest review."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it have any special features like a time-lapse mode or a burst mode?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "Electric Standing Desk",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "This desk has changed my life! I can alternate between sitting and standing, which has helped my back pain.",
+          "rating": 5,
+          "likes": 98,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "I've been thinking of getting one for my home office. How sturdy is it when it's at its highest setting?"
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "Is it noisy when it goes up and down? I don't want to disrupt my family when I'm working."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "The desk is great, but the assembly was a bit of a pain. It took longer than I expected.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "I'm not the best at assembling furniture. Was it just confusing or were there missing parts?"
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have memory presets to save your favorite heights?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "I love the clean and minimalist design. The motor is smooth and the desk is very stable.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "That's good to hear. I want something that looks good in my office."
+            },
+            {
+              "name": "Chloe White",
+              "reply": "How much weight can it hold? I have a lot of monitors and equipment on my desk."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Logitech MX Vertical",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophie Martin"
+          },
+          "review": "My wrist feels so much better after using this mouse. It took a day or two to get used to, but it's worth it.",
+          "rating": 5,
+          "likes": 88,
+          "replies": [
+            {
+              "name": "Jacob Wilson",
+              "reply": "I have a lot of wrist pain from my job. Does it work for both left-handed and right-handed people?"
+            },
+            {
+              "name": "Grace Miller",
+              "reply": "How's the accuracy for precise tasks like graphic design or photo editing?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chris Davis"
+          },
+          "review": "The ergonomic design is great, but the buttons are a bit hard to reach for my smaller hands.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "I have small hands too, so that's a good thing to consider. Thanks for the heads-up."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Is it a good mouse for gaming? Or is it strictly for productivity?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emily White"
+          },
+          "review": "The battery life is amazing. I only have to charge it once a month. The connectivity is also very reliable.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Jack Adams",
+              "reply": "I'm tired of constantly charging my mouse. This sounds like the one for me."
+            },
+            {
+              "name": "Olivia Miller",
+              "reply": "Does it connect via Bluetooth or a USB receiver? Or both?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "UltraSlim Wireless Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jessica Taylor"
+          },
+          "review": "I love how thin and portable this keyboard is. It's perfect for my tablet and phone.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Ryan Chen",
+              "reply": "I'm a student and need a portable keyboard. Is it comfortable to type on for long periods?"
+            },
+            {
+              "name": "Laura Davis",
+              "reply": "How's the battery life? And does it come with a stand for my tablet?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Alex Wilson"
+          },
+          "review": "A great keyboard for travel, but the keys are a bit mushy. Not the best for fast typists.",
+          "rating": 4,
+          "likes": 38,
+          "replies": [
+            {
+              "name": "Kevin Green",
+              "reply": "That's a deal-breaker for me. I type very quickly for my job."
+            },
+            {
+              "name": "Chloe Miller",
+              "reply": "Is it a quiet keyboard? I don't want to make a lot of noise in a library or cafe."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "The design is very sleek and it looks great on my desk. The connectivity is very stable.",
+          "rating": 5,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "Isabella White",
+              "reply": "Does it work with both Windows and Mac operating systems seamlessly?"
+            },
+            {
+              "name": "Daniel Brown",
+              "reply": "Is it backlit? I sometimes work in low-light environments."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "WaveMini Pocket Speaker",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Daniel Rodriguez"
+          },
+          "review": "I can't believe the sound that comes out of this little speaker! It's perfect for my hikes.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Emily Carter",
+              "reply": "That's awesome! I'm an avid hiker too. Is it water-resistant?"
+            },
+            {
+              "name": "Matthew Taylor",
+              "reply": "How long does the battery last on a single charge?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Miller"
+          },
+          "review": "A good little speaker, but the bass is a bit lacking. Understandable for its size, though.",
+          "rating": 4,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "Lucas Davis",
+              "reply": "I'm not a bass head, so that's not a problem for me. Thanks for the heads-up."
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Does it have a good built-in microphone for hands-free calls?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ryan Green"
+          },
+          "review": "Super portable and the sound is clear. It's a great little speaker for the price.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Sophie Wilson",
+              "reply": "Does it have a clip or a loop to attach to a backpack?"
+            },
+            {
+              "name": "Ben Perez",
+              "reply": "How long does it take to fully charge?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ClarityVoice Smart Speaker",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Laura Johnson"
+          },
+          "review": "The voice recognition is so accurate! It's great for controlling my smart home devices.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Chris Smith",
+              "reply": "I'm looking to get a smart speaker for my home. Can it connect to other smart devices easily?"
+            },
+            {
+              "name": "Jessica Lee",
+              "reply": "How's the sound quality for playing music? I'm hoping to use it as my main speaker."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Kevin Chen"
+          },
+          "review": "The speaker is great, but the app is a bit clunky and takes some time to set up.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "Is the app necessary for everyday use? Or is it just for the initial setup?"
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it have a physical button to mute the microphone for privacy?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emma Wilson"
+          },
+          "review": "The design is very sleek and it blends in with my decor. The sound is good for its size.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "James Taylor",
+              "reply": "Does it have a good far-field microphone? Can you talk to it from across the room?"
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "Is it compatible with both Amazon Alexa and Google Assistant?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ProWork Keyboard & Mouse Set",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Wilson"
+          },
+          "review": "A fantastic set for my work-from-home setup. The keyboard is silent and the mouse is super responsive.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "I'm a data entry clerk, so a silent keyboard is a must for me. Does it feel good to type on?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "Is the mouse comfortable for long hours of use? I'm worried about my wrist."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Grace Lee"
+          },
+          "review": "The mouse is great, but the keyboard keys feel a bit shallow. Still, a good deal for the price.",
+          "rating": 4,
+          "likes": 40,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "I'm used to a mechanical keyboard, so that's a good thing to know. Thanks for the heads-up."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have any extra shortcut keys for media or volume control?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "The battery life on both the keyboard and mouse is excellent. I've been using it for weeks without a charge.",
+          "rating": 5,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "That's a huge plus for me. I hate constantly changing batteries."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Is it a full-size keyboard with a number pad?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "SoundMaster Headphone & Mouse Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophia Adams"
+          },
+          "review": "The headphones have amazing sound quality and the microphone is very clear for calls.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Mark Evans",
+              "reply": "I'm a gamer, so a good microphone is important. Are the headphones comfortable for long gaming sessions?"
+            },
+            {
+              "name": "Lisa Robinson",
+              "reply": "How's the mouse? Does it have a good DPI range for different games?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "A good combo for the price, but the mouse cable is a bit flimsy. I'm worried it will break over time.",
+          "rating": 4,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "I might have to use a wireless mouse instead then. Thanks for the warning."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Are the headphones wireless or wired? I'm looking for a wireless option."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "I'm impressed with the noise cancellation on the headphones. It's perfect for when I'm in a noisy environment.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "That's a huge plus! I work in a loud office and need to block out noise."
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Does the mouse have customizable RGB lighting?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "EliteDesk Headset & Keyboard Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "Perfect for my home office setup. The headset is comfortable for calls and the keyboard is responsive.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I'm a remote worker, so this combo sounds perfect. Does the headset have a good microphone for meetings?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "How's the keyboard noise level? I don't want to annoy my coworkers on video calls."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "The keyboard is a bit smaller than I expected, but the headset is excellent. Good value for money.",
+          "rating": 4,
+          "likes": 35,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "Is it a TKL (tenkeyless) keyboard? I prefer those for more desk space."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does the headset have good sound quality for listening to music too?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "The headset is comfortable and the audio quality is great. The keyboard is just average, but it gets the job done.",
+          "rating": 4,
+          "likes": 45,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "I'm more interested in the headset, so that's fine. Thanks for the heads-up on the keyboard."
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Is the headset wireless or wired?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "iPrime 15 Ultra",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "The camera is a game-changer! The cinematic mode is unreal. The battery also lasts forever.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm a content creator and this sounds perfect. How's the video quality for vlogging?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "Is the phone a bit heavy? I heard it's heavier than the previous models."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "Super fast performance and a vibrant screen. The new chip makes a huge difference.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "How's the phone for gaming? Does it handle high-end games well?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it have a new port? I've heard some rumors about that."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "The phone is excellent, but the price is a bit high. Still, it's the best phone on the market right now.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "I'm saving up for it. I hope it's a good long-term investment."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Is the new camera a huge upgrade from the iPrime 14 Pro? I'm trying to decide if it's worth it."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Apple Magic Mouse 3",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "The design is elegant and the gestures are very intuitive. Perfect for my Mac.",
+          "rating": 5,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I love the sleek design. Does it work with Windows computers as well?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "How's the battery life on it? I heard the charging port is on the bottom, which is a bit weird."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "A great mouse for productivity, but not the best for gaming. The tracking isn't as precise as a gaming mouse.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "That's good to know. I'll stick to a gaming mouse for my games then."
+            },
+            {
+              "name": "Laura Green",
+              "reply": "Does it work well on different surfaces like a wooden desk or a glass table?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "I love the flat design and the scrolling is super smooth. It's a bit pricey, but worth it for the Mac ecosystem.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "Is the charging cable included in the box? Or do you have to buy it separately?"
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "I've been using the Magic Mouse 2 for years, is it a huge upgrade from that one?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "BusinessMate Elite 15",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "This laptop is perfect for my business needs. It's fast, secure, and the battery lasts all day.",
+          "rating": 5,
+          "likes": 88,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "I'm a business owner and this sounds like a great option. Does it have good security features like a fingerprint reader?"
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "How's the screen for working on spreadsheets and presentations? Is it bright enough?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "A solid laptop for work, but the speakers are a bit weak. I have to use headphones for video calls.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "That's a bit of a bummer. Is the microphone on the laptop good enough for calls?"
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have a good port selection? I need to connect to multiple monitors."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "The keyboard is very comfortable for long typing sessions. The build quality is excellent and it feels very durable.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "That's great to hear. I'm a writer and need a good keyboard for my work."
+            },
+            {
+              "name": "Chloe White",
+              "reply": "How's the cooling system on this laptop? Does it get hot under heavy use?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "WorkMaster Mouse & Keyboard Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophie Martin"
+          },
+          "review": "This combo is perfect for my office. The keyboard is quiet and the mouse is comfortable for my wrist.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Jacob Wilson",
+              "reply": "I'm looking for a combo for my job. Is the mouse ergonomic?"
+            },
+            {
+              "name": "Grace Miller",
+              "reply": "How's the battery life on both the keyboard and the mouse?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chris Davis"
+          },
+          "review": "Great value for the price, but the keyboard feels a bit lightweight. I prefer something with more heft.",
+          "rating": 4,
+          "likes": 40,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "I'm the opposite, I like lightweight keyboards for portability. Thanks for the heads-up."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it connect via Bluetooth or a USB receiver? Or both?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emily White"
+          },
+          "review": "The keys on the keyboard are very responsive and the mouse glides smoothly. Very happy with this purchase.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Jack Adams",
+              "reply": "Does it have any special multimedia keys for volume and playback?"
+            },
+            {
+              "name": "Olivia Miller",
+              "reply": "Is the keyboard a full-size one? I need a number pad for my work."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "MechaPro RGB Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jessica Taylor"
+          },
+          "review": "This keyboard is a dream for gaming! The switches are so fast and the RGB lighting is stunning.",
+          "rating": 5,
+          "likes": 110,
+          "replies": [
+            {
+              "name": "Ryan Chen",
+              "reply": "I'm a competitive gamer and this sounds perfect. What kind of switches does it use?"
+            },
+            {
+              "name": "Laura Davis",
+              "reply": "Is the software for customizing the RGB easy to use?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Alex Wilson"
+          },
+          "review": "The keyboard is excellent, but it's very loud. Not ideal for a shared living space.",
+          "rating": 4,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Kevin Green",
+              "reply": "Good to know. I'll probably get a different one for my apartment."
+            },
+            {
+              "name": "Chloe Miller",
+              "reply": "Does it come with a wrist rest? I need something comfortable for long gaming sessions."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "The build quality is very solid and the keycaps feel high-quality. A great keyboard for the price.",
+          "rating": 5,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "Isabella White",
+              "reply": "How's the cable on it? Is it braided or just a regular rubber cable?"
+            },
+            {
+              "name": "Daniel Brown",
+              "reply": "Does it have a USB passthrough port for my mouse?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Professional Vlogging Camera",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Daniel Rodriguez"
+          },
+          "review": "This camera is a content creator's dream! The video quality is amazing and the flip-out screen is a must-have.",
+          "rating": 5,
+          "likes": 98,
+          "replies": [
+            {
+              "name": "Emily Carter",
+              "reply": "I'm a vlogger and I've been looking for a good camera. How's the autofocus for face tracking?"
+            },
+            {
+              "name": "Matthew Taylor",
+              "reply": "Does it have a good microphone input? I need to use an external mic."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Miller"
+          },
+          "review": "The camera is great, but the battery life is a bit short when recording in 4K. Had to buy a few extra batteries.",
+          "rating": 4,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Lucas Davis",
+              "reply": "That's a common issue with these cameras. Thanks for the heads-up on the extra batteries."
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Is it good for taking photos too? Or is it more video-focused?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ryan Green"
+          },
+          "review": "The camera is very user-friendly and the image stabilization is top-notch. Perfect for handheld vlogging.",
+          "rating": 5,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "Sophie Wilson",
+              "reply": "Does it have a good app to easily transfer videos to my phone?"
+            },
+            {
+              "name": "Ben Perez",
+              "reply": "Is the camera lightweight? I'll be holding it for long periods of time."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "SoundCore Elite 500",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Laura Johnson"
+          },
+          "review": "The sound quality is incredible for the price. The noise cancellation is also very effective.",
+          "rating": 5,
+          "likes": 110,
+          "replies": [
+            {
+              "name": "Chris Smith",
+              "reply": "I'm looking for a new pair of headphones for my commute. How comfortable are they for long periods?"
+            },
+            {
+              "name": "Jessica Lee",
+              "reply": "Does it have a good microphone for taking calls on the go?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Kevin Chen"
+          },
+          "review": "A great pair of headphones, but the build quality feels a bit cheap. I'm worried about them breaking over time.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "Good to know. I'll have to be careful with them if I get them."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "How's the battery life on them? Do they last a full day of use?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emma Wilson"
+          },
+          "review": "I love the sleek design and the controls are easy to use. The sound is very balanced and clear.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "James Taylor",
+              "reply": "Does it come with a carrying case? I'd like to protect them in my bag."
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "Is it easy to pair with multiple devices at once?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Wireless Charging Pad",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Wilson"
+          },
+          "review": "It works great with my phone and earbuds. It charges them quickly and it's so convenient.",
+          "rating": 5,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "I'm looking for a charging pad for my nightstand. Is it small enough to fit in a tight space?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "Does it get hot when it's charging my devices?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Grace Lee"
+          },
+          "review": "The charging pad is great, but it's a bit finicky with phone cases. I have to remove mine sometimes for it to work.",
+          "rating": 4,
+          "likes": 35,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "That's a bit of a bummer. What kind of case do you have? A thick one?"
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it come with a power adapter or do you have to use your own?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "I love the sleek design and it has a good grip on the bottom, so it doesn't slide around.",
+          "rating": 5,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "Does it have a light to indicate when it's charging? I want to know if my device is connected."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Is it a fast wireless charging pad? I need something that can charge my phone quickly."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "CreatorBook Studio 16",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophia Adams"
+          },
+          "review": "A beast of a laptop for video editing and graphic design. The screen is so vibrant and the performance is incredible.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "Mark Evans",
+              "reply": "I'm a video editor and this sounds like the perfect laptop. How's the cooling system under heavy loads?"
+            },
+            {
+              "name": "Lisa Robinson",
+              "reply": "Is the keyboard comfortable for long typing sessions? I'm a content writer too."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "The performance is top-notch, but it's a bit heavy to carry around. I wish it was a bit more portable.",
+          "rating": 4,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "That's a good trade-off for the performance. Thanks for the heads-up on the weight."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it have a good selection of ports for connecting to external monitors and other devices?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "The screen is amazing! The colors are so accurate, which is a must-have for my work.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "That's exactly what I'm looking for. What's the battery life like when you're doing creative work?"
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Does it come with any software for creative professionals or do you have to buy it separately?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ComboMax Desktop Accessories Pack",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "A great value pack! The mousepad is huge and the mouse and keyboard are both excellent.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I'm looking to upgrade my entire setup. Does this pack come with anything else besides the mouse, keyboard, and mousepad?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "How's the keyboard? Is it mechanical or membrane?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "The mouse and keyboard are good, but the mousepad has a bit of a weird smell. It went away after a few days, though.",
+          "rating": 4,
+          "likes": 40,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "That's a bit strange. At least it went away. Is the mousepad good quality?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Is the mouse wired or wireless? And how's the DPI on it?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "Everything in this pack is good quality and it's a great deal for the price. I'm very happy with my purchase.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "Does the keyboard have customizable RGB lighting?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Is the keyboard a full-size one with a number pad?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Pixelon Z5",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "The camera on this phone is fantastic! The portrait mode is amazing and the night shots are so clear.",
+          "rating": 5,
+          "likes": 100,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm a photographer and I've heard great things about this phone's camera. How's the video quality?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "Does it have a good battery life? My current phone dies too quickly."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "A great phone for the price. The screen is vibrant and the software is very clean and easy to use.",
+          "rating": 4,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "I'm a fan of a clean software experience. Does it have a good selection of customization options?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "How's the build quality? Does it feel durable and premium?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "The phone is good, but the lack of an expandable storage slot is a bit of a bummer. Still, I'm happy with it.",
+          "rating": 4,
+          "likes": 50,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "That's a deal-breaker for me. I need more storage for my photos and videos."
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it have a good speaker for listening to music and podcasts?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.3
+    },
+    {
+      "productName": "ClarityTune Pro",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "The sound quality is incredible! The bass is deep and the highs are crystal clear. My favorite headphones so far.",
+          "rating": 5,
+          "likes": 105,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I'm an audiophile and this sounds promising. How's the comfort for long listening sessions?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Does it have a good noise cancellation feature for noisy environments?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "A great pair of headphones, but the microphone is a bit weak for calls. I have to speak up a lot.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "That's a bit of a bummer. I use my headphones for work calls too."
+            },
+            {
+              "name": "Laura Green",
+              "reply": "How's the battery life on them? Do they last a full workday?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "The design is beautiful and the build quality feels very premium. It's a bit pricey, but worth the investment.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "Does it come with a hard case for protection? I'm worried about scratching them."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it have a good app to customize the sound settings?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Portable SSD",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "Lightning fast transfer speeds! I use it for my video editing projects and it saves me so much time.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "I'm a video editor and this sounds perfect. What's the capacity on this model?"
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "Is it durable? I'm worried about it breaking if I drop it."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "A great little drive, but the cable it came with is a bit short. Had to buy a longer one.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "That's a minor inconvenience. At least the drive itself is good."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Is it compatible with both Windows and Mac operating systems?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "The size is perfect for travel and it's so lightweight. I'm very happy with this purchase.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "Does it require external power or is it bus-powered by the USB cable?"
+            },
+            {
+              "name": "Chloe White",
+              "reply": "Is it good for gaming? Can I install games on it and play them from the drive?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "AeroBook X15 Pro",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophie Martin"
+          },
+          "review": "A fantastic laptop for gaming and creative work. The screen is beautiful and the performance is top-notch.",
+          "rating": 5,
+          "likes": 115,
+          "replies": [
+            {
+              "name": "Jacob Wilson",
+              "reply": "I'm a gamer and this sounds perfect. How's the cooling system under heavy loads?"
+            },
+            {
+              "name": "Grace Miller",
+              "reply": "Is it heavy to carry around? I need something I can take with me to school."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chris Davis"
+          },
+          "review": "The laptop is excellent, but the battery life is a bit short. I have to keep it plugged in most of the time.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "That's a bit of a bummer. Is the charger a good size or is it huge and bulky?"
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it have a good selection of ports for my external monitors and peripherals?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emily White"
+          },
+          "review": "I love the sleek design and the keyboard is very comfortable for typing. The speakers are also surprisingly good.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Jack Adams",
+              "reply": "That's great to hear. I want a laptop that looks good and performs well."
+            },
+            {
+              "name": "Olivia Miller",
+              "reply": "How's the build quality? Does it feel durable and premium?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ProGamer Keyboard, Mouse & Headset Bundle",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jessica Taylor"
+          },
+          "review": "This bundle is a fantastic deal! The keyboard is great for gaming and the headset has amazing sound.",
+          "rating": 5,
+          "likes": 105,
+          "replies": [
+            {
+              "name": "Ryan Chen",
+              "reply": "I'm a gamer on a budget and this sounds perfect. How's the mouse? Is it responsive?"
+            },
+            {
+              "name": "Laura Davis",
+              "reply": "Is the headset comfortable for long gaming sessions? My ears get sore easily."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Alex Wilson"
+          },
+          "review": "A great bundle for the price, but the microphone on the headset is a bit weak. My friends have a hard time hearing me.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Kevin Green",
+              "reply": "That's a bit of a bummer. I'll probably have to buy a separate mic then."
+            },
+            {
+              "name": "Chloe Miller",
+              "reply": "Is the keyboard mechanical or membrane? I prefer mechanical keyboards for gaming."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "The keyboard has great RGB lighting and the mouse glides smoothly. Overall, a great bundle for a new gamer.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Isabella White",
+              "reply": "Does it come with a mousepad? The picture shows one but the description doesn't say."
+            },
+            {
+              "name": "Daniel Brown",
+              "reply": "Is it easy to set up with a Windows PC? I'm not very tech-savvy."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Gaming Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Daniel Rodriguez"
+          },
+          "review": "This keyboard is so responsive! It's made a huge difference in my gaming performance.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Emily Carter",
+              "reply": "I'm a gamer and this sounds perfect. What kind of switches does it have?"
+            },
+            {
+              "name": "Matthew Taylor",
+              "reply": "Is the RGB lighting customizable? I want to match it with my other peripherals."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Miller"
+          },
+          "review": "A great keyboard, but it's very loud. Not ideal for late-night gaming sessions when my family is sleeping.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Lucas Davis",
+              "reply": "Good to know. I'll have to get a different one for my apartment."
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Does it come with a wrist rest? I need something comfortable for long gaming sessions."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ryan Green"
+          },
+          "review": "The build quality is excellent and the keycaps feel high-quality. A great keyboard for the price.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Sophie Wilson",
+              "reply": "Does it have any extra buttons for macros or shortcuts?"
+            },
+            {
+              "name": "Ben Perez",
+              "reply": "Is it a full-size keyboard with a number pad?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "NovaSound AirFlow",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Laura Johnson"
+          },
+          "review": "I love how lightweight and comfortable these earbuds are. The sound quality is amazing for their size.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Chris Smith",
+              "reply": "I'm looking for a good pair of earbuds for my workouts. Do they stay in your ears securely?"
+            },
+            {
+              "name": "Jessica Lee",
+              "reply": "How's the battery life? Do they last a full workout session and more?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Kevin Chen"
+          },
+          "review": "A great pair of earbuds, but the touch controls are a bit finicky. I have to tap a few times sometimes.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "That's a bit of a bummer. Is there an app to customize the controls?"
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it have a good microphone for taking calls?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emma Wilson"
+          },
+          "review": "The charging case is so small and portable. The sound is very balanced and clear, perfect for all genres of music.",
+          "rating": 5,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "James Taylor",
+              "reply": "Does the case have a good grip? I'm worried about it slipping out of my hands."
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "Is it easy to pair with multiple devices at once?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Microsoft Surface Arc Mouse",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Wilson"
+          },
+          "review": "I love the unique design! It's so easy to fold and put in my pocket. Perfect for travel.",
+          "rating": 5,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "I'm a student and need a portable mouse. How's the comfort for long hours of use?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "Does it work well on different surfaces like a wooden desk or a couch?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Grace Lee"
+          },
+          "review": "A great mouse for its portability, but the click is a bit loud. Not ideal for quiet environments.",
+          "rating": 4,
+          "likes": 40,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "That's good to know. I'll probably get a different one for my library sessions."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have any extra buttons for shortcuts or macros?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "The touch scroll is very smooth and the battery life is excellent. I only have to charge it every few months.",
+          "rating": 5,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "Does it connect via Bluetooth? I don't want to use up a USB port on my laptop."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Is the scroll wheel as good as a physical one? I'm worried about it feeling weird."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "TitanBook Gaming 17",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophia Adams"
+          },
+          "review": "This laptop is a powerhouse! It runs all my games at max settings with no problem.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "Mark Evans",
+              "reply": "I'm a serious gamer and this sounds perfect. How's the cooling system under heavy loads?"
+            },
+            {
+              "name": "Lisa Robinson",
+              "reply": "Is it heavy to carry around? I'm worried about it being too bulky."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "The performance is top-notch, but the battery life is a bit short. I have to keep it plugged in most of the time.",
+          "rating": 4,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "That's a good trade-off for the performance. Thanks for the heads-up on the battery life."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it have a good selection of ports for my external monitors and peripherals?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "The screen is amazing! The refresh rate is so high and it makes gaming so much smoother.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "That's exactly what I'm looking for. How's the keyboard and trackpad for gaming?"
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Does it come with any free games or software?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "GalaxyX Pro",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "The camera on this phone is insane! The zoom is so powerful and the photos are incredibly detailed.",
+          "rating": 5,
+          "likes": 115,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I'm a photographer and this sounds perfect. How's the low-light performance?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "Is the phone heavy to hold? I'm worried about it being too bulky."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "A fantastic phone, but the price is a bit high. Still, it's the best phone on the market for its features.",
+          "rating": 4,
+          "likes": 80,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "I'm saving up for it. I hope it's a good long-term investment."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it have a good battery life? I'm a heavy phone user."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "The screen is so vibrant and the colors pop. The software is also very smooth and easy to use.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "Does it come with a good charger in the box? Or do I have to buy it separately?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Is the phone good for gaming? Does it handle high-end games well?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Tactile Pro Mechanical Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "The satisfying click of the keys is everything! It's a joy to type on and the RGB lighting is beautiful.",
+          "rating": 5,
+          "likes": 110,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm a writer and this sounds perfect. What kind of switches does it use?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "Does it come with a wrist rest? I need something comfortable for long typing sessions."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "A great keyboard for gaming and typing, but it's very loud. Not ideal for a shared living space.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "Good to know. I'll probably get a different one for my apartment."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Is it a full-size keyboard with a number pad?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "The build quality is excellent and the keycaps feel high-quality. A great keyboard for the price.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "Does it have a USB passthrough port for my mouse?"
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Is it easy to set up with a Mac? Or is it more for Windows PCs?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Action Cam Ultra 4K",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "The video quality is fantastic! The image stabilization is so good for all my action sports videos.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I'm a skateboarder and this sounds perfect for me. Is it waterproof without a case?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "How's the battery life when recording in 4K? I need something that can last a while."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "A great action camera, but the battery life is a bit short. Had to buy a few extra batteries.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "That's a common issue with these cameras. Thanks for the heads-up on the extra batteries."
+            },
+            {
+              "name": "Laura Green",
+              "reply": "Does it come with a good selection of mounts and accessories?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "The camera is very user-friendly and the app is easy to use. I'm very happy with my purchase.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "Does it have a good microphone for recording audio during my videos?"
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Is it good for taking photos too? Or is it more video-focused?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Gaming Console",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "The graphics are stunning and the loading times are so fast! I'm loving the new games.",
+          "rating": 5,
+          "likes": 150,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "I'm a huge gamer and this sounds amazing. How's the backwards compatibility with older games?"
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "Does it have a good selection of games in the launch library?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "A great console, but it gets a bit hot when playing for long periods. I'm worried about it overheating.",
+          "rating": 4,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "I've heard about that. Is it loud when it's running hot?"
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Is it easy to set up and get it running out of the box?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "The controller is so comfortable and the haptic feedback is a game-changer. It makes me feel more immersed in the game.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "That's awesome! I love it when controllers have good haptic feedback."
+            },
+            {
+              "name": "Chloe White",
+              "reply": "Does it have a good selection of streaming apps like Netflix and Hulu?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "AeroBeat Max Wireless",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophie Martin"
+          },
+          "review": "I love how lightweight and comfortable these headphones are. The sound quality is amazing for their size.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Jacob Wilson",
+              "reply": "I'm looking for a good pair of headphones for my commute. How's the noise cancellation?"
+            },
+            {
+              "name": "Grace Miller",
+              "reply": "Does it have a good microphone for taking calls on the go?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chris Davis"
+          },
+          "review": "A great pair of headphones, but the touch controls are a bit finicky. I have to tap a few times sometimes.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "That's a bit of a bummer. Is there an app to customize the controls?"
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "How's the battery life on them? Do they last a full day of use?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emily White"
+          },
+          "review": "The design is very sleek and the build quality feels very premium. The sound is very balanced and clear.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Jack Adams",
+              "reply": "Does it come with a hard case for protection? I'm worried about scratching them."
+            },
+            {
+              "name": "Olivia Miller",
+              "reply": "Is it easy to pair with multiple devices at once?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "BassPulse X9",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Jessica Taylor"
+          },
+          "review": "The bass on this speaker is incredible! It's so powerful and it's perfect for my parties.",
+          "rating": 5,
+          "likes": 105,
+          "replies": [
+            {
+              "name": "Ryan Chen",
+              "reply": "I'm looking for a party speaker and this sounds perfect. Does it get loud enough for a big room?"
+            },
+            {
+              "name": "Laura Davis",
+              "reply": "How's the battery life on it? And is it waterproof?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Alex Wilson"
+          },
+          "review": "A great speaker, but it's a bit heavy to carry around. I wish it was a bit more portable.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Kevin Green",
+              "reply": "Good to know. I'll probably get a different one for my outdoor trips."
+            },
+            {
+              "name": "Chloe Miller",
+              "reply": "Does it have a good microphone for taking calls?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mark Evans"
+          },
+          "review": "The design is very sleek and the connectivity is seamless. I'm very happy with this speaker.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Isabella White",
+              "reply": "Is it easy to pair with both iOS and Android devices?"
+            },
+            {
+              "name": "Daniel Brown",
+              "reply": "Does it have a good app to customize the sound settings?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "EchoBeats Studio",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Daniel Rodriguez"
+          },
+          "review": "These headphones are incredible for music production! The sound is so flat and accurate.",
+          "rating": 5,
+          "likes": 115,
+          "replies": [
+            {
+              "name": "Emily Carter",
+              "reply": "I'm a music producer and this sounds perfect. How's the comfort for long studio sessions?"
+            },
+            {
+              "name": "Matthew Taylor",
+              "reply": "Does it have good noise isolation to block out external noise?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Miller"
+          },
+          "review": "A great pair of headphones, but the cable is a bit long and gets in the way sometimes.",
+          "rating": 4,
+          "likes": 70,
+          "replies": [
+            {
+              "name": "Lucas Davis",
+              "reply": "I can always buy a shorter cable. Thanks for the heads-up!"
+            },
+            {
+              "name": "Mia Thompson",
+              "reply": "Are the headphones durable? I'm worried about them breaking over time."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ryan Green"
+          },
+          "review": "The build quality is very solid and they feel very premium. The sound is top-notch and they are a great investment.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Sophie Wilson",
+              "reply": "Does it come with a carrying case? I'd like to protect them when I'm traveling."
+            },
+            {
+              "name": "Ben Perez",
+              "reply": "Is it good for gaming too? Or is it strictly for music production?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "USB Flash Drive",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Laura Johnson"
+          },
+          "review": "A simple and reliable flash drive. It's fast and I use it for all my school projects.",
+          "rating": 5,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Chris Smith",
+              "reply": "I'm a student too. What's the capacity on this model?"
+            },
+            {
+              "name": "Jessica Lee",
+              "reply": "Is it durable? I'm worried about it breaking in my backpack."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Kevin Chen"
+          },
+          "review": "A great little drive, but the cap is a bit loose. I'm worried about losing it.",
+          "rating": 4,
+          "likes": 30,
+          "replies": [
+            {
+              "name": "Sophia Rodriguez",
+              "reply": "Good to know. I'll probably get one with a retractable design instead."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does it work well with both Windows and Mac operating systems?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Emma Wilson"
+          },
+          "review": "The design is very sleek and it's so small and portable. I'm very happy with my purchase.",
+          "rating": 5,
+          "likes": 45,
+          "replies": [
+            {
+              "name": "James Taylor",
+              "reply": "Does it have a good read and write speed? I need to transfer large files."
+            },
+            {
+              "name": "Natalie Lopez",
+              "reply": "Is it easy to use? I'm not very tech-savvy."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Razer DeathAdder V4 Pro",
+      "review": [
+        {
+          "reviewer": {
+            "name": "David Wilson"
+          },
+          "review": "The best gaming mouse I've ever used! It's so comfortable for my hand and the sensor is incredibly accurate.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "Olivia Miller",
+              "reply": "I'm a competitive gamer and this sounds perfect. Is it lightweight or on the heavier side?"
+            },
+            {
+              "name": "Lucas Davis",
+              "reply": "How's the battery life? And does it come with a good charging dock?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Grace Lee"
+          },
+          "review": "A great mouse for gaming, but the price is a bit high. Still, you get what you pay for.",
+          "rating": 4,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "I'm saving up for it. I hope it's a good long-term investment for a gamer like me."
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have customizable RGB lighting? I want to match it with my other peripherals."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Carter"
+          },
+          "review": "The build quality is excellent and the buttons feel very responsive. The software is also very easy to use.",
+          "rating": 5,
+          "likes": 90,
+          "replies": [
+            {
+              "name": "Chloe White",
+              "reply": "Does it have a good DPI range? I need something with a high DPI for my games."
+            },
+            {
+              "name": "Jacob King",
+              "reply": "Is it a wireless mouse? I hate dealing with cables."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "ZenBook Ultra 14",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sophia Adams"
+          },
+          "review": "I love how lightweight and powerful this laptop is. The screen is beautiful and the performance is top-notch.",
+          "rating": 5,
+          "likes": 105,
+          "replies": [
+            {
+              "name": "Mark Evans",
+              "reply": "I'm a student and this sounds perfect. How's the battery life for a full day of classes?"
+            },
+            {
+              "name": "Lisa Robinson",
+              "reply": "Does it have a good selection of ports for connecting to external monitors and peripherals?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Chloe Scott"
+          },
+          "review": "A great laptop, but the speakers are a bit weak. I have to use headphones for music and movies.",
+          "rating": 4,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "David Carter",
+              "reply": "That's a bit of a bummer. Is the microphone good enough for video calls?"
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Is the keyboard comfortable for long typing sessions? I'm a writer."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ethan Green"
+          },
+          "review": "The build quality feels very premium and the design is so sleek. I'm very happy with this purchase.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Grace Miller",
+              "reply": "Does it get hot under heavy use? I'm worried about it overheating."
+            },
+            {
+              "name": "Jack Adams",
+              "reply": "Is the trackpad easy to use? I don't like using a mouse for my laptop."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "HyperSpeed Gaming Keyboard",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Kevin Rodriguez"
+          },
+          "review": "The response time on this keyboard is insane! It's made a huge difference in my gaming performance.",
+          "rating": 5,
+          "likes": 110,
+          "replies": [
+            {
+              "name": "Laura Scott",
+              "reply": "I'm a competitive gamer and this sounds perfect. What kind of switches does it have?"
+            },
+            {
+              "name": "Daniel Perez",
+              "reply": "Is the RGB lighting customizable? I want to match it with my other peripherals."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Hannah Brown"
+          },
+          "review": "A great keyboard, but it's very loud. Not ideal for late-night gaming sessions when my family is sleeping.",
+          "rating": 4,
+          "likes": 65,
+          "replies": [
+            {
+              "name": "Michael Taylor",
+              "reply": "Good to know. I'll have to get a different one for my apartment."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it come with a wrist rest? I need something comfortable for long gaming sessions."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "John Smith"
+          },
+          "review": "The build quality is excellent and the keycaps feel high-quality. A great keyboard for the price.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Jessica Carter",
+              "reply": "Does it have any extra buttons for macros or shortcuts?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Is it a full-size keyboard with a number pad?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "BassFlex Party Speaker",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Sarah Chen"
+          },
+          "review": "This speaker is a beast! The bass is so powerful and it's perfect for my parties and outdoor events.",
+          "rating": 5,
+          "likes": 120,
+          "replies": [
+            {
+              "name": "David Kim",
+              "reply": "I'm a party planner and this sounds perfect. Does it get loud enough for a big crowd?"
+            },
+            {
+              "name": "Laura Williams",
+              "reply": "How's the battery life on it? And is it waterproof?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Ben Lee"
+          },
+          "review": "A great speaker, but it's a bit heavy to carry around. I wish it was a bit more portable.",
+          "rating": 4,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Chris Green",
+              "reply": "Good to know. I'll probably get a different one for my trips."
+            },
+            {
+              "name": "Emily Wilson",
+              "reply": "Does it have a good microphone input for karaoke?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Olivia Martinez"
+          },
+          "review": "The design is very sleek and the connectivity is seamless. I'm very happy with this speaker.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Daniel Carter",
+              "reply": "Is it easy to pair with both iOS and Android devices?"
+            },
+            {
+              "name": "Sophia Brown",
+              "reply": "Does it have a good app to customize the sound settings?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "GamerX Headset & Mouse Combo",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Michael Brown"
+          },
+          "review": "This combo is a fantastic deal! The headset has amazing sound and the mouse is so responsive.",
+          "rating": 5,
+          "likes": 105,
+          "replies": [
+            {
+              "name": "Jessica Lee",
+              "reply": "I'm a gamer on a budget and this sounds perfect. How's the microphone on the headset?"
+            },
+            {
+              "name": "Ryan Davis",
+              "reply": "Is the headset comfortable for long gaming sessions? My ears get sore easily."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Sophia Wilson"
+          },
+          "review": "A great bundle for the price, but the mouse cable is a bit flimsy. I'm worried it will break over time.",
+          "rating": 4,
+          "likes": 60,
+          "replies": [
+            {
+              "name": "Kevin Chen",
+              "reply": "I might have to use a wireless mouse instead then. Thanks for the warning."
+            },
+            {
+              "name": "Laura Green",
+              "reply": "Are the headphones wired or wireless? I'm looking for a wireless option."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Tom Adams"
+          },
+          "review": "I'm impressed with the noise cancellation on the headset. It's perfect for when I'm in a noisy environment.",
+          "rating": 5,
+          "likes": 85,
+          "replies": [
+            {
+              "name": "Emma Wilson",
+              "reply": "That's a huge plus! I work in a loud office and need to block out noise."
+            },
+            {
+              "name": "Michael Brown",
+              "reply": "Does the mouse have customizable RGB lighting?"
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    },
+    {
+      "productName": "Gaming Headset",
+      "review": [
+        {
+          "reviewer": {
+            "name": "Hannah Moore"
+          },
+          "review": "The sound quality is amazing for gaming! I can hear every footstep and it's made a huge difference.",
+          "rating": 5,
+          "likes": 95,
+          "replies": [
+            {
+              "name": "Jake Miller",
+              "reply": "I'm a competitive gamer and this sounds perfect. How's the microphone quality for communicating with my teammates?"
+            },
+            {
+              "name": "Olivia Davis",
+              "reply": "Is the headset comfortable for long gaming sessions? My ears get sore easily."
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Liam Clark"
+          },
+          "review": "A great headset, but the volume controls are a bit hard to reach. I have to fumble around sometimes.",
+          "rating": 4,
+          "likes": 55,
+          "replies": [
+            {
+              "name": "Ava Wilson",
+              "reply": "That's a bit of a bummer. Is there an app to control the volume instead?"
+            },
+            {
+              "name": "Noah Evans",
+              "reply": "Does it have a good noise cancellation feature to block out background noise?"
+            }
+          ]
+        },
+        {
+          "reviewer": {
+            "name": "Mia Thompson"
+          },
+          "review": "The design is very sleek and the build quality feels very premium. I'm very happy with my purchase.",
+          "rating": 5,
+          "likes": 75,
+          "replies": [
+            {
+              "name": "Ethan Carter",
+              "reply": "Does it come with a stand or a hook to put it on when I'm not using it?"
+            },
+            {
+              "name": "Chloe White",
+              "reply": "Is it a wireless headset? I hate dealing with cables."
+            }
+          ]
+        }
+      ],
+      "averageRating": 4.7
+    }
+  ]

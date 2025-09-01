@@ -1,5 +1,6 @@
 import DescriptionSection from "@/components/product-details/DescriptionSection";
 import DetailsTop from "@/components/product-details/DetailsTop";
+import ReviewSection from "@/components/product-details/ReviewSection";
 import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
   const { name } = await params;
@@ -48,6 +49,7 @@ const DetailPage = async ({ params }) => {
     <main className="w-full mx-auto space-y-20 pb-10 min-h-screen">
       <DetailsTop product={product} />
       <DescriptionSection product={product} />
+      <ReviewSection name={product.name} />
     </main>
   );
 };
