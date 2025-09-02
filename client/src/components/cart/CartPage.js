@@ -128,7 +128,7 @@ const CartPage = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 w-3/4 sm:w-1/2 lg:w-1/4 2xl:w-1/3 h-full bg-white shadow-xl z-[10000] flex flex-col"
+            className="fixed top-0 right-0 w-3/4 sm:w-1/2 lg:w-1/3 2xl:w-1/3 h-full bg-white shadow-xl z-[10000] flex flex-col"
           >
             {/* Header */}
             <div className="p-4 flex justify-between items-center border-b">
@@ -142,7 +142,7 @@ const CartPage = () => {
             </div>
 
             <div className="flex-1 flex flex-col justify-between">
-              <div className="flex-1 overflow-y-auto">
+              <div className="flex-1 overflow-y-auto overflow-x-hidden">
                 {cartIsLoading ? (
                   <p className="text-center mt-8">Loading...</p>
                 ) : cartError ? (

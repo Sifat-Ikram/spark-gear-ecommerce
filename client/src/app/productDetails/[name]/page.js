@@ -3,6 +3,8 @@ import DetailsTop from "@/components/product-details/DetailsTop";
 import ReviewSection from "@/components/product-details/ReviewSection";
 import SimilarProducts from "@/components/product-details/SimilarProducts";
 import { notFound } from "next/navigation";
+
+
 export async function generateMetadata({ params }) {
   const { name } = await params;
   const res = await fetch(`http://localhost:5000/api/product`);
@@ -22,7 +24,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: product.title,
       description: product?.shortDescription,
-      url: `http://localhost:5000/api/product/${name}`,
+      url: `http://localhost:3000/api/product/${name}`,
       images: [
         {
           url: product.image,
