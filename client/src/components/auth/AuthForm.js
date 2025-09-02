@@ -44,7 +44,6 @@ export default function AuthForm({ type }) {
       const endpoint =
         type === "login" ? "/api/user/login" : "/api/user/register";
       const res = await axiosPublic.post(endpoint, data);
-      console.log(res);
 
       Swal.fire({
         toast: true,
@@ -58,7 +57,8 @@ export default function AuthForm({ type }) {
         timer: 1000,
         timerProgressBar: true,
       });
-
+      
+      localStorage.setItem("userEmail", res.data.user.email);
       localStorage.setItem("userName", res.data.user.name);
       localStorage.setItem("accessToken", res.data.accessToken);
       localStorage.setItem("refreshToken", res.data.refreshToken);

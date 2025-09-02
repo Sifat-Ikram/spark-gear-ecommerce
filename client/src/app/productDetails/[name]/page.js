@@ -1,6 +1,7 @@
 import DescriptionSection from "@/components/product-details/DescriptionSection";
 import DetailsTop from "@/components/product-details/DetailsTop";
 import ReviewSection from "@/components/product-details/ReviewSection";
+import SimilarProducts from "@/components/product-details/SimilarProducts";
 import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
   const { name } = await params;
@@ -50,6 +51,7 @@ const DetailPage = async ({ params }) => {
       <DetailsTop product={product} />
       <DescriptionSection product={product} />
       <ReviewSection name={product.name} />
+      <SimilarProducts productName={product.name} category={product.category} />
     </main>
   );
 };

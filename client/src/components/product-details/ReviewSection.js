@@ -30,7 +30,7 @@ const ReviewSection = ({ name }) => {
     try {
       await axiosPublic.post("/api/reviews", {
         productName: name,
-        reviewerName: user || "Anonymous",
+        reviewerName: user.name || "Anonymous",
         review: newReview,
         rating: 0,
         likes: 0,
@@ -50,7 +50,7 @@ const ReviewSection = ({ name }) => {
     try {
       await axiosPublic.patch(`/api/reviews/${name}/reply`, {
         reviewIndex,
-        replierName: user || "Anonymous",
+        replierName: user.name || "Anonymous",
         reply: replyText,
       });
       setReplyInputs((prev) => ({ ...prev, [reviewIndex]: "" }));

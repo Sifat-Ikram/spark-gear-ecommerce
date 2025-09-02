@@ -12,24 +12,24 @@ export function AuthProvider({ children }) {
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
   const pathname = usePathname();
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    try {
-      const storedUser = localStorage.getItem("userName");
-      if (storedUser) {
-        setUser(storedUser);
+  const [user, setUser] = useState(() => {
+    if (typeof window !== "undefined") {
+      const storedUserName = localStorage.getItem("userName");
+      const storedUserEmail = localStorage.getItem("userEmail");
+      if (storedUserName && storedUserEmail) {
+        return { name: storedUserName, email: storedUserEmail };
       }
-    } catch (err) {
-      console.warn("localStorage not available", err);
     }
-  }, []);
+    return null;
+  });
 
   useEffect(() => {
-    if (user) {
-      localStorage.setItem("userName", user);
+    if (user?.name && user?.email) {
+      localStorage.setItem("userName", user.name);
+      localStorage.setItem("userEmail", user.email);
     } else {
       localStorage.removeItem("userName");
+      localStorage.removeItem("userEmail");
     }
   }, [user]);
 

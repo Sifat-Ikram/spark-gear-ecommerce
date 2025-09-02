@@ -2,22 +2,31 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaUser } from "react-icons/fa";
 import SearchOverlay from "./SearchOverlay";
 import { useAuth } from "@/provider/AuthContext";
+import { useCart } from "@/provider/CartContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 
 const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
+  const { openCart } = useCart();
   const { user, logout } = useAuth();
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openUserDropdown, setOpenUserDropdown] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   if (categoryError) {
     return <h1>Error fetching categories!!!</h1>;
   }
+
+  const renderUser = hasMounted && user;
 
   return (
     <div className="flex items-center space-x-3.5 text-lg font-medium">
@@ -80,7 +89,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
             </Link>
           )
         )}
-        {!user && (
+        {!renderUser && (
           <Link
             href={"/login"}
             className="text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal"
@@ -99,6 +108,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           <FiSearch onClick={setShowSearch} className="text-sm md:text-base" />
         </motion.div>
         <motion.div
+          onClick={openCart}
           whileHover={{ scale: 1.2 }}
           className="relative cursor-pointer"
         >
@@ -108,7 +118,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           </span>
         </motion.div>
         <motion.div>
-          {user && (
+          {renderUser && (
             <div
               className="relative"
               onMouseEnter={() => setOpenUserDropdown(true)}

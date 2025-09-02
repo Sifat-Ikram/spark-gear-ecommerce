@@ -33,7 +33,7 @@ const DescriptionSection = ({ product }) => {
         </div>
 
         {/* Right Column - Specs */}
-        <div className="w-full lg:w-[48%] flex flex-col justify-between">
+        <div className="w-full lg:w-[48%] flex flex-col space-y-3 md:space-y-4 2xl:space-y-8">
           {product.specs.map((spec) => (
             <div
               key={spec.name}

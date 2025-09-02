@@ -1,11 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { FaChevronRight, FaStar } from "react-icons/fa";
-import ImageSection from "./ImageSection";
 import { motion } from "framer-motion";
+import ImageSection from "./ImageSection";
+import { useAuth } from "@/provider/AuthContext";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
+import { FaChevronRight, FaStar } from "react-icons/fa";
+import { useCart } from "@/provider/CartContext";
+import { useEffect, useState } from "react";
+import { useCartByEmail } from "@/hooks/useCartByEmail";
 
 const DetailsTop = ({ product }) => {
+  const { user } = useAuth();
+  const { openCart } = useCart();
+  const axiosPublic = useAxiosPublic();
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => setHasMounted(true), []);
+  const email = hasMounted ? user?.email : null;
+  const { cartRefetch } = useCartByEmail(email, {
+    enabled: !!email,
+  });
+
   if (!product) {
     return (
       <h1 className="text-center text-white text-lg md:text-xl xl:text-2xl font-semibold xl:font-bold">
@@ -13,6 +28,56 @@ const DetailsTop = ({ product }) => {
       </h1>
     );
   }
+
+  const addToCart = async (product) => {
+    if (!email) {
+      const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      const existing = storedCart.find(
+        (item) => item.cart.name === product.name
+      );
+
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        storedCart.push({
+          quantity: 1,
+          cart: {
+            image: product.images[0].url,
+            name: product.name,
+            category: product.category,
+            price: product.price,
+            sku: product.sku,
+            stock: product.stock,
+          },
+        });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(storedCart));
+    } else {
+      const cartData = {
+        userEmail: user.email,
+        userName: user.name,
+        quantity: 1,
+        cart: {
+          image: product.images[0].url,
+          name: product.name,
+          category: product.category,
+          price: product.price,
+          sku: product.sku,
+          stock: product.stock,
+        },
+      };
+
+      try {
+        const res = await axiosPublic.post("/api/cart/addCart", cartData);
+        cartRefetch();
+      } catch (err) {
+        console.error("Failed to add to cart:", err);
+      }
+    }
+    openCart();
+  };
 
   return (
     <section className="w-11/12 mx-auto pt-5 pb-10">
@@ -51,12 +116,10 @@ const DetailsTop = ({ product }) => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="flex-1 flex flex-col justify-between space-y-10 h-full">
-            {/* Product Name */}
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 break-words leading-snug sm:leading-tight">
               {product.name}
             </h1>
 
-            {/* Ratings & Warranty */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0">
               <div className="flex items-center space-x-2">
                 <div className="flex text-yellow-500">
@@ -81,12 +144,10 @@ const DetailsTop = ({ product }) => {
               </span>
             </div>
 
-            {/* Short Description */}
             <p className="text-sm sm:text-base text-gray-600 text-left w-4/5">
               {product?.shortDescription}
             </p>
 
-            {/* Product Details */}
             <div className="flex flex-col space-y-4 text-gray-800 text-sm sm:text-base">
               <span>
                 <strong>Brand:</strong> {product?.brand}
@@ -104,9 +165,13 @@ const DetailsTop = ({ product }) => {
             </div>
           </div>
 
-          {/* Add to Cart */}
           <div className="w-full sm:w-1/2">
-            <button className="w-full buttons mt-10">Add to Cart</button>
+            <button
+              onClick={() => addToCart(product)}
+              className="w-full buttons mt-10"
+            >
+              Add to Cart
+            </button>
           </div>
         </motion.div>
       </div>

@@ -5,12 +5,12 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { CartProvider } from "./CartContext";
 
 export default function QueryProvider({ children }) {
   const [queryClient] = useState(() => new QueryClient());
   const pathname = usePathname();
 
-  // Hide navbar/footer on these routes
   const hideLayout = ["/login", "/register"];
   const shouldHideLayout = hideLayout.some((route) =>
     pathname.startsWith(route)
@@ -18,9 +18,11 @@ export default function QueryProvider({ children }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {!shouldHideLayout && <Navbar />}
-      {children}
-      {!shouldHideLayout && <Footer />}
+      <CartProvider>
+        {!shouldHideLayout && <Navbar />}
+        {children}
+        {!shouldHideLayout && <Footer />}
+      </CartProvider>
     </QueryClientProvider>
   );
 }

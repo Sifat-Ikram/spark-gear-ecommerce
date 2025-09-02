@@ -17,9 +17,6 @@ export default function ProductSection({ products, type }) {
   const categories = [...new Set(products.map((p) => p.category))];
   const brands = [...new Set(products.map((p) => p.brand))];
 
-  const productNames = products.map((prod) => prod.name);
-  console.log(productNames);
-
   const filteredProducts = useMemo(() => {
     let result = products.filter((p) => {
       const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());

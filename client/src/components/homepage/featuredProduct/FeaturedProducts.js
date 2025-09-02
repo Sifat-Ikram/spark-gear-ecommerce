@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useProducts } from "@/hooks/useProducts";
-import Link from "next/link";
 import FeaturedCard from "@/components/card/FeaturedCard";
 
 const FeaturedProducts = () => {

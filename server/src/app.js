@@ -9,6 +9,7 @@ import userRoutes from "./routes/user.routes.js";
 import categoyRoutes from "./routes/category.routes.js";
 import productRoutes from "./routes/product.routes.js";
 import reviewRoutes from "./routes/review.routes.js";
+import cartRoutes from "./routes/cart.routes.js";
 import resetPassword from "./routes/resetPassword.routes.js";
 import { errorHandler } from "./middlewares/error.middleware.js";
 import cookieParser from "cookie-parser";
@@ -36,6 +37,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/category", categoyRoutes);
 app.use("/api/product", productRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use("/api/cart", cartRoutes);
 app.use("/api", resetPassword);
 
 app.get("/api/health", (req, res) => res.status(200).json({ status: "OK" }));
