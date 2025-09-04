@@ -41,7 +41,7 @@ export default function FeaturedCard({ product }) {
 
   return (
     <Link
-      href={`/productDetails/${product?.slug}`}
+      href={`/main-layout/productDetails/${product?.slug}`}
       className="bg-gray-50 group border-[1px] border-[#00a88f] rounded-2xl shadow-lg overflow-hidden flex flex-col"
     >
       <motion.div className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">

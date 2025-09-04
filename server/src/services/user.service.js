@@ -6,7 +6,7 @@ import {
   generateRefreshToken,
 } from "../utils/jwt.utils.js";
 
-export const registerUser = async (name, email, password) => {
+export const registerUser = async (name, email, password, role) => {
   const userExists = await User.findOne({ email });
   if (userExists) throw new Error("User already exists");
   const salt = await bcrypt.genSalt(10);
@@ -14,7 +14,8 @@ export const registerUser = async (name, email, password) => {
   const user = await User.create({
     name,
     email,
-    password: hashedPassword
+    password: hashedPassword,
+    role,
   });
 
   const accessToken = generateAccessToken(user);
@@ -52,7 +53,7 @@ export const loginUser = async (email, password) => {
     expiresIn: 15 * 60,
     user: {
       name: user.name,
-      email: user.email
+      email: user.email,
     },
   };
 };

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroProductHighlight() {
   return (
@@ -20,11 +21,11 @@ export default function HeroProductHighlight() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700/90 mb-12">
             Cutting-edge technology, sleek designs, and unbeatable performance.
           </p>
-          <div className="flex justify-center lg:justify-start gap-4 flex-wrap">
+          <Link href={"/register"} className="flex justify-center lg:justify-start gap-4 flex-wrap">
             <button className="bg-[#00a88f] hover:bg-[#1a7f73] text-white font-semibold px-6 py-3 rounded-lg transition">
               Sign up Today
             </button>
-          </div>
+          </Link>
         </motion.div>
       </div>
 

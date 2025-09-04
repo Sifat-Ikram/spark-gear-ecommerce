@@ -32,6 +32,7 @@ export default function AuthForm({ type }) {
   }, [setValue]);
 
   const onSubmit = async (data) => {
+    data.role = "user";
     if (rememberMe) {
       localStorage.setItem("rememberEmail", data.email);
       localStorage.setItem("rememberPassword", data.password);
@@ -57,7 +58,7 @@ export default function AuthForm({ type }) {
         timer: 1000,
         timerProgressBar: true,
       });
-      
+
       localStorage.setItem("userEmail", res.data.user.email);
       localStorage.setItem("userName", res.data.user.name);
       localStorage.setItem("accessToken", res.data.accessToken);

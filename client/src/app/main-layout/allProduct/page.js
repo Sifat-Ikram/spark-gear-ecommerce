@@ -1,6 +1,7 @@
 import Cover from "@/components/card/Cover";
 import ProductSection from "@/components/productpage/ProductSection";
 
+
 export const metadata = {
   title: "Our Products - Spark Gear",
   description:

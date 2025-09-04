@@ -2,12 +2,12 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { useAuth } from "@/provider/AuthContext";
 import Image from "next/image";
-import { useCartByEmail } from "@/hooks/useCartByEmail";
 import Swal from "sweetalert2";
-import useAxiosPublic from "@/hooks/useAxiosPublic";
 import { useRouter } from "next/navigation";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
+import { useAuth } from "@/provider/AuthContext";
+import { useCartByEmail } from "@/hooks/useCartByEmail";
 
 const Checkout = () => {
   const router = useRouter();

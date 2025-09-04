@@ -9,7 +9,7 @@ export default function ProductPageCard({ product }) {
       whileHover={{ scale: 1.03 }}
       className="bg-white rounded-xl shadow"
     >
-      <Link href={`/productDetails/${product?.slug}`}>
+      <Link href={`/main-layout/productDetails/${product?.slug}`}>
         <div className="relative w-full h-40">
           <Image
             src={product.images[0]?.url}

@@ -8,6 +8,7 @@ import HeroProductHighlight from "@/components/homepage/highlights/HeroProductHi
 import IntroSection from "@/components/homepage/intro/IntroSection";
 import NewArrival from "@/components/homepage/new-arrivals/NewArrival";
 import TestimonialSection from "@/components/homepage/testimonial/TestimonialSection";
+import MainLayout from "./main-layout/layout";
 
 export const metadata = {
   title: "Spark Gear | Best Gadget Shop for Innovative Tech Products",
@@ -46,23 +47,25 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="my-20 space-y-20">
-      <Banner />
-      <div className="w-11/12 mx-auto flex flex-col space-y-20">
-        <IntroSection />
-        <CategoriesSection />
-        <FeaturedProducts />
+    <MainLayout>
+      <div className="my-20 space-y-20">
+        <Banner />
+        <div className="w-11/12 mx-auto flex flex-col space-y-20">
+          <IntroSection />
+          <CategoriesSection />
+          <FeaturedProducts />
+        </div>
+        <WhyChooseUs />
+        <div className="w-11/12 mx-auto flex flex-col space-y-20">
+          <BrandSection />
+          <HeroProductHighlight />
+          <NewArrival />
+        </div>
+        <AppDownload />
+        <div className="w-11/12 mx-auto flex flex-col space-y-20">
+          <TestimonialSection />
+        </div>
       </div>
-      <WhyChooseUs />
-      <div className="w-11/12 mx-auto flex flex-col space-y-20">
-        <BrandSection />
-        <HeroProductHighlight />
-        <NewArrival />
-      </div>
-      <AppDownload />
-      <div className="w-11/12 mx-auto flex flex-col space-y-20">
-        <TestimonialSection />
-      </div>
-    </div>
+    </MainLayout>
   );
 }

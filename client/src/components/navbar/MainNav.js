@@ -19,19 +19,19 @@ const MainNav = () => {
   const navItems = [
     {
       label: "Products",
-      link: "/allProduct",
+      link: "/main-layout/allProduct",
     },
     {
       label: "Categories",
       dropdown: categories?.map((cat) => ({
         label: cat.name,
-        link: `/category/${slugify(cat.name, { lower: true })}`,
+        link: `/main-layout/category/${slugify(cat.name, { lower: true })}`,
         image: cat.image,
       })),
     },
     {
       label: "About us",
-      link: "/aboutUs",
+      link: "/main-layout/aboutUs",
     },
   ];
 

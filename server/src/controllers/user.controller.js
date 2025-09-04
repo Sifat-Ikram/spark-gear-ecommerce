@@ -20,11 +20,12 @@ export const register = async (req, res, next) => {
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
 
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
     const { accessToken, refreshToken, expiresIn, user } = await registerUser(
       name,
       email,
-      password
+      password,
+      role
     );
 
     res.cookie("accessToken", accessToken, {

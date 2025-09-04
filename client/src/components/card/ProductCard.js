@@ -35,7 +35,7 @@ export default function ProductCard({ product }) {
           <p className="text-sm md:text-base lg:text-lg font-bold text-gray-900 dark:text-white">
             {product.price.toFixed(2)} BDT
           </p>
-          <Link href={`/productDetails/${product?.slug}`}>
+          <Link href={`/main-layout/productDetails/${product?.slug}`}>
             <button className="bg-[#00a88f] hover:bg-[#1a7f73] text-white font-semibold px-4 sm:px-5 py-2 rounded-lg transition text-sm sm:text-base">
               View Details
             </button>

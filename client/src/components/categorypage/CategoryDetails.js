@@ -18,7 +18,10 @@ const CategoryDetails = ({ products, category }) => {
             Home
           </Link>
           <FaChevronRight className="w-4 h-4" />
-          <Link href="/allProduct" className="hover:text-primary font-medium">
+          <Link
+            href="/main-layout/allProduct"
+            className="hover:text-primary font-medium"
+          >
             Products
           </Link>
           <FaChevronRight className="w-4 h-4" />

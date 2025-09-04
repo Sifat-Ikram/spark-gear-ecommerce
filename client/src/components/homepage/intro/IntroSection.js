@@ -29,7 +29,10 @@ const IntroSection = () => {
           smartphones to cameras, keyboards, and accessories. At Sparkear, we
           bring you only the best gadgets to spark your digital lifestyle.
         </p>
-        <Link href="/shop" className="buttons max-md:w-full md:w-fit">
+        <Link
+          href="/main-layout/allProduct"
+          className="buttons max-md:w-full md:w-fit"
+        >
           Shop Now
         </Link>
       </div>

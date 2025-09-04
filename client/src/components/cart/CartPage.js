@@ -236,7 +236,7 @@ const CartPage = () => {
                 <button
                   onClick={() => {
                     closeCart();
-                    router.push("/checkout");
+                    router.push("/main-layout/checkout");
                   }}
                   className="w-full buttons"
                 >
