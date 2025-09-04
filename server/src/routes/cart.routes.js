@@ -2,6 +2,7 @@ import express from "express";
 import {
   addToCart,
   deleteCart,
+  deleteCartByEmail,
   getAllCart,
   getCartByEmail,
   updatCart,
@@ -14,5 +15,6 @@ router.get("/", getAllCart);
 router.get("/:email", getCartByEmail);
 router.patch("/:id", updatCart);
 router.delete("/:id", deleteCart);
+router.delete("/user/:email", deleteCartByEmail);
 
 export default router;

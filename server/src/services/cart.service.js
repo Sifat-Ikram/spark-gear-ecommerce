@@ -33,7 +33,7 @@ export const getCartByEmailService = async (email) => {
 export const updateCartService = async (id, action) => {
   const cartItem = await Cart.findById(id);
   console.log(cartItem);
-  
+
   if (!cartItem) {
     return null;
   }
@@ -48,4 +48,8 @@ export const updateCartService = async (id, action) => {
 
 export const deleteCartService = async (id) => {
   return await Cart.findByIdAndDelete(id);
+};
+
+export const deleteCartByEmailService = async (email) => {
+  return await Cart.deleteMany({ userEmail: email });
 };

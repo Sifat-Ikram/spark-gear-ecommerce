@@ -1,5 +1,6 @@
 import {
   addCartService,
+  deleteCartByEmailService,
   deleteCartService,
   getCartByEmailService,
   getCartService,
@@ -67,5 +68,25 @@ export const deleteCart = async (req, res) => {
     res
       .status(500)
       .json({ message: "Error deleting cart", error: err.message });
+  }
+};
+
+export const deleteCartByEmail = async (req, res) => {
+  try {
+    const { email } = req.params;
+    const result = await deleteCartByEmailService(email);
+
+    if (result.deletedCount === 0) {
+      return res
+        .status(404)
+        .json({ message: "No cart items found for this user" });
+    }
+
+    res.json({ message: "All cart items deleted successfully!", result });
+  } catch (err) {
+    res.status(500).json({
+      message: "Error deleting user's cart",
+      error: err.message,
+    });
   }
 };

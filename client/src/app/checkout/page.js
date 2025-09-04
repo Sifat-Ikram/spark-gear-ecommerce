@@ -6,9 +6,13 @@ import { useAuth } from "@/provider/AuthContext";
 import Image from "next/image";
 import { useCartByEmail } from "@/hooks/useCartByEmail";
 import Swal from "sweetalert2";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
+import { useRouter } from "next/navigation";
 
 const Checkout = () => {
+  const router = useRouter();
   const { user } = useAuth();
+  const axiosPublic = useAxiosPublic();
   const { register, handleSubmit, watch, setValue } = useForm({
     defaultValues: {
       city: user?.city || "Dhaka",
@@ -30,12 +34,7 @@ const Checkout = () => {
   useEffect(() => setHasMounted(true), []);
 
   const email = hasMounted ? user?.email : null;
-  const {
-    cart: storedCartHook,
-    cartIsLoading,
-    cartError,
-    cartRefetch,
-  } = useCartByEmail(email, {
+  const { cart: storedCartHook } = useCartByEmail(email, {
     enabled: !!email,
   });
 
@@ -133,8 +132,6 @@ const Checkout = () => {
       });
       return;
     }
-
-    // Build order data
     const orderData = {
       user: {
         name: data.name,
@@ -143,50 +140,40 @@ const Checkout = () => {
         city: data.city,
         address: data.address,
       },
-      cart: cart, // include cart as-is
+      cart: cart.map((item) => ({
+        cart: item.cart,
+        quantity: item.quantity,
+        createdAt: item.createdAt,
+        updatedAt: item.updatedAt,
+        _id: item._id,
+      })),
       shippingFee: shippingFee,
       orderTotal:
         cart.reduce((sum, item) => sum + item.cart.price * item.quantity, 0) +
         shippingFee,
-      paymentInfo: null, // will be updated based on payment method
+      paymentInfo: null,
       createdAt: new Date().toISOString(),
     };
 
     try {
-      if (selectedMethod === "cod") {
-        orderData.paymentInfo = "Cash on Delivery";
-      } else if (selectedMethod === "card" || selectedMethod === "bkash") {
-        // Here, you should integrate the actual payment process
-        // After payment succeeds, include the payment details in orderData.paymentInfo
-        // For now, we simulate with a placeholder
-        const paymentResult = {
-          method: selectedMethod,
-          transactionId: "TXN1234567890", // replace with actual txn ID from payment gateway
-          status: "Paid",
-        };
-        orderData.paymentInfo = paymentResult;
-      }
+      const res = await axiosPublic.post("/api/order/createOrder", orderData);
 
-      // Send order to backend
-      const response = await fetch("/api/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(orderData),
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
+      if (res.data) {
         Swal.fire({
           icon: "success",
           title: "Order Placed!",
           text: "Your order has been successfully placed.",
           confirmButtonColor: "#1a7f73",
         });
-        console.log("Checkout Response:", result);
-        // Optionally: clear cart or redirect
+
+        if (user?.email) {
+          await axiosPublic.delete(`/api/cart/user/${user.email}`);
+          setCart([]);
+        } else {
+          localStorage.removeItem("cart");
+          setCart([]);
+        }
+        router.push("/");
       } else {
         Swal.fire({
           icon: "error",
@@ -348,7 +335,7 @@ const Checkout = () => {
             </div>
             <div className="flex justify-between items-center p-4 text-sm md:text-base">
               <span>Shipping</span>
-              <span className="font-medium">BDT {shippingFee}</span>
+              <span className="font-medium">{shippingFee} BDT</span>
             </div>
             <div className="flex justify-between items-center p-4 mt-2 text-lg md:text-xl font-semibold bg-gray-50">
               <span>Order Total</span>

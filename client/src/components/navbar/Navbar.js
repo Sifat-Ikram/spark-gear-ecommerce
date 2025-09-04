@@ -3,7 +3,7 @@ import TopBar from "./TopBar";
 import MainNav from "./MainNav";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const quickLinksLeft = [
   { id: 1, label: "About Us", href: "/about" },
@@ -43,29 +43,17 @@ const Navbar = () => {
       <nav className="w-full sticky top-0 z-50">
         <AnimatePresence>
           {showTopBarOnPage && (
-            <motion.div
-              key="topbar"
-              initial={{ y: -50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -50, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
+            <div>
               <TopBar
                 quickLinksLeft={quickLinksLeft}
                 quickLinksRight={quickLinksRight}
               />
-            </motion.div>
+            </div>
           )}
         </AnimatePresence>
-        <motion.div
-          key="mainnav"
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          className="bg-[#1a7f73] w-full"
-        >
+        <div className="bg-[#1a7f73] w-full">
           <MainNav />
-        </motion.div>
+        </div>
       </nav>
     </>
   );
