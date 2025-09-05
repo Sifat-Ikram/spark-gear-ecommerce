@@ -35,7 +35,6 @@ export default function ProductList({ products }) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Pagination */}
       {products.length > itemsPerPage && (
         <div className="mt-6 flex justify-center">
           <Pagination
