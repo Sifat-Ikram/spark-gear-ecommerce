@@ -79,7 +79,7 @@ const ProductImages = ({ productId, type, images = [] }) => {
     }
   };
 
-  const handleRemoveImage = async (urlToRemove, indexToRemove) => {
+  const handleRemoveImage = async (indexToRemove) => {
     // Remove locally first
     const updated = localImages.filter((_, i) => i !== indexToRemove);
     setLocalImages(updated);

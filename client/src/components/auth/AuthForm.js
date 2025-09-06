@@ -16,6 +16,7 @@ export default function AuthForm({ type }) {
   const { user, loading, setUser } = useAuth();
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -23,16 +24,16 @@ export default function AuthForm({ type }) {
     formState: { errors, isSubmitting },
   } = useForm();
 
+  // Load saved email for "Remember Me"
   useEffect(() => {
     const savedEmail = localStorage.getItem("rememberEmail");
-    const savedPassword = localStorage.getItem("rememberPassword");
-    if (savedEmail && savedPassword) {
+    if (savedEmail) {
       setValue("email", savedEmail);
-      setValue("password", savedPassword);
       setRememberMe(true);
     }
   }, [setValue]);
 
+  // Redirect logged-in user away from login page
   useEffect(() => {
     if (!loading && user && type === "login") {
       router.replace("/");
@@ -42,13 +43,12 @@ export default function AuthForm({ type }) {
   if (loading || (user && type === "login")) return null;
 
   const onSubmit = async (data) => {
-    data.role = "user";
-    if (rememberMe) {
+    if (type === "register") data.role = "user";
+
+    if (rememberMe && type === "login") {
       localStorage.setItem("rememberEmail", data.email);
-      localStorage.setItem("rememberPassword", data.password);
     } else {
       localStorage.removeItem("rememberEmail");
-      localStorage.removeItem("rememberPassword");
     }
 
     try {
@@ -69,13 +69,13 @@ export default function AuthForm({ type }) {
         timerProgressBar: true,
       });
 
-      localStorage.setItem("userEmail", res.data.user.email);
-      localStorage.setItem("userName", res.data.user.name);
-      localStorage.setItem("accessToken", res.data.accessToken);
-      localStorage.setItem("refreshToken", res.data.refreshToken);
-      localStorage.setItem("expiresIn", res.data.expiresIn);
-
-      setUser({ name: res.data.user.name, email: res.data.user.email });
+      // Set global user state
+      setUser({
+        id: res.data.user.id,
+        name: res.data.user.name,
+        email: res.data.user.email,
+        role: res.data.user.role,
+      });
 
       router.push(type === "login" ? "/" : "/login");
     } catch (error) {
@@ -111,13 +111,13 @@ export default function AuthForm({ type }) {
           type="text"
           placeholder="Enter Your Full Name"
           {...register("name", { required: "Name is required" })}
-          error={errors.username && errors.username.message}
+          error={errors.name && errors.name.message} // ✅ corrected
         />
       )}
 
       <InputField
         label="Email"
-        placeholder="Enter you email"
+        placeholder="Enter your email"
         type="email"
         {...register("email", { required: "Email is required" })}
         error={errors.email && errors.email.message}

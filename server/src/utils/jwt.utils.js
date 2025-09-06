@@ -1,9 +1,16 @@
 import jwt from "jsonwebtoken";
 
 export const generateAccessToken = (user) => {
-  return jwt.sign({ id: user._id, email: user.email, role: user.role }, process.env.JWT_SECRET, {
-    expiresIn: "15m",
-  });
+  return jwt.sign(
+    {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: "15m" }
+  );
 };
 
 export const generateRefreshToken = (user) => {
@@ -24,7 +31,6 @@ export const verifyRefreshToken = (token) => {
   try {
     return jwt.verify(token, process.env.JWT_REFRESH_SECRET);
   } catch (err) {
-    console.error("Refresh token verification error:", err);
     return null;
   }
 };

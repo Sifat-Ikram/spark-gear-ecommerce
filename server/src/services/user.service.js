@@ -29,6 +29,7 @@ export const registerUser = async (name, email, password, role) => {
       id: user._id,
       name: user.name,
       email: user.email,
+      role: user.role,
     },
   };
 };
@@ -52,8 +53,10 @@ export const loginUser = async (email, password) => {
     refreshToken,
     expiresIn: 15 * 60,
     user: {
+      id: user._id,
       name: user.name,
       email: user.email,
+      role: user.role,
     },
   };
 };
@@ -75,6 +78,12 @@ export const refreshAccessToken = async (refreshToken) => {
     return {
       accessToken: newAccessToken,
       expiresIn: 15 * 60,
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+      },
     };
   } catch (error) {
     throw new Error("Invalid refresh token");

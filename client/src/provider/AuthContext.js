@@ -4,37 +4,18 @@ import axios from "axios";
 import { createContext, useContext, useState, useEffect, useMemo } from "react";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
 import { usePathname, useRouter } from "next/navigation";
+import { jwtDecode } from "jwt-decode";
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
-  const router = useRouter();
-  const axiosPublic = useAxiosPublic();
-  const pathname = usePathname();
   const [user, setUser] = useState(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const axiosPublic = useAxiosPublic();
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const storedUserName = localStorage.getItem("userName");
-      const storedUserEmail = localStorage.getItem("userEmail");
-      if (storedUserName && storedUserEmail) {
-        setUser({ name: storedUserName, email: storedUserEmail });
-      }
-    }
-    setLoading(false);
-  }, []);
-
-  useEffect(() => {
-    if (user?.name && user?.email) {
-      localStorage.setItem("userName", user.name);
-      localStorage.setItem("userEmail", user.email);
-    } else {
-      localStorage.removeItem("userName");
-      localStorage.removeItem("userEmail");
-    }
-  }, [user]);
-
+  // Axios instance with 401 interceptor
   const axiosInstance = useMemo(() => {
     const instance = axios.create({
       baseURL: axiosPublic.defaults.baseURL,
@@ -46,16 +27,34 @@ export function AuthProvider({ children }) {
       async (error) => {
         const originalRequest = error.config;
 
-        if (error.response?.status === 401 && !originalRequest._retry) {
+        // Only retry if refreshToken cookie exists
+        const hasRefreshToken = document.cookie.includes("refreshToken");
+
+        if (
+          error.response?.status === 401 &&
+          !originalRequest._retry &&
+          hasRefreshToken
+        ) {
           originalRequest._retry = true;
           try {
-            await instance.post("/api/user/refresh");
+            const refreshRes = await instance.post("/api/user/refresh");
+            const newAccessToken = refreshRes.data.accessToken;
+
+            const decoded = jwtDecode(newAccessToken);
+            setUser({
+              id: decoded.id,
+              name: decoded.name,
+              email: decoded.email,
+              role: decoded.role,
+            });
+
+            originalRequest.headers[
+              "Authorization"
+            ] = `Bearer ${newAccessToken}`;
             return instance(originalRequest);
-          } catch (refreshError) {
-            console.error("Refresh token failed:", refreshError);
+          } catch {
             setUser(null);
-            router.push("/login");
-            return Promise.reject(refreshError);
+            return Promise.reject(error);
           }
         }
 
@@ -64,38 +63,46 @@ export function AuthProvider({ children }) {
     );
 
     return instance;
-  }, [axiosPublic, router]);
+  }, [axiosPublic]);
 
   useEffect(() => {
-    const attemptRefresh = async () => {
-      try {
-        await axiosInstance.post("/api/user/refresh");
-      } catch (err) {
-        const status = err.response?.status;
-        if (![400, 401, 500].includes(status)) {
-          console.error("Unexpected refresh error:", err);
-        }
+    const initializeUser = async () => {
+      const hasRefreshToken = document.cookie.includes("refreshToken");
+      if (!hasRefreshToken) {
         setUser(null);
-        if (pathname !== "/login" && pathname !== "/register") {
-          router.push("/login");
+        setLoading(false);
+        return; // Do not call /refresh if no token
+      }
+
+      try {
+        const res = await axiosInstance.post("/api/user/refresh");
+        const accessToken = res.data.accessToken;
+
+        if (accessToken) {
+          const decoded = jwtDecode(accessToken);
+          setUser({
+            id: decoded.id,
+            name: decoded.name,
+            email: decoded.email,
+            role: decoded.role,
+          });
         }
+      } catch (err) {
+        setUser(null); // silent fail
       } finally {
         setLoading(false);
       }
     };
 
-    if (pathname !== "/") {
-      attemptRefresh();
-    } else {
-      setLoading(false);
-    }
-  }, [axiosInstance, router, pathname]);
+    initializeUser();
+  }, [axiosInstance]);
 
+  // Logout function
   const logout = async () => {
     try {
       await axiosInstance.post("/api/user/logout");
       setUser(null);
-      router.push("/");
+      router.push("/login");
     } catch (err) {
       console.error("Logout failed:", err);
     }
@@ -103,16 +110,11 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{
-        axiosInstance,
-        loading,
-        user,
-        setUser,
-        logout,
-      }}
+      value={{ axiosInstance, loading, user, setUser, logout }}
     >
       {children}
     </AuthContext.Provider>
   );
 }
+
 export const useAuth = () => useContext(AuthContext);
