@@ -1,13 +1,13 @@
 "use client";
 
-import useAxiosPublic from "@/hooks/useAxiosPublic";
-import { useUser } from "@/hooks/useUser";
-import { useState } from "react";
-import { MdDelete } from "react-icons/md";
 import Swal from "sweetalert2";
+import { useState } from "react";
+import { useUser } from "@/hooks/useUser";
+import { MdDelete } from "react-icons/md";
+import { useAuth } from "@/provider/AuthContext";
 
 const UserPage = () => {
-  const axiosPublic = useAxiosPublic();
+  const { axiosInstance } = useAuth();
   const [updatingUserId, setUpdatingUserId] = useState(null);
   const { users, userIsLoading, userError, userRefetch } = useUser();
 
@@ -25,9 +25,11 @@ const UserPage = () => {
     if (result.isConfirmed) {
       try {
         setUpdatingUserId(userId);
-        await axiosPublic.patch(`/api/users/${userId}/role`, { role: newRole });
+        await axiosInstance.patch(`/api/users/${userId}/role`, {
+          role: newRole,
+        });
         Swal.fire("Updated!", `User role changed to ${newRole}.`, "success");
-        userRefetch(); // refresh table
+        userRefetch();
       } catch (error) {
         Swal.fire("Error!", "Failed to change role.", "error");
         console.error("Failed to update role:", error);
@@ -50,7 +52,7 @@ const UserPage = () => {
 
     if (result.isConfirmed) {
       try {
-        await axiosPublic.delete(`/api/users/${userId}`);
+        await axiosInstance.delete(`/api/users/${userId}`);
         Swal.fire("Deleted!", "User has been deleted.", "success");
         userRefetch();
       } catch (error) {

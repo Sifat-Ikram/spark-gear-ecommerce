@@ -1,15 +1,17 @@
 "use client";
 
+import { useAuth } from "@/provider/AuthContext";
 import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "./useAxiosPublic";
 
 export function useUser() {
-  const axiosPublic = useAxiosPublic();
+  const { axiosInstance } = useAuth();
 
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await axiosPublic.get("/api/users");
+      const res = await axiosInstance.get("/api/users", {
+        withCredentials: true,
+      });
       return res.data;
     },
     staleTime: 1000 * 60 * 5,

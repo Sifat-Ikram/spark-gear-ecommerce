@@ -12,16 +12,18 @@ export function AuthProvider({ children }) {
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
   const pathname = usePathname();
-  const [user, setUser] = useState(() => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
     if (typeof window !== "undefined") {
       const storedUserName = localStorage.getItem("userName");
       const storedUserEmail = localStorage.getItem("userEmail");
       if (storedUserName && storedUserEmail) {
-        return { name: storedUserName, email: storedUserEmail };
+        setUser({ name: storedUserName, email: storedUserEmail });
       }
     }
-    return null;
-  });
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     if (user?.name && user?.email) {
@@ -35,6 +37,7 @@ export function AuthProvider({ children }) {
 
   const axiosInstance = useMemo(() => {
     const instance = axios.create({
+      baseURL: axiosPublic.defaults.baseURL,
       withCredentials: true,
     });
 
@@ -46,12 +49,12 @@ export function AuthProvider({ children }) {
         if (error.response?.status === 401 && !originalRequest._retry) {
           originalRequest._retry = true;
           try {
-            await axiosPublic.post("/api/user/refresh");
-
+            await instance.post("/api/user/refresh");
             return instance(originalRequest);
           } catch (refreshError) {
             console.error("Refresh token failed:", refreshError);
-            router.push("/");
+            setUser(null);
+            router.push("/login");
             return Promise.reject(refreshError);
           }
         }
@@ -66,12 +69,15 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const attemptRefresh = async () => {
       try {
-        await axiosPublic.post("/api/user/refresh");
+        await axiosInstance.post("/api/user/refresh");
       } catch (err) {
         const status = err.response?.status;
         if (![400, 401, 500].includes(status)) {
           console.error("Unexpected refresh error:", err);
-          router.push("/");
+        }
+        setUser(null);
+        if (pathname !== "/login" && pathname !== "/register") {
+          router.push("/login");
         }
       } finally {
         setLoading(false);
@@ -83,11 +89,11 @@ export function AuthProvider({ children }) {
     } else {
       setLoading(false);
     }
-  }, [axiosPublic, router, pathname]);
+  }, [axiosInstance, router, pathname]);
 
   const logout = async () => {
     try {
-      await axiosPublic.post("/api/user/logout");
+      await axiosInstance.post("/api/user/logout");
       setUser(null);
       router.push("/");
     } catch (err) {
@@ -101,6 +107,7 @@ export function AuthProvider({ children }) {
         axiosInstance,
         loading,
         user,
+        setUser,
         logout,
       }}
     >

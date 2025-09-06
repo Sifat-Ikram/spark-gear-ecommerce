@@ -9,6 +9,9 @@ import { useState } from "react";
 import Pagination from "@/components/productpage/Pagination";
 import { useRouter } from "next/navigation";
 import ProductFilter from "@/components/admin-routes/ProductFilter";
+import Swal from "sweetalert2";
+import { useAuth } from "@/provider/AuthContext";
+import Link from "next/link";
 
 const AdminProducts = () => {
   const { products, productIsLoading, productError, productRefetch } =
@@ -17,6 +20,7 @@ const AdminProducts = () => {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const { axiosInstance } = useAuth();
 
   const categories = Array.from(new Set(products.map((p) => p.category)));
 
@@ -36,11 +40,32 @@ const AdminProducts = () => {
   const start = (page - 1) * itemsPerPage;
   const paginated = filteredProducts.slice(start, start + itemsPerPage);
 
+  const handleDelete = async (id) => {
+    const result = await Swal.fire({
+      title: "Are you sure?",
+      text: "Do you want to delete this product?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Yes, delete it!",
+      cancelButtonText: "Cancel",
+    });
+
+    if (result.isConfirmed) {
+      try {
+        await axiosInstance.delete(`/api/product/${id}`);
+        Swal.fire("Deleted!", "Product has been deleted.", "success");
+        productRefetch();
+      } catch (error) {
+        Swal.fire("Error!", "Failed to delete the product.", "error");
+      }
+    }
+  };
+
   if (productIsLoading) return <p>Loading...</p>;
   if (productError) return <p>Error loading users</p>;
 
   return (
-    <div className="w-11/12 mx-auto min-h-screen pb-8">
+    <main className="w-11/12 mx-auto min-h-screen pb-8">
       <h1 className="text-center text-lg sm:text-xl md:text-3xl lg:text-5xl 2xl:text-7xl font-bold my-10">
         Product List
       </h1>
@@ -75,7 +100,14 @@ const AdminProducts = () => {
               >
                 <td className="relative h-5 w-5 sm:h-8 sm:w-8 md:h-12 md:w-12 xl:h-16 xl:w-16 px-2 py-1 md:px-2 md:py-3">
                   <Image
-                    src={product.images[0] || fallback}
+                    src={
+                      product.images &&
+                      Array.isArray(product.images) &&
+                      typeof product.images[0] === "string" &&
+                      product.images[0].trim() !== ""
+                        ? product.images[0]
+                        : fallback
+                    }
                     alt={product.name}
                     fill
                     priority
@@ -98,12 +130,17 @@ const AdminProducts = () => {
                   )}
                 </td>
                 <td className="px-2 py-1 md:px-2 md:py-3 text-center">
-                  <button className="text-blue-600 hover:text-blue-800 transition-colors">
-                    <FiEdit2 size={20} />
-                  </button>
+                  <Link href={`/admin/updateProduct/${product._id}`}>
+                    <button className="text-[#00a88f] hover:text-[#1a7f73] cursor-pointer transition-colors">
+                      <FiEdit2 size={20} />
+                    </button>
+                  </Link>
                 </td>
                 <td className="px-2 py-1 md:px-2 md:py-3 text-center">
-                  <button className="text-red-600 hover:text-red-800 transition-colors">
+                  <button
+                    onClick={() => handleDelete(product._id)}
+                    className="text-red-600 cursor-pointer hover:text-red-800 transition-colors"
+                  >
                     <FiTrash2 size={20} />
                   </button>
                 </td>
@@ -123,7 +160,7 @@ const AdminProducts = () => {
           )}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

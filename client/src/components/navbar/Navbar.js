@@ -43,12 +43,10 @@ const Navbar = () => {
       <nav className="w-full sticky top-0 z-50">
         <AnimatePresence>
           {showTopBarOnPage && (
-            <div>
-              <TopBar
-                quickLinksLeft={quickLinksLeft}
-                quickLinksRight={quickLinksRight}
-              />
-            </div>
+            <TopBar
+              quickLinksLeft={quickLinksLeft}
+              quickLinksRight={quickLinksRight}
+            />
           )}
         </AnimatePresence>
         <div className="bg-[#1a7f73] w-full">

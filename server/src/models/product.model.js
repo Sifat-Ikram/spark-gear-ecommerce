@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const imageSchema = new mongoose.Schema({
-  url: { type: String, required: true, trim: true },
+  url: { type: String, trim: true },
   alt: { type: String, trim: true },
 });
 

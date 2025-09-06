@@ -8,12 +8,14 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Swal from "sweetalert2";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
+import { useAuth } from "@/provider/AuthContext";
 
 export default function AuthForm({ type }) {
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
-  const [showPassword, setShowPassword] = useState(false);
+  const { user, loading, setUser } = useAuth();
   const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const {
     register,
     handleSubmit,
@@ -30,6 +32,14 @@ export default function AuthForm({ type }) {
       setRememberMe(true);
     }
   }, [setValue]);
+
+  useEffect(() => {
+    if (!loading && user && type === "login") {
+      router.replace("/");
+    }
+  }, [loading, user, router, type]);
+
+  if (loading || (user && type === "login")) return null;
 
   const onSubmit = async (data) => {
     data.role = "user";
@@ -64,12 +74,15 @@ export default function AuthForm({ type }) {
       localStorage.setItem("accessToken", res.data.accessToken);
       localStorage.setItem("refreshToken", res.data.refreshToken);
       localStorage.setItem("expiresIn", res.data.expiresIn);
+
+      setUser({ name: res.data.user.name, email: res.data.user.email });
+
       router.push(type === "login" ? "/" : "/login");
     } catch (error) {
       Swal.fire({
         toast: true,
         position: "top-end",
-        icon: "success",
+        icon: "error",
         title: "Something went wrong. Try again please.",
         showConfirmButton: false,
         timer: 1000,

@@ -25,7 +25,6 @@ const routes = [
   { name: "Cart", icon: FiShoppingCart, path: "/admin/cart" },
   { name: "Add Product", icon: FiPlusCircle, path: "/admin/add-product" },
   { name: "Add Category", icon: FiTag, path: "/admin/add-category" },
-  { name: "Add Brand", icon: FiArchive, path: "/admin/add-brand" },
 ];
 
 export default function AdminSidebar() {
@@ -75,7 +74,6 @@ export default function AdminSidebar() {
                   href={route.path}
                   className={`flex items-center gap-2 lg:gap-3 px-6 py-2 lg:py-3 cursor-pointer rounded-lg transition-colors duration-200 
                 ${isActive ? "bg-[#1a7f73]" : "hover:bg-[#1a7f73]"}`}
-                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Icon className="text-lg" />
@@ -88,7 +86,6 @@ export default function AdminSidebar() {
             <motion.button
               onClick={() => handleLogout()}
               className="w-full flex items-center gap-3 rounded-lg px-6 py-3 hover:bg-[#1a7f73] cursor-pointer transition-colors duration-200"
-              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <MdLogout className="text-lg" />
