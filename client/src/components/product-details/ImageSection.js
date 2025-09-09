@@ -41,8 +41,8 @@ const ImageSection = ({ images }) => {
               key={idx}
               className={`relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200 ${
                 selectedIndex === idx
-                  ? "border-[#1a7f73] ring-1 ring-[#1a7f73]"
-                  : "border-gray-100 hover:border-[#1a7f73]"
+                  ? "border-[#008080] ring-1 ring-[#008080]"
+                  : "border-gray-100 hover:border-[#008080]"
               }`}
               onClick={() => setSelectedIndex(idx)}
             >

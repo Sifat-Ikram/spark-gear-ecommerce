@@ -132,10 +132,10 @@ const CartPage = () => {
           >
             {/* Header */}
             <div className="p-4 flex justify-between items-center border-b">
-              <h2 className="text-lg font-bold text-[#1a7f73]">Your Cart</h2>
+              <h2 className="text-lg font-bold text-[#016b6b]">Your Cart</h2>
               <button
                 onClick={closeCart}
-                className="text-xl font-bold text-[#00a88f] hover:text-[#1a7f73]"
+                className="text-xl font-bold text-[#008080] hover:text-[#016b6b]"
               >
                 <MdCancel />
               </button>
@@ -195,7 +195,7 @@ const CartPage = () => {
                                 handleDecrease(item._id, item.cart.name)
                               }
                             >
-                              <PiMinusSquareFill className="text-[#00a88f] hover:text-[#1a7f73] text-xl" />
+                              <PiMinusSquareFill className="text-[#008080] hover:text-[#016b6b] text-xl" />
                             </button>
                             <span className="w-6 text-center font-medium">
                               {item.quantity}
@@ -205,7 +205,7 @@ const CartPage = () => {
                                 handleIncrease(item._id, item.cart.name)
                               }
                             >
-                              <BsFillPlusSquareFill className="text-[#00a88f] hover:text-[#1a7f73] text-lg" />
+                              <BsFillPlusSquareFill className="text-[#008080] hover:text-[#016b6b] text-lg" />
                             </button>
                           </div>
 

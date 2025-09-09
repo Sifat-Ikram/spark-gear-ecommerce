@@ -14,7 +14,7 @@ const DescriptionSection = ({ product }) => {
   return (
     <div className="flex flex-col space-y-6 sm:space-y-8">
       {/* Section Header */}
-      <div className="w-full py-4 sm:py-6 lg:py-8 bg-[#1a7f73] shadow-md">
+      <div className="w-full py-4 sm:py-6 lg:py-8 bg-[#008080] shadow-md">
         <h1 className="text-center text-white text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-semibold">
           Product Description
         </h1>

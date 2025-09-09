@@ -49,7 +49,7 @@ const Navbar = () => {
             />
           )}
         </AnimatePresence>
-        <div className="bg-[#1a7f73] w-full">
+        <div className="bg-[#008080] w-full">
           <MainNav />
         </div>
       </nav>

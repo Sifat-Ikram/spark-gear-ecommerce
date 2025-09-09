@@ -184,7 +184,7 @@ const AddCategories = () => {
 
         <button
           type="submit"
-          className="buttons w-full md:w-auto mt-4 md:mt-0 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+          className="buttons w-full md:w-auto mt-4 md:mt-0"
         >
           Add Category
         </button>

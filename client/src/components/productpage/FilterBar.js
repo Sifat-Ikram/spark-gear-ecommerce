@@ -19,38 +19,64 @@ export default function FilterBar({
   rating,
   setRating,
   sort,
-  setSort
+  setSort,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const options = [
+    { value: "", label: "Sort by" },
+    { value: "price_low", label: "Price: Low to High" },
+    { value: "price_high", label: "Price: High to Low" },
+  ];
+
+  const selected = options.find((opt) => opt.value === sort);
+
   return (
     <div>
-      <div className="bg-[#1a7f73] text-white shadow px-2 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
+      <div className="bg-[#008080] text-white shadow px-2 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
         <div className="flex justify-between items-center">
-          {/* Left Section: Menu + Title */}
+          {/* Filters Button */}
           <div className="flex items-center space-x-1 sm:space-x-3">
             <FaBars
               onClick={() => setIsOpen(true)}
-              className="text-white text-sm sm:text-lg block lg:hidden"
+              className="text-white text-sm sm:text-lg cursor-pointer lg:hidden"
             />
-            <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-nowrap">
+            <span className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-semibold text-nowrap">
               Available Products
             </span>
           </div>
 
-          {/* Right Section: Sort Dropdown */}
-          <div>
-            <select
-              value={sort}
-              onChange={(e) => setSort(e.target.value)}
-              className="max-sm:w-28 text-sm sm:text-base md:text-lg border text-gray-800 bg-white border-[#1a7f73] rounded px-2 py-1 sm:px-3 sm:py-2 focus:outline-none focus:ring-2 focus:ring-[#1a7f73]"
+          {/* Custom Sort Dropdown */}
+          <div className="relative inline-block text-left">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="w-40 border border-[#008080] rounded px-3 py-2 text-[#008080] bg-white focus:outline-none"
             >
-              <option>Sort by</option>
-              <option value="price_low">Price: Low to High</option>
-              <option value="price_high">Price: High to Low</option>
-            </select>
+              {selected ? selected.label : "Sort by"}
+            </button>
+
+            {isDropdownOpen && (
+              <ul className="absolute right-0 mt-1 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
+                {options.map((opt) => (
+                  <li
+                    key={opt.value}
+                    onClick={() => {
+                      setSort(opt.value);
+                      setIsDropdownOpen(false);
+                    }}
+                    className="px-3 py-2 cursor-pointer text-[#008080] hover:bg-[#008080] hover:text-white"
+                  >
+                    {opt.label}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>
+
+      {/* Sidebar for Filters (Mobile) */}
       <AnimatePresence>
         {isOpen && (
           <>

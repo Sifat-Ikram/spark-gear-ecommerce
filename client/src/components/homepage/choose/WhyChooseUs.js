@@ -6,25 +6,25 @@ import { FiTruck, FiHeadphones, FiRotateCcw, FiShield } from "react-icons/fi";
 const features = [
   {
     id: 1,
-    icon: <FiTruck className="text-3xl text-[#00a88f]" />,
+    icon: <FiTruck className="text-3xl text-[#008080]" />,
     title: "Fast & Free Shipping",
     desc: "Get your gadgets delivered quickly with no extra cost.",
   },
   {
     id: 2,
-    icon: <FiHeadphones className="text-3xl text-[#00a88f]" />,
+    icon: <FiHeadphones className="text-3xl text-[#008080]" />,
     title: "24/7 Customer Support",
     desc: "Our team is always here to help with your questions.",
   },
   {
     id: 3,
-    icon: <FiRotateCcw className="text-3xl text-[#00a88f]" />,
+    icon: <FiRotateCcw className="text-3xl text-[#008080]" />,
     title: "Easy Returns",
     desc: "Hassle-free 7-day return policy for all purchases.",
   },
   {
     id: 4,
-    icon: <FiShield className="text-3xl text-[#00a88f]" />,
+    icon: <FiShield className="text-3xl text-[#008080]" />,
     title: "Secure Payments",
     desc: "Your transactions are encrypted and completely safe.",
   },

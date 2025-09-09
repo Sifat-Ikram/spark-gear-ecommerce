@@ -100,7 +100,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
               />
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-[#008080] dark:text-[#161929] dark:border-[2px] border-white dark:bg-white text-white px-5 py-2 rounded-md hover:bg-teal-700 dark:hover:bg-white dark:hover:text-[#161929] transition text-sm sm:text-base"
+                className="w-full sm:w-auto buttons"
               >
                 Search
               </button>

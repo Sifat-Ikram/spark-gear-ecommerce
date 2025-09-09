@@ -1,15 +1,15 @@
 "use client";
 
-import { useAuth } from "@/provider/AuthContext";
 import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "./useAxiosSecure";
 
 export function useUser() {
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
 
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await axiosInstance.get("/api/users", {
+      const res = await axiosSecure.get("/api/users", {
         withCredentials: true,
       });
       return res.data;

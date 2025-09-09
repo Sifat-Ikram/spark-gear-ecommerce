@@ -4,10 +4,10 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 import { useUser } from "@/hooks/useUser";
 import { MdDelete } from "react-icons/md";
-import { useAuth } from "@/provider/AuthContext";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 
 const UserPage = () => {
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
   const [updatingUserId, setUpdatingUserId] = useState(null);
   const { users, userIsLoading, userError, userRefetch } = useUser();
 
@@ -25,7 +25,7 @@ const UserPage = () => {
     if (result.isConfirmed) {
       try {
         setUpdatingUserId(userId);
-        await axiosInstance.patch(`/api/users/${userId}/role`, {
+        await axiosSecure.patch(`/api/users/${userId}/role`, {
           role: newRole,
         });
         Swal.fire("Updated!", `User role changed to ${newRole}.`, "success");
@@ -52,7 +52,7 @@ const UserPage = () => {
 
     if (result.isConfirmed) {
       try {
-        await axiosInstance.delete(`/api/users/${userId}`);
+        await axiosSecure.delete(`/api/users/${userId}`);
         Swal.fire("Deleted!", "User has been deleted.", "success");
         userRefetch();
       } catch (error) {

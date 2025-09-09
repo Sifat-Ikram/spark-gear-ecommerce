@@ -78,7 +78,7 @@ const AdminProducts = () => {
           onAddNew={() => router.push("/admin/add-product")}
         />
         <table className="min-w-full bg-white rounded-xl shadow-md overflow-hidden">
-          <thead className="bg-[#1a7f73]">
+          <thead className="bg-[#008080]">
             <tr className="text-white text-sm md:text-base lg:text-lg">
               <th className="px-2 py-3 md:px-4 md:py-4 text-left">Image</th>
               <th className="px-2 py-3 md:px-4 md:py-4 text-left">Name</th>
@@ -94,7 +94,7 @@ const AdminProducts = () => {
                 key={product._id}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
-                className={`text-gray-700 text-sm md:text-base xl:text-lg ${
+                className={`text-gray-700 text-sm md:text-base py-8 xl:text-lg ${
                   idx % 2 === 0 ? "bg-white" : "bg-gray-50"
                 }`}
               >
@@ -131,7 +131,7 @@ const AdminProducts = () => {
                 </td>
                 <td className="px-2 py-1 md:px-2 md:py-3 text-center">
                   <Link href={`/admin/updateProduct/${product._id}`}>
-                    <button className="text-[#00a88f] hover:text-[#1a7f73] cursor-pointer transition-colors">
+                    <button className="text-[#008080] hover:text-[#016b6b] cursor-pointer transition-colors">
                       <FiEdit2 size={20} />
                     </button>
                   </Link>

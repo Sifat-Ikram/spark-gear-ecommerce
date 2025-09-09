@@ -1,120 +1,91 @@
 "use client";
 
-import axios from "axios";
-import { createContext, useContext, useState, useEffect, useMemo } from "react";
-import useAxiosPublic from "@/hooks/useAxiosPublic";
-import { usePathname, useRouter } from "next/navigation";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+} from "react";
 import { jwtDecode } from "jwt-decode";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
 
 const AuthContext = createContext();
 
-export function AuthProvider({ children }) {
-  const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState(null);
-  const router = useRouter();
-  const pathname = usePathname();
+export const AuthProvider = ({ children }) => {
   const axiosPublic = useAxiosPublic();
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // Axios instance with 401 interceptor
-  const axiosInstance = useMemo(() => {
-    const instance = axios.create({
-      baseURL: axiosPublic.defaults.baseURL,
-      withCredentials: true,
-    });
+  // Decode user info from JWT
+  const decodeUserFromToken = (token) => {
+    try {
+      const decoded = jwtDecode(token);
+      return {
+        id: decoded.id,
+        name: decoded.name,
+        email: decoded.email,
+        role: decoded.role,
+      };
+    } catch (err) {
+      return null;
+    }
+  };
 
-    instance.interceptors.response.use(
-      (response) => response,
-      async (error) => {
-        const originalRequest = error.config;
+  const refreshAccessToken = useCallback(async () => {
+    try {
+      const { data } = await axiosPublic.get("/api/user/refresh");
+      const { accessToken } = data;
 
-        // Only retry if refreshToken cookie exists
-        const hasRefreshToken = document.cookie.includes("refreshToken");
-
-        if (
-          error.response?.status === 401 &&
-          !originalRequest._retry &&
-          hasRefreshToken
-        ) {
-          originalRequest._retry = true;
-          try {
-            const refreshRes = await instance.post("/api/user/refresh");
-            const newAccessToken = refreshRes.data.accessToken;
-
-            const decoded = jwtDecode(newAccessToken);
-            setUser({
-              id: decoded.id,
-              name: decoded.name,
-              email: decoded.email,
-              role: decoded.role,
-            });
-
-            originalRequest.headers[
-              "Authorization"
-            ] = `Bearer ${newAccessToken}`;
-            return instance(originalRequest);
-          } catch {
-            setUser(null);
-            return Promise.reject(error);
-          }
-        }
-
-        return Promise.reject(error);
+      if (accessToken) {
+        const decodedUser = decodeUserFromToken(accessToken);
+        setUser(decodedUser);
+      } else {
+        setUser(null);
       }
-    );
-
-    return instance;
+    } catch (err) {
+      setUser(null);
+    }
   }, [axiosPublic]);
 
   useEffect(() => {
     const initializeUser = async () => {
-      const hasRefreshToken = document.cookie.includes("refreshToken");
-      if (!hasRefreshToken) {
-        setUser(null);
-        setLoading(false);
-        return; // Do not call /refresh if no token
-      }
-
+      setLoading(true);
       try {
-        const res = await axiosInstance.post("/api/user/refresh");
-        const accessToken = res.data.accessToken;
-
-        if (accessToken) {
-          const decoded = jwtDecode(accessToken);
-          setUser({
-            id: decoded.id,
-            name: decoded.name,
-            email: decoded.email,
-            role: decoded.role,
-          });
-        }
-      } catch (err) {
-        setUser(null); // silent fail
-      } finally {
-        setLoading(false);
-      }
+        await refreshAccessToken();
+      } catch {}
+      setLoading(false);
     };
-
     initializeUser();
-  }, [axiosInstance]);
+  }, [refreshAccessToken]);
 
-  // Logout function
-  const logout = async () => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      refreshAccessToken();
+    }, 15 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, [refreshAccessToken]);
+
+  const logOut = async () => {
     try {
-      await axiosInstance.post("/api/user/logout");
+      await axiosPublic.post("/api/user/logout");
       setUser(null);
-      router.push("/login");
     } catch (err) {
       console.error("Logout failed:", err);
     }
   };
 
+  const authInfo = {
+    user,
+    setUser,
+    loading,
+    logOut,
+    refreshAccessToken,
+  };
+
   return (
-    <AuthContext.Provider
-      value={{ axiosInstance, loading, user, setUser, logout }}
-    >
-      {children}
-    </AuthContext.Provider>
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
-}
+};
 
 export const useAuth = () => useContext(AuthContext);

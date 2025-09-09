@@ -11,25 +11,40 @@ import {
   FiShoppingCart,
   FiFileText,
   FiTag,
-  FiArchive,
   FiMenu,
 } from "react-icons/fi";
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/provider/AuthContext";
+import Link from "next/link";
 
 const routes = [
-  { name: "Dashboard", icon: FiHome, path: "/admin/dashboard" },
-  { name: "Users", icon: FiUsers, path: "/admin/users" },
-  { name: "Products", icon: FiBox, path: "/admin/products" },
-  { name: "Orders", icon: FiFileText, path: "/admin/orders" },
-  { name: "Cart", icon: FiShoppingCart, path: "/admin/cart" },
-  { name: "Add Product", icon: FiPlusCircle, path: "/admin/add-product" },
-  { name: "Add Category", icon: FiTag, path: "/admin/add-category" },
+  {
+    name: "Dashboard",
+    icon: FiHome,
+    path: "/admin/dashboard",
+    roles: ["admin"],
+  },
+  { name: "Users", icon: FiUsers, path: "/admin/users", roles: ["admin"] },
+  { name: "Products", icon: FiBox, path: "/admin/products", roles: ["admin"] },
+  { name: "Orders", icon: FiFileText, path: "/admin/orders", roles: ["admin"] },
+  { name: "Cart", icon: FiShoppingCart, path: "/admin/cart", roles: ["admin"] },
+  {
+    name: "Add Product",
+    icon: FiPlusCircle,
+    path: "/admin/add-product",
+    roles: ["admin"],
+  },
+  {
+    name: "Add Category",
+    icon: FiTag,
+    path: "/admin/add-category",
+    roles: ["admin"],
+  },
 ];
 
 export default function AdminSidebar() {
   const router = useRouter();
-  const { logout } = useAuth();
+  const { user, loading, logOut } = useAuth();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -52,40 +67,50 @@ export default function AdminSidebar() {
     };
   }, [open]);
 
+  if (loading) return null;
+
+  console.log(user);
+  
+
+  const visibleRoutes =
+    !loading && user?.role
+      ? routes.filter((route) => route.roles.includes(user?.role))
+      : [];
+
   const handleLogout = async () => {
-    await logout();
+    await logOut();
     router.push("/");
   };
 
   return (
     <div>
-      <aside className="hidden md:flex flex-col w-full min-h-screen bg-[#00a88f] text-white sticky top-0">
-        <div className="text-2xl font-bold p-6 border-b border-[#1a7f73]">
+      <aside className="hidden md:flex flex-col w-full min-h-screen bg-[#008080] text-white sticky top-0">
+        <div className="text-2xl font-bold p-6 border-b border-[#008080]">
           Admin Panel
         </div>
         <nav className="flex-1 flex flex-col justify-between px-3 py-2 lg:py-4">
           <div>
-            {routes.map((route) => {
+            {visibleRoutes.map((route) => {
               const isActive = pathname === route.path;
               const Icon = route.icon;
               return (
-                <motion.a
-                  key={route.name}
-                  href={route.path}
-                  className={`flex items-center gap-2 lg:gap-3 px-6 py-2 lg:py-3 cursor-pointer rounded-lg transition-colors duration-200 
-                ${isActive ? "bg-[#1a7f73]" : "hover:bg-[#1a7f73]"}`}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Icon className="text-lg" />
-                  <span>{route.name}</span>
-                </motion.a>
+                <Link key={route.name} href={route.path}>
+                  <motion.div
+                    className={`flex items-center gap-2 lg:gap-3 px-6 py-2 lg:py-3 cursor-pointer rounded-lg transition-colors duration-200 
+                ${isActive ? "bg-[#008080]" : "hover:bg-[#016b6b]"}`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Icon className="text-lg" />
+                    <span>{route.name}</span>
+                  </motion.div>
+                </Link>
               );
             })}
           </div>
           <div>
             <motion.button
               onClick={() => handleLogout()}
-              className="w-full flex items-center gap-3 rounded-lg px-6 py-3 hover:bg-[#1a7f73] cursor-pointer transition-colors duration-200"
+              className="w-full flex items-center gap-3 rounded-lg px-6 py-3 hover:bg-[#016b6b] cursor-pointer transition-colors duration-200"
               whileTap={{ scale: 0.95 }}
             >
               <MdLogout className="text-lg" />
@@ -94,7 +119,7 @@ export default function AdminSidebar() {
           </div>
         </nav>
       </aside>
-      <div className="md:hidden w-full bg-[#00a88f] sticky top-0 z-50">
+      <div className="md:hidden w-full bg-[#008080] sticky top-0 z-50">
         <div className="w-11/12 mx-auto text-white flex items-center justify-between">
           <div className="text-xl font-bold">Admin Panel</div>
           <button onClick={() => setOpen(!open)} className="py-4">
@@ -107,31 +132,30 @@ export default function AdminSidebar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute right-0 top-14 w-36 sm:w-48 bg-[#00a88f] text-white rounded-b-md shadow-lg flex flex-col z-50"
+            className="absolute right-0 top-14 w-36 sm:w-48 bg-[#008080] text-white rounded-b-md shadow-lg flex flex-col z-50"
           >
             <div>
-              {routes.map((route) => {
+              {visibleRoutes.map((route) => {
                 const isActive = pathname === route.path;
-                const Icon = route.icon;
                 return (
-                  <motion.a
-                    key={route.name}
-                    href={route.path}
-                    className={`flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 cursor-pointer transition-colors duration-200 
-                  ${isActive ? "bg-[#1a7f73]" : "hover:bg-[#1a7f73]"}`}
-                    onClick={() => setOpen(false)}
-                  >
-                    <span className="text-base text-center sm:text-xl">
-                      {route.name}
-                    </span>
-                  </motion.a>
+                  <Link key={route.name} href={route.path}>
+                    <motion.div
+                      className={`flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 cursor-pointer transition-colors duration-200 
+                  ${isActive ? "bg-[#008080]" : "hover:bg-[#016b6b]"}`}
+                      onClick={() => setOpen(false)}
+                    >
+                      <span className="text-base text-center sm:text-xl">
+                        {route.name}
+                      </span>
+                    </motion.div>
+                  </Link>
                 );
               })}
             </div>
             <div>
               <motion.button
                 onClick={() => handleLogout()}
-                className="w-full flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 hover:bg-[#1a7f73] cursor-pointer transition-colors duration-200"
+                className="w-full flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 hover:bg-[#016b6b] cursor-pointer transition-colors duration-200"
               >
                 <span>Logout</span>
               </motion.button>

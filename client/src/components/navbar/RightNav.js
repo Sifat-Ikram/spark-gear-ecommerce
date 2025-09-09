@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import SearchOverlay from "./SearchOverlay";
 import { useAuth } from "@/provider/AuthContext";
@@ -16,17 +16,10 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openUserDropdown, setOpenUserDropdown] = useState(false);
-  const [hasMounted, setHasMounted] = useState(false);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
 
   if (categoryError) {
     return <h1>Error fetching categories!!!</h1>;
   }
-
-  const renderUser = hasMounted && user;
 
   return (
     <div className="flex items-center space-x-3.5 text-lg font-medium">
@@ -89,7 +82,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
             </Link>
           )
         )}
-        {!renderUser && (
+        {!user?.email && (
           <Link
             href={"/login"}
             className="text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal"
@@ -118,7 +111,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           </span>
         </motion.div>
         <motion.div>
-          {renderUser && (
+          {user?.email && (
             <div
               className="relative"
               onMouseEnter={() => setOpenUserDropdown(true)}
@@ -141,12 +134,12 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                     transition={{ duration: 0.2 }}
                     className="absolute right-0 w-40 rounded-lg shadow-lg z-50"
                   >
-                    <ul className="flex flex-col mt-5 sm:mt-4 md:mt-[22px] lg:mt-10 space-y-[1px] w-full bg-[#1a7f73] rounded-b-lg overflow-hidden">
+                    <ul className="flex flex-col mt-5 sm:mt-4 md:mt-[22px] lg:mt-10 space-y-[1px] w-full bg-[#008080] rounded-b-lg overflow-hidden">
                       <li>
                         <Link
                           href="/profile"
                           onClick={() => setOpenUserDropdown(false)}
-                          className="block text-center py-2 transition text-white w-full hover:bg-[#16665c]"
+                          className="block text-center py-2 transition text-white w-full hover:bg-[#016b6b]"
                         >
                           Profile
                         </Link>
@@ -157,7 +150,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                             logout();
                             setOpenUserDropdown(false);
                           }}
-                          className="w-full text-center py-2 transition text-white hover:bg-[#16665c]"
+                          className="w-full text-center py-2 transition text-white hover:bg-[#016b6b]"
                         >
                           Sign Out
                         </button>

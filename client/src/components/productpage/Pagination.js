@@ -9,7 +9,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
           onClick={() => onPageChange(i + 1)}
           className={`px-3 py-1 rounded ${
             currentPage === i + 1
-              ? "bg-[#1a7f73] text-white"
+              ? "bg-[#008080] text-white"
               : "bg-white border"
           }`}
         >

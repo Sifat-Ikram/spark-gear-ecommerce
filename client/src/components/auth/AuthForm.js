@@ -9,11 +9,12 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
 import { useAuth } from "@/provider/AuthContext";
+import { jwtDecode } from "jwt-decode";
 
 export default function AuthForm({ type }) {
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
-  const { user, loading, setUser } = useAuth();
+  const { user, setUser, loading } = useAuth();
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -24,7 +25,6 @@ export default function AuthForm({ type }) {
     formState: { errors, isSubmitting },
   } = useForm();
 
-  // Load saved email for "Remember Me"
   useEffect(() => {
     const savedEmail = localStorage.getItem("rememberEmail");
     if (savedEmail) {
@@ -33,7 +33,6 @@ export default function AuthForm({ type }) {
     }
   }, [setValue]);
 
-  // Redirect logged-in user away from login page
   useEffect(() => {
     if (!loading && user && type === "login") {
       router.replace("/");
@@ -55,6 +54,17 @@ export default function AuthForm({ type }) {
       const endpoint =
         type === "login" ? "/api/user/login" : "/api/user/register";
       const res = await axiosPublic.post(endpoint, data);
+      const { accessToken } = res.data;
+
+      const decoded = jwtDecode(accessToken);
+      if (accessToken) {
+        setUser({
+          id: decoded.id,
+          name: decoded.name,
+          email: decoded.email,
+          role: decoded.role,
+        });
+      }
 
       Swal.fire({
         toast: true,
@@ -69,15 +79,13 @@ export default function AuthForm({ type }) {
         timerProgressBar: true,
       });
 
-      // Set global user state
-      setUser({
-        id: res.data.user.id,
-        name: res.data.user.name,
-        email: res.data.user.email,
-        role: res.data.user.role,
-      });
-
-      router.push(type === "login" ? "/" : "/login");
+      router.push(
+        type === "login"
+          ? decoded.role === "admin"
+            ? "/admin/users"
+            : "/"
+          : "/login"
+      );
     } catch (error) {
       Swal.fire({
         toast: true,
@@ -100,7 +108,7 @@ export default function AuthForm({ type }) {
       transition={{ duration: 0.6 }}
       className="w-full max-w-md bg-white font-roboto shadow-xl p-10 rounded-md space-y-6"
     >
-      <h2 className="text-3xl font-bold text-center text-[#1A7F73] flex items-center justify-center gap-2">
+      <h2 className="text-3xl font-bold text-center text-[#008080] flex items-center justify-center gap-2">
         <FaUniversity />{" "}
         {type === "login" ? "Login First!" : "Registration here"}
       </h2>
@@ -152,7 +160,7 @@ export default function AuthForm({ type }) {
 
             <a
               href="/forgotPassword"
-              className="text-[#1A7F73] hover:underline text-sm"
+              className="text-[#008080] hover:underline text-sm"
             >
               Forgot Password?
             </a>
@@ -172,14 +180,14 @@ export default function AuthForm({ type }) {
         {type === "login" ? (
           <>
             New here?{" "}
-            <Link href="/register" className="text-[#1A7F73] hover:underline">
+            <Link href="/register" className="text-[#008080] hover:underline">
               Register
             </Link>
           </>
         ) : (
           <>
             Already have an account?{" "}
-            <Link href="/login" className="text-[#1A7F73] hover:underline">
+            <Link href="/login" className="text-[#008080] hover:underline">
               Login
             </Link>
           </>

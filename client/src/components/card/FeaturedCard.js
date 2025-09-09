@@ -3,8 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import fallback from "@/assets/fallback.png";
 
 export default function FeaturedCard({ product }) {
+  const imageUrl = product?.images?.[0]?.url || fallback;
+
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -42,12 +45,12 @@ export default function FeaturedCard({ product }) {
   return (
     <Link
       href={`/main-layout/productDetails/${product?.slug}`}
-      className="bg-gray-50 group border-[1px] border-[#00a88f] rounded-2xl shadow-lg overflow-hidden flex flex-col"
+      className="bg-gray-50 group border-[1px] border-[#008080] rounded-2xl shadow-lg overflow-hidden flex flex-col"
     >
       <motion.div className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">
         <Image
-          src={product.images[0].url}
-          alt={product.images[0].alt}
+          src={imageUrl}
+          alt={product.images[0]?.alt || "Product image"}
           fill
           loading="lazy"
           className="object-contain h-full w-full"
@@ -73,7 +76,7 @@ export default function FeaturedCard({ product }) {
           </div>
         </div>
 
-        <p className="mt-3 text-sm md:text-base lg:text-lg font-bold text-[#00a88f]">
+        <p className="mt-3 text-sm md:text-base lg:text-lg font-bold text-[#008080]">
           {product.price.toFixed(2)} BDT
         </p>
       </div>

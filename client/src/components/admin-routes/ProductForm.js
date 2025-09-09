@@ -22,7 +22,7 @@ export default function ProductForm({ defaultValues, onSubmit, type }) {
       currency: "USD",
       shortDescription: "",
       description: "",
-      images: [{ url: "", alt: "" }], // kept in data but not displayed
+      images: [{ url: "", alt: "" }],
       stock: "",
       available: true,
       ratings: { average: "", reviewsCount: "" },
@@ -33,7 +33,6 @@ export default function ProductForm({ defaultValues, onSubmit, type }) {
     },
   });
 
-  // Reset form when defaultValues changes (important for edit mode)
   useEffect(() => {
     if (defaultValues) {
       reset({
@@ -45,7 +44,6 @@ export default function ProductForm({ defaultValues, onSubmit, type }) {
     }
   }, [defaultValues, reset]);
 
-  // Specs field array
   const {
     fields: specFields,
     append: addSpec,
@@ -222,7 +220,7 @@ export default function ProductForm({ defaultValues, onSubmit, type }) {
         <button
           type="button"
           onClick={() => addSpec({ name: "", value: "" })}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          className="px-4 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#016b6b]"
         >
           + Add Spec
         </button>

@@ -1,7 +1,10 @@
-export const verifyAdmin = (req, res, next) => {
-  if (req.user && req.user.role === "admin") {
+export const verifyAdmin = (roles = []) => {
+  return (req, res, next) => {
+    if (!req.user || !roles.includes(req.user.role)) {
+      return res
+        .status(403)
+        .json({ message: "Forbidden: insufficient role permissions" });
+    }
     next();
-  } else {
-    return res.status(403).json({ message: "Forbidden: Admin only" });
-  }
+  };
 };

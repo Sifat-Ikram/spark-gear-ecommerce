@@ -11,12 +11,12 @@ export default function ReviewCard({ name, image, product, review, rating }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="bg-white rounded-2xl p-6 sm:p-8 flex flex-col border border-[#00a88f] transition-all duration-300 h-[260px]"
+      className="bg-white rounded-2xl p-6 sm:p-8 flex flex-col border border-[#008080] transition-all duration-300 h-[260px]"
     >
       {/* User Info */}
       <div className="flex items-center space-x-4 mb-4">
         {image ? (
-          <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#00a88f] shadow-md">
+          <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#008080] shadow-md">
             <Image src={image} alt={name} fill className="object-cover" />
           </div>
         ) : (
@@ -28,7 +28,7 @@ export default function ReviewCard({ name, image, product, review, rating }) {
           </h3>
           <p className="text-sm text-gray-500 truncate">
             Reviewed:{" "}
-            <span className="font-medium text-[#00a88f]">{product}</span>
+            <span className="font-medium text-[#008080]">{product}</span>
           </p>
         </div>
       </div>

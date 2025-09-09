@@ -44,7 +44,7 @@ const AppDownload = () => {
         >
           <a
             href="#"
-            className="flex items-center justify-center gap-2 bg-[#00a88f] text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-[#008f79] transition"
+            className="flex items-center justify-center gap-2 bg-[#008080] text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-[#008f79] transition"
           >
             <FaGooglePlay className="text-xl" /> Google Play
           </a>

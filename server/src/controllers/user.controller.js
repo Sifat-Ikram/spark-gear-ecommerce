@@ -98,6 +98,14 @@ export const refresh = async (req, res, next) => {
     const user = req.user;
     const accessToken = generateAccessToken(user);
 
+    // Set new access token in cookie
+    res.cookie("accessToken", accessToken, {
+      httpOnly: true,
+      secure: isProduction,
+      maxAge: 15 * 60 * 1000, // 15 minutes
+      sameSite: isProduction ? "None" : "Lax",
+    });
+
     res.status(200).json({
       accessToken,
       expiresIn: 15 * 60,

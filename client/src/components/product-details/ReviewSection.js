@@ -93,7 +93,7 @@ const ReviewSection = ({ name }) => {
         />
         <button
           onClick={handleSubmitReview}
-          className="bg-teal-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-teal-700 transition text-xs sm:text-sm md:text-base"
+          className="bg-[#008080] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#016b6b] transition text-xs sm:text-sm md:text-base"
         >
           Submit Review
         </button>
@@ -136,14 +136,14 @@ const ReviewSection = ({ name }) => {
 
             <div className="flex items-center gap-4 text-gray-600 text-xs sm:text-sm md:text-base mt-2">
               <button
-                className="flex items-center gap-1 hover:text-teal-600"
+                className="flex items-center gap-1 hover:text-[#008080]"
                 onClick={() => handleLikeDislike(index)}
               >
                 <FaThumbsUp className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span>{reviewItem.likes}</span>
               </button>
               <button
-                className="hover:text-teal-600 cursor-pointer"
+                className="hover:text-[#008080] cursor-pointer"
                 onClick={() => handleReplyToggle(index)}
               >
                 Reply
@@ -174,7 +174,7 @@ const ReviewSection = ({ name }) => {
                   />
                   <button
                     onClick={() => handleSubmitReply(index)}
-                    className="self-end bg-teal-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-teal-700 transition text-xs sm:text-sm md:text-base"
+                    className="self-end bg-[#008080] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#016b6b] transition text-xs sm:text-sm md:text-base"
                   >
                     Submit Reply
                   </button>

@@ -6,11 +6,27 @@ import { verifyAdmin } from "../middlewares/admin.middleware.js";
 const router = express.Router();
 
 router.get("/", ProductController.getAllProducts);
-router.post("/", protect, verifyAdmin, ProductController.addProduct);
+
+router.post("/", protect, verifyAdmin(["admin"]), ProductController.addProduct);
+
 router.get("/id/:id", ProductController.getProductById);
-router.put("/:id", protect, verifyAdmin, ProductController.updateProduct);
-router.delete("/:id", protect, verifyAdmin, ProductController.deleteProduct);
+
+router.put(
+  "/:id",
+  protect,
+  verifyAdmin(["admin"]),
+  ProductController.updateProduct
+);
+
+router.delete(
+  "/:id",
+  protect,
+  verifyAdmin(["admin"]),
+  ProductController.deleteProduct
+);
+
 router.get("/:categoryName", ProductController.getProductsByCategory);
+
 router.get("/:slug", ProductController.getProductsBySlug);
 
 export default router;

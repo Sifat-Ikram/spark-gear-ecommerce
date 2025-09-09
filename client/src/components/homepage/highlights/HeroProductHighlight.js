@@ -22,7 +22,7 @@ export default function HeroProductHighlight() {
             Cutting-edge technology, sleek designs, and unbeatable performance.
           </p>
           <Link href={"/register"} className="flex justify-center lg:justify-start gap-4 flex-wrap">
-            <button className="bg-[#00a88f] hover:bg-[#1a7f73] text-white font-semibold px-6 py-3 rounded-lg transition">
+            <button className="buttons">
               Sign up Today
             </button>
           </Link>

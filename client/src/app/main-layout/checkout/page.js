@@ -163,7 +163,7 @@ const Checkout = () => {
           icon: "success",
           title: "Order Placed!",
           text: "Your order has been successfully placed.",
-          confirmButtonColor: "#1a7f73",
+          confirmButtonColor: "#008080",
         });
 
         if (user?.email) {
@@ -203,16 +203,16 @@ const Checkout = () => {
         animate={{ opacity: 1 }}
         className="overflow-x-auto mb-8"
       >
-        <table className="w-full border border-gray-300 rounded-lg">
-          <thead className="bg-[#1a7f73] text-white rounded-t-lg">
+        <table className="w-full">
+          <thead className="bg-[#008080] text-white">
             <tr>
-              <th className="p-3 text-center">Order Summary</th>
+              <th className="p-3 text-center rounded-tl-lg">Order Summary</th>
               <th className="p-3">Quantity</th>
               <th className="p-3">Price</th>
-              <th className="p-3">Total</th>
+              <th className="p-3 rounded-tr-lg">Total</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-300">
+          <tbody className="divide-y divide-gray-300 border border-gray-300">
             {cart?.map((item) => (
               <tr key={item.cart.name}>
                 <td className="p-3 flex items-center gap-2">
@@ -259,7 +259,7 @@ const Checkout = () => {
       {/* Form Section */}
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1">
-          <h2 className="bg-[#1a7f73] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
+          <h2 className="bg-[#008080] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
             Delivery Information
           </h2>
           <form
@@ -318,7 +318,7 @@ const Checkout = () => {
         {/* Billing Summary */}
         <div className="w-full lg:w-1/3 flex flex-col justify-between max-lg:space-y-10">
           <div className="flex flex-col divide-y divide-gray-300">
-            <h2 className="bg-[#1a7f73] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
+            <h2 className="bg-[#008080] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
               Billing Summary
             </h2>
             <div className="flex justify-between items-center p-4 text-sm md:text-base">
@@ -351,7 +351,7 @@ const Checkout = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-[#1a7f73] font-semibold text-base md:text-lg mb-3">
+            <h3 className="text-[#008080] font-semibold text-base md:text-lg mb-3">
               Payment Method
             </h3>
 
@@ -361,7 +361,7 @@ const Checkout = () => {
                 type="button"
                 onClick={() => handleSelect("card")}
                 className={`flex-1 h-14 rounded-lg bg-cover bg-center relative shadow-md transition-transform ${
-                  selectedMethod === "card" ? "ring-2 ring-[#1a7f73]" : ""
+                  selectedMethod === "card" ? "ring-2 ring-[#008080]" : ""
                 } hover:scale-105`}
                 style={{
                   backgroundImage:
@@ -376,7 +376,7 @@ const Checkout = () => {
                 type="button"
                 onClick={() => handleSelect("bkash")}
                 className={`flex-1 h-14 rounded-lg bg-gray-200 bg-cover bg-center relative shadow-md transition-transform ${
-                  selectedMethod === "bkash" ? "ring-2 ring-[#1a7f73]" : ""
+                  selectedMethod === "bkash" ? "ring-2 ring-[#008080]" : ""
                 } hover:scale-105`}
                 style={{
                   backgroundImage:
@@ -393,11 +393,11 @@ const Checkout = () => {
             <button
               type="button"
               onClick={() => handleSelect("cod")}
-              className={`w-full h-14 rounded-lg border-1 border-[#1a7f73] font-semibold transition-colors ${
+              className={`w-full h-14 rounded-lg border-1 border-[#008080] font-semibold transition-colors ${
                 selectedMethod === "cod"
-                  ? "bg-[#1a7f73] text-white"
-                  : "bg-white text-[#1a7f73]"
-              } hover:bg-[#1a7f73] hover:text-white shadow-md`}
+                  ? "bg-[#008080] text-white"
+                  : "bg-white text-[#008080]"
+              } hover:bg-[#008080] hover:text-white shadow-md`}
             >
               Cash on Delivery
             </button>

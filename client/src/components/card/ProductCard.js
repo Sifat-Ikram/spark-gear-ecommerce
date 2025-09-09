@@ -3,18 +3,21 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import fallback from "@/assets/fallback.png";
 
 export default function ProductCard({ product }) {
+  const imageUrl = product?.images?.[0]?.url || fallback;
+
   return (
-    <div className="bg-white dark:bg-[#1c1f2e] rounded-2xl shadow-lg overflow-hidden flex flex-col">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
       <motion.div
         className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden"
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.5 }}
       >
         <Image
-          src={product.images[0].url}
-          alt={product.images[0].alt}
+          src={imageUrl}
+          alt={product.images[0].alt || "Product image"}
           fill
           className="object-contain h-full w-full"
         />
@@ -36,7 +39,7 @@ export default function ProductCard({ product }) {
             {product.price.toFixed(2)} BDT
           </p>
           <Link href={`/main-layout/productDetails/${product?.slug}`}>
-            <button className="bg-[#00a88f] hover:bg-[#1a7f73] text-white font-semibold px-4 sm:px-5 py-2 rounded-lg transition text-sm sm:text-base">
+            <button className="bg-[#008080] hover:bg-[#016b6b] text-white font-semibold px-4 sm:px-5 py-2 rounded-lg transition text-sm sm:text-base">
               View Details
             </button>
           </Link>
