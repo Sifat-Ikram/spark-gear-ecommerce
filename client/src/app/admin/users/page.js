@@ -82,9 +82,6 @@ const UserPage = () => {
               <th className="px-2 py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-left">
                 Email
               </th>
-              <th className="px-2 py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-left">
-                Role
-              </th>
               <th className="px-2 py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-center">
                 Action
               </th>
@@ -105,17 +102,20 @@ const UserPage = () => {
                 <td className="px-2 py-2 text-[10px] sm:text-xs md:text-sm lg:text-base">
                   {user.email}
                 </td>
-                <td className="px-2 py-2 text-[10px] sm:text-xs md:text-sm lg:text-base">
-                  {user.role}
-                </td>
                 <td className="px-2 py-2 text-center">
-                  <button
-                    disabled={updatingUserId === user._id}
-                    onClick={() => handleToggleRole(user._id, user.role)}
-                    className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 text-[10px] sm:text-xs md:text-sm lg:text-base bg-[#00a88f] text-white rounded-md hover:bg-[#1a7f73] transition"
-                  >
-                    {user.role === "user" ? "Make Admin" : "Make User"}
-                  </button>
+                  {user?.role === "admin" ? (
+                    <h1 className="sm:text-xs md:text-sm lg:text-base">
+                      {user.role}
+                    </h1>
+                  ) : (
+                    <button
+                      disabled={updatingUserId === user._id}
+                      onClick={() => handleToggleRole(user._id, user.role)}
+                      className="px-2 py-1 sm:px-3 lg:py-1.5 lg:px-4 2xl:py-2 text-[10px] sm:text-xs md:text-sm lg:text-base bg-[#00a88f] text-white rounded-md hover:bg-[#1a7f73] transition"
+                    >
+                      {user.role === "user" ? "Make Admin" : "Make User"}
+                    </button>
+                  )}
                 </td>
                 <td className="px-2 py-2 text-center">
                   <button

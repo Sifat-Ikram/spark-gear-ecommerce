@@ -12,7 +12,7 @@ import { FiSearch, FiShoppingCart } from "react-icons/fi";
 
 const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
   const { openCart } = useCart();
-  const { user, logout } = useAuth();
+  const { user, logOut } = useAuth();
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openUserDropdown, setOpenUserDropdown] = useState(false);
@@ -147,7 +147,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                       <li>
                         <button
                           onClick={() => {
-                            logout();
+                            logOut();
                             setOpenUserDropdown(false);
                           }}
                           className="w-full text-center py-2 transition text-white hover:bg-[#016b6b]"

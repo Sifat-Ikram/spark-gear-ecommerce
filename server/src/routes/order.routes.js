@@ -6,15 +6,19 @@ import {
   getOrderById,
   getOrderByUsername,
   updateOrder,
+  updateOrderStatus,
 } from "../controllers/order.controller.js";
+import { verifyAdmin } from "../middlewares/admin.middleware.js";
+import { protect } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
 router.post("/createOrder", createOrder);
-router.get("/", getAllOrders);
+router.get("/", protect, verifyAdmin(["admin"]), getAllOrders);
 router.get("/:id", getOrderById);
 router.get("/user/:username", getOrderByUsername);
 router.put("/:id", updateOrder);
-router.delete("/:id", deleteOrder);
+router.patch("/status/:id", protect, verifyAdmin(["admin"]), updateOrderStatus);
+router.delete("/:id", protect, verifyAdmin(["admin"]), deleteOrder);
 
 export default router;

@@ -152,6 +152,7 @@ const Checkout = () => {
         cart.reduce((sum, item) => sum + item.cart.price * item.quantity, 0) +
         shippingFee,
       paymentInfo: null,
+      status: "pending",
       createdAt: new Date().toISOString(),
     };
 

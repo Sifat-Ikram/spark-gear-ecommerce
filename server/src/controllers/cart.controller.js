@@ -20,7 +20,7 @@ export const addToCart = async (req, res) => {
 
 export const getAllCart = async (req, res) => {
   try {
-    const carts = getCartService();
+    const carts = await getCartService();
     res.json(carts);
   } catch (err) {
     res

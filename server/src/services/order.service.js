@@ -23,6 +23,20 @@ class OrderService {
     return await orderModel.findByIdAndUpdate(id, orderData, { new: true });
   }
 
+  async updateOrderStatus(id, status) {
+    const validStatuses = [
+      "pending",
+      "processing",
+      "shipped",
+      "delivered",
+      "cancelled",
+    ];
+    if (!validStatuses.includes(status)) {
+      throw new Error("Invalid order status");
+    }
+    return await orderModel.findByIdAndUpdate(id, { status }, { new: true });
+  }
+
   async deleteOrder(id) {
     return await orderModel.findByIdAndDelete(id);
   }

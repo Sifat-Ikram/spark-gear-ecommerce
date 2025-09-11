@@ -27,7 +27,7 @@ const routes = [
   { name: "Users", icon: FiUsers, path: "/admin/users", roles: ["admin"] },
   { name: "Products", icon: FiBox, path: "/admin/products", roles: ["admin"] },
   { name: "Orders", icon: FiFileText, path: "/admin/orders", roles: ["admin"] },
-  { name: "Cart", icon: FiShoppingCart, path: "/admin/cart", roles: ["admin"] },
+  { name: "Cart", icon: FiShoppingCart, path: "/admin/carts", roles: ["admin"] },
   {
     name: "Add Product",
     icon: FiPlusCircle,
@@ -68,9 +68,6 @@ export default function AdminSidebar() {
   }, [open]);
 
   if (loading) return null;
-
-  console.log(user);
-  
 
   const visibleRoutes =
     !loading && user?.role

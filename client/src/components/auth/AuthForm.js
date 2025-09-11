@@ -33,14 +33,6 @@ export default function AuthForm({ type }) {
     }
   }, [setValue]);
 
-  useEffect(() => {
-    if (!loading && user && type === "login") {
-      router.replace("/");
-    }
-  }, [loading, user, router, type]);
-
-  if (loading || (user && type === "login")) return null;
-
   const onSubmit = async (data) => {
     if (type === "register") data.role = "user";
 
@@ -57,6 +49,8 @@ export default function AuthForm({ type }) {
       const { accessToken } = res.data;
 
       const decoded = jwtDecode(accessToken);
+      localStorage.setItem("accessToken", accessToken);
+
       if (accessToken) {
         setUser({
           id: decoded.id,
@@ -79,13 +73,11 @@ export default function AuthForm({ type }) {
         timerProgressBar: true,
       });
 
-      router.push(
-        type === "login"
-          ? decoded.role === "admin"
-            ? "/admin/users"
-            : "/"
-          : "/login"
-      );
+      if (decoded.role === "admin") {
+        router.push("/admin/users");
+      } else {
+        router.push("/");
+      }
     } catch (error) {
       Swal.fire({
         toast: true,

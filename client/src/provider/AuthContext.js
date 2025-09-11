@@ -17,7 +17,6 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Decode user info from JWT
   const decodeUserFromToken = (token) => {
     try {
       const decoded = jwtDecode(token);
@@ -51,11 +50,21 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const initializeUser = async () => {
       setLoading(true);
-      try {
-        await refreshAccessToken();
-      } catch {}
+      const token = localStorage.getItem("accessToken");
+
+      if (token) {
+        const decodedUser = decodeUserFromToken(token);
+        if (decodedUser) {
+          setUser(decodedUser);
+          setLoading(false);
+          return;
+        }
+      }
+
+      await refreshAccessToken();
       setLoading(false);
     };
+
     initializeUser();
   }, [refreshAccessToken]);
 
