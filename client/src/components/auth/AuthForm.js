@@ -14,7 +14,7 @@ import { jwtDecode } from "jwt-decode";
 export default function AuthForm({ type }) {
   const router = useRouter();
   const axiosPublic = useAxiosPublic();
-  const { user, setUser, loading } = useAuth();
+  const { setUser } = useAuth();
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -49,7 +49,6 @@ export default function AuthForm({ type }) {
       const { accessToken } = res.data;
 
       const decoded = jwtDecode(accessToken);
-      localStorage.setItem("accessToken", accessToken);
 
       if (accessToken) {
         setUser({
@@ -74,7 +73,7 @@ export default function AuthForm({ type }) {
       });
 
       if (decoded.role === "admin") {
-        router.push("/admin/users");
+        router.push("/admin/admin-dashboard");
       } else {
         router.push("/");
       }

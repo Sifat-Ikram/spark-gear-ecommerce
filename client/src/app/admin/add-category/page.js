@@ -8,14 +8,12 @@ import { FiX, FiPlus } from "react-icons/fi";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useCategories } from "@/hooks/useCategories";
-import { useAuth } from "@/provider/AuthContext";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 
 const AddCategories = () => {
   const { categories, categoryIsLoading, categoryError, categoryRefetch } =
     useCategories();
-
-  const { axiosInstance } = useAuth();
-  const [localCategories, setLocalCategories] = useState();
+  const axiosSecure = useAxiosSecure();
   const [newImage, setNewImage] = useState("");
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef(null);
@@ -85,7 +83,7 @@ const AddCategories = () => {
     const categoryData = { ...data, image: newImage };
 
     try {
-      const res = await axiosInstance.post("/api/category", categoryData);
+      const res = await axiosSecure.post("/api/category", categoryData);
 
       Swal.fire({
         icon: "success",
@@ -109,7 +107,7 @@ const AddCategories = () => {
 
   const handleRemoveCategory = async (id) => {
     try {
-      await axiosInstance.delete(`/api/category/${id}`);
+      await axiosSecure.delete(`/api/category/${id}`);
 
       Swal.fire({
         icon: "success",
@@ -182,10 +180,7 @@ const AddCategories = () => {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className="buttons w-full md:w-auto mt-4 md:mt-0"
-        >
+        <button type="submit" className="buttons w-full md:w-auto mt-4 md:mt-0">
           Add Category
         </button>
       </form>

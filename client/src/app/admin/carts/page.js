@@ -37,7 +37,7 @@ export default function AdminCartsPage() {
 
   return (
     <div className="p-4 md:p-8">
-      <h1 className="text-2xl md:text-3xl font-bold text-[#008080] mb-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
         Admin Cart Management
       </h1>
 

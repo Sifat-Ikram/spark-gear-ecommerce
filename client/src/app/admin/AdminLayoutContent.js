@@ -17,7 +17,8 @@ const AdminLayoutContent = ({ children }) => {
         icon: "error",
         title: "Unauthorized",
         text: "You are not allowed to access this page.",
-        confirmButtonText: "Go Home",
+        timer: 2000,
+        showConfirmButton: false,
       }).then(() => {
         router.push("/");
       });

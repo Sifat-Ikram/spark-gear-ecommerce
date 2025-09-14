@@ -12,6 +12,7 @@ import {
   FiFileText,
   FiTag,
   FiMenu,
+  FiImage,
 } from "react-icons/fi";
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/provider/AuthContext";
@@ -21,13 +22,18 @@ const routes = [
   {
     name: "Dashboard",
     icon: FiHome,
-    path: "/admin/dashboard",
+    path: "/admin/admin-dashboard",
     roles: ["admin"],
   },
   { name: "Users", icon: FiUsers, path: "/admin/users", roles: ["admin"] },
   { name: "Products", icon: FiBox, path: "/admin/products", roles: ["admin"] },
   { name: "Orders", icon: FiFileText, path: "/admin/orders", roles: ["admin"] },
-  { name: "Cart", icon: FiShoppingCart, path: "/admin/carts", roles: ["admin"] },
+  {
+    name: "Cart",
+    icon: FiShoppingCart,
+    path: "/admin/carts",
+    roles: ["admin"],
+  },
   {
     name: "Add Product",
     icon: FiPlusCircle,
@@ -40,11 +46,17 @@ const routes = [
     path: "/admin/add-category",
     roles: ["admin"],
   },
+  {
+    name: "Add Banner",
+    icon: FiImage,
+    path: "/admin/add-banner",
+    roles: ["admin"],
+  },
 ];
 
 export default function AdminSidebar() {
   const router = useRouter();
-  const { user, loading, logOut } = useAuth();
+  const { user, loading, logOut, setUser, loggingOut } = useAuth();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -69,14 +81,10 @@ export default function AdminSidebar() {
 
   if (loading) return null;
 
-  const visibleRoutes =
-    !loading && user?.role
-      ? routes.filter((route) => route.roles.includes(user?.role))
-      : [];
-
   const handleLogout = async () => {
     await logOut();
     router.push("/");
+    setUser(null);
   };
 
   return (
@@ -87,14 +95,14 @@ export default function AdminSidebar() {
         </div>
         <nav className="flex-1 flex flex-col justify-between px-3 py-2 lg:py-4">
           <div>
-            {visibleRoutes.map((route) => {
+            {routes.map((route) => {
               const isActive = pathname === route.path;
               const Icon = route.icon;
               return (
                 <Link key={route.name} href={route.path}>
                   <motion.div
                     className={`flex items-center gap-2 lg:gap-3 px-6 py-2 lg:py-3 cursor-pointer rounded-lg transition-colors duration-200 
-                ${isActive ? "bg-[#008080]" : "hover:bg-[#016b6b]"}`}
+                ${isActive ? "bg-[#016b6b]" : "hover:bg-[#016b6b]"}`}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Icon className="text-lg" />

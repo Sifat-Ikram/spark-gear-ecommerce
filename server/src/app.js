@@ -13,6 +13,8 @@ import reviewRoutes from "./routes/review.routes.js";
 import cartRoutes from "./routes/cart.routes.js";
 import userRoutes from "./routes/users.routes.js";
 import orderRoutes from "./routes/order.routes.js";
+import bannerRoutes from "./routes/banner.routes.js";
+import couponRoutes from "./routes/coupon.routes.js";
 import resetPassword from "./routes/resetPassword.routes.js";
 import { errorHandler } from "./middlewares/error.middleware.js";
 import cookieParser from "cookie-parser";
@@ -44,6 +46,8 @@ app.use("/api/reviews", reviewRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/order", orderRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/banner", bannerRoutes);
+app.use("/api/coupon", couponRoutes);
 app.use("/api", resetPassword);
 
 app.get("/api/health", (req, res) => res.status(200).json({ status: "OK" }));

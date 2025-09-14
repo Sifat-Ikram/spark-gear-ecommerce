@@ -13,6 +13,10 @@ const Checkout = () => {
   const router = useRouter();
   const { user } = useAuth();
   const axiosPublic = useAxiosPublic();
+  const [couponCode, setCouponCode] = useState("");
+  const [discountAmount, setDiscountAmount] = useState(0);
+  const [appliedCoupon, setAppliedCoupon] = useState(null);
+
   const { register, handleSubmit, watch, setValue } = useForm({
     defaultValues: {
       city: user?.city || "Dhaka",
@@ -123,6 +127,69 @@ const Checkout = () => {
     setValue("paymentMethod", method, { shouldValidate: true });
   };
 
+  const handleApplyCoupon = async () => {
+    if (!couponCode.trim()) return;
+
+    try {
+      const res = await axiosPublic.get(`/api/coupon/code/${couponCode}`);
+      const coupon = res.data;
+
+      if (!coupon) {
+        Swal.fire("Invalid", "Coupon code does not exist", "error");
+        return;
+      }
+
+      if (!coupon.isActive) {
+        Swal.fire("Inactive", "This coupon is not active", "warning");
+        return;
+      }
+
+      const subtotal = cart.reduce(
+        (sum, item) => sum + item.cart.price * item.quantity,
+        0
+      );
+
+      let discount = 0;
+      if (coupon.type === "percentage") {
+        discount = (subtotal * coupon.value) / 100;
+      } else {
+        discount = coupon.value;
+      }
+
+      if (discount > subtotal) discount = subtotal;
+
+      if (coupon.minPurchase && subtotal < coupon.minPurchase) {
+        Swal.fire(
+          "Not Eligible",
+          `Minimum purchase of ${coupon.minPurchase} BDT required`,
+          "warning"
+        );
+        return;
+      }
+
+      setDiscountAmount(discount);
+      setAppliedCoupon(coupon);
+      Swal.fire("Applied!", "Coupon has been applied", "success");
+    } catch (err) {
+      console.error(err);
+      Swal.fire("Error", "Failed to apply coupon", "error");
+    }
+  };
+
+  const handleRemoveCoupon = () => {
+    setAppliedCoupon(null);
+    setDiscountAmount(0);
+    setCouponCode("");
+  };
+
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.cart.price * item.quantity,
+    0
+  );
+
+  // Apply discount if a coupon is applied
+  const totalWithDiscount = subtotal + shippingFee - discountAmount;
+
   const onSubmit = async (data) => {
     if (!selectedMethod) {
       Swal.fire({
@@ -148,13 +215,14 @@ const Checkout = () => {
         _id: item._id,
       })),
       shippingFee: shippingFee,
-      orderTotal:
-        cart.reduce((sum, item) => sum + item.cart.price * item.quantity, 0) +
-        shippingFee,
+      orderTotal: totalWithDiscount,
       paymentInfo: null,
       status: "pending",
       createdAt: new Date().toISOString(),
     };
+
+    console.log(orderData);
+    
 
     try {
       const res = await axiosPublic.post("/api/order/createOrder", orderData);
@@ -179,7 +247,7 @@ const Checkout = () => {
         Swal.fire({
           icon: "error",
           title: "Order Failed",
-          text: result.message || "Failed to place order.",
+          text: res.data.message || "Failed to place order",
         });
       }
     } catch (error) {
@@ -317,7 +385,7 @@ const Checkout = () => {
         </div>
 
         {/* Billing Summary */}
-        <div className="w-full lg:w-1/3 flex flex-col justify-between max-lg:space-y-10">
+        <div className="w-full lg:w-1/3 flex flex-col justify-between space-y-10">
           <div className="flex flex-col divide-y divide-gray-300">
             <h2 className="bg-[#008080] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
               Billing Summary
@@ -351,6 +419,41 @@ const Checkout = () => {
               </span>
             </div>
           </div>
+          {/* Coupon Section */}
+          <div className="mb-4">
+            <h3 className="text-gray-700 font-semibold text-base md:text-lg mb-2">
+              Apply Coupon
+            </h3>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={couponCode}
+                onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
+                placeholder="Enter coupon code"
+                className="flex-1 border p-2 rounded"
+              />
+              {appliedCoupon ? (
+                <button onClick={handleRemoveCoupon} className="buttons">
+                  Remove
+                </button>
+              ) : (
+                <button onClick={handleApplyCoupon} className="buttons">
+                  Apply
+                </button>
+              )}
+            </div>
+            {appliedCoupon && (
+              <p className="mt-2 text-green-600 font-medium">
+                {appliedCoupon.code} applied! Discount:{" "}
+                {discountAmount.toFixed(2)} BDT
+              </p>
+            )}
+          </div>
+          {appliedCoupon && (
+            <div className="mb-4 p-4 text-green-800 font-semibold rounded">
+              Total Amount: {totalWithDiscount.toFixed(2)} BDT
+            </div>
+          )}
           <div>
             <h3 className="text-[#008080] font-semibold text-base md:text-lg mb-3">
               Payment Method
@@ -404,7 +507,7 @@ const Checkout = () => {
             </button>
           </div>
 
-          <button onClick={handleSubmit(onSubmit)} className="w-full buttons">
+          <button onClick={handleSubmit(onSubmit)} className="w-full buttons ">
             PLACE ORDER
           </button>
         </div>

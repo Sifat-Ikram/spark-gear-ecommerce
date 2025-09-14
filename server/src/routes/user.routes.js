@@ -1,16 +1,16 @@
 import express from "express";
-import {
-  login,
-  logout,
-  profile,
-  refresh,
-  register,
-  validateLogin,
-  validateRegister,
-} from "../controllers/user.controller.js";
-import { protectRefresh } from "../middlewares/refreshAuth.middleware.js";
 import rateLimit from "express-rate-limit";
 import { protect } from "../middlewares/auth.middleware.js";
+import { protectRefresh } from "../middlewares/refreshAuth.middleware.js";
+import {
+  registerController,
+  loginController,
+  meController,
+} from "../controllers/user.controller.js";
+import {
+  refreshController,
+  logoutController,
+} from "../controllers/auth.controller.js";
 
 const router = express.Router();
 
@@ -20,10 +20,10 @@ const loginLimiter = rateLimit({
   message: "Too many login attempts, try again after 15 minutes",
 });
 
-router.post("/register", validateRegister, register);
-router.post("/login", loginLimiter, validateLogin, login);
-router.post("/refresh", protectRefresh, refresh);
-router.post("/logout", protectRefresh, logout);
-router.get("/profile", protect, profile);
+router.post("/register", registerController);
+router.post("/login", loginLimiter, loginController);
+router.post("/refresh", protectRefresh, refreshController);
+router.post("/logout", protectRefresh, logoutController);
+router.get("/profile", meController);
 
 export default router;

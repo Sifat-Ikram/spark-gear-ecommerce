@@ -1,6 +1,5 @@
 import { body, validationResult } from "express-validator";
-import { loginUser, registerUser } from "../services/user.service.js";
-import { generateAccessToken } from "../utils/jwt.utils.js";
+import { getMe, loginUser, registerUser } from "../services/user.service.js";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -15,14 +14,14 @@ export const validateLogin = [
   body("password").notEmpty(),
 ];
 
-export const register = async (req, res, next) => {
+export const registerController = async (req, res, next) => {
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
 
     const { name, email, password, role } = req.body;
-    const { accessToken, refreshToken, expiresIn, user } = await registerUser(
+    const { accessToken, refreshToken, expiresIn } = await registerUser(
       name,
       email,
       password,
@@ -43,24 +42,20 @@ export const register = async (req, res, next) => {
       sameSite: isProduction ? "None" : "Lax",
     });
 
-    res.status(201).json({
-      user,
-      accessToken,
-      expiresIn,
-    });
+    res.status(201).json({ accessToken, expiresIn });
   } catch (err) {
     next(err);
   }
 };
 
-export const login = async (req, res, next) => {
+export const loginController = async (req, res, next) => {
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
 
     const { email, password } = req.body;
-    const { accessToken, refreshToken, expiresIn, user } = await loginUser(
+    const { accessToken, refreshToken, expiresIn } = await loginUser(
       email,
       password
     );
@@ -80,7 +75,6 @@ export const login = async (req, res, next) => {
     });
 
     res.status(200).json({
-      user,
       accessToken,
       expiresIn,
     });
@@ -89,54 +83,15 @@ export const login = async (req, res, next) => {
   }
 };
 
-export const profile = async (req, res) => {
-  res.status(200).json({ user: req.user });
-};
-
-export const refresh = async (req, res, next) => {
+export const meController = async (req, res) => {
   try {
-    const user = req.user;
-    const accessToken = generateAccessToken(user);
+    const accessToken = req.cookies.accessToken;
+    const refreshToken = req.cookies.refreshToken;
 
-    // Set new access token in cookie
-    res.cookie("accessToken", accessToken, {
-      httpOnly: true,
-      secure: isProduction,
-      maxAge: 15 * 60 * 1000, // 15 minutes
-      sameSite: isProduction ? "None" : "Lax",
-    });
+    const { hasRefreshToken } = await getMe(accessToken, refreshToken);
 
-    res.status(200).json({
-      accessToken,
-      expiresIn: 15 * 60,
-      user: {
-        id: user._id,
-        name: user.name,
-        email: user.email,
-        role: user.role,
-      },
-    });
+    res.status(200).json({ hasRefreshToken });
   } catch (err) {
-    next(err);
-  }
-};
-
-export const logout = async (req, res, next) => {
-  try {
-    res.clearCookie("accessToken", {
-      httpOnly: true,
-      secure: isProduction,
-      sameSite: isProduction ? "None" : "Lax",
-    });
-
-    res.clearCookie("refreshToken", {
-      httpOnly: true,
-      secure: isProduction,
-      sameSite: isProduction ? "None" : "Lax",
-    });
-
-    res.status(200).json({ message: "Logged out successfully" });
-  } catch (err) {
-    next(err);
+    res.status(401).json({ message: "Unable to get user info" });
   }
 };

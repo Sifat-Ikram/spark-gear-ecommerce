@@ -5,6 +5,7 @@ import {
   getAllOrders,
   getOrderById,
   getOrderByUsername,
+  getOrdersByStatus,
   updateOrder,
   updateOrderStatus,
 } from "../controllers/order.controller.js";
@@ -17,6 +18,7 @@ router.post("/createOrder", createOrder);
 router.get("/", protect, verifyAdmin(["admin"]), getAllOrders);
 router.get("/:id", getOrderById);
 router.get("/user/:username", getOrderByUsername);
+router.get("/status/:status", getOrdersByStatus);
 router.put("/:id", updateOrder);
 router.patch("/status/:id", protect, verifyAdmin(["admin"]), updateOrderStatus);
 router.delete("/:id", protect, verifyAdmin(["admin"]), deleteOrder);

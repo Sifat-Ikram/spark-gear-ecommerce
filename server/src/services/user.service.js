@@ -21,17 +21,7 @@ export const registerUser = async (name, email, password, role) => {
   const accessToken = generateAccessToken(user);
   const refreshToken = generateRefreshToken(user);
 
-  return {
-    accessToken,
-    refreshToken,
-    expiresIn: 15 * 60,
-    user: {
-      id: user._id,
-      name: user.name,
-      email: user.email,
-      role: user.role,
-    },
-  };
+  return { accessToken, refreshToken, expiresIn: 15 * 60 };
 };
 
 export const loginUser = async (email, password) => {
@@ -48,17 +38,7 @@ export const loginUser = async (email, password) => {
   const accessToken = generateAccessToken(user);
   const refreshToken = generateRefreshToken(user);
 
-  return {
-    accessToken,
-    refreshToken,
-    expiresIn: 15 * 60,
-    user: {
-      id: user._id,
-      name: user.name,
-      email: user.email,
-      role: user.role,
-    },
-  };
+  return { accessToken, refreshToken, expiresIn: 15 * 60 };
 };
 
 export const refreshAccessToken = async (refreshToken) => {
@@ -66,26 +46,27 @@ export const refreshAccessToken = async (refreshToken) => {
 
   try {
     const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
-
     if (!decoded?.id) throw new Error("Invalid refresh token payload");
 
     const user = await User.findById(decoded.id);
-    if (!user) {
-      throw new Error("User not found");
-    }
+    if (!user) throw new Error("User not found");
 
     const newAccessToken = generateAccessToken(user);
-    return {
-      accessToken: newAccessToken,
-      expiresIn: 15 * 60,
-      user: {
-        id: user._id,
-        name: user.name,
-        email: user.email,
-        role: user.role,
-      },
-    };
+    return { accessToken: newAccessToken, expiresIn: 15 * 60 };
   } catch (error) {
     throw new Error("Invalid refresh token");
+  }
+};
+
+export const getMe = async (accessToken, refreshToken) => {
+  let hasRefreshToken = !!refreshToken;
+  try {
+    if (accessToken) {
+      jwt.verify(accessToken, process.env.JWT_ACCESS_SECRET);
+      return { hasRefreshToken };
+    }
+    return { hasRefreshToken };
+  } catch (err) {
+    return { hasRefreshToken };
   }
 };

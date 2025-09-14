@@ -83,6 +83,21 @@ export const updateOrderStatus = async (req, res) => {
   }
 };
 
+export const getOrdersByStatus = async (req, res) => {
+  try {
+    const { status } = req.params;
+
+    if (!status) {
+      return res.status(400).json({ message: "Status is required" });
+    }
+
+    const orders = await orderService.getOrdersByStatus(status);
+    res.status(200).json(orders);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
 export const deleteOrder = async (req, res) => {
   try {
     const order = await orderService.deleteOrder(req.params.id);
