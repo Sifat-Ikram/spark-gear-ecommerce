@@ -60,17 +60,17 @@ export default function FeaturedCard({ product }) {
       {/* Product Info */}
       <div className="flex-1 p-2 sm:p-3 md:p-4 flex flex-col justify-between">
         <div>
-          <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100 truncate">
+          <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 truncate">
             {product.name}
           </h3>
 
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-1">
+          <p className="text-sm sm:text-base text-gray-600 mt-1">
             Brand: {product.brand}
           </p>
 
           <div className="mt-1 flex items-center">
             {renderStars(product.ratings.average)}
-            <span className="ml-2 text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <span className="ml-2 text-sm sm:text-base text-gray-600">
               ({product.ratings.reviewsCount})
             </span>
           </div>

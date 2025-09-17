@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { FiPackage, FiUser, FiDollarSign } from "react-icons/fi";
 import { AiOutlinePhone } from "react-icons/ai";
 import Image from "next/image";
-import axios from "axios";
 import Swal from "sweetalert2";
 import { useEffect, useRef, useState } from "react";
 import useAxiosSecure from "@/hooks/useAxiosSecure";

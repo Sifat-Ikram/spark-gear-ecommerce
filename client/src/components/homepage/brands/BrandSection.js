@@ -81,7 +81,7 @@ const BrandSection = () => {
   return (
     <section className="">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 dark:text-white leading-snug">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 leading-snug">
         Shop by Brands
       </h2>
 
@@ -128,7 +128,7 @@ const BrandSection = () => {
               <SwiperSlide key={brand._id}>
                 <Link
                   href={`/brandDetails/${brand._id}`}
-                  className="flex flex-col items-center cursor-pointer bg-gray-50 dark:bg-[#1c1f2e] rounded-xl shadow hover:shadow-lg px-3 py-4 sm:px-4 sm:py-5 md:px-5 md:py-6 transition-all duration-300"
+                  className="flex flex-col items-center cursor-pointer bg-gray-50 rounded-xl shadow hover:shadow-lg px-3 py-4 sm:px-4 sm:py-5 md:px-5 md:py-6 transition-all duration-300"
                 >
                   <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-2 sm:mb-3 md:mb-4">
                     <Image
@@ -140,7 +140,7 @@ const BrandSection = () => {
                       className="object-cover rounded-full"
                     />
                   </div>
-                  <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-gray-700 dark:text-gray-200 text-center leading-tight">
+                  <span className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-gray-700 text-center leading-tight">
                     {brand.name}
                   </span>
                 </Link>

@@ -26,16 +26,16 @@ export default function ProductCard({ product }) {
       {/* Product Info */}
       <div className="flex-1 p-4 sm:p-5 md:p-6 flex flex-col justify-between">
         <div>
-          <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100 truncate">
+          <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 truncate">
             {product.name}
           </h3>
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-1">
+          <p className="text-sm sm:text-base text-gray-600 mt-1">
             Category: {product.category}
           </p>
         </div>
 
         <div className="mt-3 flex flex-row items-center justify-between">
-          <p className="text-sm md:text-base lg:text-lg font-bold text-gray-900 dark:text-white">
+          <p className="text-sm md:text-base lg:text-lg font-bold text-gray-900">
             {product.price.toFixed(2)} BDT
           </p>
           <Link href={`/main-layout/productDetails/${product?.slug}`}>

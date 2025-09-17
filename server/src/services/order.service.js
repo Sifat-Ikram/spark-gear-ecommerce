@@ -52,11 +52,12 @@ class OrderService {
     return await orderModel.findById(id);
   }
 
-  async getOrderByUserName(userName) {
+  async getOrdersByEmail(email) {
     return await orderModel
-      .find({ "user.name": userName })
+      .find({ "user.email": email })
       .sort({ createdAt: -1 });
   }
+
   async updateOrder(id, orderData) {
     return await orderModel.findByIdAndUpdate(id, orderData, { new: true });
   }

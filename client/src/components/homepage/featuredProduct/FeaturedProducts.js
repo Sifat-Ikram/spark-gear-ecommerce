@@ -9,21 +9,21 @@ const FeaturedProducts = () => {
 
   if (productIsLoading)
     return (
-      <p className="text-center text-gray-600 dark:text-gray-300 py-8 sm:py-12">
+      <p className="text-center text-gray-600 py-8 sm:py-12">
         Loading featured products...
       </p>
     );
 
   if (productError)
     return (
-      <p className="text-center text-red-500 dark:text-red-300 py-8 sm:py-12">
+      <p className="text-center text-red-500 py-8 sm:py-12">
         Failed to load products
       </p>
     );
 
   if (!products || products.length === 0)
     return (
-      <p className="text-center text-gray-600 dark:text-gray-300 py-8 sm:py-12">
+      <p className="text-center text-gray-600 py-8 sm:py-12">
         No featured products available
       </p>
     );

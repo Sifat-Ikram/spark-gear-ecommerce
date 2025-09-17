@@ -5,15 +5,22 @@ export default class UserServices {
     return await User.find().select("-password").sort({ createdAt: -1 });
   }
 
-  static async getUserByEmail(email) {
-    return await User.findOne({ email }).select("-password");
+  static async getUserById(userId) {
+    return await User.findById(userId).select("-password");
   }
 
-  static async updateUser(userId, updatedData) {
-    if (updatedData.password) {
-      delete updatedData.password;
-    }
-    return User.findByIdAndUpdate(userId, updatedData, {
+  static async updateProfile(userId, profileData) {
+    // Only allow user profile fields
+    const allowedFields = ["name", "email", "phone", "city", "address"];
+    const updates = {};
+
+    allowedFields.forEach((field) => {
+      if (profileData[field] !== undefined) {
+        updates[field] = profileData[field];
+      }
+    });
+
+    return await User.findByIdAndUpdate(userId, updates, {
       new: true,
       runValidators: true,
     }).select("-password");

@@ -16,21 +16,21 @@ const NewArrival = () => {
 
   if (productIsLoading)
     return (
-      <p className="text-center text-gray-600 dark:text-gray-300 py-12 sm:py-16">
+      <p className="text-center text-gray-600 py-12 sm:py-16">
         Loading new arrivals...
       </p>
     );
 
   if (productError)
     return (
-      <p className="text-center text-red-500 dark:text-red-300 py-12 sm:py-16">
+      <p className="text-center text-red-500 py-12 sm:py-16">
         Failed to load products
       </p>
     );
 
   if (!products || products.length === 0)
     return (
-      <p className="text-center text-gray-600 dark:text-gray-300 py-12 sm:py-16">
+      <p className="text-center text-gray-600 py-12 sm:py-16">
         No new arrivals available
       </p>
     );
@@ -40,7 +40,7 @@ const NewArrival = () => {
   return (
     <section className="w-full">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 dark:text-white leading-snug">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 leading-snug">
         New Arrivals
       </h2>
 

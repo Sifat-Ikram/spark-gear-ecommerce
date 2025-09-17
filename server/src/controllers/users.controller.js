@@ -9,27 +9,31 @@ export const getAllUsers = async (req, res) => {
   }
 };
 
-export const getUserByEmail = async (req, res) => {
-  const { email } = req.params;
+export const getUserById = async (req, res) => {
+  const { id } = req.params;
   try {
-    const user = await UserServices.getUserByEmail(email);
-    if (!user) {
-      return res.status(404).json({ message: "User not found!!!" });
-    }
+    const user = await UserServices.getUserById(id);
+    if (!user) return res.status(404).json({ message: "User not found" });
     res.status(200).json(user);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 };
 
-export const updateUser = async (req, res) => {
-  const { id } = req.params;
+export const updateProfile = async (req, res) => {
   try {
-    const user = await UserServices.updateUser(id, req.body);
-    if (!user) {
+    const userId = req.user.id;
+    const updatedUser = await UserServices.updateProfile(userId, req.body);
+
+    if (!updatedUser) {
       return res.status(404).json({ message: "User not found!!!" });
     }
-    res.status(200).json(user);
+
+    res.status(200).json({
+      success: true,
+      message: "Profile updated successfully",
+      data: updatedUser,
+    });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

@@ -32,18 +32,25 @@ export const getOrderById = async (req, res) => {
   }
 };
 
-export const getOrderByUsername = async (req, res) => {
+export const getOrdersByEmail = async (req, res) => {
   try {
-    const { username } = req.params;
-    const order = await orderService.getOrderByUserName(username);
-    if (!order) {
+    const { email } = req.params;
+
+    if (!email) {
+      return res.status(400).json({ message: "Email is required" });
+    }
+
+    const orders = await orderService.getOrdersByEmail(email);
+
+    if (!orders || orders.length === 0) {
       return res
         .status(404)
-        .json({ message: "Order for this user is not found!!!" });
+        .json({ message: "No orders found for this email" });
     }
-    res.status(200).json(order);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+
+    res.status(200).json(orders);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 };
 

@@ -53,7 +53,6 @@ export default function SearchOverlay({ isOpen, onClose }) {
     e.preventDefault();
     const query = inputRef.current?.value;
     console.log("Search query:", query);
-    // Optional: Add navigation or search logic here
   };
 
   return (
@@ -67,7 +66,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
         >
           <motion.div
             ref={containerRef}
-            className="relative w-full max-w-lg bg-white/60 dark:bg-[#161929] backdrop-blur-xl rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/30 dark:border-white/10"
+            className="relative w-full max-w-lg bg-white/60 backdrop-blur-xl rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/30"
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -30, opacity: 0 }}
@@ -76,14 +75,14 @@ export default function SearchOverlay({ isOpen, onClose }) {
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute cursor-pointer top-3 right-3 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 transition"
+              className="absolute cursor-pointer top-3 right-3 text-gray-700 hover:text-gray-900 transition"
               aria-label="Close search overlay"
             >
               <FaTimes className="text-xl" />
             </button>
 
             {/* Title */}
-            <h2 className="text-center text-xl font-semibold text-gray-800 dark:text-white mb-5">
+            <h2 className="text-center text-xl font-semibold text-gray-800 mb-5">
               Search the site
             </h2>
 
@@ -96,7 +95,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
                 ref={inputRef}
                 type="text"
                 placeholder="What are you looking for?"
-                className="w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 dark:bg-[#1e2235] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008080] dark:focus:ring-[#008080]"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 text-gray-900 placeholder-gray-500  focus:outline-none focus:ring-2 focus:ring-[#008080]"
               />
               <button
                 type="submit"

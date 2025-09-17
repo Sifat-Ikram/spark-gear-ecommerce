@@ -4,7 +4,7 @@ import {
   deleteOrder,
   getAllOrders,
   getOrderById,
-  getOrderByUsername,
+  getOrdersByEmail,
   getOrdersByStatus,
   updateOrder,
   updateOrderStatus,
@@ -17,10 +17,10 @@ const router = express.Router();
 router.post("/createOrder", createOrder);
 router.get("/", protect, verifyAdmin(["admin"]), getAllOrders);
 router.get("/:id", getOrderById);
-router.get("/user/:username", getOrderByUsername);
+router.get("/email/:email", getOrdersByEmail);
 router.get("/status/:status", getOrdersByStatus);
 router.put("/:id", updateOrder);
 router.patch("/status/:id", protect, verifyAdmin(["admin"]), updateOrderStatus);
-router.delete("/:id", protect, verifyAdmin(["admin"]), deleteOrder);
+router.delete("/:id", protect, deleteOrder);
 
 export default router;

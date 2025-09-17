@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
 import { useAuth } from "@/provider/AuthContext";
 import { useCartByEmail } from "@/hooks/useCartByEmail";
+import { useUserById } from "@/hooks/useUserById";
 
 const Checkout = () => {
   const router = useRouter();
@@ -16,22 +17,27 @@ const Checkout = () => {
   const [couponCode, setCouponCode] = useState("");
   const [discountAmount, setDiscountAmount] = useState(0);
   const [appliedCoupon, setAppliedCoupon] = useState(null);
+  const { currentUser, userIsLoading, userError } = useUserById(user?.id);
 
   const { register, handleSubmit, watch, setValue } = useForm({
     defaultValues: {
-      city: user?.city || "Dhaka",
-      name: user?.name || "",
-      email: user?.email || "",
-      phone: user?.phone || "",
+      name: user ? currentUser?.name || "" : "",
+      email: user ? currentUser?.email || "" : "",
+      phone: user ? currentUser?.phone || "" : "",
+      city: user ? currentUser?.city || "Dhaka" : "Dhaka",
+      address: user ? currentUser?.address || "" : "",
     },
   });
 
   useEffect(() => {
-    if (user) {
-      setValue("name", user.name);
-      setValue("email", user.email);
+    if (user && currentUser) {
+      setValue("name", currentUser.name || "");
+      setValue("email", currentUser.email || "");
+      setValue("phone", currentUser.phone || "");
+      setValue("city", currentUser.city || "Dhaka");
+      setValue("address", currentUser.address || "");
     }
-  }, [user, setValue]);
+  }, [user, currentUser, setValue]);
 
   const [hasMounted, setHasMounted] = useState(false);
 
@@ -222,7 +228,6 @@ const Checkout = () => {
     };
 
     console.log(orderData);
-    
 
     try {
       const res = await axiosPublic.post("/api/order/createOrder", orderData);

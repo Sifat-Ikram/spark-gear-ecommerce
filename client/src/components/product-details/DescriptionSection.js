@@ -23,11 +23,11 @@ const DescriptionSection = ({ product }) => {
       {/* Main Content */}
       <div className="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between max-lg:gap-6">
         {/* Left Column - Description */}
-        <div className="w-full lg:w-[48%] bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl shadow-sm p-4 sm:p-6 lg:p-8 space-y-3">
-          <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+        <div className="w-full lg:w-[48%] bg-white border border-gray-300 rounded-2xl shadow-sm p-4 sm:p-6 lg:p-8 space-y-3">
+          <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-800">
             Description
           </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-gray-600 dark:text-gray-300">
+          <p className="text-sm sm:text-base leading-relaxed text-gray-600">
             {product.description}
           </p>
         </div>
@@ -41,7 +41,7 @@ const DescriptionSection = ({ product }) => {
             >
               <button
                 onClick={() => toggleSpec(spec.name)}
-                className="w-full flex justify-between items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#008080] dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200"
+                className="w-full flex justify-between items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#008080] hover:bg-gray-50 transition-all duration-200"
               >
                 <span className="text-sm sm:text-base lg:text-lg">
                   {spec.name}
@@ -62,7 +62,7 @@ const DescriptionSection = ({ product }) => {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-4 sm:px-5 pb-4 text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed"
+                    className="px-4 sm:px-5 pb-4 text-gray-700 text-sm sm:text-base leading-relaxed"
                   >
                     {spec.value}
                   </motion.div>
