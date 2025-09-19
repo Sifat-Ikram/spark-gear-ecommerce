@@ -205,7 +205,7 @@ const AddCategories = () => {
               <button
                 type="button"
                 onClick={() => handleRemoveCategory(cat._id)}
-                className="text-red-600 hover:text-red-800"
+                className="text-red-600 hover:text-red-800 cursor-pointer"
               >
                 <FiX size={20} />
               </button>

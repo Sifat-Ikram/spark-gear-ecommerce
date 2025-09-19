@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import SearchOverlay from "./SearchOverlay";
-import { VscSignOut } from "react-icons/vsc";
 import { useAuth } from "@/provider/AuthContext";
 import { useCart } from "@/provider/CartContext";
 import { motion } from "framer-motion";
@@ -20,7 +19,6 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
   if (categoryError) {
     return <h1>Error fetching categories!!!</h1>;
   }
-  
 
   return (
     <div className="flex items-center space-x-3.5 text-lg font-medium">
@@ -33,7 +31,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
               onMouseEnter={() => setOpenDropdown(true)}
               onMouseLeave={() => setOpenDropdown(false)}
             >
-              <button className="py-3 md:py-5 text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal transition-colors">
+              <button className="py-3 md:py-5 text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal cursor-pointer transition-colors">
                 {item.label}
               </button>
               {openDropdown && (
@@ -77,7 +75,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
             <Link
               key={idx}
               href={item.link}
-              className="text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal transition-colors"
+              className="text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal transition-colors"
             >
               {item.label}
             </Link>
@@ -86,7 +84,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
         {!user?.email && (
           <Link
             href={"/login"}
-            className="text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal"
+            className="text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
           >
             Login
           </Link>
@@ -109,14 +107,14 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           <FiShoppingCart className="text-sm md:text-base" />
         </motion.div>
         <motion.div>
-          {user?.email && (
+          {user?.email ? (
             <div className="flex items-center space-x-3.5 md:space-x-4 lg:space-x-6 2xl:space-x-8">
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 className="cursor-pointer"
               >
                 <Link href={`/main-layout/user-profile/${user.id}`}>
-                  <FaUser className="text-sm md:text-base" />
+                  <FaUser className="text-sm :text-base" />
                 </Link>
               </motion.div>
               <motion.div
@@ -125,12 +123,19 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
               >
                 <h1
                   onClick={() => logOut()}
-                  className="cursor-pointer text-xs sm:text-base md:text-sm lg:text-base 2xl:text-lg font-normal"
+                  className="cursor-pointer text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
                 >
                   LogOut
                 </h1>
               </motion.div>
             </div>
+          ) : (
+            <Link
+              href={"/login"}
+              className="block sm:hidden text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
+            >
+              Login
+            </Link>
           )}
         </motion.div>
       </div>

@@ -9,6 +9,7 @@ import { FiSearch } from "react-icons/fi";
 import { useCategories } from "@/hooks/useCategories";
 import Image from "next/image";
 import slugify from "slugify";
+import ProductSearch from "./ProductSearch";
 
 const MainNav = () => {
   const navRef = useRef(null);
@@ -135,13 +136,8 @@ const MainNav = () => {
         </Link>
       </div>
 
-      <div className="relative hidden lg:flex items-center lg:w-[400px] xl:w-[450px] 2xl:w-[600px] bg-white rounded-[6px] px-3 py-2 shadow-sm">
-        <FiSearch className="absolute left-2 text-gray-500 text-lg" />
-        <input
-          type="text"
-          placeholder="Search products..."
-          className="bg-transparent outline-none pl-10 w-full text-sm text-gray-700 placeholder-gray-500"
-        />
+      <div className="relative hidden lg:flex items-center lg:w-[400px] xl:w-[450px] 2xl:w-[600px]">
+        <ProductSearch />
       </div>
 
       <RightNav

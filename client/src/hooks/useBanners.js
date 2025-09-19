@@ -1,10 +1,10 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "./useAxiosPublic";
+import useAxiosSecure from "./useAxiosSecure";
 
 export function useBanners() {
-  const axiosSecure = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
 
   const {
     data = [],
@@ -15,7 +15,7 @@ export function useBanners() {
     queryKey: ["banners"],
     queryFn: async () => {
       const res = await axiosSecure.get("/api/banner");
-      return res.data;
+      return res.data.banners;
     },
     staleTime: 1000 * 60 * 5,
     retry: 1,

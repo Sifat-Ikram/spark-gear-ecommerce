@@ -45,15 +45,15 @@ export default function FeaturedCard({ product }) {
   return (
     <Link
       href={`/main-layout/productDetails/${product?.slug}`}
-      className="bg-gray-50 group border-[1px] border-[#008080] rounded-2xl shadow-lg overflow-hidden flex flex-col"
+      className="bg-gray-50 group rounded-2xl shadow overflow-hidden flex flex-col"
     >
-      <motion.div className="relative w-full h-48 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+      <motion.div className="relative w-full h-48 sm:h-56 lg:h-56 xl:h-64 overflow-hidden transform transition-transform duration-500 ease-in-out group-hover:scale-110">
         <Image
           src={imageUrl}
           alt={product.images[0]?.alt || "Product image"}
           fill
           loading="lazy"
-          className="object-contain h-full w-full"
+          className="object-cover object-center h-full w-full"
         />
       </motion.div>
 

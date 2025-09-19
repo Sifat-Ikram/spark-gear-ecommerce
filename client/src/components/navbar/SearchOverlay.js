@@ -1,11 +1,22 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useProducts } from "@/hooks/useProducts";
+import Link from "next/link";
 
 export default function SearchOverlay({ isOpen, onClose }) {
   const inputRef = useRef(null);
   const containerRef = useRef(null);
+  const { products, productIsLoading, productError } = useProducts();
+  const [query, setQuery] = useState("");
+
+  const filteredProducts =
+    query.trim().length > 0
+      ? products?.filter((p) =>
+          p.name.toLowerCase().includes(query.toLowerCase())
+        )
+      : [];
 
   // Close on outside click
   useEffect(() => {
@@ -48,13 +59,6 @@ export default function SearchOverlay({ isOpen, onClose }) {
     };
   }, [isOpen, onClose]);
 
-  // Submit search
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    const query = inputRef.current?.value;
-    console.log("Search query:", query);
-  };
-
   return (
     <AnimatePresence>
       {isOpen && (
@@ -86,24 +90,51 @@ export default function SearchOverlay({ isOpen, onClose }) {
               Search the site
             </h2>
 
-            {/* Search Form */}
             <form
-              onSubmit={handleSearchSubmit}
-              className="flex flex-col sm:flex-row gap-3"
+              onSubmit={(e) => e.preventDefault()}
+              className="flex flex-col gap-3"
             >
               <input
                 ref={inputRef}
                 type="text"
                 placeholder="What are you looking for?"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 text-gray-900 placeholder-gray-500  focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#008080]"
               />
-              <button
-                type="submit"
-                className="w-full sm:w-auto buttons"
-              >
-                Search
-              </button>
             </form>
+            <div className="mt-4 max-h-64 overflow-y-auto bg-white/80 backdrop-blur rounded-lg shadow-inner border border-gray-200">
+              {productIsLoading && (
+                <p className="p-3 text-sm text-gray-500">Loading products...</p>
+              )}
+              {productError && (
+                <p className="p-3 text-sm text-red-500">
+                  Failed to load products
+                </p>
+              )}
+              {filteredProducts && filteredProducts.length > 0 ? (
+                <ul className="divide-y divide-gray-200">
+                  {filteredProducts.map((product) => (
+                    <li key={product._id}>
+                      <Link
+                        href={`/main-layout/productDetails/${product?.slug}`}
+                        className="flex items-center gap-3 p-3 hover:bg-gray-100 transition"
+                        onClick={onClose}
+                      >
+                        <span className="text-sm text-gray-700">
+                          {product.name}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                !productIsLoading &&
+                query.trim() && (
+                  <p className="p-3 text-sm text-gray-500">No products found</p>
+                )
+              )}
+            </div>
           </motion.div>
         </motion.div>
       )}

@@ -44,7 +44,7 @@ export default function AdminOrdersPage() {
           <button
             key={status}
             onClick={() => setSelectedStatus(status)}
-            className={`sm:text-lg md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-medium transition ${
+            className={`sm:text-lg md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-medium cursor-pointer transition ${
               selectedStatus === status
                 ? "underline text-gray-200"
                 : "text-white hover:text-gray-200 hover:underline"

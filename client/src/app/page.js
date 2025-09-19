@@ -45,11 +45,18 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+const Home = async () => {
+  const res = await fetch("http://localhost:5000/api/banner/active", {
+    next: { revalidate: 60 },
+  });
+
+  if (!res.ok) throw new Error("Failed to fetch products");
+  const banner = await res.json();
+
   return (
     <MainLayout>
       <div className="my-20 space-y-20">
-        <Banner />
+        <Banner banner={banner.activeBanner} />
         <div className="w-11/12 mx-auto flex flex-col space-y-20">
           <IntroSection />
           <CategoriesSection />
@@ -68,4 +75,5 @@ export default function Home() {
       </div>
     </MainLayout>
   );
-}
+};
+export default Home;

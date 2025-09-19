@@ -10,8 +10,8 @@ import Pagination from "@/components/productpage/Pagination";
 import { useRouter } from "next/navigation";
 import ProductFilter from "@/components/admin-routes/ProductFilter";
 import Swal from "sweetalert2";
-import { useAuth } from "@/provider/AuthContext";
 import Link from "next/link";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 
 const AdminProducts = () => {
   const { products, productIsLoading, productError, productRefetch } =
@@ -20,7 +20,7 @@ const AdminProducts = () => {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
 
   const categories = Array.from(new Set(products.map((p) => p.category)));
 
@@ -52,7 +52,7 @@ const AdminProducts = () => {
 
     if (result.isConfirmed) {
       try {
-        await axiosInstance.delete(`/api/product/${id}`);
+        await axiosSecure.delete(`/api/product/${id}`);
         Swal.fire("Deleted!", "Product has been deleted.", "success");
         productRefetch();
       } catch (error) {

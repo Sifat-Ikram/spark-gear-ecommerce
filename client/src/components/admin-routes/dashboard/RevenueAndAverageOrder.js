@@ -16,7 +16,7 @@ const RevenueAndAverageOrder = () => {
           Revenue:
         </div>
         <div className="text-sm lg:text-lg xl:text-xl font-semibold text-gray-700">
-          ${revenue.toFixed(2)}
+          BDT {revenue.toFixed(2)}
         </div>
       </div>
       <div className="p-4 w-1/2 text-center border-[1px] border-gray-400 bg-gray-50 shadow flex gap-5 rounded-lg items-center">
@@ -24,7 +24,7 @@ const RevenueAndAverageOrder = () => {
           Average Order Value (AOV):
         </div>
         <div className="text-sm lg:text-lg xl:text-xl font-semibold text-gray-700">
-          ${aov.toFixed(2)}
+          BDT {aov.toFixed(2)}
         </div>
       </div>
     </div>

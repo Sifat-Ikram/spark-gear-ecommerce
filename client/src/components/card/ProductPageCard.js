@@ -10,18 +10,18 @@ export default function ProductPageCard({ product }) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className="bg-gray-50 rounded-xl shadow h-[320px] flex flex-col"
+      className="bg-gray-50 rounded-xl shadow flex flex-col"
     >
       <Link
         href={`/main-layout/productDetails/${product?.slug}`}
         className="flex flex-col h-full"
       >
-        <div className="relative w-full h-40">
+        <div className="relative w-full h-48 sm:h-56 lg:h-56 xl:h-64">
           <Image
             src={imageUrl}
             alt={product?.images?.[0]?.alt || "Product image"}
             fill
-            className="object-cover rounded-lg bg-gray-100"
+            className="object-cover object-center h-full w-full rounded-lg bg-gray-100"
           />
         </div>
 

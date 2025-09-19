@@ -17,6 +17,19 @@ class BannerService {
   async deleteBanner(id) {
     return await Banner.findByIdAndDelete(id);
   }
+
+  async setActiveBanner(id) {
+    await Banner.updateMany({}, { isActive: false });
+    return await Banner.findByIdAndUpdate(
+      id,
+      { isActive: true },
+      { new: true }
+    );
+  }
+
+  async getActiveBanner() {
+    return await Banner.findOne({ isActive: true });
+  }
 }
 
 export default new BannerService();

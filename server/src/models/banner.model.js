@@ -2,8 +2,10 @@ import mongoose from "mongoose";
 
 const bannerSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true, trim: true },
-    image: { type: String, required: true },
+    title: { type: String, required: true, trim: true },
+    paragraph: { type: String, required: true, trim: true },
+    video: { type: String, required: true },
+    isActive: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

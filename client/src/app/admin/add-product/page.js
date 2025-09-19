@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useAuth } from "@/provider/AuthContext";
 import ProductForm from "@/components/admin-routes/ProductForm";
 import ProductImages from "@/components/admin-routes/ProductImages";
 import Swal from "sweetalert2";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 
 const AddProduct = () => {
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
   const [productId, setProductId] = useState(null);
   const [productData, setProductData] = useState(null);
 
@@ -34,7 +34,7 @@ const AddProduct = () => {
     };
 
     try {
-      const res = await axiosInstance.post("/api/product", payload);
+      const res = await axiosSecure.post("/api/product", payload);
       setProductData(res.data);
       setProductId(res.data._id);
 
@@ -64,7 +64,7 @@ const AddProduct = () => {
         {!productData ? (
           <ProductForm type={"add"} onSubmit={onSubmit} />
         ) : (
-          <ProductImages type={add} productId={productId} />
+          <ProductImages type={"add"} productId={productId} />
         )}
       </div>
     </main>

@@ -176,7 +176,7 @@ export default function CouponDashboard() {
                 <td className="py-2 px-3 text-sm sm:text-base">
                   {coupon.type === "percentage"
                     ? `${coupon.value}%`
-                    : `$${coupon.value}`}
+                    : `BDT ${coupon.value}`}
                 </td>
                 <td className="py-2 px-3 text-sm sm:text-base">
                   {coupon.minPurchase || "-"}

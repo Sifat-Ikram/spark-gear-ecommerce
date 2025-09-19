@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { FiPlus, FiX } from "react-icons/fi";
-import { useAuth } from "@/provider/AuthContext";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 
 const ProductImages = ({ productId, type, images = [] }) => {
   const router = useRouter();
   const fileInputRef = useRef(null);
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
   const [isLoading, setIsLoading] = useState(false);
   const [linkInputs, setLinkInputs] = useState([""]);
   const [localImages, setLocalImages] = useState(
@@ -70,17 +70,14 @@ const ProductImages = ({ productId, type, images = [] }) => {
     newLinks[index] = value;
     setLinkInputs(newLinks);
 
-    if (value.startsWith("https://") && value.length > 10) {
-      const updated = [...localImages];
-      if (!updated.includes(value)) {
-        updated.push(value);
-        setLocalImages(updated);
+    if (value.startsWith("http") && value.length > 10) {
+      if (!localImages.includes(value)) {
+        setLocalImages((prev) => [...prev, value]);
       }
     }
   };
 
   const handleRemoveImage = async (indexToRemove) => {
-    // Remove locally first
     const updated = localImages.filter((_, i) => i !== indexToRemove);
     setLocalImages(updated);
 
@@ -92,7 +89,7 @@ const ProductImages = ({ productId, type, images = [] }) => {
           alt: "Product image",
         }));
 
-        const res = await axiosInstance.patch(
+        const res = await axiosSecure.patch(
           `/api/images/products/${productId}/images`,
           { images: imagesPayload },
           { headers: { "Content-Type": "application/json" } }
@@ -135,7 +132,7 @@ const ProductImages = ({ productId, type, images = [] }) => {
         alt: "Product image",
       }));
 
-      const res = await axiosInstance.patch(
+      const res = await axiosSecure.patch(
         `/api/images/products/${productId}/images`,
         { images: imagesPayload },
         { headers: { "Content-Type": "application/json" } }
@@ -223,7 +220,7 @@ const ProductImages = ({ productId, type, images = [] }) => {
               )}
               <button
                 type="button"
-                onClick={() => handleRemoveImage(url, index)}
+                onClick={() => handleRemoveImage(index)}
                 className="absolute top-2 right-2 bg-red-600 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition"
               >
                 <FiX size={16} />

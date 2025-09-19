@@ -2,14 +2,14 @@
 
 import ProductForm from "@/components/admin-routes/ProductForm";
 import ProductImages from "@/components/admin-routes/ProductImages";
+import useAxiosSecure from "@/hooks/useAxiosSecure";
 import { useProductById } from "@/hooks/useProductById";
-import { useAuth } from "@/provider/AuthContext";
 import { use, useState } from "react";
 import Swal from "sweetalert2";
 
 const UpdateProduct = ({ params }) => {
   const { id } = use(params);
-  const { axiosInstance } = useAuth();
+  const axiosSecure = useAxiosSecure();
   const [productData, setProductData] = useState(null);
   const [productId, setProductId] = useState(null);
 
@@ -21,7 +21,7 @@ const UpdateProduct = ({ params }) => {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axiosInstance.put(`/api/product/${id}`, data);
+      const res = await axiosSecure.put(`/api/product/${id}`, data);
       setProductData(res.data);
       setProductId(res.data._id);
 

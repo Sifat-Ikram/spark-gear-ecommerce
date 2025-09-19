@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
   const imageUrl = product?.images?.[0]?.url || fallback;
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+    <div className="bg-white rounded-2xl shadow overflow-hidden flex flex-col">
       <motion.div
         className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden"
         whileHover={{ scale: 1.05 }}
@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
           src={imageUrl}
           alt={product.images[0].alt || "Product image"}
           fill
-          className="object-contain h-full w-full"
+          className="object-cover object-center h-full w-full"
         />
       </motion.div>
 

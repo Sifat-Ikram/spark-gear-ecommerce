@@ -160,7 +160,7 @@ const OrderCard = ({ order, orderRefetch }) => {
           <button
             disabled={updating}
             onClick={() => setOpen((prev) => !prev)}
-            className={`px-4 py-2 border border-[#008080] rounded font-medium flex items-center justify-between gap-2 w-40 ${
+            className={`px-4 py-2 border border-[#008080] cursor-pointer rounded font-medium flex items-center justify-between gap-2 w-40 ${
               updating
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
                 : "bg-white text-[#008080]"
@@ -203,7 +203,7 @@ const OrderCard = ({ order, orderRefetch }) => {
         <div>
           <button
             onClick={() => deleteOrder(order._id)}
-            className="bg-red-500 hover:bg-red-600 text-white w-fit px-4 py-2 border rounded font-medium flex items-center justify-between space-x-1"
+            className="bg-red-500 hover:bg-red-600 cursor-pointer text-white w-fit px-4 py-2 border rounded font-medium flex items-center justify-between space-x-1"
           >
             <MdDelete className="text-base" /> Delete order
           </button>
