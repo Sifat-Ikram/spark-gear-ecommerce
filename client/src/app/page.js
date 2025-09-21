@@ -53,24 +53,37 @@ const Home = async () => {
   if (!res.ok) throw new Error("Failed to fetch products");
   const banner = await res.json();
 
+  const reviewRes = await fetch(
+    "http://localhost:5000/api/reviews/highest-rated",
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (!reviewRes.ok) throw new Error("Failed to fetch reviews");
+
+  const { data: reviews } = await reviewRes.json();
+
+  console.log(reviews);
+
   return (
     <MainLayout>
-      <div className="my-20 space-y-20">
-        <Banner banner={banner.activeBanner} />
-        <div className="w-11/12 mx-auto flex flex-col space-y-20">
+      <div className="my-20 space-y-20 xl:space-y-32 2xl:space-y-44">
+        {/* <Banner banner={banner.activeBanner} /> */}
+        <div className="w-11/12 mx-auto flex flex-col space-y-20 xl:space-y-32 2xl:space-y-44">
           <IntroSection />
           <CategoriesSection />
           <FeaturedProducts />
         </div>
         <WhyChooseUs />
-        <div className="w-11/12 mx-auto flex flex-col space-y-20">
+        <div className="w-11/12 mx-auto flex flex-col space-y-20 xl:space-y-32 2xl:space-y-44">
           <BrandSection />
           <HeroProductHighlight />
           <NewArrival />
         </div>
         <AppDownload />
-        <div className="w-11/12 mx-auto flex flex-col space-y-20">
-          <TestimonialSection />
+        <div className="w-11/12 mx-auto flex flex-col space-y-20 xl:space-y-32 2xl:space-y-44">
+          <TestimonialSection reviews={reviews} />
         </div>
       </div>
     </MainLayout>

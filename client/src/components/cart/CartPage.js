@@ -128,14 +128,14 @@ const CartPage = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 w-3/4 sm:w-1/2 lg:w-1/3 2xl:w-1/3 h-full bg-white shadow-xl z-[10000] flex flex-col"
+            className="fixed top-0 right-0 w-4/5 sm:w-1/2 lg:w-2/5 h-full bg-white shadow-xl z-[10000] flex flex-col"
           >
             {/* Header */}
-            <div className="p-4 flex justify-between items-center border-b">
-              <h2 className="text-lg font-bold text-[#016b6b]">Your Cart</h2>
+            <div className="py-4 px-4 2xl:p-6 flex justify-between items-center border-b">
+              <h2 className="title-text exo text-[#016b6b]">Your Cart</h2>
               <button
                 onClick={closeCart}
-                className="text-xl font-bold text-[#008080] hover:text-[#016b6b]"
+                className="text-xl 2xl:text-4xl font-bold text-[#008080] hover:text-[#016b6b]"
               >
                 <MdCancel />
               </button>
@@ -153,27 +153,24 @@ const CartPage = () => {
                   cart.map((item) => (
                     <div
                       key={item.cart.name}
-                      className="flex items-center mb-1 p-3 bg-gray-50 w-full shadow"
+                      className="flex items-center gap-2 lg:gap-4 2xl:gap-5 mb-1 p-3 bg-gray-50 w-full shadow"
                     >
-                      {/* Image */}
-                      <div className="relative w-20 h-20 flex-shrink-0">
+                      <div className="relative w-8 h-8 sm:w-12 lg:w-20 sm:h-12 lg:h-20 flex-shrink-0">
                         <Image
                           src={item.cart.image || fallback}
                           alt={item.cart.name}
-                          width={80}
-                          height={80}
+                          fill
                           className="object-cover rounded-lg"
                         />
                       </div>
 
-                      {/* Info */}
-                      <div className="flex-1 px-3 flex flex-col justify-between">
+                      <div className="flex-1 px-3 flex flex-col justify-between space-y-2 lg:space-y-2.5 2xl:space-y-3">
                         <div className="flex justify-between items-start">
-                          <div>
-                            <p className="font-semibold text-gray-800 truncate w-11/12">
+                          <div className="w-4/5 sm:w-2/5 md:w-3/5 xl:w-4/5 space-y-1 lg:space-y-2 2xl:space-y-3">
+                            <p className="text-lg sm:text-base xl:text-xl 2xl:text-3xl font-semibold text-gray-800 truncate">
                               {item.cart.name}
                             </p>
-                            <p className="text-sm text-gray-500">
+                            <p className="text-sm xl:text-base 2xl:text-xl text-gray-500">
                               {item.cart.category}
                             </p>
                           </div>
@@ -181,13 +178,13 @@ const CartPage = () => {
                             onClick={() =>
                               handleDelete(item._id, item.cart.name)
                             }
-                            className="text-red-500 hover:text-red-700"
+                            className="text-red-500 hover:text-red-700 text-xl 2xl:text-3xl"
                           >
                             <MdDelete size={20} />
                           </button>
                         </div>
 
-                        <div className="flex justify-between items-center mt-2">
+                        <div className="flex justify-between items-center">
                           {/* Quantity controls */}
                           <div className="flex items-center gap-2">
                             <button
@@ -195,9 +192,9 @@ const CartPage = () => {
                                 handleDecrease(item._id, item.cart.name)
                               }
                             >
-                              <PiMinusSquareFill className="text-[#008080] hover:text-[#016b6b] text-xl" />
+                              <PiMinusSquareFill className="text-[#008080] hover:text-[#016b6b] text-xl 2xl:text-3xl" />
                             </button>
-                            <span className="w-6 text-center font-medium">
+                            <span className="w-6 text-sm xl:text-base 2xl:text-xl text-center font-medium">
                               {item.quantity}
                             </span>
                             <button
@@ -205,12 +202,12 @@ const CartPage = () => {
                                 handleIncrease(item._id, item.cart.name)
                               }
                             >
-                              <BsFillPlusSquareFill className="text-[#008080] hover:text-[#016b6b] text-lg" />
+                              <BsFillPlusSquareFill className="text-[#008080] hover:text-[#016b6b] text-lg 2xl:text2xl" />
                             </button>
                           </div>
 
                           {/* Price */}
-                          <div className="font-semibold text-gray-800">
+                          <div className="text-lg xl:text-xl 2xl:text-2xl font-semibold text-gray-800">
                             {(item.cart.price * item.quantity).toFixed(2)} BDT
                           </div>
                         </div>
@@ -220,8 +217,8 @@ const CartPage = () => {
                 )}
               </div>
 
-              <div className="p-4 border-t bottom-0 space-y-2">
-                <div className="flex justify-between font-bold text-lg">
+              <div className="p-4 xl:p-5 2xl:p-8 border-t bottom-0 space-y-2 xl:space-y-3 2xl:space-y-4">
+                <div className="flex justify-between font-bold text-lg sm:text-base xl:text-xl 2xl:text-4xl exo">
                   <span>Total:</span>
                   <span>
                     {cart
@@ -235,10 +232,10 @@ const CartPage = () => {
                 </div>
                 <button
                   onClick={() => {
-                    closeCart();
                     router.push("/main-layout/checkout");
+                    closeCart();
                   }}
-                  className="w-full buttons"
+                  className="w-full buttons 2xl:!py-8 2xl:!text-[40px]"
                 >
                   Proceed to Checkout
                 </button>

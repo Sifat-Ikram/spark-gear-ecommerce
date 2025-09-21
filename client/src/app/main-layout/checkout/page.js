@@ -267,9 +267,7 @@ const Checkout = () => {
 
   return (
     <main className="w-11/12 mx-auto px-4 py-8">
-      <h1 className="md:text-2xl xl:text-4xl 2xl:text-5xl font-semibold text-center mb-6">
-        Checkout
-      </h1>
+      <h1 className="title-text exo text-center mb-6">Checkout</h1>
 
       {/* Order Summary */}
       <motion.div
@@ -280,17 +278,25 @@ const Checkout = () => {
         <table className="w-full">
           <thead className="bg-[#008080] text-white">
             <tr>
-              <th className="p-3 text-center rounded-tl-lg">Order Summary</th>
-              <th className="p-3">Quantity</th>
-              <th className="p-3">Price</th>
-              <th className="p-3 rounded-tr-lg">Total</th>
+              <th className="p-3 xl:p-4 2xl:p-6 text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto text-center rounded-tl-lg">
+                Order Summary
+              </th>
+              <th className="p-3 xl:p-4 2xl:p-6 text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto">
+                Quantity
+              </th>
+              <th className="p-3 xl:p-4 2xl:p-6 text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto">
+                Price
+              </th>
+              <th className="p-3 xl:p-4 2xl:p-6 text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto rounded-tr-lg">
+                Total
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-300 border border-gray-300">
             {cart?.map((item) => (
               <tr key={item.cart.name}>
-                <td className="p-3 flex items-center gap-2">
-                  <div className="relative h-20 w-20 rounded-xl">
+                <td className="p-3 xl:p-4 2xl:p-6 flex items-center gap-2 lg:gap-4 2xl:gap-6">
+                  <div className="relative h-16 lg:h-24 xl:h-28 2xl:h-32 w-14 lg:w-20 xl:w-24 2xl:w-28 rounded-xl">
                     <Image
                       src={item.cart.image}
                       alt={item.cart.name}
@@ -298,14 +304,22 @@ const Checkout = () => {
                       priority
                     />
                   </div>
-                  <div className="gap-2">
-                    <strong>{item.cart.name}</strong>
-                    <div className="text-gray-600">{item.cart.category}</div>
+                  <div className="gap-2 lg:gap-3 2xl:gap-5">
+                    <h1 className="text-sm sm:text-lg lg:text-xl 2xl:text-4xl font-semibold roboto">
+                      {item.cart.name}
+                    </h1>
+                    <div className="text-gray-600 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto">
+                      {item.cart.category}
+                    </div>
                   </div>
                 </td>
-                <td className="p-3 text-center">{item.quantity}</td>
-                <td className="p-3 text-center">{item.cart.price}</td>
-                <td className="p-3 text-center">
+                <td className="p-3 xl:p-4 2xl:p-6 text-gray-600 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto text-center">
+                  {item.quantity}
+                </td>
+                <td className="p-3 xl:p-4 2xl:p-6 text-gray-600 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto text-center">
+                  {item.cart.price}
+                </td>
+                <td className="p-3 xl:p-4 2xl:p-6 text-gray-600 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto text-center">
                   {(item.cart.price * item.quantity).toFixed(2)} BDT
                 </td>
               </tr>
@@ -313,10 +327,13 @@ const Checkout = () => {
           </tbody>
           <tfoot>
             <tr>
-              <td colSpan="3" className="text-right p-3 font-semibold">
+              <td
+                colSpan="3"
+                className="text-right p-3 xl:p-4 2xl:p-6 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto font-semibold"
+              >
                 Subtotal
               </td>
-              <td className="p-3 font-semibold text-center">
+              <td className="p-3 xl:p-4 2xl:p-6 text-gray-600 text-xs sm:text-sm lg:text-base 2xl:text-2xl roboto font-semibold text-center">
                 {cart
                   ?.reduce(
                     (sum, item) => sum + item.cart.price * item.quantity,
@@ -333,42 +350,48 @@ const Checkout = () => {
       {/* Form Section */}
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1">
-          <h2 className="bg-[#008080] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
+          <h2 className="bg-[#008080] text-white p-3 xl:p-4 2xl:p-6 text-center rounded-t-lg text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto">
             Delivery Information
           </h2>
           <form
-            className="flex flex-col gap-4 mt-4 px-4"
+            className="flex flex-col gap-4 xl:gap-5 2xl:gap-7 mt-7 px-4 2xl:px-6"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col space-y-2">
-              <label>Full Name</label>
+            <div className="flex flex-col space-y-2 xl:space-y-3 2xl:space-y-5">
+              <label className="text-sm lg:text-base 2xl:text-xl">
+                Full Name
+              </label>
               <input
                 {...register("name")}
                 placeholder="Enter your name"
-                className="border p-2 rounded w-full"
+                className="border p-2 xl:p-3 2xl:p-5 rounded w-full"
               />
             </div>
-            <div className="flex flex-col space-y-2">
-              <label>Email</label>
+            <div className="flex flex-col space-y-2 xl:space-y-3 2xl:space-y-5">
+              <label className="text-sm lg:text-base 2xl:text-xl">Email</label>
               <input
                 {...register("email")}
                 placeholder="Enter your email"
-                className="border p-2 rounded w-full"
+                className="border p-2 xl:p-3 2xl:p-5 rounded w-full"
               />
             </div>
-            <div className="flex flex-col space-y-2">
-              <label>Phone Number</label>
+            <div className="flex flex-col space-y-2 xl:space-y-3 2xl:space-y-5">
+              <label className="text-sm lg:text-base 2xl:text-xl">
+                Phone Number
+              </label>
               <input
                 {...register("phone")}
                 placeholder="Enter your phone number"
-                className="border p-2 rounded w-full"
+                className="border p-2 xl:p-3 2xl:p-5 rounded w-full"
               />
             </div>
-            <div className="flex flex-col space-y-2">
-              <label>Current city</label>
+            <div className="flex flex-col space-y-2 xl:space-y-3 2xl:space-y-5">
+              <label className="text-sm lg:text-base 2xl:text-xl">
+                Current city
+              </label>
               <select
                 {...register("city")}
-                className="border p-2 rounded w-full"
+                className="border p-2 xl:p-3 2xl:p-5 rounded w-full"
                 defaultValue="Dhaka"
               >
                 {cities.map((city) => (
@@ -378,24 +401,26 @@ const Checkout = () => {
                 ))}
               </select>
             </div>
-            <div className="flex flex-col space-y-2">
-              <label>Shipping Address</label>
+            <div className="flex flex-col space-y-2 xl:space-y-3 2xl:space-y-5">
+              <label className="text-sm lg:text-base 2xl:text-xl">
+                Shipping Address
+              </label>
               <textarea
                 {...register("address")}
                 placeholder="Enter your shipping address"
-                className="border p-2 rounded w-full"
+                className="border p-2 xl:p-3 2xl:p-5 rounded w-full"
               ></textarea>
             </div>
           </form>
         </div>
 
         {/* Billing Summary */}
-        <div className="w-full lg:w-1/3 flex flex-col justify-between space-y-10">
+        <div className="w-full lg:w-1/3 flex flex-col justify-between space-y-6 lg:space-y-8 2xl:space-y-14">
           <div className="flex flex-col divide-y divide-gray-300">
-            <h2 className="bg-[#008080] text-white p-3 text-center rounded-t-lg text-lg md:text-xl font-semibold">
+            <h2 className="bg-[#008080] text-white p-3 xl:p-4 2xl:p-6 text-center rounded-t-lg text-base sm:text-lg lg:text-xl 2xl:text-3xl font-semibold roboto">
               Billing Summary
             </h2>
-            <div className="flex justify-between items-center p-4 text-sm md:text-base">
+            <div className="flex justify-between items-center p-4 2xl:p-5 text-sm md:text-base xl:text-lg 2xl:text-2xl roboto">
               <span>Item Total</span>
               <span className="font-medium">
                 {cart
@@ -407,13 +432,13 @@ const Checkout = () => {
                 BDT
               </span>
             </div>
-            <div className="flex justify-between items-center p-4 text-sm md:text-base">
+            <div className="flex justify-between items-center p-4 2xl:p-5 text-sm md:text-base xl:text-lg 2xl:text-2xl roboto">
               <span>Shipping</span>
               <span className="font-medium">{shippingFee} BDT</span>
             </div>
-            <div className="flex justify-between items-center p-4 mt-2 text-lg md:text-xl font-semibold bg-gray-50">
+            <div className="flex justify-between items-center p-4 mt-2 2xl:p-5 text-sm md:text-base xl:text-lg 2xl:text-2xl roboto bg-gray-50">
               <span>Order Total</span>
-              <span>
+              <span className="font-medium">
                 {(
                   cart?.reduce(
                     (sum, item) => sum + item.cart.price * item.quantity,
@@ -424,9 +449,9 @@ const Checkout = () => {
               </span>
             </div>
           </div>
-          {/* Coupon Section */}
-          <div className="mb-4">
-            <h3 className="text-gray-700 font-semibold text-base md:text-lg mb-2">
+
+          <div className="">
+            <h3 className="text-gray-800 font-semibold text-sm md:text-base xl:text-lg 2xl:text-2xl roboto mb-2 lg:mb-3 2xl:mb-6">
               Apply Coupon
             </h3>
             <div className="flex gap-2">
@@ -454,13 +479,15 @@ const Checkout = () => {
               </p>
             )}
           </div>
+
           {appliedCoupon && (
             <div className="mb-4 p-4 text-green-800 font-semibold rounded">
               Total Amount: {totalWithDiscount.toFixed(2)} BDT
             </div>
           )}
+
           <div>
-            <h3 className="text-[#008080] font-semibold text-base md:text-lg mb-3">
+            <h3 className="text-[#008080] font-semibold text-base md:text-lg xl:text-xl 2xl:text-3xl roboto">
               Payment Method
             </h3>
 
@@ -477,7 +504,7 @@ const Checkout = () => {
                     "url('https://i.ibb.co.com/fz2spNsH/mc-sym-card-wrld-business-5-BIN-lmc1280x720.png')",
                 }}
               >
-                <span className="absolute bottom-2 left-2 text-white font-semibold text-lg md:text-xl">
+                <span className="absolute bottom-2 left-2 text-white font-semibold text-sm md:text-base xl:text-lg 2xl:text-2xl roboto">
                   Card
                 </span>
               </button>
@@ -492,7 +519,7 @@ const Checkout = () => {
                     "url('https://i.ibb.co.com/mrj2yMcn/bkash.jpg')",
                 }}
               >
-                <span className="absolute bottom-2 left-2 text-white font-semibold">
+                <span className="absolute bottom-2 left-2 text-white font-semibold text-sm md:text-base xl:text-lg 2xl:text-2xl roboto">
                   bKash
                 </span>
               </button>
@@ -502,7 +529,7 @@ const Checkout = () => {
             <button
               type="button"
               onClick={() => handleSelect("cod")}
-              className={`w-full h-14 rounded-lg border-1 border-[#008080] font-semibold transition-colors ${
+              className={`w-full h-14 rounded-lg border-1 border-[#008080] text-sm md:text-base xl:text-lg 2xl:text-2xl roboto font-semibold transition-colors ${
                 selectedMethod === "cod"
                   ? "bg-[#008080] text-white"
                   : "bg-white text-[#008080]"
@@ -512,7 +539,10 @@ const Checkout = () => {
             </button>
           </div>
 
-          <button onClick={handleSubmit(onSubmit)} className="w-full buttons ">
+          <button
+            onClick={handleSubmit(onSubmit)}
+            className="w-full buttons 2xl:!text-[30px]"
+          >
             PLACE ORDER
           </button>
         </div>

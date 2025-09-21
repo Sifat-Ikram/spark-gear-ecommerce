@@ -1,6 +1,5 @@
 import * as reviewService from "../services/review.service.js";
 
-// Get all
 export const getAll = async (req, res) => {
   try {
     const reviews = await reviewService.getAllReviews();
@@ -27,7 +26,6 @@ export const addReview = async (req, res) => {
   }
 };
 
-// Get by productName
 export const getByProduct = async (req, res) => {
   try {
     const { productName } = req.params;
@@ -39,7 +37,22 @@ export const getByProduct = async (req, res) => {
   }
 };
 
-// Delete review
+export const highestAverageReviewsController = async (req, res) => {
+  try {
+    const reviews = await reviewService.getHighestAverageReviews();
+    res.status(200).json({
+      success: true,
+      data: reviews,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch highest average reviews",
+      error: error.message,
+    });
+  }
+};
+
 export const deleteReview = async (req, res) => {
   try {
     const { productName, reviewId } = req.params;
@@ -50,7 +63,6 @@ export const deleteReview = async (req, res) => {
   }
 };
 
-// Update review
 export const updateReview = async (req, res) => {
   try {
     const { productName, reviewId } = req.params;

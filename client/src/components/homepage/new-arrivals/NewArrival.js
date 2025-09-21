@@ -40,7 +40,7 @@ const NewArrival = () => {
   return (
     <section className="w-full">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-10 sm:mb-12 md:mb-16 text-gray-900 leading-snug">
+      <h2 className="title-text exo text-left mb-10 sm:mb-12 md:mb-16 leading-snug">
         New Arrivals
       </h2>
 
@@ -65,14 +65,16 @@ const NewArrival = () => {
 
         {/* Swiper */}
         <Swiper
-          spaceBetween={20}
+          slidesPerView={7}
+          spaceBetween={10}
           breakpoints={{
-            320: { slidesPerView: 1.5 },
-            480: { slidesPerView: 2 },
-            640: { slidesPerView: 2.5 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 3.5 },
-            1280: { slidesPerView: 4 },
+            320: { slidesPerView: 1.5, spaceBetween: 8 },
+            480: { slidesPerView: 2, spaceBetween: 10 },
+            640: { slidesPerView: 2.5, spaceBetween: 12 },
+            768: { slidesPerView: 3, spaceBetween: 14 },
+            1024: { slidesPerView: 3.5, spaceBetween: 16 },
+            1280: { slidesPerView: 4, spaceBetween: 18 },
+            2000: { slidesPerView: 5, spaceBetween: 20 },
           }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) => {

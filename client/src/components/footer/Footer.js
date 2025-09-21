@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row gap-8">
           {/* Brand & Description */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-bold text-white text-">Spark Gear</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-">Spark Gear</h2>
             <p className="mt-3 text-gray-200 text-sm sm:text-base">
               SparkGear is your go-to place for high-quality tech accessories
               and gadgets. We bring you the latest products with fast delivery

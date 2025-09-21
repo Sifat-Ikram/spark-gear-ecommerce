@@ -12,7 +12,10 @@ export default function QueryProvider({ children }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex justify-center items-center text-[#008080] font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+      <div
+        className="min-h-screen flex justify-center items-center title-text exo"
+        style={{ color: "#008080" }}
+      >
         Spark Gear
       </div>
     );

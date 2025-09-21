@@ -56,13 +56,14 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialSection() {
+export default function TestimonialSection({ reviews }) {
   const swiperRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+
   return (
     <section className="relative w-full bg-white">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-14 text-gray-900">
+      <h2 className="title-text exo text-center mb-14">
         What Our Customers Say
       </h2>
 
@@ -84,7 +85,6 @@ export default function TestimonialSection() {
           </button>
         )}
 
-        
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -103,9 +103,9 @@ export default function TestimonialSection() {
           }}
           className="mySwiper w-full"
         >
-          {testimonials.map((t) => (
-            <SwiperSlide key={t.id} className="h-full">
-              <ReviewCard {...t} />
+          {reviews.slice(0, 10).map((review) => (
+            <SwiperSlide key={review.productName} className="h-full">
+              <ReviewCard review={review} />
             </SwiperSlide>
           ))}
         </Swiper>

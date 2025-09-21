@@ -55,7 +55,7 @@ const MainNav = () => {
       ref={navRef}
       className="w-11/12 mx-auto flex justify-between items-center text-white"
     >
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-[2px]">
         <div className="relative">
           <div
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -129,7 +129,7 @@ const MainNav = () => {
         <Link href={"/"}>
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight"
+            className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl exo tracking-tight"
           >
             Spark Gear
           </motion.h1>

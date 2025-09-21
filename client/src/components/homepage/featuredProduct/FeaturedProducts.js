@@ -28,7 +28,7 @@ const FeaturedProducts = () => {
       </p>
     );
 
-  const featured = products.sort(() => 0.5 - Math.random()).slice(0, 10);
+  const featured = products.sort(() => 0.5 - Math.random()).slice(0, 12);
 
   return (
     <section className="w-full min-h-screen flex flex-col justify-between">
@@ -37,12 +37,12 @@ const FeaturedProducts = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-4 sm:mb-6 md:mb-8 tracking-tight"
+        className="title-text exo text-left mb-4 sm:mb-6 md:mb-8 xl:mb-10 tracking-tight"
       >
         Trending Products
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-3 flex-1 overflow-hidden">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 flex-1 overflow-hidden">
         {featured?.map((product) => (
           <FeaturedCard key={product._id} product={product} />
         ))}

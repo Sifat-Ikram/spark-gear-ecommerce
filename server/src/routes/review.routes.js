@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.post("/", reviewController.addReview);
 router.get("/", reviewController.getAll);
+router.get("/highest-rated", reviewController.highestAverageReviewsController);
 router.get("/:productName", reviewController.getByProduct);
 router.delete("/:productName/:reviewId", reviewController.deleteReview);
 router.put("/:productName/:reviewId", reviewController.updateReview);

@@ -81,14 +81,14 @@ const ReviewSection = ({ name }) => {
   return (
     <section className="w-11/12 mx-auto py-6">
       <div className="rounded-lg mb-6 py-3 sm:py-4 md:py-5 lg:py-6 w-3/4">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">
+        <h2 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-medium exo mb-2 sm:mb-3 lg:mb-5 xl:mb-6 2xl:mb-8">
           Write a Review
         </h2>
         <textarea
           value={newReview}
           onChange={(e) => setNewReview(e.target.value)}
           placeholder="Share your thoughts about this product..."
-          className="w-full p-2 sm:p-3 md:p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-xs sm:text-sm md:text-base mb-2 sm:mb-3"
+          className="w-full p-2 roboto sm:p-3 md:p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-xs sm:text-sm md:text-base mb-2 sm:mb-3"
           rows={3}
         />
         <button
@@ -100,7 +100,7 @@ const ReviewSection = ({ name }) => {
       </div>
 
       <div className="space-y-4 sm:space-y-5 md:space-y-6 w-3/4">
-        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3">
+        <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-medium exo mb-2 sm:mb-3 lg:mb-5 xl:mb-6 2xl:mb-8">
           Reviews
         </h1>
 
@@ -113,10 +113,10 @@ const ReviewSection = ({ name }) => {
             className="bg-white border border-gray-300 rounded-lg p-3 sm:p-4 md:p-5 lg:p-6"
           >
             <div className="flex flex-col gap-1">
-              <h3 className="text-base sm:text-lg md:text-xl font-medium">
+              <h3 className="text-base sm:text-lg md:text-xl font-medium roboto">
                 {reviewItem.reviewer.name}
               </h3>
-              <div className="flex text-yellow-500 mt-1">
+              <div className="flex text-yellow-500 mt-1 roboto">
                 {Array.from({ length: 5 }).map((_, idx) => (
                   <FaStar
                     key={idx}
@@ -130,20 +130,20 @@ const ReviewSection = ({ name }) => {
               </div>
             </div>
 
-            <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed mt-2">
+            <p className="text-gray-700 text-sm sm:text-base xl:text-lg 2xl:text-xl leading-relaxed roboto mt-2">
               "{reviewItem.review}"
             </p>
 
-            <div className="flex items-center gap-4 text-gray-600 text-xs sm:text-sm md:text-base mt-2">
+            <div className="flex items-center gap-4 text-gray-600 text-sm sm:text-base xl:text-lg 2xl:text-xl mt-2">
               <button
-                className="flex items-center gap-1 hover:text-[#008080]"
+                className="flex items-center gap-1 hover:text-[#008080] roboto"
                 onClick={() => handleLikeDislike(index)}
               >
                 <FaThumbsUp className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span>{reviewItem.likes}</span>
               </button>
               <button
-                className="hover:text-[#008080] cursor-pointer"
+                className="hover:text-[#008080] cursor-pointer roboto"
                 onClick={() => handleReplyToggle(index)}
               >
                 Reply
@@ -155,10 +155,10 @@ const ReviewSection = ({ name }) => {
                 {reviewItem.replies.length > 0 &&
                   reviewItem.replies.map((reply, rIndex) => (
                     <div key={rIndex} className="flex flex-col gap-1">
-                      <h4 className="text-xs sm:text-sm md:text-base font-medium">
+                      <h4 className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium roboto">
                         {reply.name}
                       </h4>
-                      <p className="text-gray-600 text-xs sm:text-sm md:text-base">
+                      <p className="text-gray-600 text-sm sm:text-base xl:text-lg 2xl:text-xl roboto">
                         {reply.reply}
                       </p>
                     </div>

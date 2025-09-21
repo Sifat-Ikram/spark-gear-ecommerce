@@ -24,14 +24,14 @@ export default function Banner({ banner }) {
         <SplitText
           text={banner.title}
           tag="h1"
-          className="text-xl sm:text-4xl xl:text-6xl font-bold"
+          className="text-xl sm:text-4xl xl:text-6xl 2xl:text-8xl font-bold"
           splitBy="chars"
           delay={0.1}
           duration={0.8}
         />
 
         <motion.p
-          className="text-base sm:text-lg md:text-xl mx-auto"
+          className="text-base sm:text-lg xl:text-2xl 2xl:text-4xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}

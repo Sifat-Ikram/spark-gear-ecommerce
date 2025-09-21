@@ -17,7 +17,7 @@ const SimilarProducts = ({ category, productName }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-4 sm:mb-6 md:mb-8 tracking-tight"
+        className="exo title-text text-left mb-4 sm:mb-6 md:mb-8 tracking-tight"
       >
         You may also like
       </motion.h2>

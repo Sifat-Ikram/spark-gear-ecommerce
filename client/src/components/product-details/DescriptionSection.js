@@ -15,8 +15,8 @@ const DescriptionSection = ({ product }) => {
     <div className="flex flex-col space-y-6 sm:space-y-8">
       {/* Section Header */}
       <div className="w-full py-4 sm:py-6 lg:py-8 bg-[#008080] shadow-md">
-        <h1 className="text-center text-white text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-semibold">
-          Product Description
+        <h1 className="text-center text-white text-lg sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-6xl font-semibold exo">
+          Product Details
         </h1>
       </div>
 
@@ -24,10 +24,8 @@ const DescriptionSection = ({ product }) => {
       <div className="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between max-lg:gap-6">
         {/* Left Column - Description */}
         <div className="w-full lg:w-[48%] bg-white border border-gray-300 rounded-2xl shadow-sm p-4 sm:p-6 lg:p-8 space-y-3">
-          <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-800">
-            Description
-          </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-gray-600">
+          <h2 className="subtitle-text roboto text-gray-800">Description</h2>
+          <p className="text-sm sm:text-base 2xl:text-xl roboto leading-relaxed text-gray-600">
             {product.description}
           </p>
         </div>
@@ -41,9 +39,9 @@ const DescriptionSection = ({ product }) => {
             >
               <button
                 onClick={() => toggleSpec(spec.name)}
-                className="w-full flex justify-between items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#008080] hover:bg-gray-50 transition-all duration-200"
+                className="w-full flex justify-between roboto items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#008080] hover:bg-gray-50 transition-all duration-200"
               >
-                <span className="text-sm sm:text-base lg:text-lg">
+                <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl roboto">
                   {spec.name}
                 </span>
                 {activeIndex === spec.name ? (
@@ -62,7 +60,7 @@ const DescriptionSection = ({ product }) => {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-4 sm:px-5 pb-4 text-gray-700 text-sm sm:text-base leading-relaxed"
+                    className="px-4 sm:px-5 pb-4 text-gray-700 text-sm sm:text-base xl:text-lg 2xl:text-xl roboto roboto leading-relaxed"
                   >
                     {spec.value}
                   </motion.div>

@@ -92,7 +92,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
       </div>
 
       {/* Action Icons */}
-      <div className="flex items-center space-x-3.5 md:space-x-4 lg:space-x-6 2xl:space-x-8">
+      <div className="flex items-center space-x-2 md:space-x-4 lg:space-x-6 2xl:space-x-8">
         <motion.div
           whileHover={{ scale: 1.2 }}
           className="cursor-pointer block lg:hidden"
@@ -108,7 +108,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
         </motion.div>
         <motion.div>
           {user?.email ? (
-            <div className="flex items-center space-x-3.5 md:space-x-4 lg:space-x-6 2xl:space-x-8">
+            <div className="flex items-center space-x-1 sm:space-x-3.5 md:space-x-4 lg:space-x-6 2xl:space-x-8">
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 className="cursor-pointer"

@@ -30,6 +30,29 @@ export const getReviewsByProduct = async (productName) => {
   return await Review.findOne({ productName });
 };
 
+export const getHighestAverageReviews = async () => {
+  return await Review.aggregate([
+    { $match: { review: { $exists: true, $ne: [] } } },
+    { $unwind: "$review" },
+    { $sort: { "review.rating": -1 } },
+    {
+      $group: {
+        _id: "$productName",
+        averageRating: { $first: "$averageRating" },
+        highestReview: { $first: "$review" },
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        productName: "$_id",
+        averageRating: 1,
+        review: "$highestReview",
+      },
+    },
+  ]);
+};
+
 export const deleteReviewById = async (productName, reviewId) => {
   return await Review.findOneAndUpdate(
     { productName },
