@@ -48,7 +48,7 @@ app.use("/api/order", orderRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/banner", bannerRoutes);
 app.use("/api/coupon", couponRoutes);
-app.use("/api", resetPassword);
+app.use("/api/password", resetPassword);
 
 app.get("/api/health", (req, res) => res.status(200).json({ status: "OK" }));
 

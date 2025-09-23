@@ -30,7 +30,7 @@ export default function LoginPage() {
               </button>
             </a>
           </div>
-          <div className="flex justify-center items-center  px-2 sm:px-5 md:pt-9 md:px-8">
+          <div className="flex justify-center items-center  px-2 sm:px-5 md:pt-9 md:px-8 2xl:pt-52">
             <AuthForm type="register" />
           </div>
         </div>
