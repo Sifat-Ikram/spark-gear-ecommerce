@@ -21,7 +21,7 @@ export default function ProductList({ products }) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-6 sm:gap-3 xl:gap-4 2xl:gap-6"
         >
           {paginated.length > 0 ? (
             paginated.map((product) => (

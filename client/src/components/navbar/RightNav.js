@@ -21,7 +21,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
   }
 
   return (
-    <div className="flex items-center space-x-3.5 text-lg font-medium">
+    <div className="flex items-center space-x-3.5 2xl:space-x-4 text-lg font-medium">
       <div className="hidden sm:flex items-center space-x-2 md:space-x-4 lg:space-x-6 2xl:space-x-8">
         {navItems.map((item, idx) =>
           item.dropdown ? (
@@ -31,7 +31,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
               onMouseEnter={() => setOpenDropdown(true)}
               onMouseLeave={() => setOpenDropdown(false)}
             >
-              <button className="py-3 md:py-5 text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal cursor-pointer transition-colors">
+              <button className="py-3 md:py-5 2xl:py-8 text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-3xl roboto font-normal cursor-pointer transition-colors">
                 {item.label}
               </button>
               {openDropdown && (
@@ -40,7 +40,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute -left-2/3 -translate-x-2/3 bg-white shadow-xl rounded-lg p-3 z-50
+                  className="absolute -left-2/3 2xl:-left-1/2 -translate-x-2/3 2xl:-translate-x-1/2 bg-white roboto shadow-xl rounded-lg p-3 z-50
                              grid grid-cols-3 lg:grid-cols-4
                              gap-2 w-[500px] md:w-[700px]"
                 >
@@ -62,7 +62,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                           width={80}
                           className="w-20 h-20 object-cover rounded-full shadow-sm mb-2"
                         />
-                        <span className="text-sm font-medium text-gray-700 text-center cursor-pointer">
+                        <span className="text-sm font-medium text-gray-700 text-center cursor-pointer roboto">
                           {cat.label}
                         </span>
                       </Link>
@@ -75,7 +75,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
             <Link
               key={idx}
               href={item.link}
-              className="text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal transition-colors"
+              className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-3xl font-normal transition-colors roboto"
             >
               {item.label}
             </Link>
@@ -84,7 +84,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
         {!user?.email && (
           <Link
             href={"/login"}
-            className="text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
+            className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-3xl font-normal roboto"
           >
             Login
           </Link>
@@ -104,7 +104,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           whileHover={{ scale: 1.2 }}
           className="relative cursor-pointer"
         >
-          <FiShoppingCart className="text-sm md:text-base" />
+          <FiShoppingCart className="text-sm md:text-base 2xl:text-3xl" />
         </motion.div>
         <motion.div>
           {user?.email ? (
@@ -123,7 +123,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
               >
                 <h1
                   onClick={() => logOut()}
-                  className="cursor-pointer text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
+                  className="cursor-pointer text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal roboto"
                 >
                   LogOut
                 </h1>
@@ -132,7 +132,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           ) : (
             <Link
               href={"/login"}
-              className="block sm:hidden text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal"
+              className="block sm:hidden text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal roboto"
             >
               Login
             </Link>

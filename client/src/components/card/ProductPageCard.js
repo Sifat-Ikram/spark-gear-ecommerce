@@ -14,26 +14,37 @@ export default function ProductPageCard({ product }) {
     >
       <Link
         href={`/main-layout/productDetails/${product?.slug}`}
-        className="flex flex-col h-full"
+        className="flex flex-col h-full group"
       >
-        <div className="relative w-full h-48 sm:h-56 lg:h-56 xl:h-64">
+        <motion.div className="relative w-full h-48 sm:h-56 md:h-60 lg:h-64 xl:h-72 2xl:h-80 3xl:h-96 overflow-hidden">
+          {/* First image (default) */}
           <Image
-            src={imageUrl}
+            src={product?.images?.[0]?.url || fallback}
             alt={product?.images?.[0]?.alt || "Product image"}
             fill
-            className="object-cover object-center h-full w-full rounded-lg bg-gray-100"
+            loading="lazy"
+            className="object-cover object-center rounded-t-xl h-full w-full transition-opacity duration-500 group-hover:opacity-0"
           />
-        </div>
+          <Image
+            src={product?.images?.[1]?.url || fallback}
+            alt={product?.images?.[1]?.alt || "Product image"}
+            fill
+            loading="lazy"
+            className="object-cover object-center rounded-t-xl h-full w-full opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          />
+        </motion.div>
 
-        <div className="p-4 flex flex-col justify-between flex-1">
+        <div className="flex-1 p-2 sm:p-3 md:p-4 lg:p-3 2xl:p-6 3xl:p-8 flex flex-col justify-between space-y-4 sm:space-y-2 xl:space-y-3 2xl:space-y-5">
           <div>
-            <h3 className="font-semibold">{product?.name}</h3>
-            <p className="text-sm text-gray-500 line-clamp-3">
+            <h3 className="text-sm sm:text-base xl:text-lg 2xl:text-xl exo">
+              {product?.name}
+            </h3>
+            <p className="text-sm 2xl:text-base roboto text-gray-500 line-clamp-3">
               {product?.shortDescription}
             </p>
           </div>
 
-          <div className="mt-6 flex justify-between items-center">
+          <div className="flex justify-between items-center">
             <span className="text-[#008080] font-bold">
               {product?.price} BDT
             </span>

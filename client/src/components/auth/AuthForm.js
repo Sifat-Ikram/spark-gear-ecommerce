@@ -97,30 +97,34 @@ export default function AuthForm({ type }) {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-md bg-white font-roboto shadow-xl p-10 rounded-md space-y-6"
+      className="w-4/5 mx-auto bg-white shadow-xl px-10 pt-10 pb-7 2xl:p-20 rounded-md space-y-6 2xl:space-y-10"
     >
-      <h2 className="text-3xl font-bold text-center text-[#008080] flex items-center justify-center gap-2">
+      <h2 className="text-3xl font-bold exo text-center text-[#008080] flex items-center justify-center gap-2">
         <FaUniversity />{" "}
         {type === "login" ? "Login First!" : "Registration here"}
       </h2>
 
-      {type === "register" && (
-        <InputField
-          label="Full Name"
-          type="text"
-          placeholder="Enter Your Full Name"
-          {...register("name", { required: "Name is required" })}
-          error={errors.name && errors.name.message} // ✅ corrected
-        />
-      )}
+      <div>
+        {type === "register" && (
+          <InputField
+            label="Full Name"
+            type="text"
+            placeholder="Enter Your Full Name"
+            {...register("name", { required: "Name is required" })}
+            error={errors.name && errors.name.message}
+          />
+        )}
+      </div>
 
-      <InputField
-        label="Email"
-        placeholder="Enter your email"
-        type="email"
-        {...register("email", { required: "Email is required" })}
-        error={errors.email && errors.email.message}
-      />
+      <div>
+        <InputField
+          label="Email"
+          placeholder="Enter your email"
+          type="email"
+          {...register("email", { required: "Email is required" })}
+          error={errors.email && errors.email.message}
+        />
+      </div>
 
       <div className="relative space-y-1">
         <InputField
@@ -139,7 +143,7 @@ export default function AuthForm({ type }) {
         </button>
         {type === "login" && (
           <div className="flex items-center justify-between">
-            <label className="flex items-center gap-2 text-sm">
+            <label className="flex items-center gap-2 text-sm roboto">
               <input
                 type="checkbox"
                 checked={rememberMe}
@@ -151,7 +155,7 @@ export default function AuthForm({ type }) {
 
             <a
               href="/forgotPassword"
-              className="text-[#008080] hover:underline text-sm"
+              className="text-[#008080] hover:underline text-sm roboto"
             >
               Forgot Password?
             </a>
@@ -159,7 +163,11 @@ export default function AuthForm({ type }) {
         )}
       </div>
 
-      <button type="submit" className="w-full buttons" disabled={isSubmitting}>
+      <button
+        type="submit"
+        className="w-full buttons roboto"
+        disabled={isSubmitting}
+      >
         {isSubmitting
           ? "Please wait..."
           : type === "login"
@@ -171,14 +179,20 @@ export default function AuthForm({ type }) {
         {type === "login" ? (
           <>
             New here?{" "}
-            <Link href="/register" className="text-[#008080] hover:underline">
+            <Link
+              href="/register"
+              className="text-[#008080] hover:underline roboto"
+            >
               Register
             </Link>
           </>
         ) : (
           <>
             Already have an account?{" "}
-            <Link href="/login" className="text-[#008080] hover:underline">
+            <Link
+              href="/login"
+              className="text-[#008080] hover:underline roboto"
+            >
               Login
             </Link>
           </>

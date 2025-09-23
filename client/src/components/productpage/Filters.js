@@ -26,10 +26,10 @@ export default function Filters({
   };
 
   return (
-    <aside className="h-full flex flex-col max-xl:space-y-4 space-y-12">
+    <aside className="h-full flex flex-col p-4 lg:p-6 xl:p-4 2xl:p-4 overflow-y-auto">
       {/* Header */}
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl lg:text-2xl font-bold text-[#008080]">
+      <div className="flex justify-between items-center mb-4 lg:mb-4 2xl:mb-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-[#008080]">
           Filters
         </h2>
         <button
@@ -37,14 +37,14 @@ export default function Filters({
           className="text-gray-500 hover:text-[#008080] transition"
           title="Reset Filters"
         >
-          <FiRefreshCcw size={20} />
+          <FiRefreshCcw className="w-5 h-5 md:w-6 md:h-6" />
         </button>
       </div>
 
-      <div className="flex-1 flex flex-col space-y-3 lg:space-y-2 xl:space-y-5 2xl:space-y-10">
+      <div className="flex-1 flex flex-col gap-6 md:gap-8 lg:gap-4">
         {/* Search */}
         <div>
-          <label className="block text-gray-700 font-medium max-xl:mb-1 2xl:mb-3">
+          <label className="block font-medium text-sm sm:text-base 2xl:text-lg 3xl:text-xl mb-2 lg:mb-1 2xl:mb-2 3xl:mb-4">
             Search
           </label>
           <input
@@ -53,46 +53,43 @@ export default function Filters({
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm lg:text-base outline-none transition"
+                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base 
+                       placeholder:text-gray-400 outline-none transition"
           />
         </div>
 
         {/* Category */}
-        <div>
-          {
-            (type !== "category" && (
-              <div>
-                <label className="block text-gray-700 font-medium max-xl:mb-1 2xl:mb-3">
-                  Category
-                </label>
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value)}
-                  className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm lg:text-base outline-none transition"
-                >
-                  <option value="">All</option>
-                  {categories.map((c) => (
-                    <option key={c} value={c}>
-                      {c}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            ))
-          }
-        </div>
+        {type !== "category" && (
+          <div>
+            <label className="block font-medium text-sm sm:text-base 2xl:text-lg 3xl:text-xl mb-2 lg:mb-1 2xl:mb-2 3xl:mb-4">
+              Category
+            </label>
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
+                         focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
+            >
+              <option value="">All</option>
+              {categories.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
 
         {/* Brand */}
         <div>
-          <label className="block text-gray-700 font-medium max-xl:mb-1 2xl:mb-3">
+          <label className="block font-medium text-sm sm:text-base 2xl:text-lg 3xl:text-xl mb-2 lg:mb-1  2xl:mb2 3xl:mb-44">
             Brand
           </label>
           <select
             value={brand}
             onChange={(e) => setBrand(e.target.value)}
             className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm lg:text-base outline-none transition"
+                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
           >
             <option value="">All</option>
             {brands.map((b) => (
@@ -105,7 +102,7 @@ export default function Filters({
 
         {/* Price Range */}
         <div>
-          <label className="block text-gray-700 font-medium mb-3">
+          <label className="block font-medium text-sm sm:text-base 2xl:text-lg 3xl:text-xl mb-3 lg:mb-1 2xl:mb-2 3xl:mb-4">
             Price (Up to ${price})
           </label>
           <input
@@ -120,10 +117,10 @@ export default function Filters({
 
         {/* Rating Filter */}
         <div>
-          <label className="block text-gray-700 font-medium mb-3">
+          <label className="block font-medium text-sm sm:text-base 2xl:text-lg 3xl:text-xl mb-3 lg:mb-1 2xl:mb-2 3xl:mb-4">
             Minimum Rating
           </label>
-          <div className="space-y-1">
+          <div className="space-y-2">
             {[5, 4.5, 4, 3].map((r) => (
               <label
                 key={r}
@@ -137,8 +134,7 @@ export default function Filters({
                   onChange={() => setRating(Number(r))}
                   className="accent-[#008080]"
                 />
-                <span className="flex items-center text-sm text-gray-700">
-                  {/* Render stars based on value */}
+                <span className="flex items-center text-sm sm:text-base text-gray-700">
                   {Array.from({ length: 5 }).map((_, i) => {
                     if (i + 1 <= Math.floor(r))
                       return <FaStar key={i} className="text-yellow-400" />;
@@ -149,7 +145,7 @@ export default function Filters({
                     return <FaRegStar key={i} className="text-yellow-400" />;
                   })}
                 </span>
-                <span className="text-gray-500 ml-1">{r}+ </span>
+                <span className="text-gray-500 text-sm sm:text-base">{r}+</span>
               </label>
             ))}
           </div>

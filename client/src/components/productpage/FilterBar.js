@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import { FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Filters from "./Filters";
 
@@ -21,8 +21,21 @@ export default function FilterBar({
   sort,
   setSort,
 }) {
+  const dropdownRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const options = [
     { value: "", label: "Sort by" },
@@ -34,7 +47,7 @@ export default function FilterBar({
 
   return (
     <div>
-      <div className="bg-[#008080] text-white shadow px-2 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
+      <div className="bg-[#008080] text-white shadow px-2 py-4 sm:px-4 md:px-6 lg:px-7 2xl:px-8 2xl:py-5">
         <div className="flex justify-between items-center">
           {/* Filters Button */}
           <div className="flex items-center space-x-1 sm:space-x-3">
@@ -42,22 +55,28 @@ export default function FilterBar({
               onClick={() => setIsOpen(true)}
               className="text-white text-sm sm:text-lg cursor-pointer lg:hidden"
             />
-            <span className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-semibold text-nowrap">
+            <span className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-5xl font-semibold text-nowrap">
               Available Products
             </span>
           </div>
 
           {/* Custom Sort Dropdown */}
-          <div className="relative inline-block text-left">
+          <div ref={dropdownRef} className="relative inline-block text-left">
             <button
               onClick={() => setIsDropdownOpen((prev) => !prev)}
-              className="w-40 border border-[#008080] rounded px-3 py-2 text-[#008080] bg-white focus:outline-none"
+              className="w-40 xl:w-48 2xl:w-64 flex items-center justify-between border border-[#008080] rounded-lg p-2 xl:p-3 2xl:p-5 text-[#008080] bg-white focus:outline-none
+              font-semibold text-sm sm:text-base lg:text-lg 2xl:text-3xl"
             >
               {selected ? selected.label : "Sort by"}
+              {isDropdownOpen ? (
+                <FaChevronUp className="mt-1" />
+              ) : (
+                <FaChevronDown className="mt-1" />
+              )}
             </button>
 
             {isDropdownOpen && (
-              <ul className="absolute right-0 mt-1 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
+              <ul className="absolute right-0 w-40 xl:w-48 2xl:w-64 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                 {options.map((opt) => (
                   <li
                     key={opt.value}
@@ -65,7 +84,7 @@ export default function FilterBar({
                       setSort(opt.value);
                       setIsDropdownOpen(false);
                     }}
-                    className="px-3 py-2 cursor-pointer text-[#008080] hover:bg-[#008080] hover:text-white"
+                    className="cursor-pointer text-[#008080] hover:bg-[#008080] hover:rounded-lg p-2 xl:p-3 2xl:p-5 hover:text-white font-semibold text-sm sm:text-base 2xl:text-2xl text-center"
                   >
                     {opt.label}
                   </li>
@@ -91,7 +110,7 @@ export default function FilterBar({
 
             {/* Sidebar */}
             <motion.aside
-              className="fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 p-6 overflow-y-auto lg:hidden"
+              className="fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 overflow-y-auto lg:hidden"
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}

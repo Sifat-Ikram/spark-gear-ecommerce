@@ -59,7 +59,7 @@ export default function ProductSection({ products, type }) {
         setSort={setSort}
       />
       <div className="flex">
-        <div className="hidden lg:flex flex-col w-1/5 bg-white border-r-2 border-gray-300 shadow sticky top-10 h-screen p-4">
+        <div className="hidden lg:flex flex-col w-1/5 bg-white border-r-2 border-gray-300 shadow sticky top-10 h-screen py-4">
           <Filters
             type={type}
             categories={categories}

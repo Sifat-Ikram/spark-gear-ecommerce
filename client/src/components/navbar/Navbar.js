@@ -6,17 +6,16 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 
 const quickLinksLeft = [
-  { id: 1, label: "About Us", href: "/about" },
-  { id: 2, label: "Blog", href: "/blog" },
-  { id: 3, label: "How to Buy", href: "/how-to-buy" },
-  { id: 4, label: "Stores", href: "/stores" },
+  { id: 1, label: "Blog", href: "/blog" },
+  { id: 2, label: "How to Buy", href: "/how-to-buy" },
+  { id: 3, label: "Stores", href: "/stores" },
+  { id: 4, label: "Support", href: "/support/contact" },
 ];
 
 const quickLinksRight = [
   { id: 1, label: "Track Order", href: "/track-order" },
   { id: 2, label: "Shipping Info", href: "/shipping" },
   { id: 3, label: "Returns & Refunds", href: "/returns" },
-  { id: 4, label: "Support", href: "/support/contact" },
 ];
 
 const Navbar = () => {

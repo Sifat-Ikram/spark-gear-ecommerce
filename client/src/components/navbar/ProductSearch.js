@@ -20,7 +20,7 @@ const ProductSearch = () => {
   return (
     <div className="relative w-full">
       {/* Search input */}
-      <div className="flex items-center bg-white rounded-[6px] px-3 py-2 shadow-sm">
+      <div className="flex items-center bg-white rounded-[6px] px-3 py-2 2xl:px-7 2xl:py-5 shadow-sm">
         <FiSearch className="text-gray-500 text-lg mr-2" />
         <input
           type="text"

@@ -72,7 +72,7 @@ const MainNav = () => {
                 transition={{ duration: 0.2 }}
                 className="sm:hidden absolute top-full left-0 mobile-nav bg-gray-50 rounded-b-lg shadow-lg z-50 flex"
               >
-                <ul className="relative flex flex-col space-y-[1px] w-full bg-[#008080]">
+                <ul className="relative flex flex-col space-y-[1px] w-full bg-[#008080] roboto">
                   {navItems.map((item, idx) => (
                     <li key={idx}>
                       {item.link ? (
@@ -114,7 +114,7 @@ const MainNav = () => {
                             height={40}
                             className="w-10 h-10 object-cover rounded-full mb-1"
                           />
-                          <span className="text-xs text-gray-700 text-center">
+                          <span className="text-xs text-gray-700 text-center roboto">
                             {cat.name}
                           </span>
                         </Link>
