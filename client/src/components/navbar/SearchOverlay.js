@@ -100,7 +100,7 @@ export default function SearchOverlay({ isOpen, onClose }) {
                 placeholder="What are you looking for?"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 text-sm sm:text-base bg-white bg-opacity-90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#173faf]"
               />
             </form>
             <div className="mt-4 max-h-64 overflow-y-auto bg-white/80 backdrop-blur rounded-lg shadow-inner border border-gray-200">

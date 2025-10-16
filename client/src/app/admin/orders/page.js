@@ -11,7 +11,7 @@ export default function AdminOrdersPage() {
 
   if (orderIsLoading) {
     return (
-      <div className="flex justify-center items-center h-screen text-[#008080]">
+      <div className="flex justify-center items-center h-screen text-[#173faf]">
         Loading orders...
       </div>
     );
@@ -23,7 +23,7 @@ export default function AdminOrdersPage() {
         <p>Error loading orders.</p>
         <button
           onClick={orderRefetch}
-          className="mt-4 px-4 py-2 bg-[#008080] text-white rounded hover:bg-teal-700"
+          className="mt-4 px-4 py-2 bg-[#173faf] text-white rounded hover:bg-[#143694]"
         >
           Retry
         </button>
@@ -36,10 +36,10 @@ export default function AdminOrdersPage() {
 
   return (
     <div className="w-11/12 mx-auto min-h-screen">
-      <h1 className="text-2xl md:text-3xl font-bold text-[#008080] mb-6">
+      <h1 className="text-2xl md:text-3xl font-bold text-[#173faf] mb-6">
         Admin Orders
       </h1>
-      <div className="flex justify-between items-center py-2 md:py-3 2xl:py-6 bg-[#008080] mb-3 rounded-t-lg px-4 sm:px-6 md:px-4 lg:px-7 2xl:px-10">
+      <div className="flex justify-between items-center py-2 md:py-3 2xl:py-6 bg-[#173faf] mb-3 rounded-t-lg px-4 sm:px-6 md:px-4 lg:px-7 2xl:px-10">
         {STATUSES.map((status) => (
           <button
             key={status}

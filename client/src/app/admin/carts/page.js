@@ -13,7 +13,7 @@ export default function AdminCartsPage() {
 
   if (cartIsLoading) {
     return (
-      <div className="flex justify-center items-center h-screen text-[#008080] text-xl font-semibold">
+      <div className="flex justify-center items-center h-screen text-[#173faf] text-xl font-semibold">
         Loading carts...
       </div>
     );
@@ -21,7 +21,7 @@ export default function AdminCartsPage() {
 
   if (cartError) {
     return (
-      <div className="flex justify-center items-center h-screen text-[#008080] text-xl font-semibold">
+      <div className="flex justify-center items-center h-screen text-[#173faf] text-xl font-semibold">
         error fetching carts...
       </div>
     );
@@ -29,7 +29,7 @@ export default function AdminCartsPage() {
 
   if (carts?.length === 0) {
     return (
-      <div className="flex justify-center items-center h-screen text-[#008080] text-xl font-semibold">
+      <div className="flex justify-center items-center h-screen text-[#173faf] text-xl font-semibold">
         There is no cart item...
       </div>
     );
@@ -43,7 +43,7 @@ export default function AdminCartsPage() {
 
       <div className="overflow-x-auto shadow">
         <table className="w-full text-sm md:text-base text-center">
-          <thead className="bg-[#008080] text-white">
+          <thead className="bg-[#173faf] text-white">
             <tr>
               <th className="px-4 py-3 w-[20%] rounded-l-lg">User</th>
               <th className="px-4 py-3 w-[25%]">Email</th>
@@ -72,7 +72,7 @@ export default function AdminCartsPage() {
                 <td className="px-4 py-3 w-[20%] text-center">
                   <button
                     onClick={() => setSelectedUser(cartItem)}
-                    className="text-[#008080] hover:scale-110 transition-transform hover:underline cursor-pointer"
+                    className="text-[#173faf] hover:scale-110 transition-transform hover:underline cursor-pointer"
                   >
                     See details
                   </button>
@@ -106,7 +106,7 @@ export default function AdminCartsPage() {
               exit={{ scale: 0.9, opacity: 0 }}
             >
               <div className="flex justify-between items-center mb-6 gap-10">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#008080]">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#173faf]">
                   {selectedUser?.userName || "User"}'s Cart
                 </h2>
                 <button

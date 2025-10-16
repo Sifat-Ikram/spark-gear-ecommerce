@@ -39,7 +39,7 @@ export default function ProductCard({ product }) {
           href={`/main-layout/productDetails/${product?.slug}`}
           className="w-full mt-5"
         >
-          <button className="cursor-pointer rounded-md text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl font-semibold py-2 sm:py-2.5 w-full bg-[#008080] text-white hover:bg-[#016b6b] roboto whitespace-nowrap">
+          <button className="cursor-pointer rounded-md text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl font-semibold py-2 sm:py-2.5 w-full bg-[#173faf] text-white hover:bg-[#143694] roboto whitespace-nowrap">
             View Details
           </button>
         </Link>

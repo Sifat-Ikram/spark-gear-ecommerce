@@ -63,22 +63,22 @@ export default function FeaturedCard({ product }) {
         />
       </motion.div>
 
-      <div className="flex-1 p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 3xl:p-10 flex flex-col justify-between 2xl:space-y-5">
+      <div className="flex-1 p-2 sm:p-3 lg:p-3 xl:p-4 2xl:p-7 3xl:p-10 flex flex-col justify-between 2xl:space-y-5">
         <h3 className="subtitle-text roboto truncate 2xl:text-2xl 3xl:text-3xl">
           {product.name}
         </h3>
 
-        <p className="max-2xl:mt-1 text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-2xl roboto text-gray-600">
+        <p className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-2xl roboto text-gray-600">
           Brand: {product.brand}
         </p>
 
-        <div className="max-2xl:mt-1 flex items-center">
+        <div className="flex items-center">
           {renderStars(product.ratings.average)}
           <span className="ml-2 text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-xl roboto text-gray-600">
             ({product.ratings.reviewsCount})
           </span>
         </div>
-        <p className="max-2xl:mt-5 2xl:mt-6 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-bold roboto text-[#008080]">
+        <p className="max-2xl:mt-5 2xl:mt-6 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-bold roboto text-[#173faf]">
           {product.price.toFixed(2)} BDT
         </p>
       </div>

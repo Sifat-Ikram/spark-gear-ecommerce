@@ -88,12 +88,12 @@ const ReviewSection = ({ name }) => {
           value={newReview}
           onChange={(e) => setNewReview(e.target.value)}
           placeholder="Share your thoughts about this product..."
-          className="w-full p-2 roboto sm:p-3 md:p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-xs sm:text-sm md:text-base mb-2 sm:mb-3"
+          className="w-full p-2 roboto sm:p-3 md:p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#143694] resize-none text-xs sm:text-sm md:text-base mb-2 sm:mb-3"
           rows={3}
         />
         <button
           onClick={handleSubmitReview}
-          className="bg-[#008080] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#016b6b] transition text-xs sm:text-sm md:text-base"
+          className="bg-[#173faf] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#143694] transition text-xs sm:text-sm md:text-base"
         >
           Submit Review
         </button>
@@ -136,14 +136,14 @@ const ReviewSection = ({ name }) => {
 
             <div className="flex items-center gap-4 text-gray-600 text-sm sm:text-base xl:text-lg 2xl:text-xl mt-2">
               <button
-                className="flex items-center gap-1 hover:text-[#008080] roboto"
+                className="flex items-center gap-1 hover:text-[#173faf] roboto"
                 onClick={() => handleLikeDislike(index)}
               >
                 <FaThumbsUp className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                 <span>{reviewItem.likes}</span>
               </button>
               <button
-                className="hover:text-[#008080] cursor-pointer roboto"
+                className="hover:text-[#173faf] cursor-pointer roboto"
                 onClick={() => handleReplyToggle(index)}
               >
                 Reply
@@ -169,12 +169,12 @@ const ReviewSection = ({ name }) => {
                     value={replyInputs[index] || ""}
                     onChange={(e) => handleReplyChange(index, e.target.value)}
                     placeholder="Write a reply..."
-                    className="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-xs sm:text-sm md:text-base"
+                    className="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#143694] resize-none text-xs sm:text-sm md:text-base"
                     rows={2}
                   />
                   <button
                     onClick={() => handleSubmitReply(index)}
-                    className="self-end bg-[#008080] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#016b6b] transition text-xs sm:text-sm md:text-base"
+                    className="self-end bg-[#173faf] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-[#143694] transition text-xs sm:text-sm md:text-base"
                   >
                     Submit Reply
                   </button>

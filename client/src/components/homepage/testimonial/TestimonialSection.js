@@ -70,7 +70,7 @@ export default function TestimonialSection({ reviews }) {
       <div className="relative px-4 sm:px-6 lg:px-12 w-full">
         {!isBeginning && (
           <button
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 2xl:p-3 rounded-full bg-[#008080] hover:bg-[#016b6b] transition"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 2xl:p-3 rounded-full bg-[#173faf] hover:bg-[#143694] transition"
             onClick={() => swiperRef.current.slidePrev()}
           >
             <FiChevronLeft className="text-base sm:text-xl lg:text-2xl xl:text-4xl text-white" />
@@ -78,7 +78,7 @@ export default function TestimonialSection({ reviews }) {
         )}
         {!isEnd && (
           <button
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 2xl:p-3 rounded-full bg-[#008080] hover:bg-[#016b6b] transition"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 lg:p-2 2xl:p-3 rounded-full bg-[#173faf] hover:bg-[#143694] transition"
             onClick={() => swiperRef.current.slideNext()}
           >
             <FiChevronRight className="text-base sm:text-xl lg:text-2xl xl:text-4xl text-white" />

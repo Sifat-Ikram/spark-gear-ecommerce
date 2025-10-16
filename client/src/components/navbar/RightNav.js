@@ -3,16 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { FaUser } from "react-icons/fa";
 import SearchOverlay from "./SearchOverlay";
 import { useAuth } from "@/provider/AuthContext";
 import { useCart } from "@/provider/CartContext";
-import { motion } from "framer-motion";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 
 const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
   const { openCart } = useCart();
-  const { user, logOut } = useAuth();
+  const { user } = useAuth();
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
 
@@ -81,18 +81,10 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
             </Link>
           )
         )}
-        {!user?.email && (
-          <Link
-            href={"/login"}
-            className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-3xl font-normal roboto"
-          >
-            Login
-          </Link>
-        )}
       </div>
 
       {/* Action Icons */}
-      <div className="flex items-center space-x-2 md:space-x-4 lg:space-x-6 2xl:space-x-8">
+      <div className="flex items-center space-x-2 md:space-x-2 lg:space-x-3 2xl:space-x-5">
         <motion.div
           whileHover={{ scale: 1.2 }}
           className="cursor-pointer block lg:hidden"
@@ -107,8 +99,8 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
           <FiShoppingCart className="text-sm md:text-base 2xl:text-3xl" />
         </motion.div>
         <motion.div>
-          {user?.email ? (
-            <div className="flex items-center space-x-1 sm:space-x-3.5 md:space-x-4 lg:space-x-6 2xl:space-x-8">
+          {user?.email && (
+            <div className="flex items-center space-x-2 2xl:space-x-3">
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 className="cursor-pointer"
@@ -117,25 +109,7 @@ const RightNav = ({ categoryIsLoading, categoryError, navItems }) => {
                   <FaUser className="text-sm :text-base" />
                 </Link>
               </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.2 }}
-                className="cursor-pointer"
-              >
-                <h1
-                  onClick={() => logOut()}
-                  className="cursor-pointer text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal roboto"
-                >
-                  LogOut
-                </h1>
-              </motion.div>
             </div>
-          ) : (
-            <Link
-              href={"/login"}
-              className="block sm:hidden text-xs sm:text-sm lg:text-base 2xl:text-lg font-normal roboto"
-            >
-              Login
-            </Link>
           )}
         </motion.div>
       </div>

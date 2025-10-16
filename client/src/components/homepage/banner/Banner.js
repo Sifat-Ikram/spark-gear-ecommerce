@@ -40,7 +40,7 @@ export default function Banner({ banner }) {
         </motion.p>
 
         <motion.button
-          className="bg-white text-gray-700 hover:text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-[#016b6b] transition"
+          className="bg-white text-gray-700 hover:text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-[#143694] transition"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

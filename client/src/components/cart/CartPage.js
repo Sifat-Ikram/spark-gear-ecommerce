@@ -132,10 +132,10 @@ const CartPage = () => {
           >
             {/* Header */}
             <div className="py-4 px-4 2xl:p-6 flex justify-between items-center border-b">
-              <h2 className="title-text exo text-[#016b6b]">Your Cart</h2>
+              <h2 className="title-text exo text-[#143694]">Your Cart</h2>
               <button
                 onClick={closeCart}
-                className="text-xl 2xl:text-4xl font-bold text-[#008080] hover:text-[#016b6b]"
+                className="text-xl 2xl:text-4xl font-bold text-[#173faf] hover:text-[#143694]"
               >
                 <MdCancel />
               </button>
@@ -192,7 +192,7 @@ const CartPage = () => {
                                 handleDecrease(item._id, item.cart.name)
                               }
                             >
-                              <PiMinusSquareFill className="text-[#008080] hover:text-[#016b6b] text-xl 2xl:text-3xl" />
+                              <PiMinusSquareFill className="text-[#173faf] hover:text-[#143694] text-xl 2xl:text-3xl" />
                             </button>
                             <span className="w-6 text-sm xl:text-base 2xl:text-xl text-center font-medium">
                               {item.quantity}
@@ -202,7 +202,7 @@ const CartPage = () => {
                                 handleIncrease(item._id, item.cart.name)
                               }
                             >
-                              <BsFillPlusSquareFill className="text-[#008080] hover:text-[#016b6b] text-lg 2xl:text2xl" />
+                              <BsFillPlusSquareFill className="text-[#173faf] hover:text-[#143694] text-lg 2xl:text2xl" />
                             </button>
                           </div>
 

@@ -99,7 +99,7 @@ export default function AuthForm({ type }) {
       transition={{ duration: 0.6 }}
       className="w-4/5 mx-auto bg-white shadow-xl px-10 pt-10 pb-7 2xl:p-20 rounded-md space-y-6 2xl:space-y-10"
     >
-      <h2 className="text-3xl font-bold exo text-center text-[#008080] flex items-center justify-center gap-2">
+      <h2 className="text-3xl font-bold exo text-center text-[#173faf] flex items-center justify-center gap-2">
         <FaUniversity />{" "}
         {type === "login" ? "Login First!" : "Registration here"}
       </h2>
@@ -155,7 +155,7 @@ export default function AuthForm({ type }) {
 
             <a
               href="/forgotPassword"
-              className="text-[#008080] hover:underline text-sm roboto"
+              className="text-[#173faf] hover:underline text-sm roboto"
             >
               Forgot Password?
             </a>
@@ -181,7 +181,7 @@ export default function AuthForm({ type }) {
             New here?{" "}
             <Link
               href="/register"
-              className="text-[#008080] hover:underline roboto"
+              className="text-[#173faf] hover:underline roboto"
             >
               Register
             </Link>
@@ -191,7 +191,7 @@ export default function AuthForm({ type }) {
             Already have an account?{" "}
             <Link
               href="/login"
-              className="text-[#008080] hover:underline roboto"
+              className="text-[#173faf] hover:underline roboto"
             >
               Login
             </Link>

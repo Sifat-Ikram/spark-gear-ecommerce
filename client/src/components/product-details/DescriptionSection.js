@@ -14,7 +14,7 @@ const DescriptionSection = ({ product }) => {
   return (
     <div className="flex flex-col space-y-6 sm:space-y-8">
       {/* Section Header */}
-      <div className="w-full py-4 sm:py-6 lg:py-8 bg-[#008080] shadow-md">
+      <div className="w-full py-4 sm:py-6 lg:py-8 bg-[#173faf] shadow-md">
         <h1 className="text-center text-white text-lg sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-6xl font-semibold exo">
           Product Details
         </h1>
@@ -39,7 +39,7 @@ const DescriptionSection = ({ product }) => {
             >
               <button
                 onClick={() => toggleSpec(spec.name)}
-                className="w-full flex justify-between roboto items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#008080] hover:bg-gray-50 transition-all duration-200"
+                className="w-full flex justify-between roboto items-center px-4 sm:px-5 py-3 sm:py-4 text-left font-medium text-[#173faf] hover:bg-gray-50 transition-all duration-200"
               >
                 <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl roboto">
                   {spec.name}

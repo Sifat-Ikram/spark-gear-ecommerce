@@ -106,7 +106,7 @@ const ResetPassword = () => {
                 type={showPassword ? "text" : "password"}
                 placeholder="***********"
                 {...register("password", { required: "Password is required" })}
-                className="w-full border border-gray-300 focus:border-teal-500 focus:ring focus:ring-teal-200 rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
+                className="w-full border border-gray-300 focus:border-[#173faf] focus:ring focus:ring-[#173faf] rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
               />
               <div
                 onClick={() => setShowPassword((prev) => !prev)}
@@ -136,7 +136,7 @@ const ResetPassword = () => {
                   validate: (value) =>
                     value === password || "Passwords do not match",
                 })}
-                className="w-full border border-gray-300 focus:border-teal-500 focus:ring focus:ring-teal-200 rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
+                className="w-full border border-gray-300 focus:border-[#143694] focus:ring focus:ring-[#143694] rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
               />
               <div
                 onClick={() => setShowConfirmPassword((prev) => !prev)}
@@ -157,16 +157,12 @@ const ResetPassword = () => {
           </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full buttons"
-          >
+          <button type="submit" disabled={loading} className="w-full buttons">
             {loading ? "Resetting Password..." : "Reset Password"}
           </button>
 
           <Link href={"/"}>
-            <h1 className="roboto text-sm sm:text-base md:text-lg text-center hover:underline hover:text-[#008080]">
+            <h1 className="roboto text-sm sm:text-base md:text-lg text-center hover:underline hover:text-[#173faf]">
               Back Home
             </h1>
           </Link>

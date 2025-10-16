@@ -29,12 +29,12 @@ export default function Filters({
     <aside className="h-full flex flex-col p-4 lg:p-6 xl:p-4 2xl:p-4 overflow-y-auto">
       {/* Header */}
       <div className="flex justify-between items-center mb-4 lg:mb-4 2xl:mb-6">
-        <h2 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-[#008080]">
+        <h2 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-[#173faf]">
           Filters
         </h2>
         <button
           onClick={handleReset}
-          className="text-gray-500 hover:text-[#008080] transition"
+          className="text-gray-500 hover:text-[#173faf] transition"
           title="Reset Filters"
         >
           <FiRefreshCcw className="w-5 h-5 md:w-6 md:h-6" />
@@ -52,8 +52,8 @@ export default function Filters({
             placeholder="Product name..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base 
+            className="w-full border border-gray-300 focus:border-[#173faf] focus:ring-1 
+                       focus:ring-[#173faf] rounded-lg px-3 py-2 text-sm sm:text-base 
                        placeholder:text-gray-400 outline-none transition"
           />
         </div>
@@ -67,8 +67,8 @@ export default function Filters({
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                         focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
+              className="w-full border border-gray-300 focus:border-[#173faf] focus:ring-1 
+                         focus:ring-[#173faf] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
             >
               <option value="">All</option>
               {categories.map((c) => (
@@ -88,8 +88,8 @@ export default function Filters({
           <select
             value={brand}
             onChange={(e) => setBrand(e.target.value)}
-            className="w-full border border-gray-300 focus:border-[#008080] focus:ring-1 
-                       focus:ring-[#008080] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
+            className="w-full border border-gray-300 focus:border-[#173faf] focus:ring-1 
+                       focus:ring-[#173faf] rounded-lg px-3 py-2 text-sm sm:text-base outline-none transition"
           >
             <option value="">All</option>
             {brands.map((b) => (
@@ -111,7 +111,7 @@ export default function Filters({
             max="500"
             value={price}
             onChange={(e) => setPrice(Number(e.target.value))}
-            className="w-full accent-[#008080]"
+            className="w-full accent-[#173faf]"
           />
         </div>
 
@@ -132,7 +132,7 @@ export default function Filters({
                   value={r}
                   checked={rating === r}
                   onChange={() => setRating(Number(r))}
-                  className="accent-[#008080]"
+                  className="accent-[#173faf]"
                 />
                 <span className="flex items-center text-sm sm:text-base text-gray-700">
                   {Array.from({ length: 5 }).map((_, i) => {

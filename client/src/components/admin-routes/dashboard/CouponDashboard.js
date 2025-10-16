@@ -82,7 +82,7 @@ export default function CouponDashboard() {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#008080",
+      confirmButtonColor: "#173faf",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
     });
@@ -122,10 +122,7 @@ export default function CouponDashboard() {
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-0">
           Coupons Management
         </h1>
-        <button
-          onClick={() => setModalOpen(true)}
-          className="buttons"
-        >
+        <button onClick={() => setModalOpen(true)} className="buttons">
           {" "}
           Add Coupon
         </button>
@@ -134,7 +131,7 @@ export default function CouponDashboard() {
       {/* Coupon Table */}
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-200 rounded-lg">
-          <thead className="bg-[#008080] rounded-t-lg">
+          <thead className="bg-[#173faf] rounded-t-lg">
             <tr>
               <th className="py-2 px-3 text-left text-sm sm:text-base font-medium text-white rounded-tl-lg">
                 Code
@@ -241,14 +238,14 @@ export default function CouponDashboard() {
                 onChange={handleChange}
                 placeholder="Coupon Code"
                 required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#173faf]"
               />
               <div className="flex space-x-2">
                 <select
                   name="type"
                   value={formData.type}
                   onChange={handleChange}
-                  className="w-1/2 border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                  className="w-1/2 border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#173faf]"
                 >
                   <option value="percentage">Percentage</option>
                   <option value="fixed">Fixed Amount</option>
@@ -260,7 +257,7 @@ export default function CouponDashboard() {
                   onChange={handleChange}
                   placeholder="Value"
                   required
-                  className="w-1/2 border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                  className="w-1/2 border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#173faf]"
                 />
               </div>
               <input
@@ -269,7 +266,7 @@ export default function CouponDashboard() {
                 value={formData.minPurchase}
                 onChange={handleChange}
                 placeholder="Minimum Purchase (optional)"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#173faf]"
               />
               <input
                 type="date"
@@ -277,7 +274,7 @@ export default function CouponDashboard() {
                 value={formData.expiryDate}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#173faf]"
               />
               <div className="flex items-center space-x-2">
                 <input

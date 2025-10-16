@@ -33,13 +33,13 @@ export default function ProductFilter({
             value={search}
             onChange={handleSearchChange}
             placeholder="Search by product name..."
-            className="pl-10 pr-4 py-2 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#008080] transition-all shadow-sm"
+            className="pl-10 pr-4 py-2 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#173faf] transition-all shadow-sm"
           />
         </div>
         <select
           value={category}
           onChange={handleCategoryChange}
-          className="hidden sm:block px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#008080] transition-all shadow-sm"
+          className="hidden sm:block px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#173faf] transition-all shadow-sm"
         >
           <option value="">All Categories</option>
           {categories.map((cat) => (
@@ -53,7 +53,7 @@ export default function ProductFilter({
         <select
           value={category}
           onChange={handleCategoryChange}
-          className="block sm:hidden px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#008080] transition-all shadow-sm"
+          className="block sm:hidden px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#173faf] transition-all shadow-sm"
         >
           <option value="" className="text-sm sm:text-base lg:text-lg">
             All Categories
@@ -69,7 +69,7 @@ export default function ProductFilter({
           ))}
         </select>
         <Link href={"/admin/add-product"}>
-          <button className="flex text-nowrap items-center gap-2 px-5 py-2 bg-[#008080] text-white font-medium rounded-lg hover:bg-[#016b6b] transition-all shadow-md">
+          <button className="flex text-nowrap items-center gap-2 px-5 py-2 bg-[#173faf] text-white font-medium rounded-lg hover:bg-[#143694] transition-all shadow-md">
             <FiPlus size={18} /> Add Product
           </button>
         </Link>

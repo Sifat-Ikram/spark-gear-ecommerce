@@ -54,7 +54,7 @@ const AppDownload = () => {
                  text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl 
                  px-5 xs:px-6 sm:px-6 md:px-8 lg:px-8 xl:px-10 2xl:px-10 
                  py-2 xs:py-3 sm:py-3 md:py-4 lg:py-4 xl:py-5 2xl:py-5 
-                 bg-[#008080] text-white rounded-xl font-semibold shadow-md 
+                 bg-[#173faf] text-white rounded-xl font-semibold shadow-md 
                  hover:bg-[#008f79] transition cursor-pointer"
             >
               <FaGooglePlay className="text-base xs:text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl" />

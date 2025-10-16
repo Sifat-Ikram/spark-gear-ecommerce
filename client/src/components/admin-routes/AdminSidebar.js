@@ -89,8 +89,8 @@ export default function AdminSidebar() {
 
   return (
     <div>
-      <aside className="hidden md:flex flex-col w-full min-h-screen bg-[#008080] text-white sticky top-0">
-        <div className="text-2xl font-bold p-6 border-b border-[#008080]">
+      <aside className="hidden md:flex flex-col w-full min-h-screen bg-[#173faf] text-white sticky top-0">
+        <div className="text-2xl font-bold p-6 border-b border-[#173faf]">
           Admin Panel
         </div>
         <nav className="flex-1 flex flex-col justify-between px-3 py-2 lg:py-4">
@@ -102,7 +102,7 @@ export default function AdminSidebar() {
                 <Link key={route.name} href={route.path}>
                   <motion.div
                     className={`flex items-center gap-2 lg:gap-3 px-6 py-2 lg:py-3 cursor-pointer rounded-lg transition-colors duration-200 
-                ${isActive ? "bg-[#016b6b]" : "hover:bg-[#016b6b]"}`}
+                ${isActive ? "bg-[#143694]" : "hover:bg-[#143694]"}`}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Icon className="text-lg" />
@@ -115,7 +115,7 @@ export default function AdminSidebar() {
           <div>
             <motion.button
               onClick={() => handleLogout()}
-              className="w-full flex items-center gap-3 rounded-lg px-6 py-3 hover:bg-[#016b6b] cursor-pointer transition-colors duration-200"
+              className="w-full flex items-center gap-3 rounded-lg px-6 py-3 hover:bg-[#143694] cursor-pointer transition-colors duration-200"
               whileTap={{ scale: 0.95 }}
             >
               <MdLogout className="text-lg" />
@@ -124,7 +124,7 @@ export default function AdminSidebar() {
           </div>
         </nav>
       </aside>
-      <div className="md:hidden w-full bg-[#008080] sticky top-0 z-50">
+      <div className="md:hidden w-full bg-[#173faf] sticky top-0 z-50">
         <div className="w-11/12 mx-auto text-white flex items-center justify-between">
           <div className="text-xl font-bold">Admin Panel</div>
           <button onClick={() => setOpen(!open)} className="py-4">
@@ -137,7 +137,7 @@ export default function AdminSidebar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute right-0 top-14 w-36 sm:w-48 bg-[#008080] text-white rounded-b-md shadow-lg flex flex-col z-50"
+            className="absolute right-0 top-14 w-36 sm:w-48 bg-[#173faf] text-white rounded-b-md shadow-lg flex flex-col z-50"
           >
             <div>
               {visibleRoutes.map((route) => {
@@ -146,7 +146,7 @@ export default function AdminSidebar() {
                   <Link key={route.name} href={route.path}>
                     <motion.div
                       className={`flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 cursor-pointer transition-colors duration-200 
-                  ${isActive ? "bg-[#008080]" : "hover:bg-[#016b6b]"}`}
+                  ${isActive ? "bg-[#173faf]" : "hover:bg-[#143694]"}`}
                       onClick={() => setOpen(false)}
                     >
                       <span className="text-base text-center sm:text-xl">
@@ -160,7 +160,7 @@ export default function AdminSidebar() {
             <div>
               <motion.button
                 onClick={() => handleLogout()}
-                className="w-full flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 hover:bg-[#016b6b] cursor-pointer transition-colors duration-200"
+                className="w-full flex items-center justify-center px-2 sm:px-6 py-1.5 sm:py-3 hover:bg-[#143694] cursor-pointer transition-colors duration-200"
               >
                 <span>Logout</span>
               </motion.button>

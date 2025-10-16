@@ -27,7 +27,6 @@ const ForgotPassword = () => {
         email: data.email,
       });
       const resetLink = response?.data?.resetURL;
-      console.log(resetLink);
 
       if (resetLink) {
         // Redirect to reset password page
@@ -82,7 +81,7 @@ const ForgotPassword = () => {
               type="email"
               placeholder="m32220@gmail.com"
               {...register("email", { required: "Email is required" })}
-              className="w-full border border-gray-300 focus:border-teal-500 focus:ring focus:ring-teal-200 rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
+              className="w-full border border-gray-300 focus:border-[#143694] focus:ring focus:ring-[#143694] rounded-lg px-4 py-3 text-sm sm:text-base shadow-sm outline-none transition"
             />
             {errors.email && (
               <p className="text-red-500 text-xs sm:text-sm mt-1">
@@ -97,7 +96,7 @@ const ForgotPassword = () => {
           </button>
 
           <Link href={"/"}>
-            <h1 className="roboto text-sm sm:text-base md:text-lg text-center hover:underline hover:text-[#008080]">
+            <h1 className="roboto text-sm sm:text-base md:text-lg text-center hover:underline hover:text-[#173faf]">
               Back Home
             </h1>
           </Link>

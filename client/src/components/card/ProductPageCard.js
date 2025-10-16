@@ -45,7 +45,7 @@ export default function ProductPageCard({ product }) {
           </div>
 
           <div className="flex justify-between items-center">
-            <span className="text-[#008080] font-bold">
+            <span className="text-[#173faf] font-bold">
               {product?.price} BDT
             </span>
             <span className="text-sm text-yellow-600">

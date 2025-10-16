@@ -64,8 +64,6 @@ const Home = async () => {
 
   const { data: reviews } = await reviewRes.json();
 
-  console.log(reviews);
-
   return (
     <MainLayout>
       <div className="my-20 space-y-20 xl:space-y-32 2xl:space-y-44">

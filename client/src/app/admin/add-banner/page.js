@@ -115,8 +115,6 @@ const AddBanners = () => {
 
     try {
       const res = await axiosSecure.post("/api/banner", bannerData);
-      console.log(res.data);
-
       Swal.fire({
         icon: "success",
         title: "Banner added!",
@@ -189,7 +187,7 @@ const AddBanners = () => {
 
   return (
     <main className="w-11/12 max-w-6xl mx-auto py-8">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-[#008080]">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-[#173faf]">
         Manage Banners
       </h1>
 
@@ -206,7 +204,7 @@ const AddBanners = () => {
               <input
                 {...register("title", { required: true })}
                 placeholder="Enter banner title"
-                className="border rounded-lg p-3 w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#008080]"
+                className="border rounded-lg p-3 w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#173faf]"
               />
             </div>
             <div>
@@ -217,7 +215,7 @@ const AddBanners = () => {
                 {...register("paragraph", { required: true })}
                 placeholder="Enter banner paragraph"
                 rows={3}
-                className="border rounded-lg p-3 w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#008080] resize-none"
+                className="border rounded-lg p-3 w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#173faf] resize-none"
               />
             </div>
           </div>
@@ -233,14 +231,14 @@ const AddBanners = () => {
                   className="w-full h-40 md:h-48 object-cover rounded-lg border"
                 />
               ) : (
-                <label className="relative flex-1 cursor-pointer bg-gray-100 rounded-lg border-dashed border-2 border-gray-300 hover:border-[#008080] hover:bg-gray-50 flex items-center justify-center h-40 md:h-48 text-gray-500 font-medium">
+                <label className="relative flex-1 cursor-pointer bg-gray-100 rounded-lg border-dashed border-2 border-gray-300 hover:border-[#173faf] hover:bg-gray-50 flex items-center justify-center h-40 md:h-48 text-gray-500 font-medium">
                   {isUploading ? (
                     <div className="flex flex-col items-center">
                       <span>Uploading... {uploadProgress}%</span>
                       <div className="w-40 bg-gray-200 h-2 rounded overflow-hidden mt-2">
                         <div
                           style={{ width: `${uploadProgress}%` }}
-                          className="h-full bg-[#008080]"
+                          className="h-full bg-[#173faf]"
                         />
                       </div>
                     </div>
@@ -262,7 +260,7 @@ const AddBanners = () => {
 
         <button
           type="submit"
-          className="w-full py-3 bg-[#008080] text-white font-semibold rounded-lg hover:bg-[#006666] transition"
+          className="w-full py-3 bg-[#173faf] text-white font-semibold rounded-lg hover:bg-[#006666] transition"
         >
           {isUploading ? "Uploading..." : "Add Banner"}
         </button>
@@ -320,8 +318,8 @@ const AddBanners = () => {
                     onClick={() => handleSetActive(b._id)}
                     className={`rounded-lg px-2 lg:px-4 xl:px-6 py-1 xl:py-2 font-medium flex items-center gap-1 ${
                       b.isActive
-                        ? "bg-[#008080] text-white"
-                        : "bg-gray-200 text-[#008080] hover:bg-gray-300"
+                        ? "bg-[#173faf] text-white"
+                        : "bg-gray-200 text-[#173faf] hover:bg-gray-300"
                     }`}
                   >
                     <FiCheck size={16} />{" "}

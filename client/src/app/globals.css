@@ -11,7 +11,7 @@
 
 /* Global CTA Button */
 .buttons {
-  background-color: #008080;
+  background-color: #173faf;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -27,7 +27,7 @@
 
 /* Hover effect */
 .buttons:hover {
-  background-color: #016b6b;
+  background-color: #143694;
   transform: translateY(-2px);
 }
 
@@ -62,7 +62,7 @@
 }
 
 .subtitle-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #374151;
   line-height: 1.5;

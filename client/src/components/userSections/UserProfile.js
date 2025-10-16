@@ -59,7 +59,7 @@ const UserProfile = ({ currentUser }) => {
         </h1>
         {!isEditing && (
           <button
-            className="px-5 py-2 rounded-md bg-[#008080] text-white hover:bg-[#016b6b] transition flex items-center space-x-3 whitespace-nowrap"
+            className="px-5 py-2 rounded-md bg-[#173faf] text-white hover:bg-[#143694] transition flex items-center space-x-3 whitespace-nowrap"
             onClick={() => setIsEditing(true)}
           >
             <FaEdit className="inline-block" />
@@ -183,7 +183,7 @@ const UserProfile = ({ currentUser }) => {
             <button
               form="editProfileForm"
               type="submit"
-              className="px-4 py-2 rounded bg-[#008080] text-white hover:bg-[#016b6b] transition"
+              className="px-4 py-2 rounded bg-[#173faf] text-white hover:bg-[#143694] transition"
               disabled={loading}
             >
               {loading ? "Saving..." : "Save"}

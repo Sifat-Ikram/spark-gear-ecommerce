@@ -92,7 +92,7 @@ const OrderCard = ({ order, orderRefetch }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="bg-gray-50 shadow-md rounded-lg p-4 md:p-6 border-l-4 border-[#008080]"
+      className="bg-gray-50 shadow-md rounded-lg p-4 md:p-6 border-l-4 border-[#173faf]"
     >
       <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
         <div className="w-full sm:w-2/5 flex flex-wrap justify-between space-y-3">
@@ -110,7 +110,7 @@ const OrderCard = ({ order, orderRefetch }) => {
           </div>
           <div className="w-full flex flex-col justify-between">
             <div>
-              <h3 className="font-semibold text-[#008080] mb-2 flex items-center gap-2">
+              <h3 className="font-semibold text-[#173faf] mb-2 flex items-center gap-2">
                 <FiDollarSign /> Summary
               </h3>
               <p className="text-gray-700">
@@ -128,7 +128,7 @@ const OrderCard = ({ order, orderRefetch }) => {
 
         {/* Order Items */}
         <div className="w-full sm:w-1/2 overflow-x-auto">
-          <h3 className="font-semibold text-[#008080] mb-2 flex items-center gap-2">
+          <h3 className="font-semibold text-[#173faf] mb-2 flex items-center gap-2">
             <FiPackage /> Items
           </h3>
           <div className="flex flex-col gap-2">
@@ -160,10 +160,10 @@ const OrderCard = ({ order, orderRefetch }) => {
           <button
             disabled={updating}
             onClick={() => setOpen((prev) => !prev)}
-            className={`px-4 py-2 border border-[#008080] cursor-pointer rounded font-medium flex items-center justify-between gap-2 w-40 ${
+            className={`px-4 py-2 border border-[#173faf] cursor-pointer rounded font-medium flex items-center justify-between gap-2 w-40 ${
               updating
                 ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                : "bg-white text-[#008080]"
+                : "bg-white text-[#173faf]"
             }`}
           >
             {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
@@ -192,7 +192,7 @@ const OrderCard = ({ order, orderRefetch }) => {
                     handleStatusChange(status);
                     setOpen(false);
                   }}
-                  className="block w-full text-left px-4 py-2 hover:bg-[#008080] hover:text-white transition"
+                  className="block w-full text-left px-4 py-2 hover:bg-[#173faf] hover:text-white transition"
                 >
                   {status.charAt(0).toUpperCase() + status.slice(1)}
                 </button>

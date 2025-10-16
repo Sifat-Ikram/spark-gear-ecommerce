@@ -13,7 +13,7 @@ const SortingProducts = ({ sort, setSort }) => {
       {/* Trigger */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="w-40 border border-[#008080] rounded px-3 py-2 text-[#008080] bg-white focus:outline-none"
+        className="w-40 border border-[#173faf] rounded px-3 py-2 text-[#173faf] bg-white focus:outline-none"
       >
         {selected ? selected.label : "Sort by"}
       </button>
@@ -28,7 +28,7 @@ const SortingProducts = ({ sort, setSort }) => {
                 setSort(opt.value);
                 setIsOpen(false);
               }}
-              className="px-3 py-2 cursor-pointer text-[#008080] hover:bg-[#008080] hover:text-white"
+              className="px-3 py-2 cursor-pointer text-[#173faf] hover:bg-[#173faf] hover:text-white"
             >
               {opt.label}
             </li>

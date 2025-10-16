@@ -220,7 +220,7 @@ export default function ProductForm({ defaultValues, onSubmit, type }) {
         <button
           type="button"
           onClick={() => addSpec({ name: "", value: "" })}
-          className="px-4 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#016b6b]"
+          className="px-4 py-2 bg-[#173faf] text-white rounded-lg hover:bg-[#143694]"
         >
           + Add Spec
         </button>

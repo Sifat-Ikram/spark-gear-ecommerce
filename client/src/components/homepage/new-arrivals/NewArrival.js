@@ -48,7 +48,7 @@ const NewArrival = () => {
         {/* Navigation Buttons */}
         {!isBeginning && (
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 sm:p-4 rounded-full bg-[#008080] hover:bg-[#016b6b] shadow-lg transition-all"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 sm:p-4 rounded-full bg-[#173faf] hover:bg-[#143694] shadow-lg transition-all"
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <FiChevronLeft className="text-2xl sm:text-3xl text-white" />
@@ -56,7 +56,7 @@ const NewArrival = () => {
         )}
         {!isEnd && (
           <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 sm:p-4 rounded-full bg-[#008080] hover:bg-[#016b6b] shadow-lg transition-all"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 sm:p-4 rounded-full bg-[#173faf] hover:bg-[#143694] shadow-lg transition-all"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <FiChevronRight className="text-2xl sm:text-3xl text-white" />

@@ -3,19 +3,16 @@ import TopBar from "./TopBar";
 import MainNav from "./MainNav";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const quickLinksLeft = [
-  { id: 1, label: "Blog", href: "/blog" },
-  { id: 2, label: "How to Buy", href: "/how-to-buy" },
   { id: 3, label: "Stores", href: "/stores" },
   { id: 4, label: "Support", href: "/support/contact" },
 ];
 
 const quickLinksRight = [
-  { id: 1, label: "Track Order", href: "/track-order" },
-  { id: 2, label: "Shipping Info", href: "/shipping" },
-  { id: 3, label: "Returns & Refunds", href: "/returns" },
+  { id: 1, label: "Blog", href: "/blog" },
+  { id: 2, label: "Contact Us", href: "/contactUs" },
 ];
 
 const Navbar = () => {
@@ -23,32 +20,38 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
         setShowTopBar(false);
       } else {
+        // Scrolling up
         setShowTopBar(true);
       }
+      lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const showTopBarOnPage = pathname === "/" && showTopBar;
-
   return (
     <>
       <nav className="w-full sticky top-0 z-50">
         <AnimatePresence>
-          {showTopBarOnPage && (
-            <TopBar
-              quickLinksLeft={quickLinksLeft}
-              quickLinksRight={quickLinksRight}
-            />
+          {showTopBar && (
+            <motion.div transition={{ duration: 0.3, ease: "easeInOut" }}>
+              <TopBar
+                quickLinksLeft={quickLinksLeft}
+                quickLinksRight={quickLinksRight}
+              />
+            </motion.div>
           )}
         </AnimatePresence>
-        <div className="bg-[#008080] w-full">
+
+        <div className="bg-[#173FAF] w-full">
           <MainNav />
         </div>
       </nav>

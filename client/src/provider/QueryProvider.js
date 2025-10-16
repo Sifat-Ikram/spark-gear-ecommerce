@@ -14,7 +14,7 @@ export default function QueryProvider({ children }) {
     return (
       <div
         className="min-h-screen flex justify-center items-center title-text exo"
-        style={{ color: "#008080" }}
+        style={{ color: "#173faf" }}
       >
         Spark Gear
       </div>

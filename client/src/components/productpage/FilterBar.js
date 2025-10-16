@@ -47,7 +47,7 @@ export default function FilterBar({
 
   return (
     <div>
-      <div className="bg-[#008080] text-white shadow px-2 py-4 sm:px-4 md:px-6 lg:px-7 2xl:px-8 2xl:py-5">
+      <div className="bg-[#173faf] text-white shadow px-2 py-4 sm:px-4 md:px-6 lg:px-7 2xl:px-8 2xl:py-5">
         <div className="flex justify-between items-center">
           {/* Filters Button */}
           <div className="flex items-center space-x-1 sm:space-x-3">
@@ -64,7 +64,7 @@ export default function FilterBar({
           <div ref={dropdownRef} className="relative inline-block text-left">
             <button
               onClick={() => setIsDropdownOpen((prev) => !prev)}
-              className="w-40 xl:w-48 2xl:w-64 flex items-center justify-between border border-[#008080] rounded-lg p-2 xl:p-3 2xl:p-5 text-[#008080] bg-white focus:outline-none
+              className="w-40 xl:w-48 2xl:w-64 flex items-center justify-between border border-[#173faf] rounded-lg p-2 xl:p-3 2xl:p-5 text-[#173faf] bg-white focus:outline-none
               font-semibold text-sm sm:text-base lg:text-lg 2xl:text-3xl"
             >
               {selected ? selected.label : "Sort by"}
@@ -84,7 +84,7 @@ export default function FilterBar({
                       setSort(opt.value);
                       setIsDropdownOpen(false);
                     }}
-                    className="cursor-pointer text-[#008080] hover:bg-[#008080] hover:rounded-lg p-2 xl:p-3 2xl:p-5 hover:text-white font-semibold text-sm sm:text-base 2xl:text-2xl text-center"
+                    className="cursor-pointer text-[#173faf] hover:bg-[#173faf] hover:rounded-lg p-2 xl:p-3 2xl:p-5 hover:text-white font-semibold text-sm sm:text-base 2xl:text-2xl text-center"
                   >
                     {opt.label}
                   </li>

@@ -22,7 +22,7 @@ const IntroSection = () => {
       {/* Right Side: Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
         <h2 className="title-text exo text-left mb-6 sm:mb-8 md:mb-10 text-gray-900 leading-snug">
-          Welcome to <span className="text-[#008080]">Spark Gear</span>
+          Welcome to <span className="text-[#173faf]">Spark Gear</span>
         </h2>
         <p className="text-gray-600 mb-6 leading-relaxed subtitle-text roboto">
           Discover the latest and greatest in tech — from powerful laptops and

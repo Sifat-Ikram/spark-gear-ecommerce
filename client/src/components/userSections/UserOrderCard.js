@@ -51,7 +51,7 @@ const UserOrderCard = ({ order, orderRefetch }) => {
       className="bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200"
     >
       {/* Order Header */}
-      <div className="bg-[#008080] text-white p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div className="bg-[#173faf] text-white p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-lg font-semibold">
             Order #{order._id.slice(-6)}
@@ -81,7 +81,7 @@ const UserOrderCard = ({ order, orderRefetch }) => {
 
       {/* Order Items */}
       <div className="p-4 space-y-4">
-        <h3 className="font-semibold text-[#008080] mb-2 flex items-center gap-2">
+        <h3 className="font-semibold text-[#173faf] mb-2 flex items-center gap-2">
           <FiPackage /> Ordered Items
         </h3>
 
@@ -121,7 +121,7 @@ const UserOrderCard = ({ order, orderRefetch }) => {
           </p>
           <p>
             <span className="font-medium">Total:</span>{" "}
-            <span className="text-[#008080] font-semibold">
+            <span className="text-[#173faf] font-semibold">
               ${order.orderTotal}
             </span>
           </p>

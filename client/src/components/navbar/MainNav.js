@@ -72,7 +72,7 @@ const MainNav = () => {
                 transition={{ duration: 0.2 }}
                 className="sm:hidden absolute top-full left-0 mobile-nav bg-gray-50 rounded-b-lg shadow-lg z-50 flex"
               >
-                <ul className="relative flex flex-col space-y-[1px] w-full bg-[#008080] roboto">
+                <ul className="relative flex flex-col space-y-[1px] w-full bg-[#173faf] roboto">
                   {navItems.map((item, idx) => (
                     <li key={idx}>
                       {item.link ? (

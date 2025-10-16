@@ -7,7 +7,7 @@ const features = [
   {
     id: 1,
     icon: (
-      <FiTruck className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#008080]" />
+      <FiTruck className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#173faf]" />
     ),
     title: "Fast & Free Shipping",
     desc: "Get your gadgets delivered quickly with no extra cost.",
@@ -15,7 +15,7 @@ const features = [
   {
     id: 2,
     icon: (
-      <FiHeadphones className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#008080]" />
+      <FiHeadphones className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#173faf]" />
     ),
     title: "24/7 Customer Support",
     desc: "Our team is always here to help with your questions.",
@@ -23,7 +23,7 @@ const features = [
   {
     id: 3,
     icon: (
-      <FiRotateCcw className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#008080]" />
+      <FiRotateCcw className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#173faf]" />
     ),
     title: "Easy Returns",
     desc: "Hassle-free 7-day return policy for all purchases.",
@@ -31,7 +31,7 @@ const features = [
   {
     id: 4,
     icon: (
-      <FiShield className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#008080]" />
+      <FiShield className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 3xl:text-7xl text-[#173faf]" />
     ),
     title: "Secure Payments",
     desc: "Your transactions are encrypted and completely safe.",

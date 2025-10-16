@@ -59,9 +59,9 @@ export default function SalesTrendsChart() {
             <Line
               type="monotone"
               dataKey="sales"
-              stroke="#008080"
+              stroke="#173faf"
               strokeWidth={3}
-              dot={{ r: 4, fill: "#008080" }}
+              dot={{ r: 4, fill: "#173faf" }}
               activeDot={{ r: 6, fill: "#DC143C" }}
             />
           </LineChart>

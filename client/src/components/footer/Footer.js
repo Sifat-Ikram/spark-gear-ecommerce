@@ -16,7 +16,7 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="bg-[#008080] text-white pt-12 pb-6"
+      className="bg-[#173faf] text-white pt-12 pb-6"
     >
       <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 2xl:gap-20">
         <div className="w-full lg:w-3/5 flex flex-col sm:flex-row max-lg::justify-between gap-16">
@@ -111,7 +111,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-white text-[#008080] font-semibold px-5 py-3 rounded-lg transition-colors duration-300 hover:bg-gray-100 text-sm sm:text-base"
+              className="bg-white text-[#173faf] font-semibold px-5 py-3 rounded-lg transition-colors duration-300 hover:bg-gray-100 text-sm sm:text-base"
             >
               Subscribe
             </button>
