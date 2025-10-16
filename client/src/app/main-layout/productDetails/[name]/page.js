@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { name } = await params;
-  const res = await fetch(`http://localhost:5000/api/product`);
+  const res = await fetch(`https://spark-gear-server.vercel.app/api/product`);
   const products = await res.json();
   const product = products.find((p) => p.slug === name);
 
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
 }
 
 async function getProductBySlug(name) {
-  const res = await fetch(`http://localhost:5000/api/product`);
+  const res = await fetch(`https://spark-gear-server.vercel.app/api/product`);
   if (!res.ok) return null;
 
   const products = await res.json();

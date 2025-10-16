@@ -29,9 +29,12 @@ export async function generateMetadata({ params }) {
 export default async function CategoryPage({ params }) {
   const { slug } = await params;
 
-  const res = await fetch(`http://localhost:5000/api/product/${slug}`, {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    `https://spark-gear-server.vercel.app/api/product/${slug}`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch products");
@@ -40,7 +43,7 @@ export default async function CategoryPage({ params }) {
   const products = await res.json();
 
   const resCategory = await fetch(
-    `http://localhost:5000/api/category/category/${slug}`
+    `https://spark-gear-server.vercel.app/api/category/category/${slug}`
   );
 
   const category = await resCategory.json();

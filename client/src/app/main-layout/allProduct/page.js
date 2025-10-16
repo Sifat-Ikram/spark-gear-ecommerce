@@ -19,7 +19,7 @@ export const metadata = {
 };
 
 export default async function ProductsPage() {
-  const res = await fetch("http://localhost:5000/api/product", {
+  const res = await fetch("https://spark-gear-server.vercel.app/api/product", {
     next: { revalidate: 60 },
   });
 

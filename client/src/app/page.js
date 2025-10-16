@@ -46,15 +46,18 @@ export const metadata = {
 };
 
 const Home = async () => {
-  const res = await fetch("http://localhost:5000/api/banner/active", {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    "https://spark-gear-server.vercel.app/api/banner/active",
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) throw new Error("Failed to fetch products");
   const banner = await res.json();
 
   const reviewRes = await fetch(
-    "http://localhost:5000/api/reviews/highest-rated",
+    "https://spark-gear-server.vercel.app/api/reviews/highest-rated",
     {
       next: { revalidate: 60 },
     }
