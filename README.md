@@ -65,13 +65,13 @@ This is a **personal full‑stack project** built to showcase strong frontend + 
 
 ### 🔑 Admin Login (for testing)
 
-**Email:** [admin@example.com](sparkgear@gmail.com)
+**Email:** [sparkgear@gmail.com](sparkgear@gmail.com)
 **Password:** 123456
 
 ### 🌐 Live Website
 
-**Frontend URL:** [https://your-deployed-website.com](https://spark-gear-six.vercel.app/)
-**Backend URL:** [https://your-api-server.com](https://spark-gear-server.vercel.app/)
+**Frontend URL:** [https://spark-gear-six.vercel.app](https://spark-gear-six.vercel.app)
+**Backend URL:** [https://spark-gear-server.vercel.app](https://spark-gear-server.vercel.app)
 
 ---
 
