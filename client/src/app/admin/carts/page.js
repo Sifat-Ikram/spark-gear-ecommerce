@@ -107,7 +107,7 @@ export default function AdminCartsPage() {
             >
               <div className="flex justify-between items-center mb-6 gap-10">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#173faf]">
-                  {selectedUser?.userName || "User"}'s Cart
+                  {selectedUser?.userName || "User"}&apos;s Cart
                 </h2>
                 <button
                   onClick={() => setSelectedUser(null)}

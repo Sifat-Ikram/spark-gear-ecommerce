@@ -23,7 +23,7 @@ const app = express();
 
 connectDB();
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://spark-gear-six.vercel.app"];
 
 app.use(
   cors({

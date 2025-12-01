@@ -129,7 +129,7 @@ const MainNav = () => {
         <Link href={"/"}>
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl exo tracking-tight"
+            className="font-bold text-white py-1 text-xl sm:text-2xl md:text-3xl lg:text-4xl exo tracking-tight"
           >
             Spark Gear
           </motion.h1>

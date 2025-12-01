@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: product.title,
       description: product?.shortDescription,
-      url: `http://localhost:3000/api/product/${name}`,
+      url: `https://spark-gear-six.vercel.app/api/product/${name}`,
       images: [
         {
           url: product.image,

@@ -18,12 +18,12 @@ const AddBanners = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const fileInputRef = useRef(null);
+  
 
   const { register, handleSubmit, reset } = useForm({
     defaultValues: { title: "", paragraph: "" },
   });
 
-  // Upload handler (Cloudinary unsigned video upload)
   const handleUpload = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -176,10 +176,6 @@ const AddBanners = () => {
     }
   };
 
-  if (bannerIsLoading)
-    return (
-      <p className="text-center py-10 text-gray-500">Loading banners...</p>
-    );
   if (bannerError)
     return (
       <p className="text-center py-10 text-red-500">Error loading banners.</p>
@@ -191,10 +187,77 @@ const AddBanners = () => {
         Manage Banners
       </h1>
 
-      {/* Add Banner Form */}
+      <div className="mb-12">
+        {banners.length === 0 ? (
+          <h1 className="text-lg sm:text-xl xl:text-3xl 2xl:text-4xl font-semibold text-center">
+            There is no banners yet!!!
+          </h1>
+        ) : (
+          <div className="flex flex-col w-full gap-6">
+            {banners.map((b) => (
+              <motion.div
+                key={b._id}
+                className="relative bg-white rounded-2xl shadow-md overflow-hidden group flex flex-col sm:flex-row gap-5 lg:gap-8 xl:gap-10"
+                whileHover={{ scale: 1.03 }}
+              >
+                <div className="h-full w-full sm:w-1/2 xl:w-2/4">
+                  {b?.video ? (
+                    <video
+                      src={b.video}
+                      controls
+                      className="w-full h-48 object-cover"
+                    />
+                  ) : (
+                    <div className="w-full">
+                      <Image
+                        src={fallback}
+                        alt={b.title || "fallback"}
+                        width={300}
+                        height={200}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                </div>
+
+                <div className="sm:flex-1 p-3 flex flex-col gap-2">
+                  <p className="font-bold text-gray-700 truncate">{b.title}</p>
+                  <p className="text-gray-500 text-sm line-clamp-2">
+                    {b.paragraph}
+                  </p>
+
+                  <div className="flex max-sm:justify-between sm:gap-5 items-center mt-2">
+                    <button
+                      type="button"
+                      onClick={() => handleRemoveBanner(b._id)}
+                      className="bg-red-600 hover:bg-red-800 text-white rounded-lg px-2 lg:px-4 xl:px-6 py-1 xl:py-2 font-medium flex items-center gap-1"
+                    >
+                      <FiX size={18} /> Remove
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => handleSetActive(b._id)}
+                      className={`rounded-lg px-2 lg:px-4 xl:px-6 py-1 xl:py-2 font-medium flex items-center gap-1 ${
+                        b.isActive
+                          ? "bg-[#173faf] text-white"
+                          : "bg-gray-200 text-[#173faf] hover:bg-gray-300"
+                      }`}
+                    >
+                      <FiCheck size={16} />{" "}
+                      {b.isActive ? "Active" : "Make Active"}
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </div>
+
       <form
         onSubmit={handleSubmit(handleAddBanner)}
-        className="flex flex-col gap-6 mb-12 bg-white p-6 rounded-2xl shadow-lg border border-gray-200"
+        className="flex flex-col gap-6 bg-white p-6 rounded-2xl shadow-lg border border-gray-200"
       >
         <div className="flex flex-col md:flex-row md:items-start gap-5">
           {/* Title & Paragraph */}
@@ -260,77 +323,11 @@ const AddBanners = () => {
 
         <button
           type="submit"
-          className="w-full py-3 bg-[#173faf] text-white font-semibold rounded-lg hover:bg-[#006666] transition"
+          className="w-full py-3 bg-[#173faf] text-white font-semibold rounded-lg hover:bg-[#143694] transition cursor-pointer"
         >
           {isUploading ? "Uploading..." : "Add Banner"}
         </button>
       </form>
-
-      {banners.length === 0 ? (
-        <h1 className="text-lg sm:text-xl xl:text-3xl 2xl:text-4xl font-semibold text-center">
-          There is no banners yet!!!
-        </h1>
-      ) : (
-        <div className="flex flex-col w-full gap-6">
-          {banners.map((b) => (
-            <motion.div
-              key={b._id}
-              className="relative bg-white rounded-2xl shadow-md overflow-hidden group flex flex-col sm:flex-row gap-5 lg:gap-8 xl:gap-10"
-              whileHover={{ scale: 1.03 }}
-            >
-              <div className="h-full w-full sm:w-1/2 xl:w-2/4">
-                {b?.video ? (
-                  <video
-                    src={b.video}
-                    controls
-                    className="w-full h-48 object-cover"
-                  />
-                ) : (
-                  <div className="w-full">
-                    <Image
-                      src={fallback}
-                      alt={b.title || "fallback"}
-                      width={300}
-                      height={200}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
-              </div>
-
-              <div className="sm:flex-1 p-3 flex flex-col gap-2">
-                <p className="font-bold text-gray-700 truncate">{b.title}</p>
-                <p className="text-gray-500 text-sm line-clamp-2">
-                  {b.paragraph}
-                </p>
-
-                <div className="flex max-sm:justify-between sm:gap-5 items-center mt-2">
-                  <button
-                    type="button"
-                    onClick={() => handleRemoveBanner(b._id)}
-                    className="bg-red-600 hover:bg-red-800 text-white rounded-lg px-2 lg:px-4 xl:px-6 py-1 xl:py-2 font-medium flex items-center gap-1"
-                  >
-                    <FiX size={18} /> Remove
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => handleSetActive(b._id)}
-                    className={`rounded-lg px-2 lg:px-4 xl:px-6 py-1 xl:py-2 font-medium flex items-center gap-1 ${
-                      b.isActive
-                        ? "bg-[#173faf] text-white"
-                        : "bg-gray-200 text-[#173faf] hover:bg-gray-300"
-                    }`}
-                  >
-                    <FiCheck size={16} />{" "}
-                    {b.isActive ? "Active" : "Make Active"}
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      )}
     </main>
   );
 };

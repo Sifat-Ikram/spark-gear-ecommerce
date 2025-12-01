@@ -114,10 +114,10 @@ const OrderCard = ({ order, orderRefetch }) => {
                 <FiDollarSign /> Summary
               </h3>
               <p className="text-gray-700">
-                Shipping Fee: ${order.shippingFee}
+                Shipping Fee: BDT {order.shippingFee}
               </p>
               <p className="text-gray-700 font-semibold">
-                Total: ${order.orderTotal}
+                Total: BDT {order.orderTotal}
               </p>
               {order.paymentInfo && (
                 <p className="text-green-600 mt-1">Payment Completed</p>
@@ -148,7 +148,7 @@ const OrderCard = ({ order, orderRefetch }) => {
                   <p className="font-medium">{item.cart.name}</p>
                   <p className="text-sm text-gray-500">{item.cart.category}</p>
                 </div>
-                <p className="font-semibold">${item.cart.price}</p>
+                <p className="font-semibold">BDT {item.cart.price}</p>
                 <p className="text-gray-600">x{item.quantity}</p>
               </div>
             ))}

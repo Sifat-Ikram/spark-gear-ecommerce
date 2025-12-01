@@ -15,6 +15,8 @@ export function useBanners() {
     queryKey: ["banners"],
     queryFn: async () => {
       const res = await axiosSecure.get("/api/banner");
+      console.log(res.data);
+      
       return res.data.banners;
     },
     staleTime: 1000 * 60 * 5,

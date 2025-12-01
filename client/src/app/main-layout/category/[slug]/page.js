@@ -13,10 +13,10 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${categoryName} | Spark Gear`,
       description: `Check out our latest ${categoryName} products.`,
-      url: `http://localhost:3000/category/${slug}`,
+      url: `https://spark-gear-six.vercel.app/category/${slug}`,
       images: [
         {
-          url: `http://localhost:3000/og-default.png`,
+          url: `https://spark-gear-six.vercel.app/og-default.png`,
           width: 1200,
           height: 630,
           alt: `${categoryName} products`,

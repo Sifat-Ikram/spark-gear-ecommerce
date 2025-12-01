@@ -27,21 +27,13 @@ export const metadata = {
     title: "Spark Gear – Your Trusted Gadget Shop",
     description:
       "Shop premium gadgets and electronics at Spark Gear. Explore featured products, new arrivals, and exclusive deals.",
-    url: "https://sparkgear.com",
+    url: "https://spark-gear-six.vercel.app",
     siteName: "Spark Gear",
-    images: [
-      {
-        url: "https://sparkgear.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Spark Gear Gadgets",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://sparkgear.com",
+    canonical: "https://spark-gear-six.vercel.app",
   },
 };
 
@@ -70,7 +62,7 @@ const Home = async () => {
   return (
     <MainLayout>
       <div className="my-20 space-y-20 xl:space-y-32 2xl:space-y-44">
-        {/* <Banner banner={banner.activeBanner} /> */}
+        <Banner banner={banner.activeBanner} />
         <div className="w-11/12 mx-auto flex flex-col space-y-20 xl:space-y-32 2xl:space-y-44">
           <IntroSection />
           <CategoriesSection />

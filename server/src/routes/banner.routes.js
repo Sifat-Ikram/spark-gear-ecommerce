@@ -5,7 +5,7 @@ import { verifyAdmin } from "../middlewares/admin.middleware.js";
 
 const router = express.Router();
 
-router.post("/", protect, verifyAdmin, BannerController.addBanner);
+router.post("/", BannerController.addBanner);
 
 router.get("/", protect, verifyAdmin, BannerController.getAllBanners);
 

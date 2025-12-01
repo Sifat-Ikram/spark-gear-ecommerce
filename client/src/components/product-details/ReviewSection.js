@@ -131,7 +131,7 @@ const ReviewSection = ({ name }) => {
             </div>
 
             <p className="text-gray-700 text-sm sm:text-base xl:text-lg 2xl:text-xl leading-relaxed roboto mt-2">
-              "{reviewItem.review}"
+              &quot;{reviewItem.review}&quot;
             </p>
 
             <div className="flex items-center gap-4 text-gray-600 text-sm sm:text-base xl:text-lg 2xl:text-xl mt-2">
