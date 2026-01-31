@@ -80,7 +80,7 @@ This is a **personal full‑stack project** built to showcase strong frontend + 
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/gadgets-ecommerce.git
+git clone https://github.com/Sifat-Ikram/spark-gear-ecommerce.git
 cd gadgets-ecommerce
 ```
 
